@@ -7,4 +7,3 @@ The 2016 Algonquin Design Grad website.
 ---
 
 © 2016 Algonquin College Graphic Design Grad Website Team Members
-
