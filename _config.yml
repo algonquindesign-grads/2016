@@ -1,0 +1,16 @@
+permalink: pretty
+cdn: http://grads.images.algonquindesign.ca/2016
+
+collections:
+  grads:
+    output: true
+    permalink: /grads/:path/
+    title: "Grads"
+
+exclude:
+  - README.md
+  - .editorconfig
+  - .gitignore
+
+kramdown:
+  input: GFM
