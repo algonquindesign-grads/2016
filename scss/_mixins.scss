@@ -1,0 +1,18 @@
+  @mixin student-name {
+
+  position: absolute;
+  text-align: center;
+  margin: 0;
+  width: 100%;
+  z-index: 10;
+  padding: 0.6em 0 0.4em;
+  background-color: lighten($grey, 25%);
+  color: $white;
+  letter-spacing: 2px;
+  font-size: 12px;
+  font-family: "Effra", serif;
+  margin-top: -2.25em;
+  @media only screen and (min-width: 60em) {
+
+  }
+}
