@@ -1,0 +1,69 @@
+/* Imports */
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,700);
+html {
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+h1 {
+  font-family: "Roboto", sans-serif;
+}
+
+.social-grid {
+  letter-spacing: -0.31em;
+  text-rendering: optimizespeed;
+  display: -webkit-flex;
+  -webkit-flex-flow: row wrap;
+  display: -ms-flexbox;
+  -ms-flex-flow: row wrap;
+}
+
+.social-island {
+  position: relative;
+  margin-bottom: 2em;
+}
+
+.social-unit {
+  margin-right: -15px;
+  margin-left: -15px;
+  position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.social-img-flex {
+  display: block;
+  width: 85%;
+  float: left;
+}
+
+.social {
+  padding-left: 2em;
+}
+
+.social-icons {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+li {
+  float: left;
+}
+
+.btn {
+  font-size: 1.5em;
+}
+
+@media only screen and (min-width: 25em) {
+  .social-unit-2-xs {
+    width: 50.0000%;
+  }
+}
+
+@media only screen and (min-width: 38em) {
+  .social-unit-3-m {
+    width: 33.3333%;
+  }
+}
