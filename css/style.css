@@ -2182,14 +2182,14 @@ td, th, fieldset {
 @media only screen and (min-width: 80em) {
   .fw-header {
     position: fixed;
-    width: 12em;
+    width: 15em;
     left: 0;
     top: 0;
     bottom: 0;
   }
   .site-wrapper {
-    width: calc(100% - 12em);
-    left: 12em;
+    width: calc(100% - 14em);
+    left: 15em;
   }
   .fw-toggle {
     display: none;
@@ -2199,10 +2199,10 @@ td, th, fieldset {
   }
   .fw-navigation {
     left: 0;
-    top: 12em;
+    top: 13em;
     position: fixed;
     max-height: 20em;
-    width: 12em;
+    width: 15em;
     overflow-y: scroll;
   }
   .fw-navigation ul li:last-child:before {
@@ -2213,7 +2213,7 @@ td, th, fieldset {
   }
   .side-info {
     position: relative;
-    top: 14em;
+    top: 16em;
   }
   .side-info .fw-info {
     position: static !important;
@@ -2221,6 +2221,24 @@ td, th, fieldset {
     height: auto;
     width: auto;
     overflow: auto;
+  }
+  .side-info .fw-info .fw-info-date {
+    font-size: 1.2656rem;
+    line-height: 1.8750rem;
+  }
+  .side-info .fw-info .fw-info-time,
+  .side-info .fw-info .fw-info-venue {
+    font-size: 1.1250rem;
+    line-height: 1.5000rem;
+  }
+  .side-info .fw-info .fw-info-venue {
+    font-size: 0.8889rem;
+    line-height: 1.5000rem;
+  }
+  .side-info .fw-info .fw-info-address,
+  .side-info .fw-info .fw-info-city {
+    font-size: 0.8889rem;
+    line-height: 1.5000rem;
   }
 }
 

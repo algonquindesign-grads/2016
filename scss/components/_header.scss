@@ -209,7 +209,7 @@
   }
 
   .site-wrapper{
-    width: calc(100% - 12em);
+    width: 100% - $side-bar-width;
     left: $side-bar-width;
   }
 
@@ -224,7 +224,7 @@
 
   .fw-navigation{
     left: 0;
-    top: $side-bar-width;
+    top: $side-bar-width - 2em;
     position: fixed;
     max-height: $menu-max-height;
     width: $side-bar-width;
@@ -242,9 +242,30 @@
   }
   .side-info{
     position: relative;
-    top: 14em;
+    top: 16em;
     .fw-info{
       @include element-invisible-off;
+      h2{
+
+      }
+      .fw-info-date{
+        font-size: 1.2656rem;
+        line-height: 1.8750rem;
+      }
+      .fw-info-time,
+      .fw-info-venue{
+        font-size: 1.1250rem;
+        line-height: 1.5000rem;
+      }
+      .fw-info-venue{
+        font-size: 0.8889rem;
+        line-height: 1.5000rem;
+      }
+      .fw-info-address,
+      .fw-info-city {
+        font-size: 0.8889rem;
+        line-height: 1.5000rem;
+      }
     }
   }
 }
