@@ -2,19 +2,23 @@
   @include zero;
   display: block;
   overflow: hidden;
-  background-color: $green;
+  background-color: $white;
 
   .logo{
     display: block;
     padding: 1em;
     width: calc(100% - 5em);
-
+    &:hover  .svg-top{
+      fill: white;
+    }
     .fw-logo{
       display: block;
       width: 100%;
+      max-width: 20em;
       padding: 1em;
 
-      img{
+      img,
+      svg{
         display: block;
         width: 100%;
       }
@@ -22,6 +26,10 @@
 
   }
 
+}
+
+.svg-top{
+  transition: all 500ms ease-in-out;
 }
 
 .fw-navigation{
@@ -71,5 +79,8 @@
   .fw-info-address{
     text-decoration: none;
     color: $text-color;
+    &:hover{
+      color: lighten($text-color, 50%);
+    }
   }
 }
