@@ -1,5 +1,8 @@
+
 <section class="ph-graduates">
-	<ul class="ph-student">
+  {% include filter.html %}
+
+	<ul class="ph-student filter-items">
   {% for student in site.grads %}
       <li class="ph-image" data-category="{% for a in student.specialization%}{{a}} {% endfor %}">
         <a href="{{site.baseurl}}/{{student.url | replace: 'grads/', '/' | remove:'/'}}">

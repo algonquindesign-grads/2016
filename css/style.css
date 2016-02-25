@@ -1,3 +1,70 @@
+.filter-radio {
+  left: -50px;
+  position: absolute;
+}
+
+.filters label {
+  cursor: pointer;
+}
+
+/* add .grid selector because that is now the sibling element of the filter. call .grid and its child .filters */
+#filter-all:checked ~ .grid .filters [for="filter-all"],
+#filter-branding:checked ~ .grid .filters [for="filter-branding"],
+#filter-ux:checked ~ .grid .filters [for="filter-ux"],
+#filter-web:checked ~ .grid .filters [for="filter-web"],
+#filter-illustration:checked ~ .grid .filters [for="filter-illustration"],
+#filter-motion:checked ~ .grid .filters [for="filter-motion"],
+#filter-print:checked ~ .grid .filters [for="filter-print"],
+#filter-type:checked ~ .grid .filters [for="filter-type"],
+#filter-photo:checked ~ .grid .filters [for="filter-photo"] {
+  background-color: black;
+  color: white;
+}
+
+#filter-all:checked ~ .filters [for="filter-all"],
+#filter-branding:checked ~ .filters [for="filter-branding"],
+#filter-group-2:checked ~ .filters [for="filter-group-2"],
+#filter-group-3:checked ~ .filters [for="filter-group-3"] {
+  background-color: red;
+}
+
+/* The ~ sibling selector will select all .filters elements, as long as they follow the preceding value*/
+.filter-items > li {
+  opacity: .4;
+}
+
+#filter-all:checked ~ .filter-items > li {
+  opacity: 1;
+}
+
+/* > will only select direct child descendant */
+#filter-branding:checked ~ .filter-items > [data-category~="branding"],
+#filter-ux:checked ~ .filter-items > [data-category~="ux-ui"],
+#filter-web:checked ~ .filter-items > [data-category~="web"],
+#filter-illustration:checked ~ .filter-items > [data-category~="illustration"],
+#filter-motion:checked ~ .filter-items > [data-category~="motion"],
+#filter-print:checked ~ .filter-items > [data-category~="print"],
+#filter-type:checked ~ .filter-items > [data-category~="type"],
+#filter-photo:checked ~ .filter-items > [data-category~="photography"] {
+  opacity: 1;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+.filter-btn {
+  display: inline-block;
+  margin: 0;
+  background-color: #dcdadb;
+  color: #55565b;
+  padding: .5em 1em;
+}
+
+.filter-btn:hover {
+  background-color: #a6a5a8;
+}
+
 .ph-graduates {
   padding-left: 0em;
   padding-right: 0em;
