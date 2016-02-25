@@ -23,6 +23,11 @@ html {
   width: 100%;
 }
 
+.site-wrapper{
+  display: block;
+  background-color: red;
+}
+
 // Show navigation on screen when there is no JS
 body.noscript .navigation{
 

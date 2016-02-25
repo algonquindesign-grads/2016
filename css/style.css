@@ -53,6 +53,15 @@ html {
   width: 100%;
 }
 
+.site-wrapper {
+  display: block;
+  background-color: red;
+}
+
+.fw-header {
+  background-color: blue;
+}
+
 @-moz-viewport {
   width: device-width;
   scale: 1;
