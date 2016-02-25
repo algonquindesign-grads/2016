@@ -2207,3 +2207,24 @@ body.noscript .fw-toggle {
   overflow: hidden;
   clip: rect(1px, 1px, 1px, 1px);
 }
+
+@media only screen and (min-width: 38em) {
+  body.noscript .fw-header .logo {
+    width: 18em;
+    margin: 0;
+  }
+  body.noscript .fw-header[data-state="closed"] .fw-navigation {
+    position: absolute;
+    top: 1em;
+    right: 2em;
+  }
+  body.noscript .fw-header[data-state="closed"] .fw-navigation ul {
+    display: block;
+  }
+  body.noscript .fw-header[data-state="closed"] .fw-navigation ul li {
+    display: inline-block;
+  }
+  body.noscript .fw-header[data-state="closed"] .fw-navigation ul li a {
+    padding: 1em;
+  }
+}

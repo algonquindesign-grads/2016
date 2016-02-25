@@ -35,8 +35,8 @@ body{
 // Show navigation on screen when there is no JS
 body.noscript{
   .fw-header{
-    &[data-state="closed"]{
-      .fw-navigation{
+      &[data-state="closed"]{
+        .fw-navigation{
         max-height: 15em;
       }
     }
@@ -44,5 +44,32 @@ body.noscript{
 
   .fw-toggle{
     @include element-invisible;
+  }
+}
+
+@media only screen and (min-width: 38em){
+  body.noscript{
+    .fw-header{
+      .logo{
+        width: 18em;
+        margin: 0;
+      }
+      &[data-state="closed"]{
+        .fw-navigation{
+          position: absolute;
+          top: 1em;
+          right: 2em;;
+          ul{
+            display: block;
+            li{
+              display: inline-block;
+              a{
+                padding: 1em;
+              }
+            }
+          }
+      }
+    }
+  }
   }
 }
