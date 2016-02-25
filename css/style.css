@@ -2048,11 +2048,15 @@ body {
   display: block;
   overflow: hidden;
   background-color: #eee;
+  position: relative;
 }
 
 .fw-header .logo {
+  position: relative;
+  top: 0;
+  left: 0;
   display: block;
-  padding: 1em;
+  padding: 0.5em 1em;
   width: calc(100% - 5em);
 }
 
@@ -2063,7 +2067,7 @@ body {
 .fw-header .logo .fw-logo {
   display: block;
   width: 100%;
-  max-width: 20em;
+  max-width: 15em;
   padding: 1em;
 }
 
@@ -2078,8 +2082,12 @@ body {
 }
 
 .fw-toggle {
+  position: absolute;
+  top: 0;
+  right: 0;
   display: block;
   width: 3em;
+  margin: 1em;
   padding: 1.5em 0.65em;
   background-color: transparent;
 }
