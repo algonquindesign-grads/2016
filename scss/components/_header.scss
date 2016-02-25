@@ -258,9 +258,12 @@
       }
     }
   }
-  .side-info{
-    position: relative;
-    top: 8em;
+
+  .fw-info-small{
+    position: fixed;
+    top: 22em;
+    z-index: 500;
+    width: $side-bar-width;
     .fw-info{
       @include element-invisible-off;
       h2{
