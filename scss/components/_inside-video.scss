@@ -1,0 +1,178 @@
+
+@-moz-viewport { width: device-width; scale: 1; }
+@-ms-viewport { width: device-width; scale: 1; }
+@-o-viewport { width: device-width; scale: 1; }
+@-webkit-viewport { width: device-width; scale: 1; }
+@viewport { width: device-width; scale: 1; }
+
+
+html {
+  box-sizing: border-box;
+  -moz-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+}
+
+.rg-name-sm {
+  display: block;
+  font-size: .5em;
+  font-weight: 200;
+  line-height: 1em;
+}
+
+.rg-capital{
+  text-transform: uppercase;
+}
+
+
+.rg-embed{
+  position: relative;
+}
+
+.rg-embed-16by9{
+  padding-top: 56.25%;
+}
+
+.rg-embed-item{
+  height: 100%;
+  left: 0;
+  padding: absolute;
+  top: 0;
+  width: 100%;
+}
+
+
+
+
+.rg-icon{
+	
+	li{
+		float: left;
+		padding: .25em;
+		text-decoration: none;
+	
+		font-size: 40px;
+	}
+
+}
+
+.rg-video-wrapper{
+	iframe{
+		width: 100%;
+	}
+}
+
+.rg-persons-name{
+
+		text-transform: uppercase;
+		padding: .5em 1em ;
+}	
+
+.rg-float{
+  float:left;
+}
+
+.rg-profil{
+
+	padding: 2em;
+
+	.rg-profil-img{
+		padding-top:2em;
+	}
+
+	.rg-profil-info{
+		padding-top: 4em;
+
+		.content{
+			margin: 0 2em;
+		}
+	}
+	.skill{
+		border-bottom: 1px solid #000; 
+	}
+	
+}
+
+.rg-social-icons  {
+  margin: auto 0;
+  list-style-type:none;
+
+		li{
+			font-size: 50px;
+      color: $grey;
+		}
+
+    a{
+       text-decoration: none;
+     } 
+	}
+
+.rg-social-icons li:before{
+  text-decoration: none;
+}
+.rg-links a{
+  text-decoration: none;
+  font-weight: 400;
+  color: $black;
+
+    &:hover {
+      text-decoration: underline;
+    }
+}
+
+.rg-wrap, .rg-wrap-name {
+  width: 100%;
+  background-color: $grey;
+}
+
+.rg-nav-btn {
+  list-style-type: none;
+  width: auto;
+  text-align: center;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+
+.rg-nav-btn-li {
+  display: inline-block;
+  left: 33%;
+}
+
+
+.rg-nav-btn-arrows {
+  width: 4em;
+  font-weight: 600;
+  margin: 0;
+  
+  @include rg-nav-btn;
+    &:hover {
+      font-weight: 600;
+    }
+
+}
+
+.rg-on {
+  visibility: visible;
+}
+
+.rg-nav-btn-a {
+  width: 8em;
+  font-weight: 100;
+  @include pp-nav-btn;
+}
+
+.rg-off {
+  display: none;
+  margin: 0;
+}
+
