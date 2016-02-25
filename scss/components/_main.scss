@@ -26,9 +26,9 @@ body:after{
   content: "";
   background-image: url("http://grads.images.algonquindesign.ca.s3.amazonaws.com/2016/img/dots.png");
   background-repeat: repeat;
-  background-size: 2em 2em;
+  background-size: $grid-size $grid-size;
   background-position: top;
-  opacity: 0.2;
+  opacity: $grid-opacity;
   top: 0;
   left: 0;
   bottom: 0;
@@ -56,7 +56,7 @@ body:after{
 // Show navigation on screen when there is no JS
 body.noscript{
   .fw-navigation{
-        max-height: 15em;
+    max-height: 15em;
   }
 
   .fw-toggle{
@@ -89,7 +89,7 @@ body.noscript{
             border-bottom: none;
           }
           &:hover:before{
-            border-bottom: 1px solid $grey;
+            border-bottom: 1px solid $menu-underline;
           }
         }
       }
@@ -112,7 +112,7 @@ body.noscript{
         &:before{
           left: 2em;
           right: 2em;
-          border-bottom: 1px solid $grey;
+          border-bottom: 1px solid $menu-underline;
         }
         &:hover:before{
           left: 0;

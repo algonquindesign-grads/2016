@@ -1943,7 +1943,7 @@ td, th, fieldset {
   padding: 0;
   display: block;
   overflow: hidden;
-  background-color: #fff;
+  background-color: #f8f2e9;
   position: relative;
   z-index: 50;
 }
@@ -1964,10 +1964,6 @@ td, th, fieldset {
   padding: 1em;
 }
 
-.fw-header .logo .fw-logo:hover .svg-top {
-  fill: #d5d5d5;
-}
-
 .fw-header .logo .fw-logo img,
 .fw-header .logo .fw-logo svg {
   display: block;
@@ -1975,7 +1971,16 @@ td, th, fieldset {
 }
 
 .fw-header .logo .fw-logo svg .svg-top {
-  transition: all 500ms ease-in-out;
+  fill: #a1a2a7;
+  transition: fill 500ms ease-in-out;
+}
+
+.fw-header .logo .fw-logo svg .svg-rest {
+  fill: #55565a;
+}
+
+.fw-header .logo .fw-logo:hover .svg-top {
+  fill: #bcbcbf;
 }
 
 .fw-header .logo .fw-logo .fw-logo-vert {
@@ -2051,7 +2056,7 @@ td, th, fieldset {
 .fw-toggle-button:before {
   width: 100%;
   height: 4px;
-  background-color: #55565a;
+  background-color: #4b3618;
   transition: all 250ms;
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
@@ -2061,9 +2066,9 @@ td, th, fieldset {
 .fw-navigation {
   position: relative;
   max-height: 0;
-  overflow: hidden;
   margin: 0;
   background-color: transparent;
+  overflow: hidden;
   transition: max-height 250ms ease-in-out;
 }
 
@@ -2078,19 +2083,19 @@ td, th, fieldset {
 }
 
 .fw-navigation ul li a {
-  background-color: #fff;
+  background-color: #f8f2e9;
   display: block;
   padding: 1em 2em;
   text-decoration: none;
-  color: #000;
+  color: #4b3618;
 }
 
 .fw-navigation ul li a:hover, .fw-navigation ul li a:focus {
-  background-color: #e6e6e6;
+  background-color: #f2e7d6;
 }
 
 .fw-navigation ul li a:active {
-  background-color: #d9d9d9;
+  background-color: #ecdbc2;
   color: #fff;
 }
 
@@ -2100,7 +2105,7 @@ td, th, fieldset {
   left: 2em;
   right: 2em;
   bottom: 0;
-  border-bottom: 1px solid #55565a;
+  border-bottom: 1px solid #4b3618;
   transition: all 250ms;
 }
 
@@ -2121,6 +2126,7 @@ td, th, fieldset {
 .fw-info * {
   margin: 0;
   padding: 0;
+  color: #000;
 }
 
 .fw-info h2 {
@@ -2142,11 +2148,11 @@ td, th, fieldset {
 
 .fw-info .fw-info-address {
   text-decoration: none;
-  color: #000;
 }
 
 .fw-info .fw-info-address:hover {
   color: gray;
+  text-decoration: underline;
 }
 
 @media only screen and (min-width: 38em) {
@@ -2199,23 +2205,21 @@ td, th, fieldset {
     position: fixed;
     max-height: 20em;
     width: 15em;
-    overflow-y: scroll;
   }
   .fw-navigation ul li:before {
-    border-bottom: 1px solid #55565a;
+    border-bottom: 1px solid #4b3618;
   }
   .fw-navigation ul li:last-child:before {
-    border-bottom: 1px solid #55565a;
+    border-bottom: 1px solid #4b3618;
   }
   .fw-navigation ul li a {
     padding: 0.5em 2em;
     font-size: 1em;
-    line-height: 1.5em;
   }
   .fw-info-small {
     position: fixed;
     top: 22em;
-    z-index: 500;
+    z-index: 250;
     width: 15em;
   }
   .fw-info-small .fw-info {
@@ -2224,6 +2228,9 @@ td, th, fieldset {
     height: auto;
     width: auto;
     overflow: auto;
+  }
+  .fw-info-small .fw-info * {
+    color: #4b3618;
   }
   .fw-info-small .fw-info h2 {
     font-size: 0.8889rem;
@@ -2354,7 +2361,7 @@ body.noscript .fw-toggle {
     border-bottom: none;
   }
   body.noscript .fw-navigation ul li:hover:before {
-    border-bottom: 1px solid #55565a;
+    border-bottom: 1px solid #4b3618;
   }
 }
 
@@ -2373,7 +2380,7 @@ body.noscript .fw-toggle {
   body.noscript .fw-navigation ul li:before {
     left: 2em;
     right: 2em;
-    border-bottom: 1px solid #55565a;
+    border-bottom: 1px solid #4b3618;
   }
   body.noscript .fw-navigation ul li:hover:before {
     left: 0;

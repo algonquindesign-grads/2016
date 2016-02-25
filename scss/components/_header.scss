@@ -2,7 +2,7 @@
   @include zero;
   display: block;
   overflow: hidden;
-  background-color: $white;
+  background-color: $off-white;
   position: relative;
   z-index: 50;
   .logo{
@@ -17,9 +17,7 @@
       width: 100%;
       max-width: 15em;
       padding: 1em;
-      &:hover .svg-top{
-        fill: lighten(#bbb, 10%)
-      }
+
       img,
       svg{
         display: block;
@@ -27,8 +25,15 @@
       }
       svg{
         .svg-top{
-          transition: all 500ms ease-in-out;
+          fill: $svg-top-fill;
+          transition: fill $svg-transition ease-in-out;
         }
+        .svg-rest{
+          fill: $svg-fill;
+        }
+      }
+      &:hover .svg-top{
+        fill: lighten($svg-top-fill, 10%);;
       }
       .fw-logo-vert{
         display: none;
@@ -65,7 +70,7 @@
   top: 0;
   right: 0;
   display: block;
-  width: 3em;
+  width: $menu-toggle-size;
   margin: 1em;
   padding: 1.5em 0.65em;
   background-color: transparent;
@@ -93,9 +98,9 @@
 .fw-toggle-button:after,
 .fw-toggle-button:before {
   width: 100%;
-  height: 4px;
-  background-color: $grey;
-  transition: all $fw-menu-duration;
+  height: $menu-burger-lines;
+  background-color: $menu-burger;
+  transition: all $menu-duration;
   backface-visibility: hidden;
   border-radius: 2px;
 }
@@ -103,26 +108,26 @@
 .fw-navigation{
   position: relative;
   max-height: 0;
-  overflow: hidden;
   margin: 0;
   background-color: transparent;
-  transition: max-height $fw-menu-duration ease-in-out;
+  overflow: hidden;
+  transition: max-height $menu-duration ease-in-out;
   ul{
     @include zero;
     list-style: none;
     li{
       position: relative;
       a{
-        background-color: $white;
+        background-color: $menu-background;
         display: block;
         padding: 1em 2em;;
         text-decoration: none;
-        color: $text-color;
+        color: $menu-text;
         &:hover, &:focus{
-          background-color: darken($white, 10%);
+          background-color: darken($menu-background, 5%);
         }
         &:active{
-          background-color: darken($white, 15%);
+          background-color: darken($menu-background, 10%);
           color: $white;
         }
       }
@@ -132,8 +137,8 @@
         left : 2em;
         right: 2em;
         bottom: 0;
-        border-bottom: 1px solid $grey;
-        transition: all $fw-menu-duration;
+        border-bottom: $menu-underline-stroke solid $menu-underline;
+        transition: all $menu-duration;
       }
       &:hover:before{
         left: 0;
@@ -151,6 +156,7 @@
   position: relative;
   *{
     @include zero;
+    color: $info-text;
   }
   h2{
     text-transform: uppercase;
@@ -167,9 +173,9 @@
   }
   .fw-info-address{
     text-decoration: none;
-    color: $text-color;
     &:hover{
-      color: lighten($text-color, 50%);
+      color: lighten($info-text, 50%);
+      text-decoration: underline;
     }
   }
 }
@@ -183,8 +189,8 @@
     @include element-invisible;
   }
   .fw-navigation{
-    width: 18em;
-    left: calc(100% - 18em);
+    width: $menu-fly-out-width;
+    left: calc(100% - #{$menu-fly-out-width});
     position: absolute;
     z-index: 100;
   }
@@ -216,7 +222,7 @@
   }
 
   .site-wrapper{
-    width: calc(100% - 15em);
+    width: calc(100% - #{$side-bar-width});
     left: $side-bar-width;
     height: 100%;
     overflow: scroll;
@@ -236,19 +242,17 @@
     position: fixed;
     max-height: $menu-max-height;
     width: $side-bar-width;
-    overflow-y: scroll;
     ul{
       li{
         &:before{
-          border-bottom: 1px solid $grey;
+          border-bottom: 1px solid $menu-underline;
         }
         &:last-child:before{
-          border-bottom: 1px solid $grey;
+          border-bottom: 1px solid $menu-underline;
         }
         a{
           padding: 0.5em 2em;
           font-size: 1em;
-          line-height: 1.5em;
         }
       }
     }
@@ -256,10 +260,13 @@
 
   .fw-info-small{
     position: fixed;
-    top: 22em;
-    z-index: 500;
+    top: $side-info-top;
+    z-index: 250;
     width: $side-bar-width;
     .fw-info{
+      *{
+        color: $menu-text;
+      }
       @include element-invisible-off;
       h2{
         font-size: 0.8889rem;
