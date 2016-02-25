@@ -13,5 +13,4 @@ function toggleNav(){
   }else{
     $('.fw-header').attr('data-state','closed');
   }
-  console.log('test');
 }

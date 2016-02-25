@@ -12,15 +12,15 @@
     display: block;
     padding: 0.5em 1em;
     width: calc(100% - 5em);
-    &:hover  .svg-top{
-      fill: white;
-    }
+
     .fw-logo{
       display: block;
       width: 100%;
       max-width: 15em;
       padding: 1em;
-
+      &:hover .svg-top{
+        fill: white;
+      }
       img,
       svg{
         display: block;
@@ -162,12 +162,12 @@
 }
 
 @media only screen and (min-width: 25em){
+
+}
+@media only screen and (min-width: 38em){
   .fw-info{
     @include element-invisible;
   }
-}
-@media only screen and (min-width: 38em){
-
 }
 @media only screen and (min-width: 60em){
 

@@ -33,6 +33,16 @@ body{
 }
 
 // Show navigation on screen when there is no JS
-body.noscript .fw-navigation{
-  max-height: 15em;
+body.noscript{
+  .fw-header{
+    &[data-state="closed"]{
+      .fw-navigation{
+        max-height: 15em;
+      }
+    }
+  }
+
+  .fw-toggle{
+    @include element-invisible;
+  }
 }

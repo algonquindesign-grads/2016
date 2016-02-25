@@ -1993,59 +1993,6 @@ td, th, fieldset {
   }
 }
 
-@-moz-viewport {
-  width: device-width;
-  scale: 1;
-}
-
-@-ms-viewport {
-  width: device-width;
-  scale: 1;
-}
-
-@-webkit-viewport {
-  width: device-width;
-  scale: 1;
-}
-
-@viewport {
-  width: device-width;
-  scale: 1;
-}
-
-html {
-  box-sizing: border-box;
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-  text-size-adjust: 100%;
-  font-family: 'Effra', sans-serif;
-}
-
-body {
-  margin: 0;
-  padding: 0;
-}
-
-*, *:before, *:after {
-  box-sizing: inherit;
-}
-
-.img-flex {
-  display: block;
-  width: 100%;
-}
-
-.site-wrapper {
-  display: block;
-  overflow: hidden;
-  margin: 0;
-  padding: 0;
-}
-
-body.noscript .fw-navigation {
-  max-height: 15em;
-}
-
 .fw-header {
   margin: 0;
   padding: 0;
@@ -2064,15 +2011,15 @@ body.noscript .fw-navigation {
   width: calc(100% - 5em);
 }
 
-.fw-header .logo:hover .svg-top {
-  fill: white;
-}
-
 .fw-header .logo .fw-logo {
   display: block;
   width: 100%;
   max-width: 15em;
   padding: 1em;
+}
+
+.fw-header .logo .fw-logo:hover .svg-top {
+  fill: white;
 }
 
 .fw-header .logo .fw-logo img,
@@ -2227,7 +2174,7 @@ body.noscript .fw-navigation {
   color: gray;
 }
 
-@media only screen and (min-width: 25em) {
+@media only screen and (min-width: 38em) {
   .fw-info {
     position: absolute !important;
     height: 1px;
@@ -2235,4 +2182,65 @@ body.noscript .fw-navigation {
     overflow: hidden;
     clip: rect(1px, 1px, 1px, 1px);
   }
+}
+
+@-moz-viewport {
+  width: device-width;
+  scale: 1;
+}
+
+@-ms-viewport {
+  width: device-width;
+  scale: 1;
+}
+
+@-webkit-viewport {
+  width: device-width;
+  scale: 1;
+}
+
+@viewport {
+  width: device-width;
+  scale: 1;
+}
+
+html {
+  box-sizing: border-box;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  font-family: 'Effra', sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.img-flex {
+  display: block;
+  width: 100%;
+}
+
+.site-wrapper {
+  display: block;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+body.noscript .fw-header[data-state="closed"] .fw-navigation {
+  max-height: 15em;
+}
+
+body.noscript .fw-toggle {
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px);
 }
