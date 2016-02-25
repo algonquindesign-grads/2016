@@ -34,9 +34,29 @@
     }
 
   }
-
+  &[data-state="open"]{
+    .fw-navigation{
+      max-height: 15em;
+    }
+    .fw-toggle-button{
+      background-color: transparent;
+    }
+    .fw-toggle-button:before {
+      transform: rotate(45deg) translate(5px, 5px);
+    }
+    .fw-toggle-button:after {
+      transform: rotate(-45deg) translate(7px, -8px);
+    }
+    & + #fw-menu {
+      max-height: 15em;
+    }
+  }
+  &[data-state="closed"]{
+    .fw-navigation{
+      max-height: 0;
+    }
+  }
 }
-
 
 
 .fw-toggle{
@@ -79,18 +99,7 @@
   border-radius: 2px;
 }
 
-.fw-toggle.on .fw-toggle-button {
-  background-color: transparent;
-}
-.fw-toggle.on .fw-toggle-button:before {
-  transform: rotate(45deg) translate(5px, 5px);
-}
-.fw-toggle.on .fw-toggle-button:after {
-  transform: rotate(-45deg) translate(7px, -8px);
-}
-.fw-toggle.on + #fw-menu {
-  max-height: 15em;
-}
+
 
 
 
@@ -120,6 +129,8 @@
         }
       }
     }
+
+
   }
 }
 

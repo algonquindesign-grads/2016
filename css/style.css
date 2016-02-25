@@ -2085,6 +2085,34 @@ body.noscript .fw-navigation {
   transition: all 500ms ease-in-out;
 }
 
+.fw-header[data-state="open"] .fw-navigation {
+  max-height: 15em;
+}
+
+.fw-header[data-state="open"] .fw-toggle-button {
+  background-color: transparent;
+}
+
+.fw-header[data-state="open"] .fw-toggle-button:before {
+  -webkit-transform: rotate(45deg) translate(5px, 5px);
+      -ms-transform: rotate(45deg) translate(5px, 5px);
+          transform: rotate(45deg) translate(5px, 5px);
+}
+
+.fw-header[data-state="open"] .fw-toggle-button:after {
+  -webkit-transform: rotate(-45deg) translate(7px, -8px);
+      -ms-transform: rotate(-45deg) translate(7px, -8px);
+          transform: rotate(-45deg) translate(7px, -8px);
+}
+
+.fw-header[data-state="open"] + #fw-menu {
+  max-height: 15em;
+}
+
+.fw-header[data-state="closed"] .fw-navigation {
+  max-height: 0;
+}
+
 .fw-toggle {
   position: absolute;
   top: 0;
@@ -2131,26 +2159,6 @@ body.noscript .fw-navigation {
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
   border-radius: 2px;
-}
-
-.fw-toggle.on .fw-toggle-button {
-  background-color: transparent;
-}
-
-.fw-toggle.on .fw-toggle-button:before {
-  -webkit-transform: rotate(45deg) translate(5px, 5px);
-      -ms-transform: rotate(45deg) translate(5px, 5px);
-          transform: rotate(45deg) translate(5px, 5px);
-}
-
-.fw-toggle.on .fw-toggle-button:after {
-  -webkit-transform: rotate(-45deg) translate(7px, -8px);
-      -ms-transform: rotate(-45deg) translate(7px, -8px);
-          transform: rotate(-45deg) translate(7px, -8px);
-}
-
-.fw-toggle.on + #fw-menu {
-  max-height: 15em;
 }
 
 .fw-navigation {
