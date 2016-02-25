@@ -33,6 +33,6 @@ body{
 }
 
 // Show navigation on screen when there is no JS
-body.noscript .navigation{
-
+body.noscript .fw-navigation{
+  max-height: 15em;
 }

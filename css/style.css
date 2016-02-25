@@ -2042,6 +2042,10 @@ body {
   padding: 0;
 }
 
+body.noscript .fw-navigation {
+  max-height: 15em;
+}
+
 .fw-header {
   margin: 0;
   padding: 0;
@@ -2213,4 +2217,14 @@ body {
 
 .fw-info .fw-info-address:hover {
   color: gray;
+}
+
+@media only screen and (min-width: 25em) {
+  .fw-info {
+    position: absolute !important;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+    clip: rect(1px, 1px, 1px, 1px);
+  }
 }

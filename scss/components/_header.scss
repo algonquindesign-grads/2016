@@ -151,7 +151,9 @@
 }
 
 @media only screen and (min-width: 25em){
-
+  .fw-info{
+    @include element-invisible;
+  }
 }
 @media only screen and (min-width: 38em){
 
