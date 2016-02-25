@@ -1,5 +1,6 @@
 ---
 full_name: "Mio Tahara"
+short_name: "Mio T"
 
 description: "I love to create Japanese-taste design with blending other culture because I am Japanese, and I used to live in some countries."
 

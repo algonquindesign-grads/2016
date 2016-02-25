@@ -4,7 +4,8 @@
 # It needs to match the same name as your images `lastname-firstname`
 
 
-full_name: "Mike Slingerland"
+full_name: "Mike Slingerland"ds
+short_name: "Mike S"
 
 
 description: "An overly enthusiastic guy who loves motion graphics, Adobe Illustrator, and snowboarding."

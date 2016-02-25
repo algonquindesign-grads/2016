@@ -5,6 +5,7 @@
 
 # Write your full name as you want it shown on the website
 full_name: "Chenise Summer Paquette"
+short_name: "Chenise Summer P"
 
 # Your personal description — written in first-person
 # MIN 100 characters
