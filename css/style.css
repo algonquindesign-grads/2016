@@ -16,42 +16,6 @@ background-color: lighten($grey, 75%);
 }
 
 */
-@-moz-viewport {
-  width: device-width;
-  scale: 1;
-}
-
-@-ms-viewport {
-  width: device-width;
-  scale: 1;
-}
-
-@-webkit-viewport {
-  width: device-width;
-  scale: 1;
-}
-
-@viewport {
-  width: device-width;
-  scale: 1;
-}
-
-html {
-  box-sizing: border-box;
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-  text-size-adjust: 100%;
-}
-
-*, *:before, *:after {
-  box-sizing: inherit;
-}
-
-.img-flex {
-  display: block;
-  width: 100%;
-}
-
 .ph-graduates {
   padding-left: 0em;
   padding-right: 0em;
@@ -187,7 +151,6 @@ html {
   position: absolute;
   top: 0;
   left: 0;
-  xtransition: all 150ms ease-in-out;
 }
 
 /*
