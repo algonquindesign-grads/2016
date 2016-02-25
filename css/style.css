@@ -2094,3 +2094,34 @@ body {
   background-color: #d9d9d9;
   color: #fff;
 }
+
+.fw-info {
+  padding: 2em;
+}
+
+.fw-info * {
+  margin: 0;
+  padding: 0;
+}
+
+.fw-info h2 {
+  text-transform: uppercase;
+  font-weight: normal;
+}
+
+.fw-info .fw-info-date {
+  font-weight: bold;
+}
+
+.fw-info .fw-info-time {
+  margin-bottom: 1em;
+}
+
+.fw-info .fw-info-venue {
+  font-weight: bold;
+}
+
+.fw-info .fw-info-address {
+  text-decoration: none;
+  color: #000;
+}

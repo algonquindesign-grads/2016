@@ -49,3 +49,27 @@
     }
   }
 }
+
+.fw-info{
+  padding: 2em;
+  *{
+    @include zero;
+  }
+  h2{
+    text-transform: uppercase;
+    font-weight: normal;
+  }
+  .fw-info-date{
+    font-weight: bold;
+  }
+  .fw-info-time{
+    margin-bottom: 1em;
+  }
+  .fw-info-venue{
+    font-weight: bold;
+  }
+  .fw-info-address{
+    text-decoration: none;
+    color: $text-color;
+  }
+}
