@@ -5,7 +5,6 @@
   background-color: $white;
   position: relative;
   z-index: 50;
-
   .logo{
     position: relative;
     top: 0;
@@ -13,7 +12,6 @@
     display: block;
     padding: 0.5em 1em;
     width: calc(100% - 5em);
-
     .fw-logo{
       display: block;
       width: 100%;
@@ -36,7 +34,6 @@
         display: none;
       }
     }
-
   }
   &[data-state="open"]{
     .fw-navigation{
@@ -110,7 +107,6 @@
   margin: 0;
   background-color: transparent;
   transition: max-height $fw-menu-duration ease-in-out;
-
   ul{
     @include zero;
     list-style: none;
@@ -122,7 +118,6 @@
         padding: 1em 2em;;
         text-decoration: none;
         color: $text-color;
-
         &:hover, &:focus{
           background-color: darken($white, 10%);
         }
@@ -148,8 +143,6 @@
         border: none;
       }
     }
-
-
   }
 }
 
@@ -188,7 +181,6 @@
 @media only screen and (min-width: 38em){
   .fw-info{
     @include element-invisible;
-    // display: none;
   }
   .fw-navigation{
     width: 18em;
@@ -209,7 +201,6 @@
     left: 0;
     top: 0;
     bottom: 0;
-    // overflow-y: scroll;
     .logo{
       .fw-logo{
         .fw-logo-vert{
@@ -225,12 +216,13 @@
   }
 
   .site-wrapper{
-    width: calc(100% - $side-bar-width);
+    width: calc(100% - 15em);
     left: $side-bar-width;
+    height: 100%;
+    overflow: scroll;
   }
 
   .fw-toggle{
-    // @include element-invisible;
     display: none;
   }
 
@@ -247,9 +239,12 @@
     overflow-y: scroll;
     ul{
       li{
+        &:before{
+          border-bottom: 1px solid $grey;
+        }
         &:last-child:before{
-        border-bottom: 1px solid $grey;
-      }
+          border-bottom: 1px solid $grey;
+        }
         a{
           padding: 0.5em 2em;
           font-size: 1em;
