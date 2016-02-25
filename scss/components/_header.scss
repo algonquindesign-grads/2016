@@ -20,7 +20,7 @@
       max-width: 15em;
       padding: 1em;
       &:hover .svg-top{
-        fill: white;
+        fill: lighten(#bbb, 10%)
       }
       img,
       svg{
@@ -31,6 +31,9 @@
         .svg-top{
           transition: all 500ms ease-in-out;
         }
+      }
+      .fw-logo-vert{
+        display: none;
       }
     }
 
@@ -206,10 +209,22 @@
     left: 0;
     top: 0;
     bottom: 0;
+    .logo{
+      .fw-logo{
+        .fw-logo-vert{
+          display: block;
+          width: 90%;
+          margin: 0 auto
+        }
+        .fw-logo-hor{
+          display: none;
+        }
+      }
+    }
   }
 
   .site-wrapper{
-    width: 100% - $side-bar-width;
+    width: calc(100% - $side-bar-width);
     left: $side-bar-width;
   }
 
@@ -224,7 +239,7 @@
 
   .fw-navigation{
     left: 0;
-    top: $side-bar-width - 2em;
+    top: $side-bar-width - 1em;
     position: fixed;
     max-height: $menu-max-height;
     width: $side-bar-width;
@@ -236,17 +251,20 @@
       }
         a{
           padding: 0.5em 2em;
+          font-size: 1em;
+          line-height: 1.5em;
         }
       }
     }
   }
   .side-info{
     position: relative;
-    top: 16em;
+    top: 8em;
     .fw-info{
       @include element-invisible-off;
       h2{
-
+        font-size: 0.8889rem;
+        line-height: 1.5000rem;
       }
       .fw-info-date{
         font-size: 1.2656rem;

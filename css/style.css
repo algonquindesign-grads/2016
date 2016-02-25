@@ -1983,7 +1983,7 @@ td, th, fieldset {
 }
 
 .fw-header .logo .fw-logo:hover .svg-top {
-  fill: white;
+  fill: #d5d5d5;
 }
 
 .fw-header .logo .fw-logo img,
@@ -1994,6 +1994,10 @@ td, th, fieldset {
 
 .fw-header .logo .fw-logo svg .svg-top {
   transition: all 500ms ease-in-out;
+}
+
+.fw-header .logo .fw-logo .fw-logo-vert {
+  display: none;
 }
 
 .fw-header[data-state="open"] .fw-navigation {
@@ -2187,8 +2191,16 @@ td, th, fieldset {
     top: 0;
     bottom: 0;
   }
+  .fw-header .logo .fw-logo .fw-logo-vert {
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+  }
+  .fw-header .logo .fw-logo .fw-logo-hor {
+    display: none;
+  }
   .site-wrapper {
-    width: calc(100% - 14em);
+    width: calc(100% - $side-bar-width);
     left: 15em;
   }
   .fw-toggle {
@@ -2199,7 +2211,7 @@ td, th, fieldset {
   }
   .fw-navigation {
     left: 0;
-    top: 13em;
+    top: 14em;
     position: fixed;
     max-height: 20em;
     width: 15em;
@@ -2210,10 +2222,12 @@ td, th, fieldset {
   }
   .fw-navigation ul li a {
     padding: 0.5em 2em;
+    font-size: 1em;
+    line-height: 1.5em;
   }
   .side-info {
     position: relative;
-    top: 16em;
+    top: 8em;
   }
   .side-info .fw-info {
     position: static !important;
@@ -2221,6 +2235,10 @@ td, th, fieldset {
     height: auto;
     width: auto;
     overflow: auto;
+  }
+  .side-info .fw-info h2 {
+    font-size: 0.8889rem;
+    line-height: 1.5000rem;
   }
   .side-info .fw-info .fw-info-date {
     font-size: 1.2656rem;
