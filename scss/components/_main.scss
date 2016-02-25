@@ -36,10 +36,12 @@ body{
 body.noscript{
   .fw-header{
       &[data-state="closed"]{
-        .fw-navigation{
-        max-height: 15em;
+        // .fw-navigation{
+        // max-height: 15em;
       }
     }
+  .fw-navigation{
+        max-height: 15em;
   }
 
   .fw-toggle{
@@ -54,22 +56,22 @@ body.noscript{
         width: 18em;
         margin: 0;
       }
-      &[data-state="closed"]{
-        .fw-navigation{
-          position: absolute;
-          top: 1em;
-          right: 2em;;
-          ul{
-            display: block;
-            li{
-              display: inline-block;
-              a{
-                padding: 1em;
-              }
-            }
+    }
+
+    .fw-navigation{
+      position: absolute;
+      width: auto;
+      top: 1em;
+      right: 2em;
+      ul{
+        display: block;
+        li{
+          display: inline-block;
+          a{
+            padding: 1em;
           }
+        }
       }
     }
-  }
   }
 }

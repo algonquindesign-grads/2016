@@ -99,15 +99,12 @@
   border-radius: 2px;
 }
 
-
-
-
-
 .fw-navigation{
+  position: relative;
   max-height: 0;
   overflow: hidden;
   margin: 0;
-  background-color: $purple;
+  background-color: transparent;
   transition: max-height $fw-menu-duration ease-in-out;
 
   ul{
@@ -167,6 +164,12 @@
 @media only screen and (min-width: 38em){
   .fw-info{
     @include element-invisible;
+  }
+  .fw-navigation{
+    width: 18em;
+    left: calc(100% - 18em);
+    position: absolute;
+    z-index: 100;
   }
 }
 @media only screen and (min-width: 60em){

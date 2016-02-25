@@ -2072,10 +2072,11 @@ td, th, fieldset {
 }
 
 .fw-navigation {
+  position: relative;
   max-height: 0;
   overflow: hidden;
   margin: 0;
-  background-color: #64689b;
+  background-color: transparent;
   transition: max-height 250ms ease-in-out;
 }
 
@@ -2145,6 +2146,12 @@ td, th, fieldset {
     overflow: hidden;
     clip: rect(1px, 1px, 1px, 1px);
   }
+  .fw-navigation {
+    width: 18em;
+    left: calc(100% - 18em);
+    position: absolute;
+    z-index: 100;
+  }
 }
 
 @-moz-viewport {
@@ -2196,7 +2203,7 @@ body {
   padding: 0;
 }
 
-body.noscript .fw-header[data-state="closed"] .fw-navigation {
+body.noscript .fw-navigation {
   max-height: 15em;
 }
 
@@ -2213,18 +2220,19 @@ body.noscript .fw-toggle {
     width: 18em;
     margin: 0;
   }
-  body.noscript .fw-header[data-state="closed"] .fw-navigation {
+  body.noscript .fw-navigation {
     position: absolute;
+    width: auto;
     top: 1em;
     right: 2em;
   }
-  body.noscript .fw-header[data-state="closed"] .fw-navigation ul {
+  body.noscript .fw-navigation ul {
     display: block;
   }
-  body.noscript .fw-header[data-state="closed"] .fw-navigation ul li {
+  body.noscript .fw-navigation ul li {
     display: inline-block;
   }
-  body.noscript .fw-header[data-state="closed"] .fw-navigation ul li a {
+  body.noscript .fw-navigation ul li a {
     padding: 1em;
   }
 }
