@@ -23,4 +23,8 @@ html {
   width: 100%;
 }
 
+// Show navigation on screen when there is no JS
+body.noscript .navigation{
+
+}
 
