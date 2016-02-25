@@ -3,7 +3,7 @@
   {% for student in site.grads %}
       <li class="ph-student" data-category="{% for a in student.specialization%}{{a}} {% endfor %}">
         <a href="#">
-        <img class="img-flex ph-gradphoto-top" src="http://grads.images.algonquindesign.ca.s3.amazonaws.com/2016/img/fw-favicon.png" alt="{{student.full_name}}">
+        <img class="img-flex ph-gradphoto-top" src="http://grads.images.algonquindesign.ca.s3.amazonaws.com/2016/portraits/{{student.path}}" alt="{{student.full_name}}">
         <p class="ph-fullname">{{student.full_name}}</p>
         <p class="ph-partialname">{{student.short_name}}</p>
         </a>

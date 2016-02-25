@@ -1,7 +1,7 @@
 ---
 
 full_name: "Anna Misak"
-short: "Anna M"
+short_name: "Anna M"
 
 description: "My passion is design, but when I am not being artistic, I tend to get lost in books I have a hard time putting down."
 
