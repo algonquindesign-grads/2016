@@ -2202,6 +2202,8 @@ td, th, fieldset {
   .site-wrapper {
     width: calc(100% - 15em);
     left: 15em;
+    height: 100%;
+    overflow: scroll;
   }
   .fw-toggle {
     display: none;
@@ -2289,12 +2291,30 @@ html {
   text-size-adjust: 100%;
   font-family: 'Effra', sans-serif;
   position: relative;
+  height: 100%;
 }
 
 body {
   margin: 0;
   padding: 0;
   position: relative;
+  height: 100%;
+  background-color: transparent;
+}
+
+body:after {
+  content: "";
+  background-image: url("http://grads.images.algonquindesign.ca.s3.amazonaws.com/2016/img/dots.png");
+  background-repeat: repeat;
+  background-size: 2em 2em;
+  background-position: top;
+  opacity: 0.2;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -10;
 }
 
 *, *:before, *:after {

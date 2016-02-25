@@ -218,6 +218,8 @@
   .site-wrapper{
     width: calc(100% - 15em);
     left: $side-bar-width;
+    height: 100%;
+    overflow: scroll;
   }
 
   .fw-toggle{
