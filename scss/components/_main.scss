@@ -12,11 +12,29 @@ html {
 	text-size-adjust: 100%;
   font-family: 'Effra', sans-serif;
   position: relative;
+  height: 100%;
 }
 
 body{
   @include zero;
   position: relative;
+  height: 100%;
+  background-color: transparent;
+}
+
+body:after{
+  content: "";
+  background-image: url("http://grads.images.algonquindesign.ca.s3.amazonaws.com/2016/img/dots.png");
+  background-repeat: repeat;
+  background-size: 2em 2em;
+  background-position: top;
+  opacity: 0.2;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -10;
 }
 
 *, *:before, *:after {
@@ -30,13 +48,9 @@ body{
 
 .site-wrapper{
   display: block;
-  overflow: hidden;
+  // overflow: hidden;
   position: relative;
   @include zero;
-}
-
-.ph-graduates{
-  margin: 0 auto;
 }
 
 // Show navigation on screen when there is no JS
@@ -71,8 +85,46 @@ body.noscript{
           a{
             padding: 1em;
           }
+          &:before{
+            border-bottom: none;
+          }
+          &:hover:before{
+            border-bottom: 1px solid $grey;
+          }
         }
       }
     }
+  }
+}
+
+@media only screen and (min-width: 80em){
+  body.noscript{
+    .fw-navigation{
+    left: 0;
+    top: $side-bar-width - 1em;
+    position: fixed;
+    max-height: $menu-max-height;
+    width: $side-bar-width;
+    overflow-y: scroll;
+    ul{
+      li{
+        width: 100%;
+        &:before{
+          left: 2em;
+          right: 2em;
+          border-bottom: 1px solid $grey;
+        }
+        &:hover:before{
+          left: 0;
+          right: 0;
+        }
+        a{
+          padding: 0.5em 2em;
+          font-size: 1em;
+          line-height: 1.5em;
+        }
+      }
+    }
+  }
   }
 }
