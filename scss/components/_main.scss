@@ -11,10 +11,12 @@ html {
 	-webkit-text-size-adjust: 100%;
 	text-size-adjust: 100%;
   font-family: 'Effra', sans-serif;
+  position: relative;
 }
 
 body{
   @include zero;
+  position: relative;
 }
 
 *, *:before, *:after {
@@ -29,17 +31,16 @@ body{
 .site-wrapper{
   display: block;
   overflow: hidden;
+  position: relative;
   @include zero;
+}
+
+.ph-graduates{
+  margin: 0 auto;
 }
 
 // Show navigation on screen when there is no JS
 body.noscript{
-  .fw-header{
-      &[data-state="closed"]{
-        // .fw-navigation{
-        // max-height: 15em;
-      }
-    }
   .fw-navigation{
         max-height: 15em;
   }

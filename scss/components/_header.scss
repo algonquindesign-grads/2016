@@ -4,6 +4,7 @@
   overflow: hidden;
   background-color: $white;
   position: relative;
+  z-index: 50;
 
   .logo{
     position: relative;
@@ -36,7 +37,7 @@
   }
   &[data-state="open"]{
     .fw-navigation{
-      max-height: 15em;
+      max-height: $menu-max-height;
     }
     .fw-toggle-button{
       background-color: transparent;
@@ -48,7 +49,7 @@
       transform: rotate(-45deg) translate(7px, -8px);
     }
     & + #fw-menu {
-      max-height: 15em;
+      max-height: $menu-max-height;
     }
   }
   &[data-state="closed"]{
@@ -111,12 +112,14 @@
     @include zero;
     list-style: none;
     li{
+      position: relative;
       a{
         background-color: $white;
         display: block;
         padding: 1em 2em;;
         text-decoration: none;
         color: $text-color;
+
         &:hover, &:focus{
           background-color: darken($white, 10%);
         }
@@ -124,6 +127,22 @@
           background-color: darken($white, 15%);
           color: $white;
         }
+      }
+      &:before{
+        content: "";
+        position: absolute;
+        left : 2em;
+        right: 2em;
+        bottom: 0;
+        border-bottom: 1px solid $grey;
+        transition: all $fw-menu-duration;
+      }
+      &:hover:before{
+        left: 0;
+        right: 0;
+      }
+      &:last-child:before{
+        border: none;
       }
     }
 
@@ -133,6 +152,7 @@
 
 .fw-info{
   padding: 2em;
+  position: relative;
   *{
     @include zero;
   }
@@ -161,9 +181,11 @@
 @media only screen and (min-width: 25em){
 
 }
+
 @media only screen and (min-width: 38em){
   .fw-info{
     @include element-invisible;
+    // display: none;
   }
   .fw-navigation{
     width: 18em;
@@ -172,9 +194,57 @@
     z-index: 100;
   }
 }
+
 @media only screen and (min-width: 60em){
 
 }
-@media only screen and (min-width: 80em){
 
+@media only screen and (min-width: 80em){
+  .fw-header{
+    position: fixed;
+    width: $side-bar-width;
+    left: 0;
+    top: 0;
+    bottom: 0;
+  }
+
+  .site-wrapper{
+    width: calc(100% - 12em);
+    left: $side-bar-width;
+  }
+
+  .fw-toggle{
+    // @include element-invisible;
+    display: none;
+  }
+
+  .logo{
+    min-width: 100%;
+  }
+
+  .fw-navigation{
+    left: 0;
+    top: $side-bar-width;
+    position: fixed;
+    max-height: $menu-max-height;
+    width: $side-bar-width;
+    overflow-y: scroll;
+    ul{
+      li{
+        &:last-child:before{
+        border-bottom: 1px solid $grey;
+      }
+        a{
+          padding: 0.5em 2em;
+        }
+      }
+    }
+  }
+  .side-info{
+    position: relative;
+    top: 14em;
+    .fw-info{
+      @include element-invisible-off;
+    }
+  }
 }

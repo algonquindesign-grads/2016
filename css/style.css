@@ -1963,6 +1963,7 @@ td, th, fieldset {
   overflow: hidden;
   background-color: #eee;
   position: relative;
+  z-index: 50;
 }
 
 .fw-header .logo {
@@ -1996,7 +1997,7 @@ td, th, fieldset {
 }
 
 .fw-header[data-state="open"] .fw-navigation {
-  max-height: 15em;
+  max-height: 20em;
 }
 
 .fw-header[data-state="open"] .fw-toggle-button {
@@ -2016,7 +2017,7 @@ td, th, fieldset {
 }
 
 .fw-header[data-state="open"] + #fw-menu {
-  max-height: 15em;
+  max-height: 20em;
 }
 
 .fw-header[data-state="closed"] .fw-navigation {
@@ -2086,6 +2087,10 @@ td, th, fieldset {
   list-style: none;
 }
 
+.fw-navigation ul li {
+  position: relative;
+}
+
 .fw-navigation ul li a {
   background-color: #eee;
   display: block;
@@ -2103,8 +2108,28 @@ td, th, fieldset {
   color: #eee;
 }
 
+.fw-navigation ul li:before {
+  content: "";
+  position: absolute;
+  left: 2em;
+  right: 2em;
+  bottom: 0;
+  border-bottom: 1px solid #55565a;
+  transition: all 250ms;
+}
+
+.fw-navigation ul li:hover:before {
+  left: 0;
+  right: 0;
+}
+
+.fw-navigation ul li:last-child:before {
+  border: none;
+}
+
 .fw-info {
   padding: 2em;
+  position: relative;
 }
 
 .fw-info * {
@@ -2154,6 +2179,51 @@ td, th, fieldset {
   }
 }
 
+@media only screen and (min-width: 80em) {
+  .fw-header {
+    position: fixed;
+    width: 12em;
+    left: 0;
+    top: 0;
+    bottom: 0;
+  }
+  .site-wrapper {
+    width: calc(100% - 12em);
+    left: 12em;
+  }
+  .fw-toggle {
+    display: none;
+  }
+  .logo {
+    min-width: 100%;
+  }
+  .fw-navigation {
+    left: 0;
+    top: 12em;
+    position: fixed;
+    max-height: 20em;
+    width: 12em;
+    overflow-y: scroll;
+  }
+  .fw-navigation ul li:last-child:before {
+    border-bottom: 1px solid #55565a;
+  }
+  .fw-navigation ul li a {
+    padding: 0.5em 2em;
+  }
+  .side-info {
+    position: relative;
+    top: 14em;
+  }
+  .side-info .fw-info {
+    position: static !important;
+    clip: auto;
+    height: auto;
+    width: auto;
+    overflow: auto;
+  }
+}
+
 @-moz-viewport {
   width: device-width;
   scale: 1;
@@ -2180,11 +2250,13 @@ html {
   -webkit-text-size-adjust: 100%;
   text-size-adjust: 100%;
   font-family: 'Effra', sans-serif;
+  position: relative;
 }
 
 body {
   margin: 0;
   padding: 0;
+  position: relative;
 }
 
 *, *:before, *:after {
@@ -2199,8 +2271,13 @@ body {
 .site-wrapper {
   display: block;
   overflow: hidden;
+  position: relative;
   margin: 0;
   padding: 0;
+}
+
+.ph-graduates {
+  margin: 0 auto;
 }
 
 body.noscript .fw-navigation {
