@@ -2,18 +2,25 @@
 <html lang="en-ca">
 <head>
 	<meta charset="utf-8">
-	<title>Framework 2016</title>
+	<title>{{ page.title }}</title>
   <link rel="icon" type="image/png" href="http://grads.images.algonquindesign.ca.s3.amazonaws.com/2016/img/fw-favicon.png">
 	<link href="{{site.baseurl}}/css/style.css" rel="stylesheet">
 	<meta name="handheldfriendly" content="true">
 	<meta name="mobileoptimized" content="240">
 	<meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="{{ page.meta }}">
   <script src="https://use.typekit.net/mly7wqm.js"></script>
   <script>try{Typekit.load({ async: true });}catch(e){}</script>
 </head>
-<body>
+<body class="noscript">
+  {% include header.html%}
 
-{{content}}
+  <div class="site-wrapper">
+    {{content}}
+    {% include grad-photo.html %}
+  </div>
+
+
 
 </body>
 </html>
