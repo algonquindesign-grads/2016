@@ -1,30 +1,13 @@
 <section class="ph-graduates">
-	<!--<ul class="ph-student">
-		<li class="ph-image">
-      <a href="#">
-        <img class="img-flex ph-gradphoto-top" src="img/test.jpg" alt="">
-        <p class="ph-fullname">Natalie Macpherson</p>
-        <p class="ph-partialname">Natalie M</p>
-      </a>
-    </li>
-	</ul> -->
-
 	<ul class="filter-items ph-student">
-	{% for student in site.grads %}
-			<li data-category="{{grads.specialization}}" class="ph-image">
-				<a>
-				<img class="img-flex ph-gradphoto-top" src="http://s3.amazonaws.com/grads.images.algonquindesign.ca/2016/portraits" alt="{{grads.full_name}}">
-				<p class="ph-fullname">{{student.full_name}}</p>
-				<p class="ph-partialname">{{student.short_name}}</p>
-				</a>
-			</li>
-		{% endfor %}
-	</ul>
-
+  {% for student in site.grads %}
+      <li class="ph-student" data-category="{% for a in student.specialization%}{{a}} {% endfor %}">
+        <a href="#">
+        <img class="img-flex ph-gradphoto-top" src="{{site.cdn}}/portraits/{{student.url | replace: 'grads/', '/' | remove:'/'}}.jpg" alt="{{student.full_name}}">
+        <p class="ph-fullname">{{student.full_name}}</p>
+        <p class="ph-partialname">{{student.short_name}}</p>
+        </a>
+      </li>
+  {% endfor %}
+</ul>
 </section>
-
-
-
-
-
-
