@@ -153,6 +153,14 @@
   }
 }
 
+.fw-info-large{
+  display: none;
+}
+
+.fw-info-small{
+  display: block;
+}
+
 .fw-info{
   padding: 2em;
   position: relative;
@@ -258,6 +266,15 @@
       }
     }
   }
+
+  .fw-info-large{
+    display: block;
+  }
+
+  .fw-info-small{
+    display: none;
+  }
+
   .side-info{
     position: relative;
     top: 8em;

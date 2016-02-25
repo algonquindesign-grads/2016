@@ -2131,6 +2131,14 @@ td, th, fieldset {
   border: none;
 }
 
+.fw-info-large {
+  display: none;
+}
+
+.fw-info-small {
+  display: block;
+}
+
 .fw-info {
   padding: 2em;
   position: relative;
@@ -2224,6 +2232,12 @@ td, th, fieldset {
     padding: 0.5em 2em;
     font-size: 1em;
     line-height: 1.5em;
+  }
+  .fw-info-large {
+    display: block;
+  }
+  .fw-info-small {
+    display: none;
   }
   .side-info {
     position: relative;
