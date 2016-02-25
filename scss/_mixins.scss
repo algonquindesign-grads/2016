@@ -1,5 +1,26 @@
-  @mixin student-name {
+@mixin zero{
+  margin: 0;
+  padding: 0;
+}
 
+@mixin element-invisible {
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px);
+}
+
+// Turns off the element-invisible effect.
+@mixin element-invisible-off {
+  position: static !important;
+  clip: auto;
+  height: auto;
+  width: auto;
+  overflow: auto;
+}
+
+@mixin student-name {
   position: absolute;
   text-align: center;
   margin: 0;
@@ -13,6 +34,5 @@
   font-family: "Effra", serif;
   margin-top: -2.25em;
   @media only screen and (min-width: 60em) {
-
   }
 }
