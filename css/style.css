@@ -2131,14 +2131,6 @@ td, th, fieldset {
   border: none;
 }
 
-.fw-info-large {
-  display: none;
-}
-
-.fw-info-small {
-  display: block;
-}
-
 .fw-info {
   padding: 2em;
   position: relative;
@@ -2233,42 +2225,38 @@ td, th, fieldset {
     font-size: 1em;
     line-height: 1.5em;
   }
-  .fw-info-large {
-    display: block;
-  }
   .fw-info-small {
-    display: none;
+    position: fixed;
+    top: 22em;
+    z-index: 500;
+    width: 15em;
   }
-  .side-info {
-    position: relative;
-    top: 8em;
-  }
-  .side-info .fw-info {
+  .fw-info-small .fw-info {
     position: static !important;
     clip: auto;
     height: auto;
     width: auto;
     overflow: auto;
   }
-  .side-info .fw-info h2 {
+  .fw-info-small .fw-info h2 {
     font-size: 0.8889rem;
     line-height: 1.5000rem;
   }
-  .side-info .fw-info .fw-info-date {
+  .fw-info-small .fw-info .fw-info-date {
     font-size: 1.2656rem;
     line-height: 1.8750rem;
   }
-  .side-info .fw-info .fw-info-time,
-  .side-info .fw-info .fw-info-venue {
+  .fw-info-small .fw-info .fw-info-time,
+  .fw-info-small .fw-info .fw-info-venue {
     font-size: 1.1250rem;
     line-height: 1.5000rem;
   }
-  .side-info .fw-info .fw-info-venue {
+  .fw-info-small .fw-info .fw-info-venue {
     font-size: 0.8889rem;
     line-height: 1.5000rem;
   }
-  .side-info .fw-info .fw-info-address,
-  .side-info .fw-info .fw-info-city {
+  .fw-info-small .fw-info .fw-info-address,
+  .fw-info-small .fw-info .fw-info-city {
     font-size: 0.8889rem;
     line-height: 1.5000rem;
   }
