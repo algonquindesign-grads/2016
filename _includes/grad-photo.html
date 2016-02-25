@@ -9,9 +9,9 @@
     </li>
 	</ul> -->
 
-	<ul class="filter-items">
+	<ul class="filter-items ph-student">
 	{% for student in site.grads %}
-			<li data-category="{{grads.specialization}}">
+			<li data-category="{{grads.specialization}}" class="ph-image">
 				<a>
 				<img class="img-flex ph-gradphoto-top" src="http://s3.amazonaws.com/grads.images.algonquindesign.ca/2016/portraits" alt="{{grads.full_name}}">
 				<p class="ph-fullname">{{student.full_name}}</p>
