@@ -16,6 +16,370 @@ background-color: lighten($grey, 75%);
 }
 
 */
+@-moz-viewport {
+  width: device-width;
+  scale: 1;
+}
+
+@-ms-viewport {
+  width: device-width;
+  scale: 1;
+}
+
+@-webkit-viewport {
+  width: device-width;
+  scale: 1;
+}
+
+@viewport {
+  width: device-width;
+  scale: 1;
+}
+
+html {
+  box-sizing: border-box;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.img-flex {
+  display: block;
+  width: 100%;
+}
+
+.ph-graduates {
+  padding-left: 0em;
+  padding-right: 0em;
+}
+
+.ph-image {
+  position: relative;
+  float: left;
+  width: 50%;
+  list-style-type: none;
+}
+
+@media only screen and (min-width: 25em) {
+  .ph-image {
+    width: 50%;
+  }
+}
+
+@media only screen and (min-width: 38em) {
+  .ph-image {
+    width: 25%;
+  }
+}
+
+@media only screen and (min-width: 60em) {
+  .ph-image {
+    width: 16.6%;
+  }
+}
+
+@media only screen and (min-width: 90em) {
+  .ph-image {
+    width: 12.5%;
+  }
+}
+
+@media only screen and (min-width: 120em) {
+  .ph-image {
+    width: 12.5%;
+  }
+}
+
+.ph-student {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+@media only screen and (min-width: 38em) {
+  .ph-student {
+    padding-left: 0.6500rem;
+    padding-right: 0.6500rem;
+  }
+}
+
+@media only screen and (min-width: 60em) {
+  .ph-student {
+    padding-left: 2.6000rem;
+    padding-right: 2.6000rem;
+  }
+}
+
+.ph-student p {
+  position: absolute;
+  text-align: center;
+  margin: 0;
+  width: 100%;
+  z-index: 10;
+  padding: 0.6em 0 0.4em;
+  background-color: #94959a;
+  color: #fff;
+  letter-spacing: 2px;
+  font-size: 12px;
+  font-family: "Effra", serif;
+  margin-top: -2.25em;
+}
+
+.ph-partialname {
+  display: block;
+}
+
+@media only screen and (min-width: 80em) {
+  .ph-partialname {
+    display: none;
+  }
+}
+
+.ph-fullname {
+  display: none;
+}
+
+@media only screen and (min-width: 80em) {
+  .ph-fullname {
+    display: block;
+  }
+}
+
+/*
+.ph-gradphoto-top {
+  position: relative;
+  height: 120px;
+  width: 120px;
+}
+  img {
+    position: absolute;
+  }
+  img .ph-gradphoto-bottom:hover{
+    opacity: 0;
+}
+
+
+
+.ph-hover {
+		position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    top: 0;
+    z-index: 5;
+    transition: all 250ms linear;
+}*/
+.ph-image a {
+  position: relative;
+  display: block;
+  padding-top: 100%;
+  overflow: hidden;
+}
+
+.ph-image a:hover .ph-gradphoto-top {
+  top: -100%;
+}
+
+.ph-gradphoto-top {
+  position: absolute;
+  top: 0;
+  left: 0;
+  xtransition: all 150ms ease-in-out;
+}
+
+/*
+.ph-gradphoto-bottom {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 250ms ease-in-out;
+} */
+@-moz-viewport {
+  width: device-width;
+  scale: 1;
+}
+
+@-ms-viewport {
+  width: device-width;
+  scale: 1;
+}
+
+@-webkit-viewport {
+  width: device-width;
+  scale: 1;
+}
+
+@viewport {
+  width: device-width;
+  scale: 1;
+}
+
+html {
+  box-sizing: border-box;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.img-flex {
+  display: block;
+  width: 100%;
+}
+
+.ph-graduates {
+  padding-left: 0em;
+  padding-right: 0em;
+}
+
+.ph-image {
+  position: relative;
+  float: left;
+  width: 50%;
+  list-style-type: none;
+}
+
+@media only screen and (min-width: 25em) {
+  .ph-image {
+    width: 50%;
+  }
+}
+
+@media only screen and (min-width: 38em) {
+  .ph-image {
+    width: 25%;
+  }
+}
+
+@media only screen and (min-width: 60em) {
+  .ph-image {
+    width: 16.6%;
+  }
+}
+
+@media only screen and (min-width: 90em) {
+  .ph-image {
+    width: 12.5%;
+  }
+}
+
+@media only screen and (min-width: 120em) {
+  .ph-image {
+    width: 12.5%;
+  }
+}
+
+.ph-student {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+@media only screen and (min-width: 38em) {
+  .ph-student {
+    padding-left: 0.6500rem;
+    padding-right: 0.6500rem;
+  }
+}
+
+@media only screen and (min-width: 60em) {
+  .ph-student {
+    padding-left: 2.6000rem;
+    padding-right: 2.6000rem;
+  }
+}
+
+.ph-student p {
+  position: absolute;
+  text-align: center;
+  margin: 0;
+  width: 100%;
+  z-index: 10;
+  padding: 0.6em 0 0.4em;
+  background-color: #94959a;
+  color: #fff;
+  letter-spacing: 2px;
+  font-size: 12px;
+  font-family: "Effra", serif;
+  margin-top: -2.25em;
+}
+
+.ph-partialname {
+  display: block;
+}
+
+@media only screen and (min-width: 80em) {
+  .ph-partialname {
+    display: none;
+  }
+}
+
+.ph-fullname {
+  display: none;
+}
+
+@media only screen and (min-width: 80em) {
+  .ph-fullname {
+    display: block;
+  }
+}
+
+/*
+.ph-gradphoto-top {
+  position: relative;
+  height: 120px;
+  width: 120px;
+}
+  img {
+    position: absolute;
+  }
+  img .ph-gradphoto-bottom:hover{
+    opacity: 0;
+}
+
+
+
+.ph-hover {
+		position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    top: 0;
+    z-index: 5;
+    transition: all 250ms linear;
+}*/
+.ph-image a {
+  position: relative;
+  display: block;
+  padding-top: 100%;
+  overflow: hidden;
+}
+
+.ph-image a:hover .ph-gradphoto-top {
+  top: -100%;
+}
+
+.ph-gradphoto-top {
+  position: absolute;
+  top: 0;
+  left: 0;
+  xtransition: all 150ms ease-in-out;
+}
+
+/*
+.ph-gradphoto-bottom {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 250ms ease-in-out;
+} */
 /*
   Gridifier || Code released under the UNLICENSE
   http://thomasjbradley.github.io/gridifier/#xs,8,0,0,0;s,8,25,0,0;m,8,38,1,1;l,8,60,1,1;xl,8,80,1,1
@@ -30,25 +394,30 @@ background-color: lighten($grey, 75%);
   display: -ms-flexbox;
   -ms-flex-flow: row wrap;
   display: flex;
-  flex-flow: row wrap;
+  -webkit-flex-flow: row wrap;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
 }
 
 .grid-bottom {
   -webkit-align-items: flex-end;
   -ms-align-items: flex-end;
-  align-items: flex-end;
+  -ms-flex-align: end;
+      align-items: flex-end;
 }
 
 .grid-middle {
   -webkit-align-items: center;
   -ms-align-items: center;
-  align-items: center;
+  -ms-flex-align: center;
+      align-items: center;
 }
 
 .grid-stretch {
   -webkit-align-items: stretch;
   -ms-align-items: stretch;
-  align-items: stretch;
+  -ms-flex-align: stretch;
+      align-items: stretch;
 }
 
 .opera-only :-o-prefocus, .grid {
@@ -1112,7 +1481,8 @@ background-color: lighten($grey, 75%);
 .content-fill {
   -ms-flex-grow: 2;
   -webkit-flex-grow: 2;
-  flex-grow: 2;
+  -ms-flex-positive: 2;
+      flex-grow: 2;
   max-width: 100%;
   /* @bugfix: IE 10, 11 */
 }
@@ -1120,7 +1490,8 @@ background-color: lighten($grey, 75%);
 .content-shrink {
   -ms-align-self: center;
   -webkit-align-self: center;
-  align-self: center;
+      -ms-flex-item-align: center;
+          align-self: center;
 }
 
 /*
@@ -1803,192 +2174,3 @@ td, th, fieldset {
     padding-right: 0.3750rem;
   }
 }
-
-@-moz-viewport {
-  width: device-width;
-  scale: 1;
-}
-
-@-ms-viewport {
-  width: device-width;
-  scale: 1;
-}
-
-@-o-viewport {
-  width: device-width;
-  scale: 1;
-}
-
-@-webkit-viewport {
-  width: device-width;
-  scale: 1;
-}
-
-@viewport {
-  width: device-width;
-  scale: 1;
-}
-
-html {
-  box-sizing: border-box;
-  -moz-text-size-adjust: 100%;
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-  text-size-adjust: 100%;
-}
-
-*, *:before, *:after {
-  box-sizing: inherit;
-}
-
-.img-flex {
-  display: block;
-  width: 100%;
-}
-
-.ph-graduates {
-  padding-left: 0em;
-  padding-right: 0em;
-}
-
-.ph-image {
-  position: relative;
-  float: left;
-  width: 50%;
-  list-style-type: none;
-}
-
-@media only screen and (min-width: 25em) {
-  .ph-image {
-    width: 50%;
-  }
-}
-
-@media only screen and (min-width: 38em) {
-  .ph-image {
-    width: 25%;
-  }
-}
-
-@media only screen and (min-width: 60em) {
-  .ph-image {
-    width: 16.6%;
-  }
-}
-
-@media only screen and (min-width: 90em) {
-  .ph-image {
-    width: 12.5%;
-  }
-}
-
-@media only screen and (min-width: 120em) {
-  .ph-image {
-    width: 12.5%;
-  }
-}
-
-.ph-student {
-  padding-left: 0;
-  padding-right: 0;
-}
-
-@media only screen and (min-width: 38em) {
-  .ph-student {
-    padding-left: 0.6500rem;
-    padding-right: 0.6500rem;
-  }
-}
-
-@media only screen and (min-width: 60em) {
-  .ph-student {
-    padding-left: 2.6000rem;
-    padding-right: 2.6000rem;
-  }
-}
-
-.ph-student p {
-  position: absolute;
-  text-align: center;
-  margin: 0;
-  width: 100%;
-  z-index: 10;
-  padding: 0.6em 0 0.4em;
-  background-color: #94959a;
-  color: #fff;
-  letter-spacing: 2px;
-  font-size: 12px;
-  font-family: "Effra", serif;
-  margin-top: -2.25em;
-}
-
-.ph-partialname {
-  display: block;
-}
-
-@media only screen and (min-width: 80em) {
-  .ph-partialname {
-    display: none;
-  }
-}
-
-.ph-fullname {
-  display: none;
-}
-
-@media only screen and (min-width: 80em) {
-  .ph-fullname {
-    display: block;
-  }
-}
-
-/*
-.ph-gradphoto-top {
-  position: relative;
-  height: 120px;
-  width: 120px;
-}
-  img {
-    position: absolute;
-  }
-  img .ph-gradphoto-bottom:hover{
-    opacity: 0;
-}
-
-
-
-.ph-hover {
-		position: absolute;
-    width: 100%;
-    height: 100%;
-    opacity: 0;
-    top: 0;
-    z-index: 5;
-    transition: all 250ms linear;
-}*/
-.ph-image a {
-  position: relative;
-  display: block;
-  padding-top: 100%;
-  overflow: hidden;
-}
-
-.ph-image a:hover .ph-gradphoto-top {
-  top: -100%;
-}
-
-.ph-gradphoto-top {
-  position: absolute;
-  top: 0;
-  left: 0;
-  xtransition: all 150ms ease-in-out;
-}
-
-/*
-.ph-gradphoto-bottom {
-    position: absolute;
-    top: 0;
-    left: 0;
-    opacity: 0;
-    transition: opacity 250ms ease-in-out;
-} */
