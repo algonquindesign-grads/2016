@@ -48,14 +48,9 @@ body:after{
 
 .site-wrapper{
   display: block;
-  overflow: hidden;
+  // overflow: hidden;
   position: relative;
   @include zero;
-
-}
-
-.ph-graduates{
-  margin: 0 auto;
 }
 
 // Show navigation on screen when there is no JS
@@ -90,8 +85,46 @@ body.noscript{
           a{
             padding: 1em;
           }
+          &:before{
+            border-bottom: none;
+          }
+          &:hover:before{
+            border-bottom: 1px solid $grey;
+          }
         }
       }
     }
+  }
+}
+
+@media only screen and (min-width: 80em){
+  body.noscript{
+    .fw-navigation{
+    left: 0;
+    top: $side-bar-width - 1em;
+    position: fixed;
+    max-height: $menu-max-height;
+    width: $side-bar-width;
+    overflow-y: scroll;
+    ul{
+      li{
+        width: 100%;
+        &:before{
+          left: 2em;
+          right: 2em;
+          border-bottom: 1px solid $grey;
+        }
+        &:hover:before{
+          left: 0;
+          right: 0;
+        }
+        a{
+          padding: 0.5em 2em;
+          font-size: 1em;
+          line-height: 1.5em;
+        }
+      }
+    }
+  }
   }
 }

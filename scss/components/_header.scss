@@ -239,9 +239,12 @@
     overflow-y: scroll;
     ul{
       li{
+        &:before{
+          border-bottom: 1px solid $grey;
+        }
         &:last-child:before{
-        border-bottom: 1px solid $grey;
-      }
+          border-bottom: 1px solid $grey;
+        }
         a{
           padding: 0.5em 2em;
           font-size: 1em;

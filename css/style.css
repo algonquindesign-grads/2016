@@ -2219,6 +2219,9 @@ td, th, fieldset {
     width: 15em;
     overflow-y: scroll;
   }
+  .fw-navigation ul li:before {
+    border-bottom: 1px solid #55565a;
+  }
   .fw-navigation ul li:last-child:before {
     border-bottom: 1px solid #55565a;
   }
@@ -2328,14 +2331,9 @@ body:after {
 
 .site-wrapper {
   display: block;
-  overflow: hidden;
   position: relative;
   margin: 0;
   padding: 0;
-}
-
-.ph-graduates {
-  margin: 0 auto;
 }
 
 body.noscript .fw-navigation {
@@ -2369,5 +2367,39 @@ body.noscript .fw-toggle {
   }
   body.noscript .fw-navigation ul li a {
     padding: 1em;
+  }
+  body.noscript .fw-navigation ul li:before {
+    border-bottom: none;
+  }
+  body.noscript .fw-navigation ul li:hover:before {
+    border-bottom: 1px solid #55565a;
+  }
+}
+
+@media only screen and (min-width: 80em) {
+  body.noscript .fw-navigation {
+    left: 0;
+    top: 14em;
+    position: fixed;
+    max-height: 20em;
+    width: 15em;
+    overflow-y: scroll;
+  }
+  body.noscript .fw-navigation ul li {
+    width: 100%;
+  }
+  body.noscript .fw-navigation ul li:before {
+    left: 2em;
+    right: 2em;
+    border-bottom: 1px solid #55565a;
+  }
+  body.noscript .fw-navigation ul li:hover:before {
+    left: 0;
+    right: 0;
+  }
+  body.noscript .fw-navigation ul li a {
+    padding: 0.5em 2em;
+    font-size: 1em;
+    line-height: 1.5em;
   }
 }
