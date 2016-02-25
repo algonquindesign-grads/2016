@@ -94,30 +94,6 @@
   }
 }
 
-/*
-.ph-gradphoto-top {
-  position: relative;
-  height: 120px;
-  width: 120px;
-}
-  img {
-    position: absolute;
-  }
-  img .ph-gradphoto-bottom:hover{
-    opacity: 0;
-}
-
-
-
-.ph-hover {
-		position: absolute;
-    width: 100%;
-    height: 100%;
-    opacity: 0;
-    top: 0;
-    z-index: 5;
-    transition: all 250ms linear;
-}*/
 .ph-image a {
   position: relative;
   display: block;
@@ -135,14 +111,6 @@
   left: 0;
 }
 
-/*
-.ph-gradphoto-bottom {
-    position: absolute;
-    top: 0;
-    left: 0;
-    opacity: 0;
-    transition: opacity 250ms ease-in-out;
-} */
 /*
   Gridifier || Code released under the UNLICENSE
   http://thomasjbradley.github.io/gridifier/#xs,8,0,0,0;s,8,25,0,0;m,8,38,1,1;l,8,60,1,1;xl,8,80,1,1

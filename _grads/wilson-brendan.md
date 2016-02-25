@@ -5,6 +5,7 @@
 
 # Write your full name as you want it shown on the website
 full_name: "Brendan Wilson"
+short_name: "Brendan W"
 
 # Your personal description — written in first-person
 # MIN 100 characters
@@ -28,13 +29,13 @@ specialization:
 # Put the Vimeo video ID here — get it from the URL of your video page
 # By adding Vimeo you will trigger the video & 2 images layout
 # If you want the 4 images layout — delete this line
-vimeo: "154830750" 
+vimeo: "154830750"
 
 # CHOOSE A MAX OF 3
 # Change the URLs to match your profile page
 # Delete the lines you don’t want
 social:
-  
+
   vimeo:      "https://vimeo.com/brendanwilson307"
   instagram:    "https://www.instagram.com/_brendan_wilson_/"
 ---

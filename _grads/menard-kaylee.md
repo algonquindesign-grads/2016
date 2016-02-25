@@ -1,6 +1,7 @@
 ---
 
 full_name: "Kaylee Ménard"
+short_name: "Kaylee M"
 
 description: "I'm forever trying to learn all the things, illustrate pretty things, and doing my damnest to keep my plant things alive."
 

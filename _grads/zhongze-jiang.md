@@ -5,6 +5,7 @@
 
 # Write your full name as you want it shown on the website
 full_name: "Zhongze Jiang"
+short_name: "Zhongze J"
 
 # Your personal description — written in first-person
 # MIN 100 characters
