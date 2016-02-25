@@ -5,11 +5,12 @@
 
 # Write your full name as you want it shown on the website
 full_name: "Anna Trojanowska"
+short_name: "Anna T"
 
 # Your personal description — written in first-person
 # MIN 100 characters
 # MAX 140 characters
-description: "I'm a hard-worker with big sense of humour and an even bigger heart. As a designer, I'm inspired by nature, literature, and gangster rap."  
+description: "I'm a hard-worker with big sense of humour and an even bigger heart. As a designer, I'm inspired by nature, literature, and gangster rap."
 
 # Use a professional email address
 email: "a.s.trojanowska@gmail.com"

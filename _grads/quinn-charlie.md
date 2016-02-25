@@ -5,6 +5,7 @@
 
 # Write your full name as you want it shown on the website
 full_name: "Charlie Quinn"
+short_name: "Charlie Q"
 
 # Your personal description — written in first-person
 # MIN 100 characters

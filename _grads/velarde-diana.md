@@ -5,6 +5,7 @@
 
 # Write your full name as you want it shown on the website
 full_name: "Diana Velarde"
+short_name: "Diana V"
 
 # Your personal description — written in first-person
 # MIN 100 characters
