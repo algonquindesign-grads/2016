@@ -41,52 +41,6 @@ html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   text-size-adjust: 100%;
-  font-family: 'Effra', sans-serif;
-}
-
-*, *:before, *:after {
-  box-sizing: inherit;
-}
-
-.img-flex {
-  display: block;
-  width: 100%;
-}
-
-.site-wrapper {
-  display: block;
-  background-color: red;
-}
-
-.fw-header {
-  background-color: blue;
-}
-
-@-moz-viewport {
-  width: device-width;
-  scale: 1;
-}
-
-@-ms-viewport {
-  width: device-width;
-  scale: 1;
-}
-
-@-webkit-viewport {
-  width: device-width;
-  scale: 1;
-}
-
-@viewport {
-  width: device-width;
-  scale: 1;
-}
-
-html {
-  box-sizing: border-box;
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-  text-size-adjust: 100%;
 }
 
 *, *:before, *:after {
@@ -2037,4 +1991,55 @@ td, th, fieldset {
     padding-left: 0.3750rem;
     padding-right: 0.3750rem;
   }
+}
+
+@-moz-viewport {
+  width: device-width;
+  scale: 1;
+}
+
+@-ms-viewport {
+  width: device-width;
+  scale: 1;
+}
+
+@-webkit-viewport {
+  width: device-width;
+  scale: 1;
+}
+
+@viewport {
+  width: device-width;
+  scale: 1;
+}
+
+html {
+  box-sizing: border-box;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  font-family: 'Effra', sans-serif;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.img-flex {
+  display: block;
+  width: 100%;
+}
+
+.site-wrapper {
+  display: block;
+  overflow: hidden;
+  background-color: #df4827;
+  margin: 0;
+  padding: 0;
+}
+
+.fw-header {
+  display: block;
+  background-color: #00a29c;
+  height: 5em;
 }

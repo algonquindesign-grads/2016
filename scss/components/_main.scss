@@ -25,11 +25,12 @@ html {
 
 .site-wrapper{
   display: block;
-  background-color: red;
+  overflow: hidden;
+  background-color: $red;
+  @include zero;
 }
 
 // Show navigation on screen when there is no JS
 body.noscript .navigation{
 
 }
-
