@@ -13,6 +13,9 @@ html {
   font-family: 'Effra', sans-serif;
 }
 
+body{
+  @include zero;
+}
 
 *, *:before, *:after {
 	box-sizing: inherit;
@@ -26,7 +29,6 @@ html {
 .site-wrapper{
   display: block;
   overflow: hidden;
-  background-color: $red;
   @include zero;
 }
 

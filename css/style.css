@@ -2021,6 +2021,11 @@ html {
   font-family: 'Effra', sans-serif;
 }
 
+body {
+  margin: 0;
+  padding: 0;
+}
+
 *, *:before, *:after {
   box-sizing: inherit;
 }
@@ -2033,13 +2038,59 @@ html {
 .site-wrapper {
   display: block;
   overflow: hidden;
-  background-color: #df4827;
   margin: 0;
   padding: 0;
 }
 
 .fw-header {
+  margin: 0;
+  padding: 0;
   display: block;
+  overflow: hidden;
   background-color: #00a29c;
-  height: 5em;
+}
+
+.fw-header .logo {
+  display: block;
+  padding: 1em;
+  width: calc(100% - 5em);
+}
+
+.fw-header .logo .fw-logo {
+  display: block;
+  width: 100%;
+  padding: 1em;
+}
+
+.fw-header .logo .fw-logo img {
+  display: block;
+  width: 100%;
+}
+
+.fw-navigation {
+  margin: 0;
+  background-color: #64689b;
+}
+
+.fw-navigation ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.fw-navigation ul li a {
+  background-color: #fff;
+  display: block;
+  padding: 1em 2em;
+  text-decoration: none;
+  color: #000;
+}
+
+.fw-navigation ul li a:hover, .fw-navigation ul li a:focus {
+  background-color: #e6e6e6;
+}
+
+.fw-navigation ul li a:active {
+  background-color: #d9d9d9;
+  color: #fff;
 }

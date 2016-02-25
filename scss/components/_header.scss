@@ -1,6 +1,51 @@
 .fw-header{
+  @include zero;
   display: block;
+  overflow: hidden;
   background-color: $green;
-  height: 5em;
 
+  .logo{
+    display: block;
+    padding: 1em;
+    width: calc(100% - 5em);
+
+    .fw-logo{
+      display: block;
+      width: 100%;
+      padding: 1em;
+
+      img{
+        display: block;
+        width: 100%;
+      }
+    }
+
+  }
+
+}
+
+.fw-navigation{
+  margin: 0;
+  background-color: $purple;
+
+  ul{
+    @include zero;
+    list-style: none;
+    li{
+      a{
+        background-color: $white;
+        display: block;
+        padding: 1em 2em;;
+        text-decoration: none;
+        color: $text-color;
+        &:hover, &:focus{
+          background-color: darken($white, 10%);
+        }
+        &:active{
+          background-color: darken($white, 15%);
+          color: $white;
+        }
+      }
+    }
+  }
 }
