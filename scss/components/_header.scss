@@ -22,17 +22,58 @@
         display: block;
         width: 100%;
       }
+      svg{
+        .svg-top{
+          transition: all 500ms ease-in-out;
+        }
+      }
     }
 
   }
 
 }
 
-.svg-top{
-  transition: all 500ms ease-in-out;
+
+
+.fw-toggle{
+  display: block;
+  width: 3em;
+  padding: 1.5em 0.75em;
+  background-color: transparent;
+
+  .fw-toggle-button{
+    position: relative;
+    &:after, &:before{
+      content: "";
+      position: absolute;
+      left: 0;
+      top: -9px;
+    }
+    &:after{
+      top: 9px;
+    }
+    span{
+      @include element-invisible;
+      position: relative;
+      display: block;
+    }
+  }
+}
+
+.fw-toggle-button,
+.fw-toggle-button:after,
+.fw-toggle-button:before {
+  width: 100%;
+  height: 5px;
+  background-color: $grey;
+  transition: all 0.3s;
+  backface-visibility: hidden;
+  border-radius: 2px;
 }
 
 .fw-navigation{
+  // max-height: 0;
+  // overflow: hidden;
   margin: 0;
   background-color: $purple;
 
