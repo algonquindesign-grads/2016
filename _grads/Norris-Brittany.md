@@ -26,15 +26,10 @@ website: "http://brittanynorris.ca"
 # Delete the lines you don’t want
 specialization:
 
-<<<<<<< HEAD
 - branding
 - web
 - ux-ui
-=======
-- Branding
-- Website Design
-- User Experience & User Interface
->>>>>>> gh-pages
+
 
 # CHOOSE A MAX OF 3
 # Change the URLs to match your profile page
