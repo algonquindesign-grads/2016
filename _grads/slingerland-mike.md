@@ -1,9 +1,5 @@
 ---
 
-# THE NAME OF THIS FILE IS CRITICAL
-# It needs to match the same name as your images `lastname-firstname`
-
-
 full_name: "Mike Slingerland"
 
 
@@ -13,7 +9,7 @@ description: "An overly enthusiastic guy who loves motion graphics, Adobe Illust
 email: "mikeslingerland@hotmail.com"
 
 
-website: "http://mslingerlanddesign.ca/
+website: "http://mslingerlanddesign.ca"
 
 
 specialization:

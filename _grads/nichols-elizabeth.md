@@ -35,7 +35,7 @@ specialization:
 # Change the URLs to match your profile page
 # Delete the lines you don’t want
 social:
-  instagram:   "https://www.instagram.com/silent_v0id""
+  instagram:   "https://www.instagram.com/silent_v0id"
   linkedin:   "https://www.linkedin.com/in/nicholselizabeth"
   twitter:    "https://twitter.com/silent_v0id"
 

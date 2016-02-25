@@ -29,8 +29,8 @@ specialization:
 # Change the URLs to match your profile page
 # Delete the lines you don’t want
 social:
-	instagram:   "https://www.instagram.com/radical.juice/"
-  behance:    "https://www.behance.net/jessoleigh
+  instagram:   "https://www.instagram.com/radical.juice/"
+  behance:    "https://www.behance.net/jessoleigh"
   linkedin:   "https://www.linkedin.com/in/jessoleigh"
 
 ---
