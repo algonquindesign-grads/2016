@@ -38,7 +38,6 @@ specialization:
 # Delete the lines you don’t want
 social:
   behance:    "https://www.behance.net/britnor"
-  dribbble:   "https://dribbble.com/thomasjbradley"
   linkedin:   "https://ca.linkedin.com/in/brittany-norris-a7a800a7"
 
 ---
