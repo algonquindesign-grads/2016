@@ -1,5 +1,5 @@
 ---
-
+layout: portfolio-pictures
 full_name: "Anita Chanthavong"
 
 # MIN 100 characters

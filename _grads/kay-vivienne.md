@@ -1,4 +1,5 @@
 ---
+layout: portfolio-pictures
 full_name: "Vivienne Kay"
 
 description: "I strive to create compelling designs that are born from strategic thinking, passion and play (a.k.a. prototyping and testing)."

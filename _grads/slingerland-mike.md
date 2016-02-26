@@ -1,4 +1,5 @@
-
+---
+layout: portfolio-pictures
 # THE NAME OF THIS FILE IS CRITICAL
 # It needs to match the same name as your images `lastname-firstname`
 

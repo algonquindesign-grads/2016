@@ -1,4 +1,5 @@
 ---
+layout: portfolio-pictures
 full_name: "Jason D Leduc"
 
 description: "I am a tireless seeker of knowledge, occasional purveyor of wisdom and also, coincidentally, a graphic designer."

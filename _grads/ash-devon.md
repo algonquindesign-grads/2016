@@ -1,5 +1,5 @@
 ---
-
+layout: portfolio-pictures
 # THE NAME OF THIS FILE IS CRITICAL
 # It needs to match the same name as your images `lastname-firstname`
 
@@ -9,7 +9,7 @@ full_name: "Devon Ash"
 # Your personal description — written in first-person
 # MIN 100 characters
 # MAX 140 characters
-description: "“Design doesn't need to be delightful for it to work, but that's like saying food doesn't need to be tasty to keep us alive.” 
+description: "“Design doesn't need to be delightful for it to work, but that's like saying food doesn't need to be tasty to keep us alive.”
 ― Frank Chimero"
 
 # Use a professional email address
