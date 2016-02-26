@@ -1,3 +1,7 @@
+.grad-title {
+  @include header-1;
+}
+
 .filter-module{
   position: relative;
   display: block;

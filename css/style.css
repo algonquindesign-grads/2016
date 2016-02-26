@@ -31,6 +31,12 @@
   margin-top: 2em;
 }
 
+.grad-title {
+  color: #64689b;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
 .filter-module {
   position: relative;
   display: block;
@@ -2382,6 +2388,14 @@ body:after {
   box-sizing: inherit;
 }
 
+.section-margin {
+  margin: 3em 2em 3em 2em;
+}
+
+.section-padding {
+  padding: 3em 2em 3em 2em;
+}
+
 .img-flex {
   display: block;
   width: 100%;
@@ -2693,20 +2707,12 @@ img {
 
 .fe-holder {
   background-color: #55565a;
-  padding: 1em;
-}
-
-@media only screen and (min-width: 60em) {
-  .fe-holder {
-    padding-right: 10%;
-    padding-left: 10%;
-  }
 }
 
 .fe-title {
-  padding: .5em;
+  color: #f8f2e9;
+  font-size: 16px;
   text-transform: uppercase;
-  margin: 1em 0 0 0;
 }
 
 .fe-images {
