@@ -1,6 +1,198 @@
+.social {
+  padding: 2em;
+  max-width: 75em;
+  margin: 2em auto;
+}
+
+.social-footer {
+  display: block;
+  background-color: #DCDBDB;
+  overflow: hidden;
+  padding: 2em 4em;
+}
+
+.social-footer i {
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px);
+}
+
+.social-icons {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  margin-left: 10%;
+}
+
+.btn {
+  font-size: 3em;
+}
+
+.social-grey {
+  margin-top: 2em;
+}
+
+#slider {
+  position: relative;
+  overflow: hidden;
+  margin: 20px auto 0 auto;
+  border-radius: 4px;
+}
+
+#slider ul {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  height: 200px;
+  list-style: none;
+}
+
+#slider ul li {
+  position: relative;
+  display: block;
+  float: left;
+  margin: 0;
+  padding: 0;
+  width: 500px;
+  height: 500px;
+  background: #ccc;
+  text-align: center;
+  line-height: 300px;
+}
+
+a.control_prev, a.control_next {
+  position: absolute;
+  top: 40%;
+  z-index: 999;
+  display: block;
+  padding: 4% 3%;
+  width: auto;
+  height: auto;
+  background: #2a2a2a;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 18px;
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+a.control_prev:hover, a.control_next:hover {
+  opacity: 1;
+  -webkit-transition: all 0.2s ease;
+}
+
+a.control_prev {
+  border-radius: 0 2px 2px 0;
+}
+
+a.control_next {
+  right: 0;
+  border-radius: 2px 0 0 2px;
+}
+
+.slider_option {
+  position: relative;
+  margin: 10px auto;
+  width: 160px;
+  font-size: 18px;
+}
+
+@media only screen and (min-width: 25em) {
+  .social-unit-2-xs {
+    width: 50.0000%;
+  }
+}
+
+@media only screen and (min-width: 38em) {
+  .social-unit-3-m {
+    width: 33.3333%;
+  }
+}
+
+.filter-module {
+  position: relative;
+  display: block;
+  margin: 0 auto;
+}
+
+.filter-radio {
+  left: -50px;
+  position: absolute;
+}
+
+.filters label {
+  cursor: pointer;
+}
+
+/* add .grid selector because that is now the sibling element of the filter. call .grid and its child .filters */
+#filter-all:checked ~ .grid .filters [for="filter-all"],
+#filter-branding:checked ~ .grid .filters [for="filter-branding"],
+#filter-ux:checked ~ .grid .filters [for="filter-ux"],
+#filter-web:checked ~ .grid .filters [for="filter-web"],
+#filter-illustration:checked ~ .grid .filters [for="filter-illustration"],
+#filter-motion:checked ~ .grid .filters [for="filter-motion"],
+#filter-print:checked ~ .grid .filters [for="filter-print"],
+#filter-type:checked ~ .grid .filters [for="filter-type"],
+#filter-photo:checked ~ .grid .filters [for="filter-photo"] {
+  background-color: black;
+  color: white;
+}
+
+#filter-all:checked ~ .filters [for="filter-all"],
+#filter-branding:checked ~ .filters [for="filter-branding"],
+#filter-group-2:checked ~ .filters [for="filter-group-2"],
+#filter-group-3:checked ~ .filters [for="filter-group-3"] {
+  background-color: red;
+}
+
+/* The ~ sibling selector will select all .filters elements, as long as they follow the preceding value*/
+.filter-items > li {
+  opacity: .4;
+}
+
+#filter-all:checked ~ .filter-items > li {
+  opacity: 1;
+}
+
+/* > will only select direct child descendant */
+#filter-branding:checked ~ .filter-items > [data-category~="branding"],
+#filter-ux:checked ~ .filter-items > [data-category~="ux-ui"],
+#filter-web:checked ~ .filter-items > [data-category~="web"],
+#filter-illustration:checked ~ .filter-items > [data-category~="illustration"],
+#filter-motion:checked ~ .filter-items > [data-category~="motion"],
+#filter-print:checked ~ .filter-items > [data-category~="print"],
+#filter-type:checked ~ .filter-items > [data-category~="type"],
+#filter-photo:checked ~ .filter-items > [data-category~="photography"] {
+  opacity: 1;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+.filter-btn {
+  display: inline-block;
+  margin: 0;
+  background-color: #dcdadb;
+  color: #55565b;
+  padding: .5em 1em;
+}
+
+.filter-btn:hover {
+  background-color: #a6a5a8;
+}
+
 .ph-graduates {
   padding-left: 0em;
   padding-right: 0em;
+  overflow: hidden;
+  margin: 2em;
+  max-width: 75em;
+  margin: 0 auto;
 }
 
 .ph-image {
@@ -119,25 +311,30 @@
   display: -ms-flexbox;
   -ms-flex-flow: row wrap;
   display: flex;
-  flex-flow: row wrap;
+  -webkit-flex-flow: row wrap;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
 }
 
 .grid-bottom {
   -webkit-align-items: flex-end;
   -ms-align-items: flex-end;
-  align-items: flex-end;
+  -ms-flex-align: end;
+      align-items: flex-end;
 }
 
 .grid-middle {
   -webkit-align-items: center;
   -ms-align-items: center;
-  align-items: center;
+  -ms-flex-align: center;
+      align-items: center;
 }
 
 .grid-stretch {
   -webkit-align-items: stretch;
   -ms-align-items: stretch;
-  align-items: stretch;
+  -ms-flex-align: stretch;
+      align-items: stretch;
 }
 
 .opera-only :-o-prefocus, .grid {
@@ -1201,7 +1398,8 @@
 .content-fill {
   -ms-flex-grow: 2;
   -webkit-flex-grow: 2;
-  flex-grow: 2;
+  -ms-flex-positive: 2;
+      flex-grow: 2;
   max-width: 100%;
   /* @bugfix: IE 10, 11 */
 }
@@ -1209,7 +1407,8 @@
 .content-shrink {
   -ms-align-self: center;
   -webkit-align-self: center;
-  align-self: center;
+      -ms-flex-item-align: center;
+          align-self: center;
 }
 
 /*
@@ -1951,11 +2150,15 @@ td, th, fieldset {
 }
 
 .fw-header[data-state="open"] .fw-toggle-button:before {
-  transform: rotate(45deg) translate(5px, 5px);
+  -webkit-transform: rotate(45deg) translate(5px, 5px);
+      -ms-transform: rotate(45deg) translate(5px, 5px);
+          transform: rotate(45deg) translate(5px, 5px);
 }
 
 .fw-header[data-state="open"] .fw-toggle-button:after {
-  transform: rotate(-45deg) translate(7px, -8px);
+  -webkit-transform: rotate(-45deg) translate(7px, -8px);
+      -ms-transform: rotate(-45deg) translate(7px, -8px);
+          transform: rotate(-45deg) translate(7px, -8px);
 }
 
 .fw-header[data-state="open"] + #fw-menu {
@@ -2009,7 +2212,8 @@ td, th, fieldset {
   height: 4px;
   background-color: #4b3618;
   transition: all 250ms;
-  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
   border-radius: 2px;
 }
 
@@ -2216,11 +2420,6 @@ td, th, fieldset {
   scale: 1;
 }
 
-@-o-viewport {
-  width: device-width;
-  scale: 1;
-}
-
 @-webkit-viewport {
   width: device-width;
   scale: 1;
@@ -2233,7 +2432,6 @@ td, th, fieldset {
 
 html {
   box-sizing: border-box;
-  -moz-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   text-size-adjust: 100%;
@@ -2259,9 +2457,9 @@ body:after {
   opacity: 0.2;
   top: 0;
   left: 0;
-  bottom: 0;
   right: 0;
-  position: absolute;
+  bottom: 0;
+  position: fixed;
   z-index: -10;
 }
 

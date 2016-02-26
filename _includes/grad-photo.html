@@ -1,13 +1,18 @@
-<section class="ph-graduates">
-	<ul class="ph-student">
+
+<section id="grads" class="ph-graduates">
+
+  {% include filter.html %}
+
+	<ul class="ph-student filter-items">
   {% for student in site.grads %}
       <li class="ph-image" data-category="{% for a in student.specialization%}{{a}} {% endfor %}">
-        <a href="#">
-        <img class="img-flex ph-gradphoto-top" src="{{site.cdn}}/portraits/{{student.url | replace: 'grads/', '/' | remove:'/'}}.jpg" alt="{{student.full_name}}">
+        <a href="{{site.baseurl}}/{{student.url | replace: 'grads/', '/' | remove:'/'}}">
+        <img class="img-flex ph-gradphoto-top" src="{{site.cdn}}portraits/{{student.url | replace: 'grads/', '/' | remove:'/'}}.jpg" alt="{{student.full_name}}">
         <p class="ph-fullname">{{student.full_name}}</p>
         <p class="ph-partialname">{{student.short_name}}</p>
         </a>
       </li>
   {% endfor %}
 </ul>
+
 </section>
