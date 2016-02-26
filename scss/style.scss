@@ -1,23 +1,12 @@
-<<<<<<< HEAD
-/* Imports */
-
-@import 'base';
-@import 'mixins';
-@import 'components/_social';
-=======
 // Import mixins, variables, and other modules, usually compass related
 @import "base";
 @import "mixins";
 
-
 // Component rules
+@import 'components/social';
 @import "components/filter";
 @import "components/grad-photo";
 @import "components/grid";
 @import "components/type";
 @import "components/header";
 @import "components/main";
-
-
-// Vendor
->>>>>>> gh-pages
