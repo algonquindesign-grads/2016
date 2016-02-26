@@ -2,14 +2,11 @@
 @import "base";
 @import "mixins";
 
-
 // Component rules
+@import 'components/social';
 @import "components/filter";
 @import "components/grad-photo";
 @import "components/grid";
 @import "components/type";
 @import "components/header";
 @import "components/main";
-
-
-// Vendor
