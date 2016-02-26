@@ -5,6 +5,7 @@ layout: portfolio-pictures
 
 # Write your full name as you want it shown on the website
 full_name: "Jasmine Down"
+short_name: "Jasmine D"
 
 # Your personal description — written in first-person
 # MIN 100 characters

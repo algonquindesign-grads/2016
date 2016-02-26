@@ -5,6 +5,7 @@ layout: portfolio-pictures
 
 # Write your full name as you want it shown on the website
 full_name: "Ahmed El-Zein"
+short_name: "Ahmed E"
 
 # Your personal description — written in first-person
 # MIN 100 characters
