@@ -1,9 +1,14 @@
+<<<<<<< Updated upstream
 ---
 layout: default
 ---
 
 <!-- <div class="pp-wrap-name island">
   <h1 class="pp-name"><span class="pp-name-sm">Anna</span> Misak</h1>
+=======
+<div class="pp-wrap-name island">
+  <h1 class="pp-name"><span class="pp-name-sm">Anna</span> Misak{{student.full_name}}</h1>
+>>>>>>> Stashed changes
 </div>
 
 <div class="grid push-0">
@@ -36,10 +41,10 @@ layout: default
       </div>
 
       <div class="unit unit-xs-1 unit-s-1 unit-m-1-2 unit-l-1-2 unit-xl-1 island mega">
-        <h2 class="pp-skill peta">Branding, Illustration, Photography</h2>
-        <p class="pp-desc">I love capturing life’s precious moments. Expressing emotion and personality through my work is something that I’m very passionate about.</p>
-        <p class="pp-links"><a href="#">www.annamisak.com</a></p>
-        <p class="pp-links"><a href="mailto:hello@annamisak.com">hello@annamisak.com</a></p>
+        <h2 class="pp-skill peta">{{student.specialization}}</h2>
+        <p class="pp-desc">{{student.description}}</p>
+        <p class="pp-links"><a href="{{student.website}}">{{student.website}}</a></p>
+        <p class="pp-links"><a href="mailto:{{student.email}}">{{student.email}}</a></p>
         <div>
           <ul class="pp-nav-btn pad-t">
             <li class="pp-nav-btn-li"><a href="#"><img class="pp-social-icon gutter-1-2" src="http://annamisak.com/grad2016/img/twitter.svg" alt="Follow me on Twitter."></a></li>
