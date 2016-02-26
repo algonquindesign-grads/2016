@@ -1,5 +1,12 @@
+---
+layout: default
+title: Framework 2016 - {{site.full_name}}
+meta: Portfolio Page for {{site.full_name}}
+---
+
+
 <div class="pp-wrap-name island">
-  <h1 class="pp-name"><span class="pp-name-sm">Anna</span> Misak</h1>
+  <h1 class="pp-name"><span class="pp-name-sm">{{ page.full_name }}</span></h1>
 </div>
 
 <div class="grid push-0">
@@ -7,19 +14,19 @@
 
     <div class="grid">
       <div class="unit unit-xs-1 unit-s-1 unit-m-1-2 unit-l-1-2">
-        <img class="img-flex" src="http://annamisak.com/grad2016/img/misak-anna-1.jpg" alt="Designer Portfolio Image">
+        <img class="img-flex" src="{{site.cdn}}portfolio/{{page.url | replace: 'grads/', '/' | remove:'/'}}-1.jpg" alt="Designer Portfolio Image">
       </div>
 
       <div class="unit unit-xs-1 unit-s-1 unit-m-1-2 unit-l-1-2">
-        <img class="img-flex" src="http://annamisak.com/grad2016/img/misak-anna-2.jpg" alt="Designer Portfolio Image">
+        <img class="img-flex" src="{{site.cdn}}portfolio/{{page.url | replace: 'grads/', '/' | remove:'/'}}-2.jpg" alt="Designer Portfolio Image">
       </div>
 
       <div class="unit unit-xs-1 unit-s-1 unit-m-1-2 unit-l-1-2">
-        <img class="img-flex" src="http://annamisak.com/grad2016/img/misak-anna-3.jpg" alt="Designer Portfolio Image">
+        <img class="img-flex" src="{{site.cdn}}portfolio/{{page.url | replace: 'grads/', '/' | remove:'/'}}-3.jpg" alt="Designer Portfolio Image">
       </div>
 
       <div class="unit unit-xs-1 unit-s-1 unit-m-1-2 unit-l-1-2">
-        <img class="img-flex" src="http://annamisak.com/grad2016/img/misak-anna-4.jpg" alt="Designer Portfolio Image">
+        <img class="img-flex" src="{{site.cdn}}portfolio/{{page.url | replace: 'grads/', '/' | remove:'/'}}-4.jpg" alt="Designer Portfolio Image">
       </div>
     </div>
 
@@ -32,10 +39,10 @@
       </div>
 
       <div class="unit unit-xs-1 unit-s-1 unit-m-1-2 unit-l-1-2 unit-xl-1 island mega">
-        <h2 class="pp-skill peta">Branding, Illustration, Photography</h2>
-        <p class="pp-desc">I love capturing life’s precious moments. Expressing emotion and personality through my work is something that I’m very passionate about.</p>
-        <p class="pp-links"><a href="#">www.annamisak.com</a></p>
-        <p class="pp-links"><a href="mailto:hello@annamisak.com">hello@annamisak.com</a></p>
+        <h2 class="pp-skill peta">{% for a in site.specialization %}{{a}} {% endfor %}</h2>
+        <p class="pp-desc">{{site.description}}</p>
+        <p class="pp-links"><a href="#">{{site.website}}</a></p>
+        <p class="pp-links"><a href="mailto:hello@annamisak.com">{{site.email}}</a></p>
         <div>
           <ul class="pp-nav-btn pad-t">
             <li class="pp-nav-btn-li"><a href="#"><img class="pp-social-icon gutter-1-2" src="http://annamisak.com/grad2016/img/twitter.svg" alt="Follow me on Twitter."></a></li>
