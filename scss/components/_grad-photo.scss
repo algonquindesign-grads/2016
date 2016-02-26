@@ -1,6 +1,10 @@
 .ph-graduates {
-	 padding-left: 0em;
-	 padding-right: 0em;
+  padding-left: 0em;
+  padding-right: 0em;
+  overflow: hidden;
+  margin: 2em;
+  max-width: 75em;
+  margin: 0 auto;
 }
 
 .ph-image {
@@ -26,13 +30,16 @@
 .ph-student {
 	padding-left: 0;
   padding-right: 0;
+  padding-top: 1em;
   @media only screen and (min-width: 38em) {
   	padding-left: 0.6500rem;
   	padding-right: 0.6500rem;
+    padding-top: 2em;
   }
   @media only screen and (min-width: 60em) {
 		padding-left: 2.6000rem;
   	padding-right: 2.6000rem;
+    padding-top: 1em;
   }
   @media only screen and (min-width: 90em) {
 

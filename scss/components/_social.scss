@@ -1,0 +1,28 @@
+.social {
+  padding: 2em;
+  max-width: 75em;
+  margin: 2em auto;
+}
+
+.social-footer{
+  display: block;
+  background-color: $grey-1;
+  overflow: hidden;
+  padding: 2em 4em;
+  a{
+    color: $white;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    font-size: 3em;
+    span{
+      @include element-invisible;
+    }
+  }
+}
+
+.social-grey {
+  margin-top: 2em;
+}
+
+
