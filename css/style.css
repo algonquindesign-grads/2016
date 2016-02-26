@@ -2011,7 +2011,7 @@ td, th, fieldset {
   padding: 0;
   display: block;
   overflow: hidden;
-  background-color: #f8f2e9;
+  background-color: #DCDBDB;
   position: relative;
   z-index: 50;
 }
@@ -2120,7 +2120,7 @@ td, th, fieldset {
 .fw-toggle-button:before {
   width: 100%;
   height: 4px;
-  background-color: #4b3618;
+  background-color: #1d1c1c;
   transition: all 250ms;
   backface-visibility: hidden;
   border-radius: 2px;
@@ -2146,19 +2146,19 @@ td, th, fieldset {
 }
 
 .fw-navigation ul li a {
-  background-color: #f8f2e9;
+  background-color: #DCDBDB;
   display: block;
   padding: 1em 2em;
   text-decoration: none;
-  color: #4b3618;
+  color: #1d1c1c;
 }
 
 .fw-navigation ul li a:hover, .fw-navigation ul li a:focus {
-  background-color: #f2e7d6;
+  background-color: #cfcece;
 }
 
 .fw-navigation ul li a:active {
-  background-color: #ecdbc2;
+  background-color: #c3c1c1;
   color: #fff;
 }
 
@@ -2168,7 +2168,7 @@ td, th, fieldset {
   left: 2em;
   right: 2em;
   bottom: 0;
-  border-bottom: 1px solid #4b3618;
+  border-bottom: 1px solid #1d1c1c;
   transition: all 250ms;
 }
 
@@ -2270,10 +2270,10 @@ td, th, fieldset {
     width: 15em;
   }
   .fw-navigation ul li:before {
-    border-bottom: 1px solid #4b3618;
+    border-bottom: 1px solid #1d1c1c;
   }
   .fw-navigation ul li:last-child:before {
-    border-bottom: 1px solid #4b3618;
+    border-bottom: 1px solid #1d1c1c;
   }
   .fw-navigation ul li a {
     padding: 0.5em 2em;
@@ -2293,7 +2293,7 @@ td, th, fieldset {
     overflow: auto;
   }
   .fw-info-small .fw-info * {
-    color: #4b3618;
+    color: #1d1c1c;
   }
   .fw-info-small .fw-info h2 {
     font-size: 0.8889rem;
@@ -2430,7 +2430,7 @@ body.noscript .fw-toggle {
     border-bottom: none;
   }
   body.noscript .fw-navigation ul li:hover:before {
-    border-bottom: 1px solid #4b3618;
+    border-bottom: 1px solid #1d1c1c;
   }
 }
 
@@ -2449,7 +2449,7 @@ body.noscript .fw-toggle {
   body.noscript .fw-navigation ul li:before {
     left: 2em;
     right: 2em;
-    border-bottom: 1px solid #4b3618;
+    border-bottom: 1px solid #1d1c1c;
   }
   body.noscript .fw-navigation ul li:hover:before {
     left: 0;
