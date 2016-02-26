@@ -1,6 +1,7 @@
 ---
 layout: portfolio-pictures
-full_name: "Natalie M Macpherson"
+full_name: "Natalie Macpherson"
+short_name: "Natalie M"
 
 description: "I am an Interactive Designer who truly believes that design can change the way people look and respond to the world around them."
 
