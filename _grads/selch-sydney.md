@@ -1,4 +1,5 @@
 ---
+layout: portfolio-pictures
 full_name: "Sydney Selch"
 short_name: "Sydney S"
 

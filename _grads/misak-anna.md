@@ -1,5 +1,5 @@
 ---
-
+layout: portfolio-pictures
 full_name: "Anna Misak"
 short_name: "Anna M"
 
