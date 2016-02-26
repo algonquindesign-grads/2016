@@ -3,7 +3,7 @@ layout: default
 title: Framework 2016 - {{site.full_name}}
 meta: Portfolio Page for {{site.full_name}}
 ---
-
+{% include base.html %}
 
 <div class="pp-wrap-name island">
   <h1 class="pp-name"><span class="pp-name-sm">{{ page.full_name }}</span></h1>
@@ -35,19 +35,19 @@ meta: Portfolio Page for {{site.full_name}}
 
     <div class="grid">
       <div class="unit unit-xs-1 unit-s-1 unit-m-1-2 unit-l-1-2 unit-xl-1 island pp-photo">
-        <img class="img-flex" src="http://annamisak.com/grad2016/img/misak-anna-p1.jpg" alt="Photo of Designer">
+        <img class="img-flex" src="{{site.cdn}}portraits/{{page.url | replace: 'grads/', '/' | remove:'/'}}-p1.jpg" alt="Photo of Designer">
       </div>
 
       <div class="unit unit-xs-1 unit-s-1 unit-m-1-2 unit-l-1-2 unit-xl-1 island mega">
-        <h2 class="pp-skill peta">{% for a in site.specialization %}{{a}} {% endfor %}</h2>
-        <p class="pp-desc">{{site.description}}</p>
-        <p class="pp-links"><a href="#">{{site.website}}</a></p>
+        <h2 class="pp-skill peta">{{page.specialization | array_to_sentence_string }}</h2>
+        <p class="pp-desc">{{page.description}}</p>
+        <p class="pp-links"><a target="_blank" href="{{page.website}}">{{page.website | replace: 'http://', '' }}</a></p>
         <p class="pp-links"><a href="mailto:hello@annamisak.com">{{site.email}}</a></p>
         <div>
           <ul class="pp-nav-btn pad-t">
-            <li class="pp-nav-btn-li"><a href="#"><img class="pp-social-icon gutter-1-2" src="http://annamisak.com/grad2016/img/twitter.svg" alt="Follow me on Twitter."></a></li>
-            <li class="pp-nav-btn-li"><a href="#"><img class="pp-social-icon gutter" src="http://annamisak.com/grad2016/img/facebook.svg" alt="Follow me on Facebook."></a></li>
-            <li class="pp-nav-btn-li"><a href="#"><img class="pp-social-icon gutter-1-2" src="http://annamisak.com/grad2016/img/instagram.svg" alt="Follow me on Instagram."></a></li>
+            {% for a in page.social %}
+              <li class="pp-nav-btn-li"><a target="_blank" href="{{a | last}}"><img class="pp-social-icon gutter-1-2" src="http://annamisak.com/grad2016/img/{{a | first}}.svg" alt="Follow me on Twitter."></a></li>
+            {% endfor %}
           </ul>
         </div>
       </div>
@@ -58,8 +58,8 @@ meta: Portfolio Page for {{site.full_name}}
 
 <div class="pp-wrap pad-t pad-b kilo">
   <ul class="pp-nav-btn">
-    <li class="pp-nav-btn-li"><a class="pp-nav-btn-arrows pp-on" href="#"><</a><a class="pp-nav-btn-a pp-off" href="#">Previous</a></li>
-    <li class="pp-nav-btn-li gutter"><a class="pp-nav-btn-a" href="#">All Grads</a></li>
-    <li class="pp-nav-btn-li"><a class="pp-nav-btn-arrows pp-on" href="#">></a><a class="pp-nav-btn-a pp-off" href="#">Next</a></li>
+    <li class="pp-nav-btn-li"><a class="pp-nav-btn-arrows pp-on" href="{{#}}"><</a><a class="pp-nav-btn-a pp-off" href="#">Previous</a></li>
+    <li class="pp-nav-btn-li gutter"><a class="pp-nav-btn-a" href="{{ base }}">All Grads</a></li>
+    <li class="pp-nav-btn-li"><a class="pp-nav-btn-arrows pp-on" href="{{#}}">></a><a class="pp-nav-btn-a pp-off" href="#">Next</a></li>
   </ul>
 </div>
