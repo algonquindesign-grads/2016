@@ -1,5 +1,5 @@
 ---
-
+layout: portfolio-pictures
 full_name: "Kaylee Ménard"
 short_name: "Kaylee M"
 
