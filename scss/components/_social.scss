@@ -1,34 +1,17 @@
-.social-grid {
-  letter-spacing: -0.31em;
-  text-rendering: optimizespeed;
-  display: -webkit-flex;
-  -webkit-flex-flow: row wrap;
-  display: -ms-flexbox;
-  -ms-flex-flow: row wrap;
-}
-
-.social-island {
-    position: relative;
-    margin-bottom: 2em;
-}
-
-.social-unit {
-    margin-right: -15px;
-    margin-left: -15px;
-    position: relative;
-    min-height: 1px;
-    padding-right: 15px;
-    padding-left: 15px;
-}
-
-.social-img-flex {
-  display: block;
-  width: 85%;
-  float: left;
-}
-
 .social {
-	padding-left: 2em;
+  padding: 2em;
+  max-width: 75em;
+  margin: 2em auto;
+}
+
+.social-footer{
+  display: block;
+  background-color: $grey-1;
+  overflow: hidden;
+  padding: 2em 4em;
+  i{
+    @include element-invisible;
+  }
 }
 
 .social-icons {
@@ -37,9 +20,7 @@
     padding: 0;
     overflow: hidden;
     margin-left: 10%;
-
 }
-
 
 .btn {
 	font-size: 3em;
