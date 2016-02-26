@@ -1,7 +1,7 @@
 ---
 layout: default
-title: Framework 2016 - {{site.full_name}}
-meta: Portfolio Page for {{site.full_name}}
+title: Framework 2016 - {{page.full_name}}
+meta: Portfolio Page for {{page.full_name}}
 ---
 {% include base.html %}
 
@@ -60,6 +60,6 @@ meta: Portfolio Page for {{site.full_name}}
   <ul class="pp-nav-btn">
     <li class="pp-nav-btn-li"><a class="pp-nav-btn-arrows pp-on" href="{{#}}"><</a><a class="pp-nav-btn-a pp-off" href="#">Previous</a></li>
     <li class="pp-nav-btn-li gutter"><a class="pp-nav-btn-a" href="{{ base }}">All Grads</a></li>
-    <li class="pp-nav-btn-li"><a class="pp-nav-btn-arrows pp-on" href="{{#}}">></a><a class="pp-nav-btn-a pp-off" href="#">Next</a></li>
+    <li class="pp-nav-btn-li"><a class="pp-nav-btn-arrows pp-on" href="{{base.next}}">></a><a class="pp-nav-btn-a pp-off" href="#">Next</a></li>
   </ul>
 </div>
