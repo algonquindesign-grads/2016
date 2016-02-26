@@ -36,3 +36,5 @@ social:
   behance:    "https://www.behance.net/rudy_gordon"
   linkedin:   "http://ca.linkedin.com/pub/rudy-gordon/64/582/768"
   pinterest:  "http://www.pinterest.com/rudygordon18/"
+
+---
