@@ -1,0 +1,142 @@
+.pp-name-sm {
+  display: block;
+  font-size: .5em;
+  font-weight: 200;
+  line-height: 1em;
+}
+
+.pp-name {
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 2.5em;
+  margin-bottom: 0;
+}
+
+.pp-skill {
+  text-transform: uppercase;
+  line-height: 1.3;
+  font-weight: 100;
+  margin-bottom: .5em;
+}
+
+.pp-desc {
+  border-top: 2px solid $black;
+  width: 100%;
+  padding: 1em 0;
+}
+
+.pp-links a {
+  padding-top: 1em;
+  text-decoration: none;
+  font-weight: 400;
+  color: $black;
+
+    &:hover {
+      text-decoration: underline;
+    }
+}
+
+.pp-social-icon {
+  height: 50px;
+
+  &:hover {
+      -webkit-animation: icons 800ms ease-in-out;
+      animation: icons 800ms ease-in-out;
+    }
+}
+
+@-webkit-keyframes icons {
+    0% { -webkit-transform: scale(1.0); }
+    50% { -webkit-transform: scale(1.5); }
+    100% { -webkit-transform: scale(1.0); }
+}
+
+@keyframes icons {
+    0% { transform: scale(1.0); }
+    50% { transform: scale(1.5); }
+    100% { transform: scale(1.0); }
+}
+
+// Grads navigation buttons
+
+.pp-wrap, .pp-wrap-name {
+  width: 100%;
+  background-color: $grey-1;
+}
+
+.pp-nav-btn {
+  list-style-type: none;
+  width: auto;
+  text-align: center;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+
+.pp-nav-btn-li {
+  display: inline-block;
+  left: 33%;
+}
+
+.pp-nav-btn-a {
+  width: 8em;
+  font-weight: 100;
+  @include pp-nav-btn;
+}
+
+.pp-nav-btn-arrows {
+  width: 4em;
+  font-weight: 600;
+  margin: 0;
+  @include pp-nav-btn;
+    &:hover {
+      font-weight: 600;
+    }
+}
+
+.pp-off {
+  display: none;
+  margin: 0;
+}
+
+.pp-on {
+  visibility: visible;
+}
+
+@media only screen and (min-width: 38em) {
+
+  .pp-on {
+    display: none;
+  }
+
+  .pp-off {
+    display: inherit;
+  }
+
+}
+
+@media only screen and (min-width: 60em) {
+
+  .pp-wrap-name {
+    background-color: $white;
+  }
+
+  .pp-name-sm {
+    display: inline-block;
+    font-size: 1em;
+    font-weight: 900;
+    line-height: 1em;
+  }
+
+  .pp-name {
+    margin-top: 1em;
+  }
+
+}
+
+@media only screen and (min-width: 80em) {
+
+  .pp-photo {
+    padding-top: 0;
+  }
+
+}
