@@ -201,6 +201,8 @@ ul li {
 .ph-graduates {
   padding-left: 0em;
   padding-right: 0em;
+  overflow: hidden;
+  margin: 2em 0;
 }
 
 .ph-image {
@@ -2465,9 +2467,9 @@ body:after {
   opacity: 0.2;
   top: 0;
   left: 0;
-  bottom: 0;
   right: 0;
-  position: absolute;
+  bottom: 0;
+  position: fixed;
   z-index: -10;
 }
 
