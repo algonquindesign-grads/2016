@@ -1,0 +1,130 @@
+@-moz-viewport { width: device-width; scale: 1; }
+@-ms-viewport { width: device-width; scale: 1; }
+@-o-viewport { width: device-width; scale: 1; }
+@-webkit-viewport { width: device-width; scale: 1; }
+@viewport { width: device-width; scale: 1; }
+
+html {
+	box-sizing: border-box;
+	-moz-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+	text-size-adjust: 100%;
+  font-family: 'Effra', sans-serif;
+  position: relative;
+  height: 100%;
+}
+
+body{
+  @include zero;
+  position: relative;
+  height: 100%;
+  background-color: transparent;
+}
+
+body:after{
+  content: "";
+  background-image: url("http://grads.images.algonquindesign.ca.s3.amazonaws.com/2016/img/dots.png");
+  background-repeat: repeat;
+  background-size: $grid-size $grid-size;
+  background-position: top;
+  opacity: $grid-opacity;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -10;
+}
+
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
+.img-flex {
+  display: block;
+  width: 100%;
+}
+
+.site-wrapper{
+  display: block;
+  // overflow: hidden;
+  position: relative;
+  @include zero;
+}
+
+// Show navigation on screen when there is no JS
+body.noscript{
+  .fw-navigation{
+    max-height: 15em;
+  }
+
+  .fw-toggle{
+    @include element-invisible;
+  }
+}
+
+@media only screen and (min-width: 38em){
+  body.noscript{
+    .fw-header{
+      .logo{
+        width: 18em;
+        margin: 0;
+      }
+    }
+
+    .fw-navigation{
+      position: absolute;
+      width: auto;
+      top: 1em;
+      right: 2em;
+      ul{
+        display: block;
+        li{
+          display: inline-block;
+          a{
+            padding: 1em;
+          }
+          &:before{
+            border-bottom: none;
+          }
+          &:hover:before{
+            border-bottom: 1px solid $menu-underline;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 80em){
+  body.noscript{
+    .fw-navigation{
+    left: 0;
+    top: $side-bar-width - 1em;
+    position: fixed;
+    max-height: $menu-max-height;
+    width: $side-bar-width;
+    overflow-y: scroll;
+    ul{
+      li{
+        width: 100%;
+        &:before{
+          left: 2em;
+          right: 2em;
+          border-bottom: 1px solid $menu-underline;
+        }
+        &:hover:before{
+          left: 0;
+          right: 0;
+        }
+        a{
+          padding: 0.5em 2em;
+          font-size: 1em;
+          line-height: 1.5em;
+        }
+      }
+    }
+  }
+  }
+}

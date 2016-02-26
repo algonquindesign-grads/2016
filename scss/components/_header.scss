@@ -1,0 +1,295 @@
+.fw-header{
+  @include zero;
+  display: block;
+  overflow: hidden;
+  background-color: $off-white;
+  position: relative;
+  z-index: 50;
+  .logo{
+    position: relative;
+    top: 0;
+    left: 0;
+    display: block;
+    padding: 0.5em 1em;
+    width: calc(100% - 5em);
+    .fw-logo{
+      display: block;
+      width: 100%;
+      max-width: 15em;
+      padding: 1em;
+
+      img,
+      svg{
+        display: block;
+        width: 100%;
+      }
+      svg{
+        .svg-top{
+          fill: $svg-top-fill;
+          transition: fill $svg-transition ease-in-out;
+        }
+        .svg-rest{
+          fill: $svg-fill;
+        }
+      }
+      &:hover .svg-top{
+        fill: lighten($svg-top-fill, 10%);;
+      }
+      .fw-logo-vert{
+        display: none;
+      }
+    }
+  }
+  &[data-state="open"]{
+    .fw-navigation{
+      max-height: $menu-max-height;
+    }
+    .fw-toggle-button{
+      background-color: transparent;
+    }
+    .fw-toggle-button:before {
+      transform: rotate(45deg) translate(5px, 5px);
+    }
+    .fw-toggle-button:after {
+      transform: rotate(-45deg) translate(7px, -8px);
+    }
+    & + #fw-menu {
+      max-height: $menu-max-height;
+    }
+  }
+  &[data-state="closed"]{
+    .fw-navigation{
+      max-height: 0;
+    }
+  }
+}
+
+
+.fw-toggle{
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: block;
+  width: $menu-toggle-size;
+  margin: 1em;
+  padding: 1.5em 0.65em;
+  background-color: transparent;
+
+  .fw-toggle-button{
+    position: relative;
+    &:after, &:before{
+      content: "";
+      position: absolute;
+      left: 0;
+      top: -9px;
+    }
+    &:after{
+      top: 9px;
+    }
+    span{
+      @include element-invisible;
+      position: relative;
+      display: block;
+    }
+  }
+}
+
+.fw-toggle-button,
+.fw-toggle-button:after,
+.fw-toggle-button:before {
+  width: 100%;
+  height: $menu-burger-lines;
+  background-color: $menu-burger;
+  transition: all $menu-duration;
+  backface-visibility: hidden;
+  border-radius: 2px;
+}
+
+.fw-navigation{
+  position: relative;
+  max-height: 0;
+  margin: 0;
+  background-color: transparent;
+  overflow: hidden;
+  transition: max-height $menu-duration ease-in-out;
+  ul{
+    @include zero;
+    list-style: none;
+    li{
+      position: relative;
+      a{
+        background-color: $menu-background;
+        display: block;
+        padding: 1em 2em;;
+        text-decoration: none;
+        color: $menu-text;
+        &:hover, &:focus{
+          background-color: darken($menu-background, 5%);
+        }
+        &:active{
+          background-color: darken($menu-background, 10%);
+          color: $white;
+        }
+      }
+      &:before{
+        content: "";
+        position: absolute;
+        left : 2em;
+        right: 2em;
+        bottom: 0;
+        border-bottom: $menu-underline-stroke solid $menu-underline;
+        transition: all $menu-duration;
+      }
+      &:hover:before{
+        left: 0;
+        right: 0;
+      }
+      &:last-child:before{
+        border: none;
+      }
+    }
+  }
+}
+
+.fw-info{
+  padding: 2em;
+  position: relative;
+  *{
+    @include zero;
+    color: $info-text;
+  }
+  h2{
+    text-transform: uppercase;
+    font-weight: normal;
+  }
+  .fw-info-date{
+    font-weight: bold;
+  }
+  .fw-info-time{
+    margin-bottom: 1em;
+  }
+  .fw-info-venue{
+    font-weight: bold;
+  }
+  .fw-info-address{
+    text-decoration: none;
+    &:hover{
+      color: lighten($info-text, 50%);
+      text-decoration: underline;
+    }
+  }
+}
+
+@media only screen and (min-width: 25em){
+
+}
+
+@media only screen and (min-width: 38em){
+  .fw-info{
+    @include element-invisible;
+  }
+  .fw-navigation{
+    width: $menu-fly-out-width;
+    left: calc(100% - #{$menu-fly-out-width});
+    position: absolute;
+    z-index: 100;
+  }
+}
+
+@media only screen and (min-width: 60em){
+
+}
+
+@media only screen and (min-width: 80em){
+  .fw-header{
+    position: fixed;
+    width: $side-bar-width;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    .logo{
+      .fw-logo{
+        .fw-logo-vert{
+          display: block;
+          width: 90%;
+          margin: 0 auto
+        }
+        .fw-logo-hor{
+          display: none;
+        }
+      }
+    }
+  }
+
+  .site-wrapper{
+    width: calc(100% - #{$side-bar-width});
+    left: $side-bar-width;
+    height: 100%;
+    overflow: scroll;
+  }
+
+  .fw-toggle{
+    display: none;
+  }
+
+  .logo{
+    min-width: 100%;
+  }
+
+  .fw-navigation{
+    left: 0;
+    top: $side-bar-width - 1em;
+    position: fixed;
+    max-height: $menu-max-height;
+    width: $side-bar-width;
+    ul{
+      li{
+        &:before{
+          border-bottom: 1px solid $menu-underline;
+        }
+        &:last-child:before{
+          border-bottom: 1px solid $menu-underline;
+        }
+        a{
+          padding: 0.5em 2em;
+          font-size: 1em;
+        }
+      }
+    }
+  }
+
+  .fw-info-small{
+    position: fixed;
+    top: $side-info-top;
+    z-index: 250;
+    width: $side-bar-width;
+    .fw-info{
+      *{
+        color: $menu-text;
+      }
+      @include element-invisible-off;
+      h2{
+        font-size: 0.8889rem;
+        line-height: 1.5000rem;
+      }
+      .fw-info-date{
+        font-size: 1.2656rem;
+        line-height: 1.8750rem;
+      }
+      .fw-info-time,
+      .fw-info-venue{
+        font-size: 1.1250rem;
+        line-height: 1.5000rem;
+      }
+      .fw-info-venue{
+        font-size: 0.8889rem;
+        line-height: 1.5000rem;
+      }
+      .fw-info-address,
+      .fw-info-city {
+        font-size: 0.8889rem;
+        line-height: 1.5000rem;
+      }
+    }
+  }
+}
