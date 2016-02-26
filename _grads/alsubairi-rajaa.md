@@ -5,6 +5,7 @@ layout: portfolio-pictures
 
 # Write your full name as you want it shown on the website
 full_name: "Rajaa Al Subairi"
+short_name: "Rajaa S"
 
 # Your personal description — written in first-person
 # MIN 100 characters
