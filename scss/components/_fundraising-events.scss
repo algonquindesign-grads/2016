@@ -1,0 +1,51 @@
+img {
+  display: block;
+  width: 100%;
+}
+
+.fe-holder {
+  background-color: $grey;
+  padding: 1em;
+  @media only screen and (min-width: 60em) {
+    padding-right: 10%; 
+    padding-left: 10%; 
+  }
+}
+
+.fe-title {
+  padding: .5em;
+  text-transform: uppercase;
+  margin: 1em 0 0 0;
+}
+
+.fe-images {
+  position: relative;
+}
+
+.fe-img {
+  display: inline-block;
+  padding: 1em;
+  width: 100%;
+}
+
+
+.fe-event {
+  position: absolute;
+  z-index: 100;
+  bottom: 0;
+  padding: .5em;
+  background-color: $black;
+  margin-left: 1em;
+  margin-right: 1em;
+  overflow: hidden;
+  display: block;
+  color: white;
+}
+
+.fe-info {
+  display: inline-block;
+  float: left;
+  padding: 1em;
+  width: 100%;
+
+}
