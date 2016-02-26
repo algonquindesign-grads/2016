@@ -1,3 +1,9 @@
+.filter-module {
+  position: relative;
+  display: block;
+  margin: 0 auto;
+}
+
 .filter-radio {
   left: -50px;
   position: absolute;
