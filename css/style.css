@@ -39,10 +39,6 @@
   margin-left: 10%;
 }
 
-li {
-  float: left;
-}
-
 .btn {
   font-size: 3em;
 }
@@ -127,6 +123,12 @@ a.control_next {
   .social-unit-3-m {
     width: 33.3333%;
   }
+}
+
+.filter-module {
+  position: relative;
+  display: block;
+  margin: 0 auto;
 }
 
 .filter-radio {
