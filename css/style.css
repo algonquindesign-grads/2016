@@ -2882,3 +2882,9 @@ body.noscript .fw-toggle {
 .sponsors {
   display: inline-block;
 }
+
+.sponsor-center {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
