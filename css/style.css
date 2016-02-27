@@ -103,11 +103,16 @@ ul li {
   margin: 0;
   background-color: #dcdadb;
   color: #55565b;
-  padding: .5em 1em;
+  padding: 0.5em 1em;
 }
 
 .filter-btn:hover {
   background-color: #a6a5a8;
+}
+
+#filter-select {
+  width: 100%;
+  font-size: 16px;
 }
 
 .grad-section {
