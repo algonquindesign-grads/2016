@@ -103,7 +103,7 @@ ul li {
   margin: 0;
   background-color: #dcdadb;
   color: #55565b;
-  padding: 0.5em 1em;
+  padding: .5em 1em;
 }
 
 .filter-btn:hover {
@@ -2860,4 +2860,26 @@ img {
 
 .pause {
   background-image: url(http://grads.images.algonquindesign.ca/2016/img/pause-button.svg);
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+footer {
+  background-color: #55565a;
+  color: #fff;
+}
+
+.ft-copyright {
+  overflow: hidden;
+}
+
+.ft-sponsor {
+  padding: .5em;
+}
+
+.thanks {
+  display: block;
 }

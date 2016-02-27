@@ -47,12 +47,12 @@ meta: Portfolio Page for {{page.full_name}}
       <div class="unit unit-xs-1 unit-s-1 unit-m-1-2 unit-l-1-2 unit-xl-1 pp-padding mega">
         <h2 class="pp-skill peta">{{page.specialization | array_to_sentence_string }}</h2>
         <p class="pp-desc">{{page.description}}</p>
-        <p class="pp-links"><a target="_blank" href="{{page.website}}">{{page.website | replace: 'http://', '' }}</a></p>
+        <p class="pp-links"><a section-margin href="{{page.website}}">{{page.website | replace: 'http://', '' }}</a></p>
         <p class="pp-links"><a href="mailto:{{ page.email }}">{{ page.email }}</a></p>
         <div>
           <ul class="pp-nav-btn pad-t">
             {% for a in page.social %}
-              <li class="pp-nav-btn-li"><a target="_blank" href="{{a | last}}"><img class="pp-social-icon gutter-1-2" src="{{site.cdn}}img/{{a | first}}.svg" alt="Follow me on {{a | first}}."></a></li>
+              <li class="pp-nav-btn-li"><a section-margin href="{{a | last}}"><img class="pp-social-icon gutter-1-2" src="{{site.cdn}}img/{{a | first}}.svg" alt="Follow me on {{a | first}}."></a></li>
             {% endfor %}
           </ul>
         </div>
