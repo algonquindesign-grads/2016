@@ -2555,6 +2555,10 @@ body.noscript .fw-toggle {
   }
 }
 
+.pp-video-wrapper iframe {
+  width: 100%;
+}
+
 .pp-image {
   position: relative;
   float: left;

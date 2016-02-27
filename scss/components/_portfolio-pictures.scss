@@ -60,6 +60,12 @@
     100% { transform: scale(1.0); }
 }
 
+.pp-video-wrapper {
+  iframe {
+    width: 100%;
+  }
+}
+
 // Student sprite photo
 
 .pp-image {
