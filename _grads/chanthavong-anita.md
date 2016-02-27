@@ -1,6 +1,7 @@
 ---
-layout: portfolio-pictures
+layout: portfolio
 full_name: "Anita Chanthavong"
+short_name: "Anita C"
 
 # MIN 100 characters
 # MAX 140 characters

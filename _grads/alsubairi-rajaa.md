@@ -1,10 +1,11 @@
 ---
-layout: portfolio-pictures
+layout: portfolio
 # THE NAME OF THIS FILE IS CRITICAL
 # It needs to match the same name as your images `lastname-firstname`
 
 # Write your full name as you want it shown on the website
 full_name: "Rajaa Al Subairi"
+short_name: "Rajaa S"
 
 # Your personal description — written in first-person
 # MIN 100 characters

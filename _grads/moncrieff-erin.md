@@ -1,5 +1,5 @@
 ---
-layout: portfolio-pictures
+layout: portfolio
 full_name: "Erin Moncrieff"
 short_name: "Erin M"
 

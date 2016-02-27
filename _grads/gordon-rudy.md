@@ -1,10 +1,11 @@
 ---
-layout: portfolio-pictures
+layout: portfolio
 # THE NAME OF THIS FILE IS CRITICAL
 # It needs to match the same name as your images `lastname-firstname`
 
 # Write your full name as you want it shown on the website
 full_name: "Rudy Gordon"
+short_name: "Rudy G"
 
 # Your personal description — written in first-person
 # MIN 100 characters
@@ -35,3 +36,5 @@ social:
   behance:    "https://www.behance.net/rudy_gordon"
   linkedin:   "http://ca.linkedin.com/pub/rudy-gordon/64/582/768"
   pinterest:  "http://www.pinterest.com/rudygordon18/"
+
+---
