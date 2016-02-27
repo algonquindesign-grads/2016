@@ -103,7 +103,7 @@ ul li {
   margin: 0;
   background-color: #dcdadb;
   color: #55565b;
-  padding: 0.5em 1em;
+  padding: .5em 1em;
 }
 
 .filter-btn:hover {
@@ -2523,7 +2523,7 @@ body.noscript .fw-toggle {
 }
 
 .pp-social-icon {
-  height: 50px;
+  width: 80px;
 }
 
 .pp-social-icon:hover {
@@ -2588,8 +2588,8 @@ body.noscript .fw-toggle {
   position: absolute;
   top: 0;
   left: 0;
-  -webkit-xtransition: all 150ms ease-in-out;
-  xtransition: all 150ms ease-in-out;
+  -webkit-transition: all 150ms ease-in-out;
+  transition: all 150ms ease-in-out;
 }
 
 @media only screen and (min-width: 80em) {
@@ -2703,6 +2703,9 @@ body.noscript .fw-toggle {
   }
   .pp-name {
     margin-top: 1em;
+  }
+  .pp-social-icon {
+    width: 95px;
   }
 }
 
@@ -2860,4 +2863,26 @@ img {
 
 .pause {
   background-image: url(http://grads.images.algonquindesign.ca/2016/img/pause-button.svg);
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+footer {
+  background-color: #55565a;
+  color: #fff;
+}
+
+.ft-copyright {
+  overflow: hidden;
+}
+
+.ft-sponsor {
+  padding: .5em;
+}
+
+.thanks {
+  display: block;
 }

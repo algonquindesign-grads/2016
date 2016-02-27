@@ -39,12 +39,13 @@
 }
 
 .pp-social-icon {
-  height: 50px;
+  width: 80px;
 
   &:hover {
       -webkit-animation: icons 800ms ease-in-out;
       animation: icons 800ms ease-in-out;
     }
+
 }
 
 @-webkit-keyframes icons {
@@ -93,8 +94,8 @@
   position: absolute;
   top: 0;
   left: 0;
-  -webkit-xtransition: all 150ms ease-in-out;
-  xtransition: all 150ms ease-in-out;
+  -webkit-transition: all 150ms ease-in-out;
+  transition: all 150ms ease-in-out;
 }
 
 .pp-pad-left {
@@ -189,6 +190,10 @@
 
   .pp-name {
     margin-top: 1em;
+  }
+
+  .pp-social-icon {
+    width: 95px;
   }
 
 }
