@@ -1,5 +1,5 @@
 ---
-layout: portfolio-pictures
+layout: portfolio
 full_name: "Natalie Macpherson"
 short_name: "Natalie M"
 

@@ -1,5 +1,5 @@
 ---
-layout: portfolio-pictures
+layout: portfolio
 full_name: "Vivienne Kay"
 short_name: "Vivienne K"
 

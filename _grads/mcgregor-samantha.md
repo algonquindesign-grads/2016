@@ -1,5 +1,5 @@
 ---
-layout: portfolio-pictures
+layout: portfolio
 full_name: "Samantha McGregor"
 short_name: "Samantha M"
 
