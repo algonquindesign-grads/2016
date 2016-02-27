@@ -5,7 +5,20 @@
    {% include filter.html %}
 
   <div class="grid framework-margin">
-    <div class="unit">
+    <div class="unit xs-1 s-1 unit-m-hidden filter-select">
+      <select id="filter-select">
+        <option value="filter-all">All</option>
+        <option value="filter-branding">Branding</option>
+        <option value="filter-ux">UX-UI</option>
+        <option value="filter-web">Web</option>
+        <option value="filter-illustration">Illustration</option>
+        <option value="filter-motion">Motion</option>
+        <option value="filter-print">Print</option>
+        <option value="filter-type">Typography</option>
+        <option value="filter-photo">Photography</option>
+      </select>
+    </div>
+    <div class="unit unit-xs-hidden unit-s-hidden m-1 filter-tabs">
       <div class="filters">
         <label class="filter-btn" for="filter-all">All</label>
         <label class="filter-btn" for="filter-branding">Branding</label>
