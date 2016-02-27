@@ -1,18 +1,35 @@
 
 <section id="grads" class="ph-graduates">
+  <h2 class="grad-section framework-margin">Graduates</h2>
 
-  {% include filter.html %}
+   {% include filter.html %}
 
-	<ul class="ph-student filter-items">
-  {% for student in site.grads %}
-      <li class="ph-image" data-category="{% for a in student.specialization%}{{a}} {% endfor %}">
-        <a href="{{site.baseurl}}{{student.url}}">
-        <img class="img-flex ph-gradphoto-top" src="{{site.cdn}}portraits/{{student.url | replace: 'grads/', '/' | remove:'/'}}.jpg" alt="{{student.full_name}}">
-        <p class="ph-fullname">{{student.full_name}}</p>
-        <p class="ph-partialname">{{student.short_name}}</p>
-        </a>
-      </li>
-  {% endfor %}
-</ul>
+  <div class="grid framework-margin">
+    <div class="unit">
+      <div class="filters">
+        <label class="filter-btn" for="filter-all">All</label>
+        <label class="filter-btn" for="filter-branding">Branding</label>
+        <label class="filter-btn" for="filter-ux">UX-UI</label>
+        <label class="filter-btn" for="filter-web">Web</label>
+        <label class="filter-btn" for="filter-illustration">Illustration</label>
+        <label class="filter-btn" for="filter-motion">Motion</label>
+        <label class="filter-btn" for="filter-print">Print</label>
+        <label class="filter-btn" for="filter-type">Typography</label>
+        <label class="filter-btn" for="filter-photo">Photography</label>
+      </div>
+    </div>
+  </div>
+
+  <ul class="ph-student filter-items">
+    {% for student in site.grads %}
+        <li class="ph-image" data-category="{% for a in student.specialization%}{{a}} {% endfor %}">
+          <a href="{{site.baseurl}}{{student.url}}">
+          <img class="img-flex ph-gradphoto-top" src="{{site.cdn}}portraits/{{student.url | replace: 'grads/', '/' | remove:'/'}}.jpg" alt="{{student.full_name}}">
+          <p class="ph-fullname">{{student.full_name}}</p>
+          <p class="ph-partialname">{{student.short_name}}</p>
+          </a>
+        </li>
+    {% endfor %}
+  </ul>
 
 </section>

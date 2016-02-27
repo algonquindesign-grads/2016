@@ -37,6 +37,14 @@ body:after{
   z-index: -10;
 }
 
+.framework-margin {
+  margin: 3em 2em 3em 2em;
+}
+
+.framework-padding {
+  padding: 3em 2em 3em 2em;
+}
+
 *, *:before, *:after {
 	box-sizing: inherit;
 }

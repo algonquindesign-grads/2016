@@ -1,3 +1,9 @@
+.social-section {
+  color: #64689b;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
 .social {
   padding: 2em;
   max-width: 75em;
@@ -104,6 +110,12 @@ ul li {
   background-color: #a6a5a8;
 }
 
+.grad-section {
+  color: #64689b;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
 .ph-graduates {
   padding-left: 0em;
   padding-right: 0em;
@@ -152,16 +164,13 @@ ul li {
 
 @media only screen and (min-width: 38em) {
   .ph-student {
-    padding-left: 0.6500rem;
-    padding-right: 0.6500rem;
-    padding-top: 2em;
+    padding: 3em 2em;
   }
 }
 
 @media only screen and (min-width: 60em) {
   .ph-student {
-    padding-left: 2.6000rem;
-    padding-right: 2.6000rem;
+    padding: 3em 2em;
     padding-top: 1em;
   }
 }
@@ -2378,6 +2387,14 @@ body:after {
   z-index: -10;
 }
 
+.framework-margin {
+  margin: 3em 2em 3em 2em;
+}
+
+.framework-padding {
+  padding: 3em 2em 3em 2em;
+}
+
 *, *:before, *:after {
   box-sizing: inherit;
 }
@@ -2704,9 +2721,9 @@ img {
 }
 
 .fe-title {
-  padding: .5em;
+  color: #f8f2e9;
+  font-size: 16px;
   text-transform: uppercase;
-  margin: 1em 0 0 0;
 }
 
 .fe-images {
