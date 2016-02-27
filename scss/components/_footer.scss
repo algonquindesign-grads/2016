@@ -1,27 +1,26 @@
-html{
-	// background-color:$background;
 
-}
-
-body{
-	padding:0;
-	margin:0;
-}
-
-footer{
+.grid-middle {
 	background-color:$grey-4;
 	color:$white;
 }
 
-
 .ft-copyright{
 	overflow:hidden;
+	display: block;
 }
 
 .ft-sponsor{
-	padding: .5em;
+	padding-left: .5em;
+	width: 100px;
+	width: 100px;
+	margin: auto 0;
 }
 
 .thanks{
   display: block;
+  text-align: center;
+}
+
+.sponsors {
+	display: inline-block;
 }
