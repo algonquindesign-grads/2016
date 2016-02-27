@@ -134,12 +134,16 @@
   background-color: $grey-1;
 }
 
+.pp-wrap{
+  text-align: center;
+}
+
 .pp-nav-btn {
   list-style-type: none;
   width: auto;
   text-align: center;
   padding-left: 0;
-  margin-bottom: 0;
+  margin-bottom: 0 auto;
 }
 
 .pp-nav-btn-li {
