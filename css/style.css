@@ -5,7 +5,7 @@
 }
 
 .social {
-  padding: 2em;
+  spadding: 2em;
   max-width: 75em;
   margin: 2em auto;
 }
@@ -2710,14 +2710,6 @@ img {
 
 .fe-holder {
   background-color: #55565a;
-  padding: 1em;
-}
-
-@media only screen and (min-width: 60em) {
-  .fe-holder {
-    padding-right: 10%;
-    padding-left: 10%;
-  }
 }
 
 .fe-title {
@@ -2730,13 +2722,7 @@ img {
   position: relative;
 }
 
-.fe-img {
-  display: inline-block;
-  padding: 1em;
-  width: 100%;
-}
-
-.fe-event {
+.fe-images .fe-event {
   position: absolute;
   z-index: 100;
   bottom: 0;
@@ -2747,6 +2733,12 @@ img {
   overflow: hidden;
   display: block;
   color: white;
+}
+
+.fe-img {
+  display: inline-block;
+  padding: 1em;
+  width: 100%;
 }
 
 .fe-info {

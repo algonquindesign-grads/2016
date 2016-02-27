@@ -7,7 +7,7 @@ description: "I am an Interactive Designer who truly believes that design can ch
 
 email: "hello@nataliemay.ca"
 
-website: "http://nataliemay.ca/"
+website: "http://nataliemay.ca"
 
 specialization:
   - print
@@ -15,7 +15,7 @@ specialization:
   - web
 
 social:
-  behance:    "https://www.behance.net/Natalie_Macpherson"
+  dribbble:   "https://dribbble.com/nataliemay"
   github:     "https://github.com/natalie-macpherson"
   linkedin:   "https://www.linkedin.com/in/nmacpher"
 ---
