@@ -175,7 +175,7 @@ ul li {
 
 @media only screen and (min-width: 60em) {
   .ph-student {
-    padding: 3em 2em;
+    padding: 0em 1em;
     padding-top: 1em;
   }
 }
@@ -2784,11 +2784,6 @@ body.noscript .fw-toggle {
   }
 }
 
-img {
-  display: block;
-  width: 100%;
-}
-
 .fe-holder {
   background-color: #55565a;
 }
@@ -2876,24 +2871,34 @@ img {
   background-image: url(http://grads.images.algonquindesign.ca/2016/img/pause-button.svg);
 }
 
-body {
-  padding: 0;
-  margin: 0;
-}
-
-footer {
+.grid-middle {
   background-color: #55565a;
   color: #fff;
 }
 
 .ft-copyright {
   overflow: hidden;
+  display: block;
 }
 
 .ft-sponsor {
-  padding: .5em;
+  padding-left: .5em;
+  width: 100px;
+  width: 100px;
+  margin: auto 0;
 }
 
 .thanks {
   display: block;
+  text-align: center;
+}
+
+.sponsors {
+  display: inline-block;
+}
+
+.sponsor-center {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
 }
