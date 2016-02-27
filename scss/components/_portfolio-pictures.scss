@@ -61,6 +61,10 @@
 }
 
 .pp-video-wrapper {
+  padding: 0;
+  margin: 0;
+  display: block;
+  width: 100%;
   iframe {
     width: 100%;
   }
