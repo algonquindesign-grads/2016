@@ -2555,6 +2555,65 @@ body.noscript .fw-toggle {
   }
 }
 
+.pp-image {
+  position: relative;
+  float: left;
+  width: 100%;
+  list-style-type: none;
+}
+
+.pp-student {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.pp-image a {
+  position: relative;
+  display: block;
+  padding-top: 100%;
+  overflow: hidden;
+}
+
+.pp-image a:hover .ph-gradphoto-top {
+  top: -100%;
+}
+
+.pp-graduates {
+  padding-top: 1.5em;
+  padding-left: 0em;
+  padding-right: 0em;
+}
+
+.pp-gradphoto-top {
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-xtransition: all 150ms ease-in-out;
+  xtransition: all 150ms ease-in-out;
+}
+
+@media only screen and (min-width: 80em) {
+  .pp-pad-left {
+    padding-left: .5em;
+  }
+}
+
+@media only screen and (min-width: 80em) {
+  .pp-pad-right {
+    padding-right: 1em;
+  }
+}
+
+.pp-padding {
+  padding: 1em 1em 1em 1em;
+}
+
+@media only screen and (min-width: 80em) {
+  .pp-padding {
+    padding: 1em 1em 1em 0;
+  }
+}
+
 .pp-wrap, .pp-wrap-name {
   width: 100%;
   background-color: #DCDBDB;
@@ -2634,7 +2693,7 @@ body.noscript .fw-toggle {
 
 @media only screen and (min-width: 60em) {
   .pp-wrap-name {
-    background-color: #fff;
+    background-color: transparent;
   }
   .pp-name-sm {
     display: inline-block;
@@ -2649,6 +2708,9 @@ body.noscript .fw-toggle {
 
 @media only screen and (min-width: 80em) {
   .pp-photo {
+    padding-top: 0;
+  }
+  .pp-graduates {
     padding-top: 0;
   }
 }

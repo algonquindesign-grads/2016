@@ -1,5 +1,5 @@
 ---
-layout: portfolio-pictures
+layout: portfolio
 full_name: "Jason D Leduc"
 short_name: "Jason L"
 

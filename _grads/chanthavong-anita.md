@@ -1,5 +1,5 @@
 ---
-layout: portfolio-pictures
+layout: portfolio
 full_name: "Anita Chanthavong"
 short_name: "Anita C"
 
