@@ -46,7 +46,7 @@ meta: Portfolio Page for {{page.full_name}}
         <div>
           <ul class="pp-nav-btn pad-t">
             {% for a in page.social %}
-              <li class="pp-nav-btn-li"><a target="_blank" href="{{a | last}}"><img class="pp-social-icon gutter-1-2" src="http://annamisak.com/grad2016/img/{{a | first}}.svg" alt="Follow me on {{a | first}}."></a></li>
+              <li class="pp-nav-btn-li"><a target="_blank" href="{{a | last}}"><img class="pp-social-icon gutter-1-2" src="{{site.cdn}}img/{{a | first}}.svg" alt="Follow me on {{a | first}}."></a></li>
             {% endfor %}
           </ul>
         </div>
