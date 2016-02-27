@@ -164,16 +164,13 @@ ul li {
 
 @media only screen and (min-width: 38em) {
   .ph-student {
-    padding-left: 0.6500rem;
-    padding-right: 0.6500rem;
-    padding-top: 2em;
+    padding: 3em 2em;
   }
 }
 
 @media only screen and (min-width: 60em) {
   .ph-student {
-    padding-left: 2.6000rem;
-    padding-right: 2.6000rem;
+    padding: 3em 2em;
     padding-top: 1em;
   }
 }
@@ -2388,6 +2385,14 @@ body:after {
   bottom: 0;
   position: fixed;
   z-index: -10;
+}
+
+.framework-margin {
+  margin: 3em 2em 3em 2em;
+}
+
+.framework-padding {
+  padding: 3em 2em 3em 2em;
 }
 
 *, *:before, *:after {

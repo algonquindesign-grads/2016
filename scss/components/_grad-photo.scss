@@ -36,13 +36,10 @@
   padding-right: 0;
   padding-top: 1em;
   @media only screen and (min-width: 38em) {
-  	padding-left: 0.6500rem;
-  	padding-right: 0.6500rem;
-    padding-top: 2em;
+  	padding: 3em 2em;
   }
   @media only screen and (min-width: 60em) {
-		padding-left: 2.6000rem;
-  	padding-right: 2.6000rem;
+    padding: 3em 2em;
     padding-top: 1em;
   }
   @media only screen and (min-width: 90em) {
