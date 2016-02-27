@@ -1,3 +1,5 @@
+// Student Portfolio inside page
+
 .pp-name-sm {
   display: block;
   font-size: .5em;
@@ -117,7 +119,7 @@
 @media only screen and (min-width: 60em) {
 
   .pp-wrap-name {
-    background-color: $white;
+    background-color: transparent;
   }
 
   .pp-name-sm {

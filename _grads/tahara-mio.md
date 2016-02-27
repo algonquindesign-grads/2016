@@ -1,5 +1,5 @@
 ---
-layout: portfolio-pictures
+layout: portfolio
 full_name: "Mio Tahara"
 short_name: "Mio T"
 

@@ -2629,7 +2629,7 @@ body.noscript .fw-toggle {
 
 @media only screen and (min-width: 60em) {
   .pp-wrap-name {
-    background-color: #fff;
+    background-color: transparent;
   }
   .pp-name-sm {
     display: inline-block;

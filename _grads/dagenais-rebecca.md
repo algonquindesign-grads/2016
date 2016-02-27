@@ -1,5 +1,5 @@
 ---
-layout: portfolio-pictures
+layout: portfolio
 full_name: "Rebecca Dagenais"
 short_name: "Rebecca D"
 
