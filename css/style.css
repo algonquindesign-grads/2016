@@ -1,3 +1,9 @@
+.social-section {
+  color: #64689b;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
 .social {
   padding: 2em;
   max-width: 75em;
@@ -102,6 +108,12 @@ ul li {
 
 .filter-btn:hover {
   background-color: #a6a5a8;
+}
+
+.grad-section {
+  color: #64689b;
+  font-size: 16px;
+  text-transform: uppercase;
 }
 
 .ph-graduates {
@@ -2704,9 +2716,9 @@ img {
 }
 
 .fe-title {
-  padding: .5em;
+  color: #f8f2e9;
+  font-size: 16px;
   text-transform: uppercase;
-  margin: 1em 0 0 0;
 }
 
 .fe-images {
