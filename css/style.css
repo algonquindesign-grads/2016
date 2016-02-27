@@ -2253,8 +2253,8 @@ td, th, fieldset {
     position: fixed;
     width: 15em;
     left: 0;
-    top: 0;
-    bottom: 0;
+    height: 100%;
+    overflow-y: scroll;
   }
   .fw-header .logo .fw-logo .fw-logo-vert {
     display: block;
@@ -2278,7 +2278,7 @@ td, th, fieldset {
   }
   .fw-navigation {
     left: 0;
-    top: 14em;
+    top: 13em;
     position: fixed;
     max-height: 20em;
     width: 15em;
@@ -2295,7 +2295,7 @@ td, th, fieldset {
   }
   .fw-info-small {
     position: fixed;
-    top: 22em;
+    top: 20em;
     z-index: 250;
     width: 15em;
   }
@@ -2585,7 +2585,7 @@ body.noscript .fw-toggle {
   overflow: hidden;
 }
 
-.pp-image a:hover .ph-gradphoto-top {
+.pp-image a:hover .ph-gradphoto-top, .pp-image a:hover .pp-gradphoto-top {
   top: -100%;
 }
 
@@ -2599,8 +2599,6 @@ body.noscript .fw-toggle {
   position: absolute;
   top: 0;
   left: 0;
-  -webkit-transition: all 150ms ease-in-out;
-  transition: all 150ms ease-in-out;
 }
 
 @media only screen and (min-width: 80em) {
@@ -2630,12 +2628,16 @@ body.noscript .fw-toggle {
   background-color: #DCDBDB;
 }
 
+.pp-wrap {
+  text-align: center;
+}
+
 .pp-nav-btn {
   list-style-type: none;
   width: auto;
   text-align: center;
   padding-left: 0;
-  margin-bottom: 0;
+  margin-bottom: 0 auto;
 }
 
 .pp-nav-btn-li {
