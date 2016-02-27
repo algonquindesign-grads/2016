@@ -13,11 +13,11 @@ meta: Portfolio Page for {{page.full_name}}
   <div class="unit unit-xs-1 unit-s-1 unit-m-1 unit-l-1 unit-xl-2-3 pp-pad-right">
 
     <div class="grid">
-
+      {% if page.vimeo == null %}
       <div><!--- START Student Profile Pictures with video -->
         <div class="unit unit-xs-1 unit-s-1 unit-m-1 unit-l-1">
           <div class="pp-video-wrapper">
-            <iframe class="rg-portfolio-video" src="https://player.vimeo.com/video/146433135" width="1080" height="400" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+            <iframe class="rg-portfolio-video" src="https://player.vimeo.com/video/{{vimeo}}" width="1080" height="400" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
           </div>
         </div>
 
@@ -29,6 +29,7 @@ meta: Portfolio Page for {{page.full_name}}
           <img class="img-flex" src="{{site.cdn}}portfolio/{{page.url | replace: 'grads/', '/' | remove:'/'}}-2.jpg" alt="Designer Portfolio Image">
         </div>
       </div><!--- END Student Profile Pictures with video -->
+      {% else %}
 
       <div><!--- START Student Profile Pictures only -->
         <div class="unit unit-xs-1 unit-s-1 unit-m-1-2 unit-l-1-2">
@@ -47,7 +48,8 @@ meta: Portfolio Page for {{page.full_name}}
           <img class="img-flex" src="{{site.cdn}}portfolio/{{page.url | replace: 'grads/', '/' | remove:'/'}}-4.jpg" alt="Designer Portfolio Image">
         </div>
       </div><!--- END Student Profile Pictures only -->
-
+      {% endfor %}
+      {% endif %}
     </div>
 
   </div>
@@ -63,7 +65,7 @@ meta: Portfolio Page for {{page.full_name}}
             </li>
           </ul>
       </div>
-      <!--- Student information -->
+      <!--- Student bio -->
       <div class="unit unit-xs-1 unit-s-1 unit-m-1-2 unit-l-1-2 unit-xl-1 pp-padding mega">
         <h2 class="pp-skill peta">{{page.specialization | array_to_sentence_string }}</h2>
         <p class="pp-desc">{{page.description}}</p>
