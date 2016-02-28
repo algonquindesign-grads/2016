@@ -2160,6 +2160,7 @@ td, th, fieldset {
 }
 
 .fw-navigation ul li a {
+  text-transform: uppercase;
   background-color: #DCDBDB;
   display: block;
   padding: 1em 2em;
