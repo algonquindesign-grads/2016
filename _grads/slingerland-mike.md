@@ -31,7 +31,7 @@ vimeo: "154870683"
 
 social:
   behance:    "https://www.behance.net/MSlingerland"
-  linkedin:   "https://www.linkedin.com/in/mike-slingerland"
+  linkedin:   "https://www.linkedin.com/in/mike-slingerland-43050664?trk=tab_pro"
   vimeo:      "https://vimeo.com/user24159570"
 
 ---
