@@ -2311,26 +2311,26 @@ td, th, fieldset {
     color: #1d1c1c;
   }
   .fw-info-small .fw-info h2 {
-    font-size: 0.8889rem;
-    line-height: 1rem;
+    font-size: 1.11112rem;
+    line-height: 1.25rem;
   }
   .fw-info-small .fw-info .fw-info-date {
-    font-size: 1.2rem;
-    line-height: 1.8750rem;
+    font-size: 1.5625rem;
+    line-height: 2.34375rem;
   }
   .fw-info-small .fw-info .fw-info-time,
   .fw-info-small .fw-info .fw-info-venue {
-    font-size: 1rem;
-    line-height: 1.5000rem;
+    font-size: 1.25rem;
+    line-height: 1.875rem;
   }
   .fw-info-small .fw-info .fw-info-venue {
-    font-size: 0.75rem;
-    line-height: 1.000rem;
+    font-size: 0.9375rem;
+    line-height: 1.25rem;
   }
   .fw-info-small .fw-info .fw-info-address,
   .fw-info-small .fw-info .fw-info-city {
-    font-size: 0.75rem;
-    line-height: 1.25rem;
+    font-size: 0.9375rem;
+    line-height: 1.5625rem;
   }
 }
 

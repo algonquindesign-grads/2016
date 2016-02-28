@@ -278,26 +278,26 @@
       }
       @include element-invisible-off;
       h2{
-        font-size: 0.8889rem;
-        line-height: 1rem;
+        font-size: $side-info-scale * 0.8889rem;
+        line-height: $side-info-scale * 1rem;
       }
       .fw-info-date{
-        font-size: 1.2rem;
-        line-height: 1.8750rem;
+        font-size: $side-info-scale * 1.25rem;
+        line-height: $side-info-scale * 1.8750rem;
       }
       .fw-info-time,
       .fw-info-venue{
-        font-size: 1rem;
-        line-height: 1.5000rem;
+        font-size: $side-info-scale * 1rem;
+        line-height: $side-info-scale * 1.5000rem;
       }
       .fw-info-venue{
-        font-size: 0.75rem;
-        line-height: 1.000rem;
+        font-size: $side-info-scale * 0.75rem;
+        line-height: $side-info-scale * 1.000rem;
       }
       .fw-info-address,
       .fw-info-city {
-        font-size: 0.75rem;
-        line-height: 1.25rem;
+        font-size: $side-info-scale * 0.75rem;
+        line-height: $side-info-scale * 1.25rem;
       }
     }
   }
