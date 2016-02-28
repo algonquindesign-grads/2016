@@ -2195,51 +2195,7 @@ td, th, fieldset {
   border: none;
 }
 
-.fw-info {
-  padding: 2em;
-  position: relative;
-}
-
-.fw-info * {
-  margin: 0;
-  padding: 0;
-  color: #000;
-}
-
-.fw-info h2 {
-  text-transform: uppercase;
-  font-weight: normal;
-}
-
-.fw-info .fw-info-date {
-  font-weight: bold;
-}
-
-.fw-info .fw-info-time {
-  margin-bottom: 1em;
-}
-
-.fw-info .fw-info-venue {
-  font-weight: bold;
-}
-
-.fw-info .fw-info-address {
-  text-decoration: none;
-}
-
-.fw-info .fw-info-address:hover {
-  color: gray;
-  text-decoration: underline;
-}
-
 @media only screen and (min-width: 38em) {
-  .fw-info {
-    position: absolute !important;
-    height: 1px;
-    width: 1px;
-    overflow: hidden;
-    clip: rect(1px, 1px, 1px, 1px);
-  }
   .fw-navigation {
     width: 18em;
     left: calc(100% - 18em);
@@ -2292,44 +2248,6 @@ td, th, fieldset {
   .fw-navigation ul li a {
     padding: 0.5em 2em;
     font-size: 1em;
-  }
-  .fw-info-small {
-    position: fixed;
-    top: 22em;
-    z-index: 250;
-    width: 15em;
-  }
-  .fw-info-small .fw-info {
-    position: static !important;
-    clip: auto;
-    height: auto;
-    width: auto;
-    overflow: auto;
-  }
-  .fw-info-small .fw-info * {
-    color: #1d1c1c;
-  }
-  .fw-info-small .fw-info h2 {
-    font-size: 0.8889rem;
-    line-height: 1.5000rem;
-  }
-  .fw-info-small .fw-info .fw-info-date {
-    font-size: 1.2656rem;
-    line-height: 1.8750rem;
-  }
-  .fw-info-small .fw-info .fw-info-time,
-  .fw-info-small .fw-info .fw-info-venue {
-    font-size: 1.1250rem;
-    line-height: 1.5000rem;
-  }
-  .fw-info-small .fw-info .fw-info-venue {
-    font-size: 0.8889rem;
-    line-height: 1.5000rem;
-  }
-  .fw-info-small .fw-info .fw-info-address,
-  .fw-info-small .fw-info .fw-info-city {
-    font-size: 0.8889rem;
-    line-height: 1.5000rem;
   }
 }
 
@@ -2947,4 +2865,65 @@ body.noscript .fw-toggle {
   padding-top: 1em;
   margin-bottom: 0;
   padding-right: 1em;
+}
+
+.fw-info-holder {
+  padding: 2em;
+  background-color: #7D7D80;
+  color: #DCDBDB;
+}
+
+.fw-info-holder h2 {
+  text-transform: uppercase;
+  font-weight: normal;
+}
+
+.fw-info-holder .fw-info-date {
+  font-weight: bold;
+}
+
+.fw-info-holder .fw-info-time {
+  margin-bottom: 1em;
+}
+
+.fw-info-holder .fw-info-venue {
+  font-weight: bold;
+}
+
+.fw-info-holder .fw-info-address {
+  font-size: 14px;
+  color: #DCDBDB;
+}
+
+.fw-info-holder .fw-info-address:hover {
+  color: #c3c1c1;
+  text-decoration: underline;
+}
+
+.fw-info-holder .fw-info-address a {
+  text-decoration: none;
+}
+
+.fw-info-sec1 {
+  padding-right: .5em;
+  float: left;
+}
+
+.fw-info-sec2 {
+  padding-right: .5em;
+  color: #DCDBDB;
+  float: left;
+}
+
+.fw-info-sec3 {
+  float: left;
+}
+
+.fw-info-sec3 button {
+  text-decoration: none;
+  padding: 1em;
+  color: #fff;
+  background-color: #A6A5A7;
+  border: 0;
+  text-align: center;
 }
