@@ -10,10 +10,7 @@ short_name: "Avery B"
 # Your personal description — written in first-person
 # MIN 100 characters
 # MAX 140 characters
-description: "I am a designer from Ottawa, Canada. I’m a passionate problem solver and love designing for myself and others. My focus is packaging design, branding & identity, UI/UX, illustration and print media. Most of all I make
-beautiful designs that communicate to every challenge.
-Of course I love all things design related, but I also enjoy traveling, drinking tea, crafting and my cat. When I’m not designing you can find me enjoying the outdoors or spending time with friends and family."
-
+description: "I’m a passionate problem solver and love designing for myself and others,  I make beautiful designs that communicate to every challenge."
 # Use a professional email address
 email: "avreeburnett@gmail.com"
 
@@ -34,6 +31,6 @@ specialization:
 social:
   behance:    "https://www.behance.net/averyburnett"
   vimeo:      "https://vimeo.com/user36330177"
-  instagram:  "https://www.instagram.com/_ajbdesigns/"
+  instagram:  "https://www.instagram.com/_averyburnett/"
 
 ---
