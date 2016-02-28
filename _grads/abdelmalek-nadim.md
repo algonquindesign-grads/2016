@@ -1,4 +1,6 @@
 ---
+title: Framework 2016 -
+meta: Portfolio Page for -
 layout: portfolio
 
 # THE NAME OF THIS FILE IS CRITICAL
