@@ -117,6 +117,7 @@
     li{
       position: relative;
       a{
+        text-transform: uppercase;
         background-color: $menu-background;
         display: block;
         padding: 1em 2em;;
@@ -160,6 +161,13 @@
     left: calc(100% - #{$menu-fly-out-width});
     position: absolute;
     z-index: 100;
+    ul{
+      li{
+        a{
+          // font-size: 1em;
+        }
+      }
+    }
   }
 }
 
@@ -205,7 +213,7 @@
 
   .fw-navigation{
     left: 0;
-    top: $side-bar-width - 1em;
+    top: $side-bar-width - 2em;
     position: fixed;
     max-height: $menu-max-height;
     width: $side-bar-width;
@@ -218,9 +226,45 @@
           border-bottom: 1px solid $menu-underline;
         }
         a{
-          padding: 0.5em 2em;
-          font-size: 1em;
+
+          padding: 0.5em 2.6666em;
+          font-size: 0.75em;
         }
+      }
+    }
+  }
+
+  .fw-info-small{
+    position: fixed;
+    top: $side-info-top;
+    z-index: 250;
+    width: $side-bar-width;
+    .fw-info{
+      *{
+        color: $menu-text;
+      }
+      @include element-invisible-off;
+      h2{
+        font-size: $side-info-scale * 0.8889rem;
+        line-height: $side-info-scale * 1rem;
+      }
+      .fw-info-date{
+        font-size: $side-info-scale * 1.25rem;
+        line-height: $side-info-scale * 1.8750rem;
+      }
+      .fw-info-time,
+      .fw-info-venue{
+        font-size: $side-info-scale * 1rem;
+        line-height: $side-info-scale * 1.5000rem;
+      }
+      .fw-info-venue{
+        font-size: $side-info-scale * 0.75rem;
+        line-height: $side-info-scale * 1.000rem;
+      }
+      .fw-info-address,
+      .fw-info-city {
+        font-size: $side-info-scale * 0.75rem;
+        line-height: $side-info-scale * 1rem;
       }
     }
   }
