@@ -2020,6 +2020,24 @@ td, th, fieldset {
   }
 }
 
+@keyframes colours {
+  0% {
+    fill: #eab63f;
+  }
+  25% {
+    fill: #64689b;
+  }
+  50% {
+    fill: #00a29c;
+  }
+  75% {
+    fill: #df4827;
+  }
+  100% {
+    fill: #eab63f;
+  }
+}
+
 .fw-header {
   margin: 0;
   padding: 0;
@@ -2062,7 +2080,7 @@ td, th, fieldset {
 }
 
 .fw-header .logo .fw-logo:hover .svg-top {
-  fill: #bcbcbf;
+  animation: colours 5s ease-in-out infinite;
 }
 
 .fw-header .logo .fw-logo .fw-logo-vert {

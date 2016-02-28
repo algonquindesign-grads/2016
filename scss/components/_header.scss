@@ -1,3 +1,16 @@
+@keyframes colours {
+  0%{
+    fill: $yellow;
+  } 25%{
+    fill: $purple;
+  } 50%{
+    fill: $green;
+  } 75%{
+    fill: $red;
+  } 100%{
+    fill: $yellow;
+  }
+}
 .fw-header{
   @include zero;
   display: block;
@@ -33,7 +46,8 @@
         }
       }
       &:hover .svg-top{
-        fill: lighten($svg-top-fill, 10%);;
+        // fill: lighten($svg-top-fill, 10%);
+        animation: colours 5s ease-in-out infinite;
       }
       .fw-logo-vert{
         display: none;
