@@ -2904,3 +2904,45 @@ body.noscript .fw-toggle {
   margin-right: auto;
   text-align: center;
 }
+
+.bts-bg {
+  background-color: #DCDBDB;
+  padding: 2em 2em 5em 2em;
+}
+
+.bts-embed__item {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  padding: 0;
+}
+
+.bts-title {
+  color: #64689b;
+  font-size: 16px;
+  text-transform: uppercase;
+  margin-bottom: 1em;
+}
+
+.bts-more-btn {
+  background-color: #55565a;
+  float: right;
+  text-decoration: none;
+  list-style-type: none;
+  text-transform: uppercase;
+  color: white;
+  padding: 1em 2em 1em 2em;
+  margin-top: 1em;
+  font-size: .75em;
+  text-align: center;
+  vertical-align: center;
+}
+
+.bts-text {
+  font-size: .75em;
+  padding-top: 1em;
+  margin-bottom: 0;
+  padding-right: 1em;
+}

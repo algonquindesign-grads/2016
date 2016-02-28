@@ -1,4 +1,6 @@
 ---
+title: Framework 2016 - Ben Marley
+meta: Portfolio Page for Ben Marley
 layout: portfolio
 # THE NAME OF THIS FILE IS CRITICAL
 # It needs to match the same name as your images `lastname-firstname`

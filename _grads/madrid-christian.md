@@ -1,4 +1,6 @@
 ---
+title: Framework 2016 - Christian Madrid
+meta: Portfolio Page for Christian Madrid
 layout: portfolio
 
 # THE NAME OF THIS FILE IS CRITICAL

@@ -1,4 +1,6 @@
 ---
+title: Framework 2016 - Erin Moncrieff
+meta: Portfolio Page for Erin Moncrieff
 layout: portfolio
 full_name: "Erin Moncrieff"
 short_name: "Erin M"
