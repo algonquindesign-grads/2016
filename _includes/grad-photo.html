@@ -1,5 +1,5 @@
 
-<section id="grads" class="ph-graduates">
+<section id="grads" class="ph-graduates ">
   <h2 class="grad-section framework-margin">Graduates</h2>
 
    {% include filter.html %}
@@ -33,7 +33,7 @@
     </div>
   </div>
 
-  <ul class="ph-student filter-items">
+  <ul class="ph-student filter-items framework-padding">
     {% for student in site.grads %}
         <li class="ph-image" data-category="{% for a in student.specialization%}{{a}} {% endfor %}">
           <a href="{{site.baseurl}}{{student.url}}">

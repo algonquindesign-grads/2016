@@ -128,6 +128,7 @@ ul li {
   margin: 2em;
   max-width: 75em;
   margin: 0 auto;
+  padding-bottom: 2em;
 }
 
 .ph-image {
@@ -165,19 +166,6 @@ ul li {
   padding-left: 0;
   padding-right: 0;
   padding-top: 1em;
-}
-
-@media only screen and (min-width: 38em) {
-  .ph-student {
-    padding: 3em 2em;
-  }
-}
-
-@media only screen and (min-width: 60em) {
-  .ph-student {
-    padding: 0em 1em;
-    padding-top: 1em;
-  }
 }
 
 .ph-student p {
