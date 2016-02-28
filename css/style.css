@@ -2295,7 +2295,7 @@ td, th, fieldset {
   }
   .fw-info-small {
     position: fixed;
-    top: 17em;
+    top: 17.5em;
     z-index: 250;
     width: 14em;
   }
