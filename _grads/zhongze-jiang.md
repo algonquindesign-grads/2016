@@ -1,7 +1,7 @@
 ---
-title: Framework 2016 -
+title: Framework 2016 - Zhongze Jiang
 meta: Portfolio Page for Zhongze Jiang
-layout: portfolio Zhongze Jiang
+layout: portfolio
 # THE NAME OF THIS FILE IS CRITICAL
 # It needs to match the same name as your images `  zhongze-jiang`
 
