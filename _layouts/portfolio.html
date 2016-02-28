@@ -97,7 +97,7 @@ layout: default
     {% endunless %}
     {% unless forloop.last %}
       {% assign next = document[forloop.index] %}
-      {% assign nexturl = next.url | prepend: 'grads/' %}
+      {% assign nexturl = next.url %}
     {% endunless %}
   {% endif %}
   {% assign prev = links %}
