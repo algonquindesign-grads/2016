@@ -26,12 +26,12 @@ specialization:
   - ux-ui
 
 
-vimeo: "https://vimeo.com/154870683"
+vimeo: "154870683"
 
 
 social:
-  behance:    "https://whttps://www.behance.net/MSlingerland"
-  linkedin:   "https://www.linkedin.com/in/mike-slingerland-43050664?trk=tab_pro"
+  behance:    "https://www.behance.net/MSlingerland"
+  linkedin:   "https://www.linkedin.com/in/mike-slingerland"
   vimeo:      "https://vimeo.com/user24159570"
 
 ---

@@ -64,7 +64,6 @@
   }
 }
 
-
 .fw-toggle{
   position: absolute;
   top: 0;
@@ -152,43 +151,11 @@
   }
 }
 
-.fw-info{
-  padding: 2em;
-  position: relative;
-  *{
-    @include zero;
-    color: $info-text;
-  }
-  h2{
-    text-transform: uppercase;
-    font-weight: normal;
-  }
-  .fw-info-date{
-    font-weight: bold;
-  }
-  .fw-info-time{
-    margin-bottom: 1em;
-  }
-  .fw-info-venue{
-    font-weight: bold;
-  }
-  .fw-info-address{
-    text-decoration: none;
-    &:hover{
-      color: lighten($info-text, 50%);
-      text-decoration: underline;
-    }
-  }
-}
-
 @media only screen and (min-width: 25em){
 
 }
 
 @media only screen and (min-width: 38em){
-  .fw-info{
-    @include element-invisible;
-  }
   .fw-navigation{
     width: $menu-fly-out-width;
     left: calc(100% - #{$menu-fly-out-width});
@@ -296,6 +263,7 @@
       }
       .fw-info-address,
       .fw-info-city {
+
         font-size: $side-info-scale * 0.65rem;
         line-height: $side-info-scale * 1rem;
       }
