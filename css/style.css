@@ -2160,6 +2160,7 @@ td, th, fieldset {
 }
 
 .fw-navigation ul li a {
+  text-transform: uppercase;
   background-color: #DCDBDB;
   display: block;
   padding: 1em 2em;
@@ -2207,7 +2208,7 @@ td, th, fieldset {
 @media only screen and (min-width: 80em) {
   .fw-header {
     position: fixed;
-    width: 15em;
+    width: 14em;
     left: 0;
     top: 0;
     bottom: 0;
@@ -2221,8 +2222,8 @@ td, th, fieldset {
     display: none;
   }
   .site-wrapper {
-    width: calc(100% - 15em);
-    left: 15em;
+    width: calc(100% - 14em);
+    left: 14em;
     height: 100%;
     overflow: scroll;
   }
@@ -2234,10 +2235,10 @@ td, th, fieldset {
   }
   .fw-navigation {
     left: 0;
-    top: 14em;
+    top: 12em;
     position: fixed;
     max-height: 20em;
-    width: 15em;
+    width: 14em;
   }
   .fw-navigation ul li:before {
     border-bottom: 1px solid #1d1c1c;
@@ -2246,8 +2247,46 @@ td, th, fieldset {
     border-bottom: 1px solid #1d1c1c;
   }
   .fw-navigation ul li a {
-    padding: 0.5em 2em;
-    font-size: 1em;
+    padding: 0.5em 2.6666em;
+    font-size: 0.75em;
+  }
+  .fw-info-small {
+    position: fixed;
+    top: 17.5em;
+    z-index: 250;
+    width: 14em;
+  }
+  .fw-info-small .fw-info {
+    position: static !important;
+    clip: auto;
+    height: auto;
+    width: auto;
+    overflow: auto;
+  }
+  .fw-info-small .fw-info * {
+    color: #1d1c1c;
+  }
+  .fw-info-small .fw-info h2 {
+    font-size: 1.11112rem;
+    line-height: 1.25rem;
+  }
+  .fw-info-small .fw-info .fw-info-date {
+    font-size: 1.5625rem;
+    line-height: 2.34375rem;
+  }
+  .fw-info-small .fw-info .fw-info-time,
+  .fw-info-small .fw-info .fw-info-venue {
+    font-size: 1.25rem;
+    line-height: 1.875rem;
+  }
+  .fw-info-small .fw-info .fw-info-venue {
+    font-size: 0.9375rem;
+    line-height: 1.25rem;
+  }
+  .fw-info-small .fw-info .fw-info-address,
+  .fw-info-small .fw-info .fw-info-city {
+    font-size: 0.9375rem;
+    line-height: 1.25rem;
   }
 }
 
@@ -2284,14 +2323,12 @@ html {
   text-size-adjust: 100%;
   font-family: 'Effra', sans-serif;
   position: relative;
-  height: 100%;
 }
 
 body {
   margin: 0;
   padding: 0;
   position: relative;
-  height: 100%;
   background-color: transparent;
 }
 
@@ -2377,10 +2414,10 @@ body.noscript .fw-toggle {
 @media only screen and (min-width: 80em) {
   body.noscript .fw-navigation {
     left: 0;
-    top: 14em;
+    top: 13em;
     position: fixed;
     max-height: 20em;
-    width: 15em;
+    width: 14em;
     overflow-y: scroll;
   }
   body.noscript .fw-navigation ul li {
