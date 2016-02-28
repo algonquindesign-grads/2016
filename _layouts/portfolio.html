@@ -103,8 +103,8 @@ layout: default
 
 <script>
 document.body.onkeyup = function(e){
-if (e.keyCode == '37') { window.location = '{{prevurl}}'; }
-if (e.keyCode == '39') { window.location = '{{nexturl}}'; }
+if (e.keyCode == '37') { window.location = '{{base}}{{prevurl}}'; }
+if (e.keyCode == '39') { window.location = '{{base}}{{nexturl}}'; }
 };
 
 </script>
@@ -112,11 +112,9 @@ if (e.keyCode == '39') { window.location = '{{nexturl}}'; }
 
 
   <ul class="unit pp-nav-btn">
-<h3>{{site.baseurl}}{{prevurl | replace: '/grads', '' | replace: '/', ''}}</h3>
-
-    <li class="pp-nav-btn-li"><a class="pp-nav-btn-arrows pp-on" href="{{previous_page_url}}">❮</a><a class="pp-nav-btn-a pp-off" href="{{base}}{{prevurl}}">Previous</a></li>
+    <li class="pp-nav-btn-li"><a class="pp-nav-btn-arrows pp-on" href="{{base}}{{prevurl}}">❮</a><a class="pp-nav-btn-a pp-off" href="{{base}}{{prevurl}}">Previous</a></li>
     <li class="pp-nav-btn-li gutter"><a class="pp-nav-btn-a" href="{{ base }}">All Grads</a></li>
-    <li class="pp-nav-btn-li"><a class="pp-nav-btn-arrows pp-on" href="{{ next_page_path }}"> ❯</a><a class="pp-nav-btn-a pp-off" href="{{base}}{{nexturl}}">Next</a></li>
+    <li class="pp-nav-btn-li"><a class="pp-nav-btn-arrows pp-on" href="{{base}}{{prevurl}}"> ❯</a><a class="pp-nav-btn-a pp-off" href="{{base}}{{nexturl}}">Next</a></li>
   </ul>
 </div>
 <div class="unit xs-1">
