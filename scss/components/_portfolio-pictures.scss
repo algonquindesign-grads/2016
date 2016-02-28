@@ -60,15 +60,22 @@
     100% { transform: scale(1.0); }
 }
 
-.pp-video-wrapper {
-  padding: 0;
-  margin: 0;
+//Vimeo Video iframe settings
+
+.pp-vimeo {
   display: block;
+  position: relative;
+  padding-bottom: 56.25%;
   width: 100%;
+
   iframe {
-    width: 100%;
+    position: absolute;
+    width: 100%!important;
+    height: 100%!important;
   }
 }
+
+
 
 // Student sprite photo
 
