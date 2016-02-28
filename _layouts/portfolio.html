@@ -93,11 +93,11 @@ layout: default
 {% for links in document  %}
   {% if links.title == page.title %}
     {% unless forloop.first %}
-      {% assign prevurl = prev.url | prepend: '2016' %}
+      {% assign prevurl = prev.url %}
     {% endunless %}
     {% unless forloop.last %}
       {% assign next = document[forloop.index] %}
-      {% assign nexturl = next.url | prepend: '2016' %}
+      {% assign nexturl = next.url %}
     {% endunless %}
   {% endif %}
   {% assign prev = links %}
