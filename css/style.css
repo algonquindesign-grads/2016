@@ -2330,7 +2330,7 @@ td, th, fieldset {
   .fw-info-small .fw-info .fw-info-address,
   .fw-info-small .fw-info .fw-info-city {
     font-size: 0.9375rem;
-    line-height: 1.5625rem;
+    line-height: 1.25rem;
   }
 }
 
