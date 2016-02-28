@@ -2555,15 +2555,17 @@ body.noscript .fw-toggle {
   }
 }
 
-.pp-video-wrapper {
-  padding: 0;
-  margin: 0;
+.pp-vimeo {
   display: block;
+  position: relative;
+  padding-bottom: 56.25%;
   width: 100%;
 }
 
-.pp-video-wrapper iframe {
-  width: 100%;
+.pp-vimeo iframe {
+  position: absolute;
+  width: 100% !important;
+  height: 100% !important;
 }
 
 .pp-image {
