@@ -1,4 +1,6 @@
 ---
+title: Framework 2016 - Nadim Abdelmalek
+meta: Portfolio Page for Nadim Abdelmalek
 
 layout: portfolio
 
@@ -35,8 +37,5 @@ social:
   facebook:   "https://www.facebook.com/nadim.abdelmalik"
   linkedin:   "https://www.linkedin.com/in/nadim-abdelmalek"
   vimeo:      "https://vimeo.com/nadimabdelmalek"
-
-title: Framework 2016 -
-meta: Portfolio Page for -
 
 ---

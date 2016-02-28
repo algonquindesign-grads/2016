@@ -1,4 +1,6 @@
 ---
+title: Framework 2016 - Elizabeth Nichols
+meta: Portfolio Page for Elizabeth Nichols
 layout: portfolio
 # THE NAME OF THIS FILE IS CRITICAL
 # It needs to match the same name as your images `lastname-firstname`

@@ -1,4 +1,6 @@
 ---
+title: Framework 2016 - Erin Graham
+meta: Portfolio Page for Erin Graham
 layout: portfolio
 # THE NAME OF THIS FILE IS CRITICAL
 # It needs to match the same name as your images `lastname-firstname`

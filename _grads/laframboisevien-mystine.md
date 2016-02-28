@@ -1,4 +1,6 @@
 ---
+title: Framework 2016 - Mystine Laframboise Vien
+meta: Portfolio Page for Mystine Laframboise Vien
 layout: portfolio
 # THE NAME OF THIS FILE IS CRITICAL
 # It needs to match the same name as your images `lastname-firstname`

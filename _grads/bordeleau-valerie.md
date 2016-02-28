@@ -1,4 +1,6 @@
 ---
+title: Framework 2016 - Valerie Bordeleau
+meta: Portfolio Page for Valerie Bordeleau
 layout: portfolio
 # THE NAME OF THIS FILE IS CRITICAL
 # It needs to match the same name as your images `lastname-firstname`

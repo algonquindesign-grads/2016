@@ -1,4 +1,6 @@
 ---
+title: Framework 2016 - Samantha McGregor
+meta: Portfolio Page for Samantha McGregor
 layout: portfolio
 full_name: "Samantha McGregor"
 short_name: "Samantha M"

@@ -1,4 +1,6 @@
 ---
+title: Framework 2016 - Sydney Selch
+meta: Portfolio Page for Sydney Selch
 layout: portfolio
 full_name: "Sydney Selch"
 short_name: "Sydney S"

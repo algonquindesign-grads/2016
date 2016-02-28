@@ -1,4 +1,6 @@
 ---
+title: Framework 2016 - Benjamin Donald Arthur Comeau
+meta: Portfolio Page for Benjamin Donald Arthur Comeau
 layout: portfolio
 # THE NAME OF THIS FILE IS CRITICAL
 # It needs to match the same name as your images `lastname-firstname`

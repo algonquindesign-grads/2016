@@ -1,4 +1,6 @@
 ---
+title: Framework 2016 - Emily Lavinskas
+meta: Portfolio Page for Emily Lavinskas
 layout: portfolio
 # THE NAME OF THIS FILE IS CRITICAL
 # It needs to match the same name as your images `lastname-firstname`

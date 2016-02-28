@@ -1,4 +1,6 @@
 ---
+title: Framework 2016 - Christianne McPartland"
+meta: Portfolio Page for Christianne McPartland"
 layout: portfolio
 # THE NAME OF THIS FILE IS CRITICAL
 # It needs to match the same name as your images `lastname-firstname`
