@@ -193,6 +193,13 @@
     left: calc(100% - #{$menu-fly-out-width});
     position: absolute;
     z-index: 100;
+    ul{
+      li{
+        a{
+          // font-size: 1em;
+        }
+      }
+    }
   }
 }
 
@@ -238,7 +245,7 @@
 
   .fw-navigation{
     left: 0;
-    top: $side-bar-width - 1em;
+    top: $side-bar-width - 2em;
     position: fixed;
     max-height: $menu-max-height;
     width: $side-bar-width;
@@ -251,8 +258,8 @@
           border-bottom: 1px solid $menu-underline;
         }
         a{
-          padding: 0.5em 2em;
-          font-size: 1em;
+          padding: 0.5em 2.6666em;
+          font-size: 0.75em;
         }
       }
     }
@@ -270,25 +277,25 @@
       @include element-invisible-off;
       h2{
         font-size: 0.8889rem;
-        line-height: 1.5000rem;
+        line-height: 1rem;
       }
       .fw-info-date{
-        font-size: 1.2656rem;
+        font-size: 1.2rem;
         line-height: 1.8750rem;
       }
       .fw-info-time,
       .fw-info-venue{
-        font-size: 1.1250rem;
+        font-size: 1rem;
         line-height: 1.5000rem;
       }
       .fw-info-venue{
-        font-size: 0.8889rem;
-        line-height: 1.5000rem;
+        font-size: 0.75rem;
+        line-height: 1.000rem;
       }
       .fw-info-address,
       .fw-info-city {
-        font-size: 0.8889rem;
-        line-height: 1.5000rem;
+        font-size: 0.75rem;
+        line-height: 1.25rem;
       }
     }
   }
