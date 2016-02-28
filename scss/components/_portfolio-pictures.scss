@@ -39,12 +39,13 @@
 }
 
 .pp-social-icon {
-  height: 50px;
+  width: 80px;
 
   &:hover {
       -webkit-animation: icons 800ms ease-in-out;
       animation: icons 800ms ease-in-out;
     }
+
 }
 
 @-webkit-keyframes icons {
@@ -57,6 +58,16 @@
     0% { transform: scale(1.0); }
     50% { transform: scale(1.5); }
     100% { transform: scale(1.0); }
+}
+
+.pp-video-wrapper {
+  padding: 0;
+  margin: 0;
+  display: block;
+  width: 100%;
+  iframe {
+    width: 100%;
+  }
 }
 
 // Student sprite photo
@@ -78,7 +89,7 @@
   display: block;
   padding-top:100%;
   overflow: hidden;
-  &:hover .ph-gradphoto-top {
+  &:hover .ph-gradphoto-top, &:hover .pp-gradphoto-top {
     top: -100%;
   }
 }
@@ -93,8 +104,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  -webkit-xtransition: all 150ms ease-in-out;
-  xtransition: all 150ms ease-in-out;
+  // transition: all 150ms ease-in-out;
 }
 
 .pp-pad-left {
@@ -124,12 +134,16 @@
   background-color: $grey-1;
 }
 
+.pp-wrap{
+  text-align: center;
+}
+
 .pp-nav-btn {
   list-style-type: none;
   width: auto;
   text-align: center;
   padding-left: 0;
-  margin-bottom: 0;
+  margin-bottom: 0 auto;
 }
 
 .pp-nav-btn-li {
@@ -191,6 +205,10 @@
     margin-top: 1em;
   }
 
+  .pp-social-icon {
+    width: 95px;
+  }
+
 }
 
 @media only screen and (min-width: 80em) {
@@ -204,3 +222,4 @@
   }
 
 }
+

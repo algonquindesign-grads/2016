@@ -2523,7 +2523,7 @@ body.noscript .fw-toggle {
 }
 
 .pp-social-icon {
-  height: 50px;
+  width: 80px;
 }
 
 .pp-social-icon:hover {
@@ -2555,6 +2555,17 @@ body.noscript .fw-toggle {
   }
 }
 
+.pp-video-wrapper {
+  padding: 0;
+  margin: 0;
+  display: block;
+  width: 100%;
+}
+
+.pp-video-wrapper iframe {
+  width: 100%;
+}
+
 .pp-image {
   position: relative;
   float: left;
@@ -2574,7 +2585,7 @@ body.noscript .fw-toggle {
   overflow: hidden;
 }
 
-.pp-image a:hover .ph-gradphoto-top {
+.pp-image a:hover .ph-gradphoto-top, .pp-image a:hover .pp-gradphoto-top {
   top: -100%;
 }
 
@@ -2588,8 +2599,6 @@ body.noscript .fw-toggle {
   position: absolute;
   top: 0;
   left: 0;
-  -webkit-xtransition: all 150ms ease-in-out;
-  xtransition: all 150ms ease-in-out;
 }
 
 @media only screen and (min-width: 80em) {
@@ -2619,12 +2628,16 @@ body.noscript .fw-toggle {
   background-color: #DCDBDB;
 }
 
+.pp-wrap {
+  text-align: center;
+}
+
 .pp-nav-btn {
   list-style-type: none;
   width: auto;
   text-align: center;
   padding-left: 0;
-  margin-bottom: 0;
+  margin-bottom: 0 auto;
 }
 
 .pp-nav-btn-li {
@@ -2703,6 +2716,9 @@ body.noscript .fw-toggle {
   }
   .pp-name {
     margin-top: 1em;
+  }
+  .pp-social-icon {
+    width: 95px;
   }
 }
 
