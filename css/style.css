@@ -118,7 +118,11 @@ ul li {
 
 #filter-select {
   width: 100%;
+  color: #55565a;
   font-size: 16px;
+  background-color: transparent;
+  border: 1px solid #DCDBDB;
+  padding: .5em 1em;
 }
 
 .grad-section {
