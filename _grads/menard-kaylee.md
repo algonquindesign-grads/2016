@@ -1,4 +1,6 @@
 ---
+title: Framework 2016 - Kaylee Ménard
+meta: Portfolio Page for Kaylee Ménard
 layout: portfolio
 full_name: "Kaylee Ménard"
 short_name: "Kaylee M"

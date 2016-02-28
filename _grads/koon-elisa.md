@@ -1,4 +1,6 @@
 ---
+title: Framework 2016 - Elisa Koon
+meta: Portfolio Page for Elisa Koon
 layout: portfolio
 # THE NAME OF THIS FILE IS CRITICAL
 # It needs to match the same name as your images `koon-elisa`

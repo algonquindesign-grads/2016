@@ -1,4 +1,6 @@
 ---
+title: Framework 2016 - Brad Doyle
+meta: Portfolio Page for Brad Doyle
 layout: portfolio
 # THE NAME OF THIS FILE IS CRITICAL
 # It needs to match the same name as your images `lastname-firstname`

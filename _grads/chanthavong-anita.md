@@ -1,4 +1,6 @@
 ---
+title: Framework 2016 - Anita Chanthavong
+meta: Portfolio Page for Anita Chanthavong
 layout: portfolio
 full_name: "Anita Chanthavong"
 short_name: "Anita C"

@@ -1,5 +1,9 @@
 ---
+title: Framework 2016 - Rajaa Al Subairi
+meta: Portfolio Page for Rajaa Al Subairi
 layout: portfolio
+title: test
+
 # THE NAME OF THIS FILE IS CRITICAL
 # It needs to match the same name as your images `lastname-firstname`
 

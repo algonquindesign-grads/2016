@@ -1,4 +1,6 @@
 ---
+title: Framework 2016 - Elzahra Elghirani
+meta: Portfolio Page for Elzahra Elghirani
 layout: portfolio
 # THE NAME OF THIS FILE IS CRITICAL
 # It needs to match the same name as your images `lastname-firstname`

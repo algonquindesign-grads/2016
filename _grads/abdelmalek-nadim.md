@@ -1,4 +1,7 @@
 ---
+title: Framework 2016 - Nadim Abdelmalek
+meta: Portfolio Page for Nadim Abdelmalek
+
 layout: portfolio
 
 # THE NAME OF THIS FILE IS CRITICAL
@@ -34,4 +37,5 @@ social:
   facebook:   "https://www.facebook.com/nadim.abdelmalik"
   linkedin:   "https://www.linkedin.com/in/nadim-abdelmalek"
   vimeo:      "https://vimeo.com/nadimabdelmalek"
+
 ---

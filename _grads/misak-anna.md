@@ -1,4 +1,6 @@
 ---
+title: Framework 2016 - Anna Misak
+meta: Portfolio Page for Anna Misak
 layout: portfolio
 full_name: "Anna Misak"
 short_name: "Anna M"

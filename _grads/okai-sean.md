@@ -1,4 +1,6 @@
 ---
+title: Framework 2016 - Sean Z Okai
+meta: Portfolio Page for Sean Z Okai
 layout: portfolio
 # THE NAME OF THIS FILE IS CRITICAL
 # It needs to match the same name as your images `lastname-firstname`

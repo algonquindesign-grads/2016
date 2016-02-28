@@ -1,4 +1,6 @@
 ---
+title: Framework 2016 - Marisa Bivi
+meta: Portfolio Page for Marisa Bivi
 layout: portfolio
 # THE NAME OF THIS FILE IS CRITICAL
 # It needs to match the same name as your images `lastname-firstname`

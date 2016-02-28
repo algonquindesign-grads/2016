@@ -1,4 +1,6 @@
 ---
+title: Framework 2016 - Natalie Macpherson
+meta: Portfolio Page for Natalie Macpherson
 layout: portfolio
 full_name: "Natalie Macpherson"
 short_name: "Natalie M"

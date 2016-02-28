@@ -1,4 +1,6 @@
 ---
+title: Framework 2016 - Mio Tahara
+meta: Portfolio Page for Mio Tahara
 layout: portfolio
 full_name: "Mio Tahara"
 short_name: "Mio T"

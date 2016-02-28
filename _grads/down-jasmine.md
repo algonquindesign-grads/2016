@@ -1,4 +1,6 @@
 ---
+title: Framework 2016 - Jasmine Down
+meta: Portfolio Page for Jasmine Down
 layout: portfolio
 # THE NAME OF THIS FILE IS CRITICAL
 # It needs to match the same name as your images `lastname-firstname`
