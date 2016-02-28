@@ -2926,4 +2926,6 @@ body.noscript .fw-toggle {
   background-color: #A6A5A7;
   border: 0;
   text-align: center;
+  font-size: 18px;
+  text-transform: uppercase;
 }
