@@ -5,7 +5,7 @@
 }
 
 .social {
-  spadding: 2em;
+  padding: 2em;
   max-width: 75em;
   margin: 2em auto;
 }
@@ -33,8 +33,40 @@
   clip: rect(1px, 1px, 1px, 1px);
 }
 
-.social-grey {
-  margin-top: 2em;
+.social-icons {
+  display: block;
+  max-width: 30em;
+  margin: 0 auto;
+}
+
+.social-icons li {
+  display: block;
+  overflow: hidden;
+}
+
+.social-icons li a {
+  display: block;
+  width: 1em;
+  height: 1em;
+  margin: 0 auto;
+}
+
+.social-facebook {
+  background: url("http://grads.images.algonquindesign.ca.s3.amazonaws.com/2016/img/facebook.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.social-twitter {
+  background: url("http://grads.images.algonquindesign.ca.s3.amazonaws.com/2016/img/twitter.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.social-instagram {
+  background: url("http://grads.images.algonquindesign.ca.s3.amazonaws.com/2016/img/instagram.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .filter-module {
@@ -76,6 +108,15 @@
 }
 
 /* The ~ sibling selector will select all .filters elements, as long as they follow the preceding value*/
+.filter-items li {
+  transition: opacity 500ms ease-in-out;
+}
+
+.filter-items li:hover p {
+  transition: background-color 250ms ease-in-out;
+  background-color: #00a29c;
+}
+
 .filter-items > li {
   opacity: .4;
 }
@@ -2896,7 +2937,7 @@ body.noscript .fw-toggle {
   width: 100%;
 }
 
-.fe-info p {
+.fe-info p, .fe-info a {
   font-family: "Effra", serif;
   font-size: 14px;
 }
@@ -2907,6 +2948,8 @@ body.noscript .fw-toggle {
 
 .fe-calender {
   margin-bottom: 0;
+  text-decoration: none;
+  color: #000;
 }
 
 .gd-video-wrap,
@@ -2939,7 +2982,7 @@ body.noscript .fw-toggle {
   border: 0;
   background-color: transparent;
   opacity: 0;
-  transition: all 250ms linear;
+  transition: opacity 250ms linear;
   cursor: pointer;
 }
 
@@ -3002,7 +3045,7 @@ body.noscript .fw-toggle {
 
 .bts-bg {
   background-color: rgba(166, 165, 167, 0.5);
-  padding: 2em 2em 3em 2em;
+  padding: 2em 2em 3em;
 }
 
 .bts-embed__item {
@@ -3022,17 +3065,17 @@ body.noscript .fw-toggle {
 }
 
 .bts-more-btn {
+  height: 3em;
   background-color: #55565a;
-  float: right;
+  display: block;
   text-decoration: none;
-  list-style-type: none;
   text-transform: uppercase;
   color: white;
-  padding: 1em 2em 1em 2em;
+  padding: 1em 0;
   margin-top: 1em;
-  font-size: .75em;
+  font-size: 0.75em;
+  line-height: 1em;
   text-align: center;
-  vertical-align: center;
 }
 
 .bts-text {

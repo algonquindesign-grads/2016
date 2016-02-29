@@ -1,0 +1,26 @@
+- name: Speed Networking
+  location: Corner Lounge
+  date: March 4
+  time: 7:00 PM
+  link: '#'
+  img: fw-logo-vert.svg
+  xs: '1'
+  s: '1-2'
+
+- name: Event 2
+  location: Location 2
+  date: March 2
+  time: 12:00 PM
+  link: '#'
+  img: fw-logo-vert.svg
+  xs: '1'
+  s: '1-2'
+
+- name: Event 3
+  location: Location 3
+  date: March 1
+  time: 12:00 PM
+  link: '#'
+  img: fw-logo-vert.svg
+  xs: 'hidden'
+  s: 'hidden'

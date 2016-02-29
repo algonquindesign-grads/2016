@@ -3,7 +3,7 @@
 }
 
 .social {
-  spadding: 2em;
+  padding: 2em;
   max-width: 75em;
   margin: 2em auto;
 }
@@ -25,8 +25,40 @@
   }
 }
 
-.social-grey {
-  margin-top: 2em;
+.social-icons{
+  display: block;
+  max-width: 30em;
+  margin: 0 auto;
+  li{
+    display: block;
+    overflow: hidden;
+    a{
+      display: block;
+      width: 1em;
+      height: 1em;
+      margin: 0 auto;
+    }
+  }
 }
 
+.social-facebook{
+  background: url('http://grads.images.algonquindesign.ca.s3.amazonaws.com/2016/img/facebook.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
 
+.social-twitter{
+  background: url('http://grads.images.algonquindesign.ca.s3.amazonaws.com/2016/img/twitter.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.social-instagram{
+  background: url('http://grads.images.algonquindesign.ca.s3.amazonaws.com/2016/img/instagram.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.social-facebook, .social-twitter, .social-instagram{
+
+}

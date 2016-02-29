@@ -78,7 +78,7 @@
   display: inline-block;
   float: left;
   width: 100%;
-  p {
+  p, a {
     font-family: "Effra", serif;
     font-size: 14px;
   }
@@ -90,4 +90,6 @@
 
 .fe-calender {
   margin-bottom: 0;
+  text-decoration: none;
+  color: $text-color;
 }

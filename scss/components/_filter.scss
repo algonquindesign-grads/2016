@@ -40,7 +40,15 @@
 /* The ~ sibling selector will select all .filters elements, as long as they follow the preceding value*/
 
 .filter-items {
-
+  li{
+    transition: opacity $filter-transition ease-in-out;
+    &:hover{
+      p{
+        transition: background-color $filter-transition * 0.5 ease-in-out;
+        background-color: $green;
+      }
+    }
+  }
 }
 
 .filter-items > li {
