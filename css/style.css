@@ -33,6 +33,42 @@
   clip: rect(1px, 1px, 1px, 1px);
 }
 
+.social-icons {
+  display: block;
+  max-width: 30em;
+  margin: 0 auto;
+}
+
+.social-icons li {
+  display: block;
+  overflow: hidden;
+}
+
+.social-icons li a {
+  display: block;
+  width: 1em;
+  height: 1em;
+  margin: 0 auto;
+}
+
+.social-facebook {
+  background: url("http://grads.images.algonquindesign.ca.s3.amazonaws.com/2016/img/facebook.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.social-twitter {
+  background: url("http://grads.images.algonquindesign.ca.s3.amazonaws.com/2016/img/twitter.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.social-instagram {
+  background: url("http://grads.images.algonquindesign.ca.s3.amazonaws.com/2016/img/instagram.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
 .filter-module {
   position: relative;
   display: block;
