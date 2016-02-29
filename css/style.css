@@ -2937,7 +2937,7 @@ body.noscript .fw-toggle {
   width: 100%;
 }
 
-.fe-info p {
+.fe-info p, .fe-info a {
   font-family: "Effra", serif;
   font-size: 14px;
 }
@@ -2948,6 +2948,8 @@ body.noscript .fw-toggle {
 
 .fe-calender {
   margin-bottom: 0;
+  text-decoration: none;
+  color: #000;
 }
 
 .gd-video-wrap,
