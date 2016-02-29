@@ -1,36 +1,63 @@
 .fe-holder {
-  background-color: $grey;
+  background-color: rgba( $grey-2, .5 );
   // padding: 1em;
-  @media only screen and (min-width: 60em) {
+  @media only screen and (min-width: 38em) {
+      margin-top: 2em;
     // padding-right: 10%;
     // padding-left: 10%;
   }
 }
 
 .fe-title {
- @include header-1-white;
+ @include header-1;
 }
 
-.fe-images {
+.fe-img-holder {
   position: relative;
-  .fe-event {
+}
+
+.fe-event {
   position: absolute;
   z-index: 100;
-  bottom: 0;
-  padding: .5em;
-  background-color: $black;
-  margin-left: 1em;
-  margin-right: 1em;
+  bottom: -1em;
+  padding: .3em .5em;
+  background-color: rgba( $black, .6 );
   overflow: hidden;
   display: block;
   color: white;
-}
+  font-family: "Effra", serif;
+  font-size: 16px;
+  text-transform: uppercase;
+ }
+
+.fe-images-1 {
+  .fe-img {
+    display: inline-block;
+    width: 100%;
+    @media only screen and (min-width: 25em) {
+      padding-right: .5em;
+    }
+  }
 }
 
-.fe-img {
-  display: inline-block;
-  padding: 1em;
-  width: 100%;
+.fe-images-2 {
+  .fe-img {
+    display: inline-block;
+    width: 100%;
+    @media only screen and (min-width: 25em) {
+      padding-right: .5em;
+    }
+  }
+}
+
+.fe-images-3 {
+  .fe-img {
+    display: inline-block;
+    width: 100%;
+    @media only screen and (min-width: 38em) {
+      padding-right: .5em;
+    }
+  }
 }
 
 
@@ -50,7 +77,17 @@
 .fe-info {
   display: inline-block;
   float: left;
-  padding: 1em;
   width: 100%;
+  p {
+    font-family: "Effra", serif;
+    font-size: 14px;
+  }
+}
 
+.fe-details {
+  margin-bottom: .5em;
+}
+
+.fe-calender {
+  margin-bottom: 0;
 }
