@@ -24,7 +24,9 @@
 #filter-print:checked ~ .grid .filters [for="filter-print"],
 #filter-type:checked ~ .grid .filters [for="filter-type"],
 #filter-photo:checked ~ .grid .filters [for="filter-photo"] {
-  background-color: black;
+  background-color: $grey-3;
+  box-shadow: none;
+  border: 2px solid $grey-3;
   color: white;
 }
 
@@ -69,16 +71,26 @@ ul li {
 .filter-btn {
   display: inline-block;
   margin: 0;
-  background-color: #dcdadb;
-  color: #55565b;
+  background-color: transparent;
+  border: 1px solid $grey-1;
+  color: $grey;
   padding: .5em 1em;
+  margin: 4px 2px;
+  box-shadow: 2px 2px $grey-1;
 }
 
 .filter-btn:hover {
-  background-color: #a6a5a8;
+  background-color: rgba(0, 0, 0, .05);
+  box-shadow: inset 2px 2px 0 0 $grey-1;
 }
 
 #filter-select {
   width: 100%;
+  color: $grey;
   font-size: 16px;
+  background-color: transparent;
+  border: 1px solid $grey-1;
+  padding: .5em 1em;
 }
+
+//Prepros should add webkit for box-shadow

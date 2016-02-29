@@ -33,7 +33,7 @@
     </div>
   </div>
 
-  <ul class="ph-student filter-items framework-padding">
+  <ul class="ph-student filter-items ph-padding">
     {% for student in site.grads %}
         <li class="ph-image" data-category="{% for a in student.specialization%}{{a}} {% endfor %}">
           <a href="{{site.baseurl}}{{student.url}}">
