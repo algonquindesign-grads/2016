@@ -5,7 +5,7 @@
 }
 
 .social {
-  spadding: 2em;
+  padding: 2em;
   max-width: 75em;
   margin: 2em auto;
 }
@@ -31,10 +31,6 @@
   width: 1px;
   overflow: hidden;
   clip: rect(1px, 1px, 1px, 1px);
-}
-
-.social-grey {
-  margin-top: 2em;
 }
 
 .filter-module {
@@ -76,6 +72,15 @@
 }
 
 /* The ~ sibling selector will select all .filters elements, as long as they follow the preceding value*/
+.filter-items li {
+  transition: opacity 500ms ease-in-out;
+}
+
+.filter-items li:hover p {
+  transition: background-color 250ms ease-in-out;
+  background-color: #00a29c;
+}
+
 .filter-items > li {
   opacity: .4;
 }
