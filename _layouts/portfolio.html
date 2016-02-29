@@ -110,9 +110,13 @@ if (e.keyCode == '39') { window.location = '{{base}}{{nexturl}}'; }
 </script>
 <div class="pp-wrap pad-t pad-b kilo">
   <ul class="unit pp-nav-btn">
+    {% if prevurl %}
     <li class="pp-nav-btn-li"><a class="pp-nav-btn-arrows pp-on" href="{{base}}{{prevurl}}">❮</a><a class="pp-nav-btn-a pp-off" href="{{base}}{{prevurl}}">Previous</a></li>
+    {% endif %}
     <li class="pp-nav-btn-li gutter"><a class="pp-nav-btn-a" href="{{ base }}">All Grads</a></li>
+    {% if nexturl %}
     <li class="pp-nav-btn-li"><a class="pp-nav-btn-arrows pp-on" href="{{base}}{{nexturl}}"> ❯</a><a class="pp-nav-btn-a pp-off" href="{{base}}{{nexturl}}">Next</a></li>
+    {% endif %}
   </ul>
 </div>
 <div class="unit xs-1">
