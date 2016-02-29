@@ -2827,7 +2827,7 @@ body.noscript .fw-toggle {
   background-color: rgba(166, 165, 167, 0.5);
 }
 
-@media only screen and (min-width: 38em) {
+@media only screen and (min-width: 80em) {
   .fe-holder {
     margin-top: 2em;
   }
@@ -3046,6 +3046,13 @@ body.noscript .fw-toggle {
   padding: 2em;
   background-color: #7D7D80;
   color: #DCDBDB;
+}
+
+@media only screen and (min-width: 80em) {
+  .fw-info-holder {
+    display: none;
+    visibility: hidden;
+  }
 }
 
 .fw-info-holder h2 {
