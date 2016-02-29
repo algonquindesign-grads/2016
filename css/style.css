@@ -2980,7 +2980,7 @@ body.noscript .fw-toggle {
   border: 0;
   background-color: transparent;
   opacity: 0;
-  transition: all 250ms linear;
+  transition: opacity 250ms linear;
   cursor: pointer;
 }
 
