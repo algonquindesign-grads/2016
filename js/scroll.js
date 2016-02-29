@@ -1,0 +1,1 @@
+$('.fw-nav-list').localScroll();
