@@ -2824,43 +2824,89 @@ body.noscript .fw-toggle {
 }
 
 .fe-holder {
-  background-color: #55565a;
+  background-color: rgba(166, 165, 167, 0.5);
+}
+
+@media only screen and (min-width: 38em) {
+  .fe-holder {
+    margin-top: 2em;
+  }
 }
 
 .fe-title {
-  color: #f8f2e9;
+  color: #64689b;
   font-size: 16px;
   text-transform: uppercase;
 }
 
-.fe-images {
+.fe-img-holder {
   position: relative;
 }
 
-.fe-images .fe-event {
+.fe-event {
   position: absolute;
   z-index: 100;
-  bottom: 0;
-  padding: .5em;
-  background-color: #000;
-  margin-left: 1em;
-  margin-right: 1em;
+  bottom: -1em;
+  padding: .3em .5em;
+  background-color: rgba(0, 0, 0, 0.6);
   overflow: hidden;
   display: block;
   color: white;
+  font-family: "Effra", serif;
+  font-size: 16px;
+  text-transform: uppercase;
 }
 
-.fe-img {
+.fe-images-1 .fe-img {
   display: inline-block;
-  padding: 1em;
   width: 100%;
+}
+
+@media only screen and (min-width: 25em) {
+  .fe-images-1 .fe-img {
+    padding-right: .5em;
+  }
+}
+
+.fe-images-2 .fe-img {
+  display: inline-block;
+  width: 100%;
+}
+
+@media only screen and (min-width: 25em) {
+  .fe-images-2 .fe-img {
+    padding-right: .5em;
+  }
+}
+
+.fe-images-3 .fe-img {
+  display: inline-block;
+  width: 100%;
+}
+
+@media only screen and (min-width: 38em) {
+  .fe-images-3 .fe-img {
+    padding-right: .5em;
+  }
 }
 
 .fe-info {
   display: inline-block;
   float: left;
-  padding: 1em;
   width: 100%;
+}
+
+.fe-info p {
+  font-family: "Effra", serif;
+  font-size: 14px;
+}
+
+.fe-details {
+  margin-bottom: .5em;
+}
+
+.fe-calender {
+  margin-bottom: 0;
 }
 
 .gd-video-wrap,
