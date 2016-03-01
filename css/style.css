@@ -3149,6 +3149,13 @@ body.noscript .fw-toggle {
 
 .fw-info-sec3 {
   float: left;
+  padding-top: 2em;
+}
+
+@media only screen and (min-width: 38em) {
+  .fw-info-sec3 {
+    padding-top: 0;
+  }
 }
 
 .fw-info-sec3 button {
