@@ -3,7 +3,7 @@ title: Framework 2016 - Benjamin Donald Arthur Comeau
 meta: Portfolio Page for Benjamin Donald Arthur Comeau
 layout: portfolio
 
-full_name: "Benjamin Donald Arthur Comeau"
+full_name: "Benjamin Donald Arthur"
 short_name: "Benjamin C"
 first_name: "Benjamin Donald Arthur"
 last_name: "Comeau"
