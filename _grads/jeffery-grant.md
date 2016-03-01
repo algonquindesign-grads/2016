@@ -12,7 +12,7 @@ last_name: "Jeffery"
 description: "I believe in house hippos. I also believe in solid design, slick motion, and sellable branding - that's the stuff house hippos are made of."
 
 email: "grantjeffery@live.com"
-r
+
 website: "http://grantjeffery.ca"
 
 specialization:
