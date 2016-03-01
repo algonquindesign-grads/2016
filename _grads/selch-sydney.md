@@ -19,6 +19,6 @@ specialization:
 social:
   behance:    "https://www.behance.net/sydneyselch"
   linkedin:   "https://ca.linkedin.com/in/sydneyselch"
-  instagram:      "https://www.instagram.com/sydneyselch/"
+  instagram:    "https://www.instagram.com/sydneyselch/"
 
 ---

@@ -2,6 +2,7 @@
 title: Framework 2016 - Jason D Leduc
 meta: Portfolio Page for Jason D Leduc
 layout: portfolio
+
 full_name: "Jason D Leduc"
 short_name: "Jason L"
 
