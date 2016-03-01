@@ -3,7 +3,7 @@
   date: March 4
   time: 7:00 PM
   link: '#'
-  img: fw-logo-vert.svg
+  img: events-01.jpg
   xs: '1'
   s: '1-2'
 
@@ -12,7 +12,7 @@
   date: March 2
   time: 12:00 PM
   link: '#'
-  img: fw-logo-vert.svg
+  img: events-02.jpg
   xs: '1'
   s: '1-2'
 
@@ -21,6 +21,6 @@
   date: March 1
   time: 12:00 PM
   link: '#'
-  img: fw-logo-vert.svg
+  img: events-03.jpg
   xs: 'hidden'
   s: 'hidden'
