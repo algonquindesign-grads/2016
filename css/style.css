@@ -12,7 +12,7 @@
 
 .social-footer {
   display: block;
-  background-color: #DCDBDB;
+  background-color: rgba(166, 165, 167, 0.5);
   overflow: hidden;
   padding: 2em 4em;
 }
@@ -3077,7 +3077,7 @@ body.noscript .fw-toggle {
 }
 
 .grid-middle {
-  background-color: #DCDBDB;
+  background-color: rgba(166, 165, 167, 0.5);
   color: #000;
 }
 
