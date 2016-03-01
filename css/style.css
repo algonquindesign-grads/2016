@@ -94,9 +94,9 @@
 #filter-print:checked ~ .grid .filters [for="filter-print"],
 #filter-type:checked ~ .grid .filters [for="filter-type"],
 #filter-photo:checked ~ .grid .filters [for="filter-photo"] {
-  background-color: #7D7D80;
+  background-color: #00a29c;
   box-shadow: none;
-  border: 2px solid #7D7D80;
+  border: 2px solid #00a29c;
   color: white;
 }
 
@@ -142,14 +142,15 @@ ul li {
 }
 
 .filter-btn {
-  display: inline-block;
-  margin: 0;
+  text-align: center;
   background-color: transparent;
   border: 1px solid #DCDBDB;
   color: #55565a;
   padding: .5em 1em;
-  margin: 4px 2px;
-  box-shadow: 2px 2px #DCDBDB;
+}
+
+.filters {
+  margin: 0 auto;
 }
 
 .filter-btn:hover {
@@ -230,7 +231,7 @@ ul li {
   color: #fff;
   letter-spacing: 2px;
   font-size: 12px;
-  font-family: "Effra", serif;
+  font-family: "Effra", sans-serif;
   margin-top: -2.10em;
 }
 
@@ -2130,7 +2131,7 @@ td, th, fieldset {
 }
 
 .fw-header .logo .fw-logo svg .svg-top {
-  fill: #eab63f;
+  fill: #64689b;
   transition: fill 500ms ease-in-out;
 }
 
@@ -2893,7 +2894,7 @@ body.noscript .fw-toggle {
   overflow: hidden;
   display: block;
   color: white;
-  font-family: "Effra", serif;
+  font-family: "Effra", sans-serif;
   font-size: 16px;
   text-transform: uppercase;
 }
@@ -2938,7 +2939,7 @@ body.noscript .fw-toggle {
 }
 
 .fe-info p, .fe-info a {
-  font-family: "Effra", serif;
+  font-family: "Effra", sans-serif;
   font-size: 14px;
 }
 
