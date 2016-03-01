@@ -3226,3 +3226,42 @@ body.noscript .fw-toggle {
   font-size: 18px;
   text-transform: uppercase;
 }
+
+.clock-holder-2 {
+  -webkit-transform: translateY(50%);
+      -ms-transform: translateY(50%);
+          transform: translateY(50%);
+}
+
+.clock-holder {
+  text-align: center;
+  background: url(../img/background-transp.png);
+  font-family: sans-serif;
+  font-weight: 100;
+  height: 3em;
+}
+
+.clock-width {
+  width: 100%;
+  margin-top: 1.5em;
+  position: relative;
+}
+
+@media only screen and (min-width: 60em) {
+  .clock-width {
+    margin-top: .5em;
+  }
+}
+
+.inline {
+  display: inline-block;
+  padding: .5em;
+}
+
+.clock-number {
+  font-size: 2em;
+}
+
+.smalltext {
+  font-size: .65em;
+}
