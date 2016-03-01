@@ -1,5 +1,5 @@
 .social-section {
-  color: #64689b;
+  color: #000;
   font-size: 1.5em;
   text-transform: uppercase;
 }
@@ -12,7 +12,7 @@
 
 .social-footer {
   display: block;
-  background-color: #DCDBDB;
+  background-color: rgba(166, 165, 167, 0.5);
   overflow: hidden;
   padding: 2em 4em;
 }
@@ -168,7 +168,7 @@ ul li {
 }
 
 .grad-section {
-  color: #64689b;
+  color: #000;
   font-size: 1.5em;
   text-transform: uppercase;
 }
@@ -227,7 +227,7 @@ ul li {
   width: 100%;
   z-index: 10;
   padding: 0.6em 0 0.4em;
-  background-color: #94959a;
+  background-color: #55565a;
   color: #fff;
   letter-spacing: 2px;
   font-size: 12px;
@@ -263,7 +263,7 @@ ul li {
 }
 
 .ph-image a:hover .ph-gradphoto-top {
-  top: -100%;
+  top: -105%;
 }
 
 .ph-gradphoto-top {
@@ -2612,19 +2612,11 @@ body.noscript .fw-toggle {
   }
 }
 
-.pp-name-sm {
-  display: block;
-  font-size: .5em;
-  font-weight: 200;
-  line-height: 1em;
-}
-
 .pp-name {
   text-transform: uppercase;
   font-weight: 900;
-  font-size: 2.5em;
   margin-bottom: 0;
-  padding-left: .1em;
+  padding-left: .2em;
 }
 
 .pp-skill {
@@ -2758,9 +2750,14 @@ body.noscript .fw-toggle {
   }
 }
 
-.pp-wrap, .pp-wrap-name {
+.pp-wrap {
   width: 100%;
-  background-color: #DCDBDB;
+  background-color: rgba(220, 219, 219, 0.5);
+}
+
+.pp-wrap-name {
+  width: 100%;
+  padding-top: 2.5em;
 }
 
 .pp-wrap {
@@ -2841,15 +2838,6 @@ body.noscript .fw-toggle {
   .pp-wrap-name {
     background-color: transparent;
   }
-  .pp-name-sm {
-    display: inline-block;
-    font-size: 1em;
-    font-weight: 900;
-    line-height: 1em;
-  }
-  .pp-name {
-    margin-top: 1em;
-  }
   .pp-social-icon {
     width: 95px;
   }
@@ -2876,7 +2864,7 @@ body.noscript .fw-toggle {
 }
 
 .about-header {
-  color: #64689b;
+  color: #000;
   font-size: 1.5em;
   text-transform: uppercase;
 }
@@ -2930,7 +2918,7 @@ body.noscript .fw-toggle {
 }
 
 .fe-title {
-  color: #64689b;
+  color: #000;
   font-size: 1.5em;
   text-transform: uppercase;
 }
@@ -2990,6 +2978,8 @@ body.noscript .fw-toggle {
   display: inline-block;
   float: left;
   width: 100%;
+  padding-top: .75em;
+  padding-bottom: 1em;
 }
 
 .fe-info p {
@@ -3075,7 +3065,7 @@ body.noscript .fw-toggle {
 }
 
 .grid-middle {
-  background-color: #DCDBDB;
+  background-color: rgba(166, 165, 167, 0.5);
   color: #000;
 }
 
@@ -3138,7 +3128,7 @@ body.noscript .fw-toggle {
 }
 
 .bts-title {
-  color: #64689b;
+  color: #000;
   font-size: 1.5em;
   text-transform: uppercase;
   margin-bottom: 1em;
@@ -3167,8 +3157,8 @@ body.noscript .fw-toggle {
 
 .fw-info-holder {
   padding: 2em;
-  background-color: #7D7D80;
-  color: #DCDBDB;
+  background-color: #55565a;
+  color: #fff;
 }
 
 @media only screen and (min-width: 80em) {
@@ -3232,14 +3222,21 @@ body.noscript .fw-toggle {
 }
 
 .fw-info-sec3 button {
-  text-decoration: none;
-  padding: 1em;
-  color: #fff;
-  background-color: #A6A5A7;
-  border: 0;
   text-align: center;
-  font-size: 18px;
+  background-color: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+  padding: .75em 1.5em;
+  font-size: 1em;
   text-transform: uppercase;
+}
+
+.fw-info-sec3 button:hover {
+  background-color: #3c3d40;
+}
+
+.fw-info-sec3 button:active {
+  background-color: #232426;
 }
 
 scss
