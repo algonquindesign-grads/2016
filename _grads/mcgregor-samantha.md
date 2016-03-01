@@ -15,9 +15,9 @@ email: "hey@samanthamcgregor.ca"
 website: "http://samanthamcgregor.ca"
 
 specialization:
+  - photography
   - ux-ui
   - web
-  - photography
 
 social:
   behance:    "https://www.behance.net/mcgregors"
