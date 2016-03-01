@@ -27,7 +27,7 @@
   width: 100%;
   z-index: 10;
   padding: 0.6em 0 0.4em;
-  background-color: lighten($grey, 25%);
+  background-color: $grey;
   color: $white;
   letter-spacing: 2px;
   font-size: 12px;
@@ -59,7 +59,7 @@
 }
 
 @mixin header-1 {
-  color: $purple;
+  color: $black;
   font-size: 1.5em;
   text-transform: uppercase;
 }
