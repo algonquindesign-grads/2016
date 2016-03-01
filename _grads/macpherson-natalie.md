@@ -1,10 +1,10 @@
 ---
-title: Framework 2016 - Natalie Macpherson
+title: Framework 2016 - Natalie May Macpherson
 meta: Portfolio Page for Natalie Macpherson
 layout: portfolio
 full_name: "Natalie Macpherson"
 short_name: "Natalie M"
-first_name: "Natalie"
+first_name: "Natalie May"
 last_name: "Macpherson"
 
 description: "I am an Interactive Designer who truly believes that design can change the way people look and respond to the world around them."
