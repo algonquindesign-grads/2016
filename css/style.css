@@ -306,25 +306,30 @@ ul li {
   display: -ms-flexbox;
   -ms-flex-flow: row wrap;
   display: flex;
-  flex-flow: row wrap;
+  -webkit-flex-flow: row wrap;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
 }
 
 .grid-bottom {
   -webkit-align-items: flex-end;
   -ms-align-items: flex-end;
-  align-items: flex-end;
+  -ms-flex-align: end;
+      align-items: flex-end;
 }
 
 .grid-middle {
   -webkit-align-items: center;
   -ms-align-items: center;
-  align-items: center;
+  -ms-flex-align: center;
+      align-items: center;
 }
 
 .grid-stretch {
   -webkit-align-items: stretch;
   -ms-align-items: stretch;
-  align-items: stretch;
+  -ms-flex-align: stretch;
+      align-items: stretch;
 }
 
 .opera-only :-o-prefocus, .grid {
@@ -1388,7 +1393,8 @@ ul li {
 .content-fill {
   -ms-flex-grow: 2;
   -webkit-flex-grow: 2;
-  flex-grow: 2;
+  -ms-flex-positive: 2;
+      flex-grow: 2;
   max-width: 100%;
   /* @bugfix: IE 10, 11 */
 }
@@ -1396,7 +1402,8 @@ ul li {
 .content-shrink {
   -ms-align-self: center;
   -webkit-align-self: center;
-  align-self: center;
+      -ms-flex-item-align: center;
+          align-self: center;
 }
 
 /*
@@ -2080,6 +2087,24 @@ td, th, fieldset {
   }
 }
 
+@-webkit-keyframes colours {
+  0% {
+    fill: #eab63f;
+  }
+  25% {
+    fill: #64689b;
+  }
+  50% {
+    fill: #00a29c;
+  }
+  75% {
+    fill: #df4827;
+  }
+  100% {
+    fill: #eab63f;
+  }
+}
+
 @keyframes colours {
   0% {
     fill: #eab63f;
@@ -2139,8 +2164,9 @@ td, th, fieldset {
   fill: #55565a;
 }
 
-.fw-header .logo .fw-logo:hover .svg-top {
-  animation: colours 5s ease-in-out infinite;
+.fw-header .logo .fw-logo:hover svg .svg-top {
+  -webkit-animation: colours 5s ease-in-out infinite;
+          animation: colours 5s ease-in-out infinite;
 }
 
 .fw-header .logo .fw-logo .fw-logo-vert {
@@ -2156,11 +2182,15 @@ td, th, fieldset {
 }
 
 .fw-header[data-state="open"] .fw-toggle-button:before {
-  transform: rotate(45deg) translate(5px, 5px);
+  -webkit-transform: rotate(45deg) translate(5px, 5px);
+      -ms-transform: rotate(45deg) translate(5px, 5px);
+          transform: rotate(45deg) translate(5px, 5px);
 }
 
 .fw-header[data-state="open"] .fw-toggle-button:after {
-  transform: rotate(-45deg) translate(7px, -8px);
+  -webkit-transform: rotate(-45deg) translate(7px, -8px);
+      -ms-transform: rotate(-45deg) translate(7px, -8px);
+          transform: rotate(-45deg) translate(7px, -8px);
 }
 
 .fw-header[data-state="open"] + #fw-menu {
@@ -2214,7 +2244,8 @@ td, th, fieldset {
   height: 4px;
   background-color: #1d1c1c;
   transition: all 250ms;
-  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
   border-radius: 2px;
 }
 
@@ -2408,17 +2439,38 @@ td, th, fieldset {
   }
 }
 
+.rtt {
+  opacity: 0;
+  position: fixed;
+  display: block;
+  right: 0;
+  bottom: 4em;
+  transition: all 250ms ease-in-out;
+  z-index: 1000;
+  transition: opacity 250ms ease-in;
+}
+
+.rtt .rtt-btn {
+  padding: 1em;
+  background-color: #00a29c;
+  color: #fff;
+  text-decoration: none;
+}
+
+.rtt:hover {
+  opacity: 1;
+}
+
+.js-rtt {
+  opacity: 0.5;
+}
+
 @-moz-viewport {
   width: device-width;
   scale: 1;
 }
 
 @-ms-viewport {
-  width: device-width;
-  scale: 1;
-}
-
-@-o-viewport {
   width: device-width;
   scale: 1;
 }
@@ -2435,7 +2487,6 @@ td, th, fieldset {
 
 html {
   box-sizing: border-box;
-  -moz-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   text-size-adjust: 100%;
@@ -2622,13 +2673,16 @@ body.noscript .fw-toggle {
 
 @keyframes icons {
   0% {
-    transform: scale(1);
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
   50% {
-    transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
   }
   100% {
-    transform: scale(1);
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
 }
 
@@ -2738,7 +2792,6 @@ body.noscript .fw-toggle {
 .pp-nav-btn-a:hover {
   color: #000;
   background-color: #fff;
-  -webkit-transition: all 300ms ease-in-out;
   transition: all 300ms ease-in-out;
 }
 
@@ -2757,7 +2810,6 @@ body.noscript .fw-toggle {
 .pp-nav-btn-arrows:hover {
   color: #000;
   background-color: #fff;
-  -webkit-transition: all 300ms ease-in-out;
   transition: all 300ms ease-in-out;
 }
 
@@ -2974,7 +3026,9 @@ body.noscript .fw-toggle {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   background-image: url(http://grads.images.algonquindesign.ca/2016/img/play-button.svg);
   background-repeat: no-repeat;
   background-size: contain;
