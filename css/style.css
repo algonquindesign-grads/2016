@@ -3238,7 +3238,7 @@ body.noscript .fw-toggle {
   background-color: transparent;
   border: 1px solid #fff;
   color: #fff;
-  padding: 1em 2em;
+  padding: .75em 1.5em;
   font-size: 1em;
   text-transform: uppercase;
 }
