@@ -3,7 +3,7 @@ title: Framework 2016 - Michelle Holly Dugas
 meta: Portfolio Page for Michelle Holly Dugas
 layout: portfolio
 
-full_name: "Michelle Holly Dugas"
+full_name: "Michelle Dugas"
 short_name: "Michelle D"
 first_name: "Michelle Holly"
 last_name: "Dugas"
