@@ -3030,6 +3030,7 @@ body.noscript .fw-toggle {
   display: block;
   text-align: center;
   text-transform: uppercase;
+  margin: 0;
 }
 
 .sponsors {
@@ -3040,6 +3041,13 @@ body.noscript .fw-toggle {
   margin-left: auto;
   margin-right: auto;
   text-align: center;
+  padding-top: 0.7000rem;
+}
+
+@media only screen and (min-width: 60em) {
+  .sponsor-center {
+    padding-top: 0;
+  }
 }
 
 .bts-bg {
