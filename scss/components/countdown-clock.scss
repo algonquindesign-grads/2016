@@ -36,7 +36,7 @@
   }
 }
 
-.inline {
+.clock-inline {
   display: inline-block;
   padding: .5em;
 }
@@ -45,7 +45,7 @@
   font-size: 2em;
 }
 
-.smalltext {
+.clock-smalltext {
   font-size: .65em;
   @media only screen and (min-width: 38em) {
     margin-bottom: .5em;
