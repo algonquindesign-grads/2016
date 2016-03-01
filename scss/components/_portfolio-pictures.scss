@@ -1,16 +1,10 @@
 // Student Portfolio inside page
 
-.pp-name-sm {
-  display: block;
-  line-height: 1em;
-}
-
 .pp-name {
   text-transform: uppercase;
   font-weight: 900;
-  font-size: 2.5em;
   margin-bottom: 0;
-  padding-left: .1em;
+  padding-left: .2em;
 }
 
 .pp-skill {
@@ -143,6 +137,7 @@
 
 .pp-wrap-name {
   width: 100%;
+  padding-top: 2.5em;
 }
 
 .pp-wrap{
@@ -195,6 +190,10 @@
 
   .pp-off {
     display: inherit;
+  }
+
+  .pp-wrap-name {
+    padding-top: 3em;
   }
 
 }
