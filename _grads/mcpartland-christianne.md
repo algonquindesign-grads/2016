@@ -5,6 +5,8 @@ layout: portfolio
 
 full_name: "Christianne McPartland"
 short_name: "Christianne M"
+first_name: "Christianne"
+last_name: "McPartland"
 
 description: "Hello, my name is Christianne, and I am an Ottawa based graphic designer. I love cats, nature, photography, typography and branding!"
 

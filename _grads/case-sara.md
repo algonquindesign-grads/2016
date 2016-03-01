@@ -5,6 +5,8 @@ layout: portfolio
 
 full_name: "Sara Case"
 short_name: "Sara C"
+first_name: "Sara"
+last_name: "Case"
 
 description: "Passion for illustration, branding and typography. Keyboard shortcuts, learning new styles, and good type are life."
 

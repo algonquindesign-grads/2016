@@ -5,6 +5,8 @@ layout: portfolio
 
 full_name: "Sean Z Okai"
 short_name: "Sean O"
+first_name: "Sean Z"
+last_name: "Okai"
 
 description: "Iam a media enthusiast with a zeal for problem-solving. Digital handyman by day, pixel seller at night. Also a highly ranked wafer connoisseur"
 

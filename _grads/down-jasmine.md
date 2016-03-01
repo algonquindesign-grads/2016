@@ -5,6 +5,8 @@ layout: portfolio
 
 full_name: "Jasmine Down"
 short_name: "Jasmine D"
+first_name: "Jasmine"
+last_name: "Down"
 
 description: "Stress typically drives me to do my best work. I love horror movies, camping, and having a beer with friends."
 

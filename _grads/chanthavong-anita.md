@@ -5,6 +5,8 @@ layout: portfolio
 
 full_name: "Anita Chanthavong"
 short_name: "Anita C"
+first_name: "Anita"
+last_name: "Chanthavong"
 
 description: "Tweak 'til perfection by day; maverick designer/developer by night. Love sharks, big cats, wolves, science, sci-fi, space, zombies & dessert."
 

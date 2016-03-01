@@ -5,6 +5,8 @@ layout: portfolio
 
 full_name: "Charlie Quinn"
 short_name: "Charlie Q"
+first_name: "Charlie"
+last_name: "Quinn"
 
 description: "While constantly working towards the next level, I’ve made a habit of going back to upgrade my skills and search for hidden treasures."
 

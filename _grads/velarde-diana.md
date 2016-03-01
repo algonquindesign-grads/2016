@@ -5,6 +5,8 @@ layout: portfolio
 
 full_name: "Diana Velarde"
 short_name: "Diana V"
+first_name: "Diana"
+last_name: "Velarde"
 
 description: "I am from Peru. I have very interesting stories asbout Peru. Am just such a Peruvian really…… oh and I like my big headphones."
 

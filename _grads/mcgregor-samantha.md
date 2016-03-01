@@ -5,6 +5,8 @@ layout: portfolio
 
 full_name: "Samantha McGregor"
 short_name: "Samantha M"
+first_name: "Samantha"
+last_name: "McGregor"
 
 description: "I'm a creative thinker who’s always down for a good adventure and I love to create beautiful, simple and effective designs."
 

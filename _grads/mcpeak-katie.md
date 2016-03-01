@@ -5,6 +5,8 @@ layout: portfolio
 
 full_name: "Katie McPeak"
 short_name: "Katie M"
+first_name: "Katie"
+last_name: "McPeak"
 
 description: "I love my family, my friends, my cats and I absolutely adore travel, Photography, drawing, painting, and creating handmade jewelry."
 

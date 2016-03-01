@@ -5,6 +5,8 @@ layout: portfolio
 
 full_name: "Marissa Godwin"
 short_name: "Marissa G"
+first_name: "Marissa"
+last_name: "Godwin"
 
 description: "Animator & illustrator. Inspired by comic books, rubberhose animation, & Ultraman villains. Fluent in After Effects; decent in Japanese"
 

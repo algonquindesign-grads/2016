@@ -5,6 +5,8 @@ layout: portfolio
 
 full_name: "Brendan Wilson"
 short_name: "Brendan W"
+first_name: "Brendan"
+last_name: "Wilson"
 
 description: "Always learning, always creating, I'm the kind of person who would rather make it myself than buy it new. Oh and Star Wars is a pretty big deal to me."
 

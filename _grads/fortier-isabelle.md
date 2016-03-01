@@ -5,6 +5,8 @@ layout: portfolio
 
 full_name: "Isabelle Fortier"
 short_name: "Isabelle F"
+first_name: "Isabelle"
+last_name: "Fortier"
 
 description: "I love learning new styles and techniques, I’m a big fan of keyboard shortcuts, and my brother says I have a great sense of humour."
 

@@ -5,6 +5,8 @@ layout: portfolio
 
 full_name: "Rebecca Dagenais"
 short_name: "Rebecca D"
+first_name: "Rebecca"
+last_name: "Dagenais"
 
 description: "Imagination is more important than knowledge. For knowledge is limited, whereas imagination embraces the entire world... -Albert Einstein"
 

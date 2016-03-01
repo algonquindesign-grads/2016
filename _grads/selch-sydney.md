@@ -2,8 +2,11 @@
 title: Framework 2016 - Sydney Selch
 meta: Portfolio Page for Sydney Selch
 layout: portfolio
+
 full_name: "Sydney Selch"
 short_name: "Sydney S"
+first_name: "Sydney"
+last_name: "Selch"
 
 description: "A busy body with an unquenchable desire to learn and inspire through design. I love vibrant pops of colour balanced with simplistic design."
 

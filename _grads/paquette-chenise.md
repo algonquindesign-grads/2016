@@ -5,6 +5,8 @@ layout: portfolio
 
 full_name: "Chenise Summer Paquette"
 short_name: "Chenise Summer P"
+first_name: "Chenise Summer"
+last_name: "Paquette"
 
 description: "Hello, my name is Chenise Summer Paquette. I am a left-handed Canadian graphic designer with a passion for creative thinking."
 

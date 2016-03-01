@@ -5,6 +5,8 @@ layout: portfolio
 
 full_name: "Christian Madrid"
 short_name: "Christian M"
+first_name: "Christian"
+last_name: "Madrid"
 
 description: "Being part of an industry that pushes creativity, innovation, and collaboration is a dream come true. I could not be more stoked."
 

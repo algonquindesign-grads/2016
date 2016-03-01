@@ -5,6 +5,8 @@ layout: portfolio
 
 full_name: "Paisley Laurenzio"
 short_name: "Paisley L"
+first_name: "Paisley"
+last_name: "Laurenzio"
 
 description: "I’m energetic and enthusiastic about life. I put care into everything I do whether it is my physical well-being, passion projects or work."
 

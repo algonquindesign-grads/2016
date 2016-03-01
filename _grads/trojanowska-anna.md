@@ -5,6 +5,8 @@ layout: portfolio
 
 full_name: "Anna Trojanowska"
 short_name: "Anna T"
+first_name: "Anna"
+last_name: "Trojanowska"
 
 description: "I'm a hard-worker with big sense of humour and an even bigger heart. As a designer, I'm inspired by nature, literature, and gangster rap."
 
