@@ -5,6 +5,8 @@ layout: portfolio
 
 full_name: "Mystine Laframboise Vien"
 short_name: "Mystine L"
+first_name: "Mystine"
+last_name: "Laframboise Vien"
 
 description: "I am and will forever be a cat lover. I enjoy travelling, chocolate, wine, music, white space, and bright colors."
 

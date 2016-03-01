@@ -5,6 +5,8 @@ layout: portfolio
 
 full_name: "Brad Doyle"
 short_name: "Brad D"
+first_name: "Brad"
+last_name: "Doyle"
 
 description: "I'm a graphic designer with a strong love and passion for videography and motion graphics. I'm a film lover, comic nerd, and all around geek"
 

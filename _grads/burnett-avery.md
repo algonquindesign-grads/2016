@@ -5,6 +5,8 @@ layout: portfolio
 
 full_name: "Avery Burnett"
 short_name: "Avery B"
+first_name: "Avery"
+last_name: "Burnett"
 
 description: "I’m a passionate problem solver and love designing for myself and others,  I make beautiful designs that communicate to every challenge."
 

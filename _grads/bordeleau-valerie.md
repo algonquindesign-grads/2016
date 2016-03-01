@@ -5,8 +5,8 @@ layout: portfolio
 
 full_name: "Valerie Bordeleau"
 short_name: "Valerie B"
-first_name: "Steve"
-last_name: "Bickram"
+first_name: "Valerie"
+last_name: "Bordeleau"
 
 description: Creating accessible media is what drives me. Good design can communicate ideas that transcend language barriers, bias, and illiteracy.
 

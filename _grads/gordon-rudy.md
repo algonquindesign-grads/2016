@@ -5,6 +5,8 @@ layout: portfolio
 
 full_name: "Rudy Gordon"
 short_name: "Rudy G"
+first_name: "Rudy"
+last_name: "Gordon"
 
 description: "I’m a small town country boy from Ontario who loves spending time outside enjoying the outdoors motorcycling and playing with my dog."
 

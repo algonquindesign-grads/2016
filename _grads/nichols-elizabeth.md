@@ -5,6 +5,8 @@ layout: portfolio
 
 full_name: "Elizabeth Nichols"
 short_name: "Elizabeth N"
+first_name: "Elizabeth"
+last_name: "Nichols"
 
 description: "I make weird things for nice people. I love interactive storytelling, unusual narratives, drawing spooky eyeballs, and tending to flowers!"
 

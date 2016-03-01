@@ -5,6 +5,8 @@ layout: portfolio
 
 full_name: "Jason D Leduc"
 short_name: "Jason L"
+first_name: "Jason D"
+last_name: "Leduc"
 
 description: "I am a tireless seeker of knowledge, occasional purveyor of wisdom and also, coincidentally, a graphic designer."
 

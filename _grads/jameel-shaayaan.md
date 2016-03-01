@@ -5,6 +5,8 @@ layout: portfolio
 
 full_name: "Shaayaan Jameel"
 short_name: "Shaayaan J"
+first_name: "Shaayaan"
+last_name: "Jameel"
 
 description: "I’m a very loud person and I love being lazy, eating, and gaming at times. I can be really weird and I have a slight obsession with minions, but that’s okay!"
 

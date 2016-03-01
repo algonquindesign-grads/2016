@@ -5,6 +5,8 @@ layout: portfolio
 
 full_name: "Erin Graham"
 short_name: "Erin G"
+first_name: "Erin"
+last_name: "Graham"
 
 description: "I’m a Graphic Designer by day, digital content creator by night, wanderlust, and a firm believer that less is more."
 

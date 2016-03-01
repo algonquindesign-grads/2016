@@ -5,6 +5,8 @@ layout: portfolio
 
 full_name: "Mike Slingerland"
 short_name: "Mike S"
+first_name: "Mike"
+last_name: "Slingerland"
 
 description: "An overly enthusiastic guy who loves motion graphics, Adobe Illustrator, and snowboarding."
 

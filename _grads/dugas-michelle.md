@@ -5,6 +5,8 @@ layout: portfolio
 
 full_name: "Michelle Holly Dugas"
 short_name: "Michelle D"
+first_name: "Michelle Holly"
+last_name: "Dugas"
 
 description: "Drink whiskey, build bikes; drop key frames, kern kern kern."
 

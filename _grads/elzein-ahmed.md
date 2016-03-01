@@ -5,6 +5,8 @@ layout: portfolio
 
 full_name: "Ahmed El-Zein"
 short_name: "Ahmed E"
+first_name: "Ahmed"
+last_name: "El-Zein"
 
 description: "the vision of the eye is limited, but the vision of the heart transcends all barriers of time and space."
 

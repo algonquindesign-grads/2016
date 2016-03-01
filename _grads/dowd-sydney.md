@@ -5,6 +5,8 @@ layout: portfolio
 
 full_name: "Sydney Dowd"
 short_name: "Sydney D"
+first_name: "Sydney"
+last_name: "Dowd"
 
 description: "Hello, I'm Sydney Dowd. I'm a problem solver and creative thinker with a focus on interactive design."
 

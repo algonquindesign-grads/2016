@@ -5,6 +5,8 @@ layout: portfolio
 
 full_name: "Benjamin Donald Arthur Comeau"
 short_name: "Benjamin C"
+first_name: "Benjamin Donald Arthur"
+last_name: "Comeau"
 
 description: "I am a huge geek. I love cool things like Sci-Fi/Fantasy stuff, RPGs, board games and all that kind of business. And I am really loud."
 

@@ -5,6 +5,8 @@ layout: portfolio
 
 full_name: "Jamie Smith"
 short_name: "Jamie S"
+first_name: "Jamie"
+last_name: "Smith"
 
 description: "I am an opinionated and optimistic, proud Canadian designer. I love dogs, sports, sci-fi and summer. Rainy days are for movies and forts."
 

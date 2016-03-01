@@ -5,6 +5,8 @@ layout: portfolio
 
 full_name: "Elzahra Elghirani"
 short_name: "Elzahra E"
+first_name: "Elzahra"
+last_name: "Elghirani"
 
 description: "I’m an optimist with huge love for visual creativity. I love fashion, reading, comedy, science, a sprinkle of philosophy and a whole lot of coffee! I also enjoy romantic walks to the fridge."
 

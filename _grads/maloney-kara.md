@@ -5,6 +5,8 @@ layout: portfolio
 
 full_name: "Kara Maloney"
 short_name: "Kara M"
+first_name: "Kara"
+last_name: "Maloney"
 
 description: "I am a Designer by day, using the world around me as inspiration for creation. But by night I am a Ninja Turtle."
 

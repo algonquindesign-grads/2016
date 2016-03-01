@@ -5,6 +5,8 @@ layout: portfolio
 
 full_name: "Heather McDonell"
 short_name: "Heather M"
+first_name: "Heather"
+last_name: "McDonell"
 
 description: "I am an unruly-haired creative with a passion for flowers and designing things that are dramatic and meaningful."
 

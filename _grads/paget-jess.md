@@ -5,6 +5,8 @@ layout: portfolio
 
 full_name: "Jess Paget"
 short_name: "Jess P"
+first_name: "Jess"
+last_name: "Paget"
 
 description: "You can find me designing for musicians, photographing the moon, or sipping on sparkling wine watching vintage horror movies."
 

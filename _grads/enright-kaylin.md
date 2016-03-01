@@ -5,6 +5,8 @@ layout: portfolio
 
 full_name: "Kaylin Enright"
 short_name: "Kaylin E"
+first_name: "Kaylin"
+last_name: "Enright"
 
 description: "My love for design is almost as big as my love for cake. Full of personality and bubbly to boot, I'm a hoot and a half to work with!"
 

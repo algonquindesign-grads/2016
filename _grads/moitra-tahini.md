@@ -5,6 +5,8 @@ layout: portfolio
 
 full_name: "Tahini Moitra"
 short_name: "Tahini M"
+first_name: "Tahini"
+last_name: "Moitra"
 
 description: "I use my art to step out of my comfort zone by taking risks, creating new adventures and weaving them into impactful, thought-provoking stories"
 

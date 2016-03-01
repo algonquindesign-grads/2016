@@ -5,6 +5,8 @@ layout: portfolio
 
 full_name: "Ben Marley"
 short_name: "Ben M"
+first_name: "Ben"
+last_name: "Marley"
 
 description: "Illustration was my passion. Then I found out how to make the illustrations move and it changed my whole outlook on the design world."
 

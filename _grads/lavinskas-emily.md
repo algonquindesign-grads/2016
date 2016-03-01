@@ -5,6 +5,8 @@ layout: portfolio
 
 full_name: "Emily Lavinskas"
 short_name: "Emily L"
+first_name: "Emily"
+last_name: "Lavinskas"
 
 description: "I'm a lover of Star Wars, bernese mountain dogs, craft beer, autumn, good kerning and ampersands, but not in that particular order."
 
