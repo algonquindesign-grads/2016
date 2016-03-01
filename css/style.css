@@ -2888,8 +2888,8 @@ body.noscript .fw-toggle {
   position: absolute;
   z-index: 100;
   bottom: -1em;
-  padding: .3em .5em;
-  background-color: rgba(0, 0, 0, 0.6);
+  padding: .3em 1em;
+  background-color: rgba(0, 0, 0, 0.8);
   overflow: hidden;
   display: block;
   color: white;
@@ -2939,11 +2939,12 @@ body.noscript .fw-toggle {
 
 .fe-info p, .fe-info a {
   font-family: "Effra", serif;
-  font-size: 14px;
+  font-size: 1em;
 }
 
 .fe-details {
   margin-bottom: .5em;
+  font-weight: bold;
 }
 
 .fe-calender {
