@@ -154,8 +154,9 @@ ul li {
 }
 
 .filter-btn:hover {
-  background-color: rgba(0, 0, 0, 0.05);
-  box-shadow: inset 2px 2px 0 0 #DCDBDB;
+  background-color: rgba(0, 162, 156, 0.5);
+  xbox-shadow: inset 2px 2px 0 0 #DCDBDB;
+  color: #fff;
 }
 
 #filter-select {
