@@ -1,14 +1,39 @@
 <!DOCTYPE html>
 <html lang="en-ca">
 <head>
-	<meta charset="utf-8">
-	<title>{{ page.title }}</title>
-  <link rel="icon" type="image/png" href="http://grads.images.algonquindesign.ca.s3.amazonaws.com/2016/img/fw-favicon.png">
+  <meta charset="utf-8">
+  <title>{{ page.title }}</title>
   <link href="{{site.baseurl}}/css/style.css" rel="stylesheet">
-	<meta name="handheldfriendly" content="true">
-	<meta name="mobileoptimized" content="240">
-	<meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="description" content="{{ page.meta }}">
+  <meta name="handheldfriendly" content="true">
+  <meta name="mobileoptimized" content="240">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Framework 2016 Algonquin College Graphic Design graduating class">
+  <!--Location-->
+  <meta name="geo-placename" content="Ottawa, Ontario, Canada">
+  <meta name="geo.region" content="CA-Ontario">
+  <!-- Basic Metadata-->
+  <meta name="author" content="2016 Graduating Class Web Team">
+  <meta name="copyright" content="&#169; Algonquin College Class of 2016">
+  <meta name="keyword" content="graphic deisgn, algonquin college, graduation, ottawa, framework, design, grads, ACGD, acgd, ux/ui, illustartion, motion, ux, ui, typography, branding, print, web, photography, 2016, students, landsdowne, landsdowne park, april 29">
+  <meta name="language" content="EN">
+  <meta name="subject" content="graphic design, graduation, grad show, portfolio, student, web">
+<!--Social Media -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Framework 2016">
+  <!--THIS NEEDS TO BE CHANGED WHEN IT IS CONNECTED TO OUR DOMAIN-->
+  <meta property="og:url" content="{{ site.baseurl }}">
+  <meta property="og:image" content="http://grads.images.algonquindesign.ca.s3.amazonaws.com/2016/img/fw-logo-vert.svg">
+  <meta property="og:site_name" content="Framework 2016">
+  <meta property="og:description" content="{{ page.meta }}">
+  <!-- Twitter-->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Framework 2016">
+    <meta name="twitter:url" content="https://twitter.com/FRAMEWORK2016">
+    <meta name="twitter:description" content="Framework 2016 Algonquin College Graphic Design graduating class">
+    <meta name="twitter:image" content="http://grads.images.algonquindesign.ca.s3.amazonaws.com/2016/img/fw-logo-vert.svg">
+
+
+  <link rel="icon" type="image/png" href="http://grads.images.algonquindesign.ca.s3.amazonaws.com/2016/img/fw-favicon.png">
 
 </head>
 {% include base.html %}
@@ -30,11 +55,16 @@
   <script src="{{site.baseurl}}/js/jquery.waypoints.min.js"></script>
   <script src="{{site.baseurl}}/js/fw-navigation.js"></script>
   <script src="https://use.typekit.net/mly7wqm.js"></script>
-<!--   <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script> -->
+  <script src="{{site.baseurl}}/js/instafeed.min.js"></script>
   <script src="{{site.baseurl}}/js/video.js"></script>
   <script src="{{site.baseurl}}/js/filter.js"></script>
   <script src="{{site.baseurl}}/js/scroll.js"></script>
+<<<<<<< HEAD
   <script src="{{site.baseurl}}/js/countdown-clock.js"></script>
+=======
+  <script src="{{site.baseurl}}/js/instagram-feed.js"></script>
+
+>>>>>>> gh-pages
 <!--   <script>try{Typekit.load({ async: true });}catch(e){}</script> -->
   <script>
     window.onload = function () {

@@ -20,23 +20,6 @@
   overflow: auto;
 }
 
-@mixin student-name {
-  position: absolute;
-  text-align: center;
-  margin: 0;
-  width: 100%;
-  z-index: 10;
-  padding: 0.6em 0 0.4em;
-  background-color: lighten($grey, 25%);
-  color: $white;
-  letter-spacing: 2px;
-  font-size: 12px;
-  font-family: "Effra", sans-serif;
-  margin-top: -2.10em;
-  @media only screen and (min-width: 60em) {
-  }
-}
-
 @mixin pp-nav-btn {
   display: block;
   text-transform: uppercase;
@@ -54,12 +37,28 @@
 
 @mixin header-1-white {
   color: $off-white;
-  font-size: 16px;
+  font-size: 1.5em;
   text-transform: uppercase;
 }
 
 @mixin header-1 {
-  color: $purple;
-  font-size: 16px;
+  color: $black;
+  font-size: 1.5em;
   text-transform: uppercase;
+}
+
+@mixin btn-outline-white {
+  text-align: center;
+  background-color: transparent;
+  border: 1px solid $white;
+  color: $white;
+  padding: .75em 1.5em;
+  font-size: 1em;
+  text-transform: uppercase;
+  &:hover {
+    background-color: darken($grey, 10%);
+  }
+  &:active{
+    background-color: darken($grey, 20%);
+  }
 }

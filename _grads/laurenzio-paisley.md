@@ -10,7 +10,7 @@ last_name: "Laurenzio"
 
 description: "I’m energetic and enthusiastic about life. I put care into everything I do whether it is my physical well-being, passion projects or work."
 
-email: "sayhi@paisleylaurenzio.ca"
+email: "paisley.laurenzio@gmail.com"
 
 website: "http://paisleylaurenzio.ca"
 
