@@ -24,7 +24,9 @@
 #filter-print:checked ~ .grid .filters [for="filter-print"],
 #filter-type:checked ~ .grid .filters [for="filter-type"],
 #filter-photo:checked ~ .grid .filters [for="filter-photo"] {
-  background-color: black;
+  background-color: $green;
+  box-shadow: none;
+  border: 2px solid $green;
   color: white;
 }
 
@@ -38,7 +40,15 @@
 /* The ~ sibling selector will select all .filters elements, as long as they follow the preceding value*/
 
 .filter-items {
-
+  li{
+    transition: opacity $filter-transition ease-in-out;
+    &:hover{
+      p{
+        transition: background-color $filter-transition * 0.5 ease-in-out;
+        background-color: $green;
+      }
+    }
+  }
 }
 
 .filter-items > li {
@@ -66,14 +76,41 @@ ul li {
   list-style-type: none;
 }
 
-.filter-btn {
-  display: inline-block;
-  margin: 0;
-  background-color: #dcdadb;
-  color: #55565b;
+// .filter-btn {
+//   display: inline-block;
+//   margin: 0;
+//   background-color: transparent;
+//   border: 1px solid $grey-1;
+//   color: $grey;
+//   padding: .5em 1em;
+//   margin: 4px 2px;
+//   box-shadow: 2px 2px $grey-1;
+// }
+
+.filter-btn{
+  text-align: center;
+  background-color: transparent;
+  border: 1px solid $grey-1;
+  color: $grey;
   padding: .5em 1em;
 }
 
-.filter-btn:hover {
-  background-color: #a6a5a8;
+.filters{
+  margin: 0 auto;
 }
+
+.filter-btn:hover {
+  background-color: rgba(0, 0, 0, .05);
+  box-shadow: inset 2px 2px 0 0 $grey-1;
+}
+
+#filter-select {
+  width: 100%;
+  color: $grey;
+  font-size: 16px;
+  background-color: transparent;
+  border: 1px solid $grey-1;
+  padding: .5em 1em;
+}
+
+//Prepros should add webkit for box-shadow

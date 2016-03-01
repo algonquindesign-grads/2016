@@ -1,9 +1,14 @@
 ---
-layout: portfolio-pictures
+title: Framework 2016 - Anna Misak
+meta: Portfolio Page for Anna Misak
+layout: portfolio
+
 full_name: "Anna Misak"
 short_name: "Anna M"
+first_name: "Anna"
+last_name: "Misak"
 
-description: "My passion is design, but when I am not being artistic, I tend to get lost in books I have a hard time putting down."
+description: "My passion for design and illustration, but when I am not being artistic, I tend to get lost in books I have a hard time putting down."
 
 email: "hello@annamisak.com"
 

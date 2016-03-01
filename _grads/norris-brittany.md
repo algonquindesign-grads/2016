@@ -1,38 +1,24 @@
 ---
-layout: portfolio-pictures
-# THE NAME OF THIS FILE IS CRITICAL
-# It needs to match the same name as your images `lastname-firstname`
+title: Framework 2016 - Brittany Norris
+meta: Portfolio Page for Brittany Norris
+layout: portfolio
 
-# Write your full name as you want it shown on the website
 full_name: "Brittany Norris"
 short_name: "Brittany N"
-
-# Your personal description — written in first-person
-# MIN 100 characters
-# MAX 140 characters
+first_name: "Brittany"
+last_name: "Norris"
 
 description: "Be yourself. Don't be scared. Always be on time. Always be polite. I am a designer with a background in business marketing. I am your solution and the differential edge you’ve been looking for. Thank You and Enjoy."
 
-
-# Use a professional email address
 email: "norrbritt@gmail.com"
 
-# OPTIONAL — delete this line if you don't want it
-# Can be your portfolio, Behance, whatever
 website: "http://brittanynorris.ca"
 
-# CHOOSE A MAX OF 3
-# Delete the lines you don’t want
 specialization:
+  - branding
+  - web
+  - ux-ui
 
-- branding
-- web
-- ux-ui
-
-
-# CHOOSE A MAX OF 3
-# Change the URLs to match your profile page
-# Delete the lines you don’t want
 social:
   behance:    "https://www.behance.net/britnor"
   linkedin:   "https://ca.linkedin.com/in/brittany-norris-a7a800a7"

@@ -1,0 +1,46 @@
+
+.grid-middle {
+	background-color: rgba($grey-2, .5 );
+	color:$text-color;
+}
+
+.ft-copyright{
+	overflow:hidden;
+	display: block;
+}
+
+.ft-sponsor{
+	padding-left: .25em;
+	width: 180px;
+	margin: auto 0;
+}
+
+.copyright {
+  display: block;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0;
+  font-size: 13px;
+  line-height: 1.3000rem;
+}
+
+.thanks{
+  display: block;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.sponsors {
+	display: inline-block;
+}
+
+.sponsor-center {
+	margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  padding-top: 0.7000rem;
+   @media only screen and (min-width: 60em) {
+   	padding-top: 0;
+   }
+}

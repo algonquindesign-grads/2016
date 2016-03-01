@@ -1,0 +1,124 @@
+---
+layout: default
+---
+
+{% include base.html %}
+<div class="pp-wrap-name island"><!--- Student's Name -->
+  <h1 class="pp-name exa">{{ page.full_name }}</h1>
+</div>
+
+<div class="grid push-0">
+  <div class="unit unit-xs-1 unit-s-1 unit-m-1 unit-l-1 unit-xl-2-3 pp-pad-right">
+
+   <div class="grid">
+    {% if page.vimeo != null %}
+<!--- START Student Profile Pictures with video -->
+
+      <div class="unit unit-xs-1 unit-s-1 unit-m-1 unit-l-1">
+        <div class="pp-vimeo">
+          <iframe src="https://player.vimeo.com/video/{{ page.vimeo }}" width="1080" height="300" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+        </div>
+      </div>
+
+      <div class="unit unit-xs-1 unit-s-1 unit-m-1-2 unit-l-1-2">
+        <img class="img-flex" src="{{site.cdn}}portfolio/{{page.url | replace: 'grads/', '/' | remove:'/'}}-1.jpg" alt="">
+      </div>
+
+      <div class="unit unit-xs-1 unit-s-1 unit-m-1-2 unit-l-1-2">
+        <img class="img-flex" src="{{site.cdn}}portfolio/{{page.url | replace: 'grads/', '/' | remove:'/'}}-2.jpg" alt="">
+      </div>
+    </div>
+<!--- END Student Profile Pictures with video -->
+      {% else %}
+
+<!--- START Student Profile Pictures only -->
+
+    <div class="unit unit-xs-1 unit-s-1 unit-m-1-2 unit-l-1-2">
+      <img class="img-flex" src="{{site.cdn}}portfolio/{{page.url | replace: 'grads/', '/' | remove:'/'}}-1.jpg" alt="">
+    </div>
+
+    <div class="unit unit-xs-1 unit-s-1 unit-m-1-2 unit-l-1-2">
+      <img class="img-flex" src="{{site.cdn}}portfolio/{{page.url | replace: 'grads/', '/' | remove:'/'}}-2.jpg" alt="">
+    </div>
+
+    <div class="unit unit-xs-1 unit-s-1 unit-m-1-2 unit-l-1-2">
+      <img class="img-flex" src="{{site.cdn}}portfolio/{{page.url | replace: 'grads/', '/' | remove:'/'}}-3.jpg" alt="">
+    </div>
+
+    <div class="unit unit-xs-1 unit-s-1 unit-m-1-2 unit-l-1-2">
+      <img class="img-flex" src="{{site.cdn}}portfolio/{{page.url | replace: 'grads/', '/' | remove:'/'}}-4.jpg" alt="">
+    </div>
+  </div>
+
+<!--- END Student Profile Pictures only -->
+{% endif %}
+  </div>
+<div class="unit unit-xs-1 unit-s-1 unit-m-1 unit-l-1 unit-xl-1-3 pp-pad-left">
+<!--- Student photo -->
+  <div class="grid">
+    <div class="unit unit-xs-1 unit-s-1 unit-m-1-2 unit-l-1-2 unit-xl-1 pp-graduates">
+      <ul class="pp-student">
+        <li class="pp-image">
+          <a href="#">
+            <img class="img-flex pp-gradphoto-top" src="{{site.cdn}}portraits/{{page.url | replace: 'grads/', '/' | remove:'/'}}.jpg" alt="Photo of {{ page.full_name }}">
+          </a>
+        </li>
+      </ul>
+    </div>
+<!--- Student bio -->
+    <div class="unit unit-xs-1 unit-s-1 unit-m-1-2 unit-l-1-2 unit-xl-1 pp-padding mega">
+      <h2 class="pp-skill peta">{{page.specialization | array_to_sentence_string }}</h2>
+      <p class="pp-desc">{{page.description}}</p>
+      <p class="pp-links peta"><a href="{{ page.website }}">{{page.website | replace: 'http://', '' }}</a></p>
+      <p class="pp-links"><a href="mailto:{{ page.email }}">{{ page.email }}</a></p>
+      <div>
+        <ul class="pp-nav-btn pad-t">
+<!--- Social icons -->
+        {% for a in page.social %}
+          <li class="pp-nav-btn-li"><a href="{{a | last}}" target="_blank"><img class="pp-social-icon gutter-1-2" src="{{site.cdn}}img/{{a | first}}.svg" alt="Follow me on {{a | first}}."></a></li>
+        {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- </div> -->
+<!--- Back and Next links -->
+{% capture grads %}{{page.collection}}{% endcapture %}
+  {% if page.collection %}
+    {% assign document = site[grads]  %}
+  {% endif %}
+{% for links in document  %}
+  {% if links.title == page.title %}
+    {% unless forloop.first %}
+      {% assign prevurl = prev.url %}
+    {% endunless %}
+    {% unless forloop.last %}
+      {% assign next = document[forloop.index] %}
+      {% assign nexturl = next.url %}
+    {% endunless %}
+  {% endif %}
+  {% assign prev = links %}
+{% endfor %}
+
+<script>
+document.body.onkeyup = function(e){
+if (e.keyCode == '37') { window.location = '{{base}}{{prevurl}}'; }
+if (e.keyCode == '39') { window.location = '{{base}}{{nexturl}}'; }
+};
+
+</script>
+<div class="pp-wrap pad-t kilo">
+  <ul class="unit pp-nav-btn">
+    {% if prevurl %}
+    <li class="pp-nav-btn-li"><a class="pp-nav-btn-arrows pp-on" href="{{base}}{{prevurl}}">❮</a><a class="pp-nav-btn-a pp-off" href="{{base}}{{prevurl}}">Previous</a></li>
+    {% endif %}
+    <li class="pp-nav-btn-li gutter"><a class="pp-nav-btn-a" href="{{ base }}#grads">All Grads</a></li>
+    {% if nexturl %}
+    <li class="pp-nav-btn-li"><a class="pp-nav-btn-arrows pp-on" href="{{base}}{{nexturl}}"> ❯</a><a class="pp-nav-btn-a pp-off" href="{{base}}{{nexturl}}">Next</a></li>
+    {% endif %}
+  </ul>
+</div>
+<div class="unit xs-1">
+  {% include footer.html %}
+</div>

@@ -1,8 +1,21 @@
+@keyframes colours {
+  0%{
+    fill: $yellow;
+  } 25%{
+    fill: $purple;
+  } 50%{
+    fill: $green;
+  } 75%{
+    fill: $red;
+  } 100%{
+    fill: $yellow;
+  }
+}
 .fw-header{
   @include zero;
   display: block;
   overflow: hidden;
-  background-color: $off-white;
+  background-color: $menu-background;
   position: relative;
   z-index: 50;
   .logo{
@@ -32,8 +45,9 @@
           fill: $svg-fill;
         }
       }
-      &:hover .svg-top{
-        fill: lighten($svg-top-fill, 10%);;
+      &:hover svg .svg-top{
+        // fill: lighten($svg-top-fill, 10%);
+        animation: colours 5s ease-in-out infinite;
       }
       .fw-logo-vert{
         display: none;
@@ -63,7 +77,6 @@
     }
   }
 }
-
 
 .fw-toggle{
   position: absolute;
@@ -118,6 +131,7 @@
     li{
       position: relative;
       a{
+        text-transform: uppercase;
         background-color: $menu-background;
         display: block;
         padding: 1em 2em;;
@@ -154,6 +168,7 @@
 .fw-info{
   padding: 2em;
   position: relative;
+  @include element-invisible;
   *{
     @include zero;
     color: $info-text;
@@ -175,26 +190,34 @@
     text-decoration: none;
     &:hover{
       color: lighten($info-text, 50%);
-      text-decoration: underline;
+       text-decoration: underline;
     }
   }
 }
+
 
 @media only screen and (min-width: 25em){
 
 }
 
 @media only screen and (min-width: 38em){
-  .fw-info{
-    @include element-invisible;
+
   }
+
   .fw-navigation{
     width: $menu-fly-out-width;
     left: calc(100% - #{$menu-fly-out-width});
     position: absolute;
     z-index: 100;
+    ul{
+      li{
+        a{
+          // font-size: 1em;
+        }
+      }
+    }
   }
-}
+
 
 @media only screen and (min-width: 60em){
 
@@ -238,7 +261,7 @@
 
   .fw-navigation{
     left: 0;
-    top: $side-bar-width - 1em;
+    top: $side-bar-width - 2em;
     position: fixed;
     max-height: $menu-max-height;
     width: $side-bar-width;
@@ -251,8 +274,9 @@
           border-bottom: 1px solid $menu-underline;
         }
         a{
-          padding: 0.5em 2em;
-          font-size: 1em;
+
+          padding: 0.5em 2.6666em;
+          font-size: 0.75em;
         }
       }
     }
@@ -269,27 +293,51 @@
       }
       @include element-invisible-off;
       h2{
-        font-size: 0.8889rem;
-        line-height: 1.5000rem;
+        font-size: $side-info-scale * 0.8889rem;
+        line-height: $side-info-scale * 1rem;
       }
       .fw-info-date{
-        font-size: 1.2656rem;
-        line-height: 1.8750rem;
+        font-size: $side-info-scale * 1.25rem;
+        line-height: $side-info-scale * 1.8750rem;
       }
       .fw-info-time,
       .fw-info-venue{
-        font-size: 1.1250rem;
-        line-height: 1.5000rem;
+        font-size: $side-info-scale * 1rem;
+        line-height: $side-info-scale * 1.5000rem;
       }
       .fw-info-venue{
-        font-size: 0.8889rem;
-        line-height: 1.5000rem;
+        font-size: $side-info-scale * 0.75rem;
+        line-height: $side-info-scale * 1.000rem;
       }
       .fw-info-address,
       .fw-info-city {
-        font-size: 0.8889rem;
-        line-height: 1.5000rem;
+        font-size: $side-info-scale * 0.65rem;
+        line-height: $side-info-scale * 1rem;
       }
     }
   }
+}
+
+.rtt{
+  opacity: 0;
+  position: fixed;
+  display: block;
+  right: 0;
+  bottom: 4em;
+  transition: all 250ms ease-in-out;
+  z-index: 1000;
+  transition: opacity 250ms ease-in;
+  .rtt-btn{
+    padding: 1em;
+    background-color: $green;
+    color: $white;
+    text-decoration: none;
+  }
+  &:hover{
+    opacity: 1;
+  }
+}
+
+.js-rtt{
+  opacity: 0.5;
 }

@@ -1,38 +1,26 @@
 ---
-layout: portfolio-pictures
-# THE NAME OF THIS FILE IS CRITICAL
-# It needs to match the same name as your images `lastname-firstname`
+title: Framework 2016 - Kaylin Enright
+meta: Portfolio Page for Kaylin Enright
+layout: portfolio
 
-# Write your full name as you want it shown on the website
 full_name: "Kaylin Enright"
 short_name: "Kaylin E"
+first_name: "Kaylin"
+last_name: "Enright"
 
-# Your personal description — written in first-person
-# MIN 100 characters
-# MAX 140 characters
 description: "My love for design is almost as big as my love for cake. Full of personality and bubbly to boot, I'm a hoot and a half to work with!"
 
-# Use a professional email address
 email: "kaylin.enright@hotmail.com"
 
-# OPTIONAL — delete this line if you don't want it
-# Can be your portfolio, Behance, whatever
 website: "http://kaylinenright.ca"
 
-# CHOOSE A MAX OF 3
-# Delete the lines you don’t want
 specialization:
   - print
   - type
   - ux-ui
 
-
-
-# CHOOSE A MAX OF 3
-# Change the URLs to match your profile page
-# Delete the lines you don’t want
 social:
-  behance:    "https://www.behance.net/kaylin-enright "
+  behance:    "https://www.behance.net/kaylin-enright"
   linkedin:   "https://www.linkedin.com/in/kaylinenright"
 
 ---

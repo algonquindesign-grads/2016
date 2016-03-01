@@ -1,51 +1,104 @@
-img {
-  display: block;
-  width: 100%;
-}
-
 .fe-holder {
-  background-color: $grey;
-  padding: 1em;
-  @media only screen and (min-width: 60em) {
-    padding-right: 10%; 
-    padding-left: 10%; 
+  background-color: rgba($grey-2, .5 );
+  // padding: 1em;
+  @media only screen and (min-width: 80em) {
+      margin-top: 2em;
+    // padding-right: 10%;
+    // padding-left: 10%;
   }
 }
 
 .fe-title {
-  padding: .5em;
-  text-transform: uppercase;
-  margin: 1em 0 0 0;
+ @include header-1;
 }
 
-.fe-images {
+.fe-img-holder {
   position: relative;
 }
-
-.fe-img {
-  display: inline-block;
-  padding: 1em;
-  width: 100%;
-}
-
 
 .fe-event {
   position: absolute;
   z-index: 100;
-  bottom: 0;
-  padding: .5em;
-  background-color: $black;
-  margin-left: 1em;
-  margin-right: 1em;
+  bottom: -0.9em;
+  padding: .2em 1em;
+  background-color: rgba( $black, .8 );
   overflow: hidden;
   display: block;
   color: white;
+  font-family: "Effra", sans-serif;
+  font-size: 1.25em;
+  text-transform: uppercase;
+ }
+
+.fe-images-1 {
+  .fe-img {
+    display: inline-block;
+    width: 100%;
+    @media only screen and (min-width: 25em) {
+      padding-right: .5em;
+    }
+  }
 }
+
+.fe-images-2 {
+  .fe-img {
+    display: inline-block;
+    width: 100%;
+    @media only screen and (min-width: 25em) {
+      padding-right: .5em;
+    }
+  }
+}
+
+.fe-images-3 {
+  .fe-img {
+    display: inline-block;
+    width: 100%;
+    @media only screen and (min-width: 38em) {
+      padding-right: .5em;
+    }
+  }
+}
+
+
+// .fe-event {
+//   position: absolute;
+//   z-index: 100;
+//   bottom: 0;
+//   padding: .5em;
+//   background-color: $black;
+//   margin-left: 1em;
+//   margin-right: 1em;
+//   overflow: hidden;
+//   display: block;
+//   color: white;
+// }
 
 .fe-info {
   display: inline-block;
   float: left;
-  padding: 1em;
   width: 100%;
+  padding-top: .75em;
+  padding-bottom: 1em;
+  p {
+    font-family: "Effra", sans-serif;
+    font-size: 1em;
+  }
+  a {
+    font-family: "Effra", sans-serif;
+    font-size: 14px;
+    color: $text-color;
 
+  }
+}
+
+.fe-details {
+  margin-bottom: .5em;
+}
+
+.fe-calender {
+  margin-bottom: 0;
+  text-decoration: none;
+  color: $text-color;
+  font-size: 14px;
 }

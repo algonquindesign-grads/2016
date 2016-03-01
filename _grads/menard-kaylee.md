@@ -1,7 +1,12 @@
 ---
-layout: portfolio-pictures
+title: Framework 2016 - Kaylee Ménard
+meta: Portfolio Page for Kaylee Ménard
+layout: portfolio
+
 full_name: "Kaylee Ménard"
 short_name: "Kaylee M"
+first_name: "Kaylee"
+last_name: "Ménard"
 
 description: "I'm forever trying to learn all the things, illustrate pretty things, and doing my damnest to keep my plant things alive."
 

@@ -1,37 +1,27 @@
 ---
-layout: portfolio-pictures
-# THE NAME OF THIS FILE IS CRITICAL
-# It needs to match the same name as your images `lastname-firstname`
+title: Framework 2016 - Mystine Laframboise Vien
+meta: Portfolio Page for Mystine Laframboise Vien
+layout: portfolio
 
-# Write your full name as you want it shown on the website
 full_name: "Mystine Laframboise Vien"
 short_name: "Mystine L"
+first_name: "Mystine"
+last_name: "Laframboise Vien"
 
-# Your personal description — written in first-person
-# MIN 100 characters
-# MAX 140 characters
-description: "I love cats and I want to travel the world."
+description: "I am and will forever be a cat lover. I enjoy travelling, chocolate, wine, music, white space, and bright colors."
 
-# Use a professional email address
-email: "hey@mystine.ca"
+email: "hello@mystine.ca"
 
-# OPTIONAL — delete this line if you don't want it
-# Can be your portfolio, Behance, whatever
 website: "http://mystine.ca"
 
-# CHOOSE A MAX OF 3
-# Delete the lines you don’t want
 specialization:
   - ux-ui
   - print
-  - epub
+  - branding
 
-# CHOOSE A MAX OF 3
-# Change the URLs to match your profile page
-# Delete the lines you don’t want
 social:
   behance:    "https://www.behance.net/mystine"
   dribbble:   "https://dribbble.com/mystine"
-  instagram:  "https://ca.instagram.com/mysst__"
+  instagram:  "https://www.instagram.com/mysst__/"
 
 ---

@@ -1,3 +1,9 @@
+.filter-module {
+  position: relative;
+  display: block;
+  margin: 0 auto;
+}
+
 .filter-radio {
   left: -50px;
   position: absolute;
@@ -39,13 +45,13 @@
 
 /* > will only select direct child descendant */
 #filter-branding:checked ~ .filter-items > [data-category~="branding"],
-#filter-ux:checked ~ .filter-items > [data-category~="ux"],
+#filter-ux:checked ~ .filter-items > [data-category~="ux-ui"],
 #filter-web:checked ~ .filter-items > [data-category~="web"],
 #filter-illustration:checked ~ .filter-items > [data-category~="illustration"],
 #filter-motion:checked ~ .filter-items > [data-category~="motion"],
 #filter-print:checked ~ .filter-items > [data-category~="print"],
 #filter-type:checked ~ .filter-items > [data-category~="type"],
-#filter-photo:checked ~ .filter-items > [data-category~="photo"] {
+#filter-photo:checked ~ .filter-items > [data-category~="photography"] {
   opacity: 1;
 }
 
