@@ -1,7 +1,7 @@
 .fw-info-holder {
     padding: 2em;
-    background-color: $grey-3;
-    color: $grey-1;
+    background-color: $grey;
+    color: $white;
     @media only screen and (min-width: 80em) {
       display: none;
       visibility: hidden;
@@ -50,13 +50,6 @@
       padding-top: 0;
     }
     button {
-    text-decoration: none;
-    padding: 1em;
-    color: $white;
-    background-color: $grey-2;
-    border: 0;
-    text-align: center;
-    font-size: 18px;
-    text-transform: uppercase;
+    @include btn-outline-white;
   }
 }
