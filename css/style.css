@@ -1,5 +1,5 @@
 .social-section {
-  color: #64689b;
+  color: #000;
   font-size: 1.5em;
   text-transform: uppercase;
 }
@@ -168,7 +168,7 @@ ul li {
 }
 
 .grad-section {
-  color: #64689b;
+  color: #000;
   font-size: 1.5em;
   text-transform: uppercase;
 }
@@ -2876,7 +2876,7 @@ body.noscript .fw-toggle {
 }
 
 .about-header {
-  color: #64689b;
+  color: #000;
   font-size: 1.5em;
   text-transform: uppercase;
 }
@@ -2930,7 +2930,7 @@ body.noscript .fw-toggle {
 }
 
 .fe-title {
-  color: #64689b;
+  color: #000;
   font-size: 1.5em;
   text-transform: uppercase;
 }
@@ -3138,7 +3138,7 @@ body.noscript .fw-toggle {
 }
 
 .bts-title {
-  color: #64689b;
+  color: #000;
   font-size: 1.5em;
   text-transform: uppercase;
   margin-bottom: 1em;
