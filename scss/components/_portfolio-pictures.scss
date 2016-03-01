@@ -140,7 +140,7 @@
   padding-top: 2.5em;
 }
 
-.pp-wrap{
+.pp-wrap {
   text-align: center;
 }
 
@@ -192,27 +192,12 @@
     display: inherit;
   }
 
-  .pp-wrap-name {
-    padding-top: 3em;
-  }
-
 }
 
 @media only screen and (min-width: 60em) {
 
   .pp-wrap-name {
     background-color: transparent;
-  }
-
-  .pp-name-sm {
-    display: inline-block;
-    font-size: 1em;
-    font-weight: 900;
-    line-height: 1em;
-  }
-
-  .pp-name {
-    margin-top: 1em;
   }
 
   .pp-social-icon {
