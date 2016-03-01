@@ -5,6 +5,8 @@ layout: portfolio
 
 full_name: "Sara Clayton"
 short_name: "Sara Clayton"
+first_name: "Sara"
+last_name: "Clayton"
 
 description: "I'm a creative thinker who believes everything must serve a purpose. I have a love for clean lines, eye-catching details and effective design. "
 

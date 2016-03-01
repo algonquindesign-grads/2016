@@ -2941,8 +2941,8 @@ body.noscript .fw-toggle {
   position: absolute;
   z-index: 100;
   bottom: -1em;
-  padding: .3em .5em;
-  background-color: rgba(0, 0, 0, 0.6);
+  padding: .3em 1em;
+  background-color: rgba(0, 0, 0, 0.8);
   overflow: hidden;
   display: block;
   color: white;
@@ -2997,6 +2997,7 @@ body.noscript .fw-toggle {
 
 .fe-details {
   margin-bottom: .5em;
+  font-weight: bold;
 }
 
 .fe-calender {
@@ -3066,8 +3067,8 @@ body.noscript .fw-toggle {
 }
 
 .grid-middle {
-  background-color: #55565a;
-  color: #fff;
+  background-color: #f8f2e9;
+  color: #000;
 }
 
 .ft-copyright {
@@ -3076,9 +3077,8 @@ body.noscript .fw-toggle {
 }
 
 .ft-sponsor {
-  padding-left: .5em;
-  width: 100px;
-  width: 100px;
+  padding-left: .25em;
+  width: 180px;
   margin: auto 0;
 }
 
@@ -3086,6 +3086,7 @@ body.noscript .fw-toggle {
   display: block;
   text-align: center;
   text-transform: uppercase;
+  margin: 0;
 }
 
 .sponsors {
@@ -3096,6 +3097,13 @@ body.noscript .fw-toggle {
   margin-left: auto;
   margin-right: auto;
   text-align: center;
+  padding-top: 0.7000rem;
+}
+
+@media only screen and (min-width: 60em) {
+  .sponsor-center {
+    padding-top: 0;
+  }
 }
 
 .bts-bg {
@@ -3197,6 +3205,13 @@ body.noscript .fw-toggle {
 
 .fw-info-sec3 {
   float: left;
+  padding-top: 2em;
+}
+
+@media only screen and (min-width: 38em) {
+  .fw-info-sec3 {
+    padding-top: 0;
+  }
 }
 
 .fw-info-sec3 button {

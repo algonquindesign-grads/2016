@@ -2,8 +2,11 @@
 title: Framework 2016 - Mio Tahara
 meta: Portfolio Page for Mio Tahara
 layout: portfolio
+
 full_name: "Mio Tahara"
 short_name: "Mio T"
+first_name: "Mio"
+last_name: "Tahara"
 
 description: "I love to create Japanese-taste design with blending other culture because I am Japanese, and I used to live in some countries."
 

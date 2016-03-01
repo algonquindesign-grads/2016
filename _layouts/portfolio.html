@@ -4,7 +4,7 @@ layout: default
 
 {% include base.html %}
 <div class="pp-wrap-name island"><!--- Student's Name -->
-  <h1 class="pp-name"><span class="pp-name-sm">{{ page.full_name }}</span></h1>
+  <h1 class="pp-name"><span class="pp-name-sm">{{ page.first_name }} </span> {{ page.last_name }}</h1>
 </div>
 
 <div class="grid push-0">
@@ -60,7 +60,7 @@ layout: default
       <ul class="pp-student">
         <li class="pp-image">
           <a href="#">
-            <img class="img-flex pp-gradphoto-top" src="{{site.cdn}}portraits/{{page.url | replace: 'grads/', '/' | remove:'/'}}.jpg" alt="Photo of Designer">
+            <img class="img-flex pp-gradphoto-top" src="{{site.cdn}}portraits/{{page.url | replace: 'grads/', '/' | remove:'/'}}.jpg" alt="Photo of {{ page.full_name }}">
           </a>
         </li>
       </ul>
@@ -75,7 +75,7 @@ layout: default
         <ul class="pp-nav-btn pad-t">
 <!--- Social icons -->
         {% for a in page.social %}
-          <li class="pp-nav-btn-li"><a section-margin href="{{a | last}}"><img class="pp-social-icon gutter-1-2" src="{{site.cdn}}img/{{a | first}}.svg" alt="Follow me on {{a | first}}."></a></li>
+          <li class="pp-nav-btn-li"><a href="{{a | last}}" target="_blank"><img class="pp-social-icon gutter-1-2" src="{{site.cdn}}img/{{a | first}}.svg" alt="Follow me on {{a | first}}."></a></li>
         {% endfor %}
         </ul>
       </div>

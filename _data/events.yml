@@ -7,19 +7,19 @@
   xs: '1'
   s: '1-2'
 
-- name: Event 2
-  location: Location 2
-  date: March 2
-  time: 12:00 PM
+- name: Pub Night
+  location: Leuitenants Pump
+  date: March 11
+  time: 7:00pm-2:00am
   link: '#'
   img: events-02.jpg
   xs: '1'
   s: '1-2'
 
-- name: Event 3
-  location: Location 3
-  date: March 1
-  time: 12:00 PM
+- name: Grad Show
+  location: Lansdowne Park
+  date: April 29
+  time: 6:00pm-9:30pm
   link: '#'
   img: events-03.jpg
   xs: 'hidden'
