@@ -263,7 +263,7 @@ ul li {
 }
 
 .ph-image a:hover .ph-gradphoto-top {
-  top: -100%;
+  top: -105%;
 }
 
 .ph-gradphoto-top {
@@ -2752,7 +2752,7 @@ body.noscript .fw-toggle {
 
 .pp-wrap {
   width: 100%;
-  background-color: #DCDBDB;
+  background-color: rgba(220, 219, 219, 0.5);
 }
 
 .pp-wrap-name {
