@@ -2943,6 +2943,7 @@ body.noscript .fw-toggle {
 
 .fe-img-holder {
   position: relative;
+  padding: 0.5em;
 }
 
 .fe-event {
@@ -2996,8 +2997,7 @@ body.noscript .fw-toggle {
   display: inline-block;
   float: left;
   width: 100%;
-  padding-top: .75em;
-  padding-bottom: 1em;
+  padding: .75em .5em;
 }
 
 .fe-info p {
