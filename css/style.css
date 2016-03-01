@@ -2990,6 +2990,8 @@ body.noscript .fw-toggle {
   display: inline-block;
   float: left;
   width: 100%;
+  padding-top: .75em;
+  padding-bottom: 1em;
 }
 
 .fe-info p {
