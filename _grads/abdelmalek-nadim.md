@@ -9,7 +9,7 @@ short_name: "Nadim A"
 first_name: "Nadim"
 last_name: "Abdelmalek"
 
-description: "I am a Graphic Designer that loves batman and pop culture, I specialize in branding and illustration."
+description: "Graphic Designer by day, crime fighter by night. I love long walks in creepy dark alleyways, and helping Alfred design my batcave."
 
 email: "hey@nadimdesign.ca"
 
@@ -22,7 +22,7 @@ specialization:
 
 social:
   facebook:   "https://www.facebook.com/nadim.abdelmalik"
-  linkedin:   "https://www.linkedin.com/in/nadim-abdelmalek"
+  linkedin:   "https://ca.linkedin.com/in/nadim-abdelmalek-606b21b1"
   vimeo:      "https://vimeo.com/nadimabdelmalek"
 
 ---
