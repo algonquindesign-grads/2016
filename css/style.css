@@ -3227,10 +3227,20 @@ body.noscript .fw-toggle {
   text-transform: uppercase;
 }
 
-.clock-holder-2 {
-  -webkit-transform: translateY(50%);
-      -ms-transform: translateY(50%);
-          transform: translateY(50%);
+@media only screen and (min-width: 38em) {
+  .clock-holder-2 {
+    -webkit-transform: translateY(10%);
+        -ms-transform: translateY(10%);
+            transform: translateY(10%);
+  }
+}
+
+@media only screen and (min-width: 55em) {
+  .clock-holder-2 {
+    -webkit-transform: translateY(50%);
+        -ms-transform: translateY(50%);
+            transform: translateY(50%);
+  }
 }
 
 .clock-holder {
@@ -3239,16 +3249,34 @@ body.noscript .fw-toggle {
   font-family: sans-serif;
   font-weight: 100;
   height: 3em;
+  margin-bottom: 2em;
+}
+
+@media only screen and (min-width: 38em) {
+  .clock-holder {
+    margin-bottom: 0;
+  }
 }
 
 .clock-width {
   width: 100%;
   margin-top: 1.5em;
   position: relative;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-@media only screen and (min-width: 60em) {
+@media only screen and (min-width: 38em) {
   .clock-width {
+    width: 10em;
+    margin-top: 2em;
+  }
+}
+
+@media only screen and (min-width: 55em) {
+  .clock-width {
+    width: 100%;
     margin-top: .5em;
   }
 }
@@ -3264,4 +3292,16 @@ body.noscript .fw-toggle {
 
 .smalltext {
   font-size: .65em;
+}
+
+@media only screen and (min-width: 38em) {
+  .smalltext {
+    margin-bottom: .5em;
+  }
+}
+
+@media only screen and (min-width: 55em) {
+  .smalltext {
+    margin-bottom: auto;
+  }
 }
