@@ -12,8 +12,14 @@
  @include header-1;
 }
 
+.fe-width {
+  max-width: 75em;
+  margin: 2em auto;;
+}
+
 .fe-img-holder {
   position: relative;
+  padding: 0.5em
 }
 
 .fe-event {
@@ -78,8 +84,7 @@
   display: inline-block;
   float: left;
   width: 100%;
-  padding-top: .75em;
-  padding-bottom: 1em;
+  padding: .75em .5em;
   p {
     font-family: "Effra", sans-serif;
     font-size: 1em;
