@@ -12,13 +12,13 @@ html {
 	text-size-adjust: 100%;
   font-family: 'Effra', sans-serif;
   position: relative;
-  height: 100%;
+  // height: 100%;
 }
 
 body{
   @include zero;
   position: relative;
-  height: 100%;
+  // height: 100%;
   background-color: transparent;
 }
 
@@ -38,11 +38,11 @@ body:after{
 }
 
 .framework-margin {
-  margin: 3em 2em 3em 2em;
+  margin: 2em 2em 2em 2em;
 }
 
 .framework-padding {
-  padding: 3em 2em 3em 2em;
+  padding: 2em 2em 2em 2em;
 }
 
 *, *:before, *:after {
@@ -80,7 +80,10 @@ body.noscript{
         margin: 0;
       }
     }
-
+    .fw-info{
+      position: relative;
+      padding: 2em;
+    }
     .fw-navigation{
       position: absolute;
       width: auto;

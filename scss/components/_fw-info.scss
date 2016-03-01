@@ -1,0 +1,62 @@
+.fw-info-holder {
+    padding: 2em;
+    background-color: $grey-3;
+    color: $grey-1;
+    @media only screen and (min-width: 80em) {
+      display: none;
+      visibility: hidden;
+    }
+  h2{
+    text-transform: uppercase;
+    font-weight: normal;
+  }
+  .fw-info-date{
+    font-weight: bold;
+  }
+  .fw-info-time{
+    margin-bottom: 1em;
+  }
+  .fw-info-venue{
+    font-weight: bold;
+  }
+  .fw-info-address{
+    font-size: 14px;
+    color: $grey-1;
+    &:hover{
+      color: darken($grey-1, 10%);
+      text-decoration: underline;
+    }
+    a {
+      text-decoration: none;
+    }
+    }
+  }
+
+.fw-info-sec1 {
+  padding-right: .5em;
+  float: left;
+}
+
+.fw-info-sec2 {
+  padding-right: .5em;
+  color: $grey-1;
+  float: left;
+}
+
+.fw-info-sec3 {
+  float: left;
+  padding-top: 2em;
+    @media only screen and (min-width: 38em) {
+      padding-top: 0;
+    }
+    button {
+    text-decoration: none;
+    padding: 1em;
+    color: $white;
+    background-color: $grey-2;
+    border: 0;
+    text-align: center;
+    font-size: 18px;
+    text-transform: uppercase;
+  }
+}

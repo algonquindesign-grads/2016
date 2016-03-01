@@ -1,24 +1,19 @@
 
+
 <footer class="gutter grid grid-middle">
-	<div class="unit unit-xs-1 unit-s-1 unit-m-1 unit-l-1 pad-t">
-  	<h3 class="thanks">SPECIAL THANKS TO OUR SPONSORS</h3>
+	<div class="unit unit-xs-1 pad-t">
+  	<h3 class="thanks">Special Thanks to our Sponsors</h3>
   </div>
-  	<div class="unit-xs-1 unit-s-1 unit-m-1 unit-l-1 pad-t pad-b">
-	    <div class="unit unit-xs-1 unit-s-1 unit-m-1-4 unit-l-1-4 sponsor-center">
-	      <img  class="ft-sponsor unit-xs-1-2 unit-s-1-2 unit-m-1-2 unit-l-1-2 unit-xl-1-2 " src="http://placehold.it/150x150">
+  	<div class="unit-xs-1 pad-t pad-b">
+{% for sponsor in site.data.sponsors %}
+	    <div class="unit unit-xs-1 unit-s-1-2 unit-m-1-2 unit-l-1-4 sponsor-center">
+	      <img class="ft-sponsor" src="{{site.cdn}}img/{{sponsor.img}}" alt="{{sponsor.name}}">
 	    </div>
-	 		 <div class="unit unit-xs-1 unit-s-1 unit-m-1-4 unit-l-1-4 sponsor-center">
-	      <img  class="ft-sponsor unit-xs-1-2 unit-s-1-2 unit-m-1-2 unit-l-1-2 unit-xl-1-2 " src="http://placehold.it/150x150">
-	    </div>
-	     <div class="unit unit-xs-1 unit-s-1 unit-m-1-4 unit-l-1-4 sponsor-center">
-	      <img  class="ft-sponsor unit-xs-1-2 unit-s-1-2 unit-m-1-2 unit-l-1-2 unit-xl-1-2 " src="http://placehold.it/150x150">
-	    </div>
-	     <div class="unit unit-xs-1 unit-s-1 unit-m-1-4 unit-l-1-4 sponsor-center">
-	      <img  class="ft-sponsor unit-xs-1-2 unit-s-1-2 unit-m-1-2 unit-l-1-2 unit-xl-1-2 " src="http://placehold.it/150x150">
-	    </div>
+{% endfor %}
+
 		</div>
-	<div class="unit unit-xs-1 unit-s-1 unit-m-1 unit-l-1">
-		<p class="unit thanks">	&copy; Algonquin College Graduating Class of 2016</p>
+	<div class="unit unit-xs-1 unit-s-1 unit-m-1 unit-l-1 pad-b">
+		<p class="unit thanks">	&copy; Algonquin College Class of 2016</p>
 	</div>
 </footer>
 

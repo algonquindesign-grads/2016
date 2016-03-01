@@ -28,19 +28,35 @@
   border: 0;
   background-color: transparent;
   opacity: 0;
-  transition: all 250ms linear;
+  transition: opacity 250ms linear;
   cursor: pointer;
 }
 
 .gd-video-wrap:hover .gd-btn-play-pause,
 .gd-video-wrap.is-paused .gd-btn-play-pause {
-  opacity: 1;
+  opacity: 0.75;
 }
 
 .play {
   background-image: url(http://grads.images.algonquindesign.ca/2016/img/play-button.svg);
+  opacity: 0;
 }
 
 .pause {
   background-image: url(http://grads.images.algonquindesign.ca/2016/img/pause-button.svg);
+  opacity: 0
 }
+@media only screen and (min-width: 80em){
+  .gd-video-wrap.is-paused .gd-btn-play-pause{
+    opacity: 0.25;
+  }
+  // .gd-video-wrap:hover > .gd-btn-play-pause{
+  //   opacity: 0.5;
+  // }
+  .gd-btn-play-pause{
+    &:hover{
+      opacity: 0.75;
+    }
+  }
+}
+

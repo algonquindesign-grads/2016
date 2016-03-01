@@ -3,7 +3,6 @@ layout: default
 ---
 
 {% include base.html %}
-
 <div class="pp-wrap-name island"><!--- Student's Name -->
   <h1 class="pp-name"><span class="pp-name-sm">{{ page.full_name }}</span></h1>
 </div>
@@ -104,19 +103,22 @@ layout: default
 
 <script>
 document.body.onkeyup = function(e){
-if (e.keyCode == '37') { window.location = '{{prevurl}}'; }
-if (e.keyCode == '39') { window.location = '{{nexturl}}'; }
+if (e.keyCode == '37') { window.location = '{{base}}{{prevurl}}'; }
+if (e.keyCode == '39') { window.location = '{{base}}{{nexturl}}'; }
 };
 
 </script>
 <div class="pp-wrap pad-t pad-b kilo">
   <ul class="unit pp-nav-btn">
-    <li class="pp-nav-btn-li"><a class="pp-nav-btn-arrows pp-on" href="{{previous_page_url}}">❮</a><a class="pp-nav-btn-a pp-off" href="{{prevurl}}">Previous</a></li>
-    <li class="pp-nav-btn-li gutter"><a class="pp-nav-btn-a" href="{{ base }}">All Grads</a></li>
-    <li class="pp-nav-btn-li"><a class="pp-nav-btn-arrows pp-on" href="{{ next_page_path }}"> ❯</a><a class="pp-nav-btn-a pp-off" href="{{nexturl}}">Next</a></li>
+    {% if prevurl %}
+    <li class="pp-nav-btn-li"><a class="pp-nav-btn-arrows pp-on" href="{{base}}{{prevurl}}">❮</a><a class="pp-nav-btn-a pp-off" href="{{base}}{{prevurl}}">Previous</a></li>
+    {% endif %}
+    <li class="pp-nav-btn-li gutter"><a class="pp-nav-btn-a" href="{{ base }}#grads">All Grads</a></li>
+    {% if nexturl %}
+    <li class="pp-nav-btn-li"><a class="pp-nav-btn-arrows pp-on" href="{{base}}{{nexturl}}"> ❯</a><a class="pp-nav-btn-a pp-off" href="{{base}}{{nexturl}}">Next</a></li>
+    {% endif %}
   </ul>
 </div>
-
 <div class="unit xs-1">
   {% include footer.html %}
 </div>
