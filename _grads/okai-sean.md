@@ -3,7 +3,7 @@ title: Framework 2016 - Sean Z Okai
 meta: Portfolio Page for Sean Z Okai
 layout: portfolio
 
-full_name: "Sean Z Okai"
+full_name: "Sean Okai"
 short_name: "Sean O"
 first_name: "Sean Z"
 last_name: "Okai"

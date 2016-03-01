@@ -3,7 +3,7 @@ title: Framework 2016 - Mystine Laframboise Vien
 meta: Portfolio Page for Mystine Laframboise Vien
 layout: portfolio
 
-full_name: "Mystine Laframboise Vien"
+full_name: "Mystine Vien"
 short_name: "Mystine L"
 first_name: "Mystine"
 last_name: "Laframboise Vien"
