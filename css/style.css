@@ -2624,6 +2624,7 @@ body.noscript .fw-toggle {
   font-weight: 900;
   font-size: 2.5em;
   margin-bottom: 0;
+  padding-left: .1em;
 }
 
 .pp-skill {
@@ -2636,11 +2637,12 @@ body.noscript .fw-toggle {
 .pp-desc {
   border-top: 2px solid #000;
   width: 100%;
-  padding: 1em 0;
+  padding: 1.5em 0;
+  margin-bottom: 0;
 }
 
 .pp-links a {
-  padding-top: 1em;
+  padding-bottom: 1em;
   text-decoration: none;
   font-weight: 400;
   color: #000;
