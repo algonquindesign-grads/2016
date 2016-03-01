@@ -20,7 +20,7 @@ specialization:
   - ux-ui
 
 social:
-  behance:    "https://www.behance.net/thomasjbradley"
+  behance:    "https://www.behance.net/chenisepaquette"
   instagram:  "https://www.instagram.com/jumbochen_/"
   vimeo:      "https://vimeo.com/user36322334"
 
