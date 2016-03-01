@@ -2,7 +2,7 @@
 title: Framework 2016 - Natalie May Macpherson
 meta: Portfolio Page for Natalie Macpherson
 layout: portfolio
-full_name: "Natalie Macpherson"
+full_name: "Natalie May Macpherson"
 short_name: "Natalie M"
 first_name: "Natalie May"
 last_name: "Macpherson"
