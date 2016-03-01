@@ -12,7 +12,16 @@
       </div>
       <div class="fe-info">
         <p class="fe-details">{{event.location}}<br>{{event.date}}</p>
-        <a class="fe-calender" href="{{link}}">Google Calendar</a>
+        <a class="fe-calendar" href="http://www.google.com/calendar/event?
+action=TEMPLATE
+&text={{event.name}}
+&dates= 20160303T190000Z/20160303T210000Z
+&details= {{event.name}}
+&location={{event.location}}
+&trp=false
+&sprop=false
+&sprop=false"
+target="_blank" rel="nofollow">Google Calendar</a>
       </div>
     </div>
 {% endfor %}

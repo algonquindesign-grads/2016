@@ -94,9 +94,9 @@
 #filter-print:checked ~ .grid .filters [for="filter-print"],
 #filter-type:checked ~ .grid .filters [for="filter-type"],
 #filter-photo:checked ~ .grid .filters [for="filter-photo"] {
-  background-color: #7D7D80;
+  background-color: #00a29c;
   box-shadow: none;
-  border: 2px solid #7D7D80;
+  border: 2px solid #00a29c;
   color: white;
 }
 
@@ -142,14 +142,15 @@ ul li {
 }
 
 .filter-btn {
-  display: inline-block;
-  margin: 0;
+  text-align: center;
   background-color: transparent;
   border: 1px solid #DCDBDB;
   color: #55565a;
   padding: .5em 1em;
-  margin: 4px 2px;
-  box-shadow: 2px 2px #DCDBDB;
+}
+
+.filters {
+  margin: 0 auto;
 }
 
 .filter-btn:hover {
@@ -230,7 +231,7 @@ ul li {
   color: #fff;
   letter-spacing: 2px;
   font-size: 12px;
-  font-family: "Effra", serif;
+  font-family: "Effra", sans-serif;
   margin-top: -2.10em;
 }
 
@@ -2163,7 +2164,7 @@ td, th, fieldset {
   fill: #55565a;
 }
 
-.fw-header .logo .fw-logo:hover .svg-top {
+.fw-header .logo .fw-logo:hover svg .svg-top {
   -webkit-animation: colours 5s ease-in-out infinite;
           animation: colours 5s ease-in-out infinite;
 }
@@ -2438,6 +2439,32 @@ td, th, fieldset {
   }
 }
 
+.rtt {
+  opacity: 0;
+  position: fixed;
+  display: block;
+  right: 0;
+  bottom: 4em;
+  transition: all 250ms ease-in-out;
+  z-index: 1000;
+  transition: opacity 250ms ease-in;
+}
+
+.rtt .rtt-btn {
+  padding: 1em;
+  background-color: #00a29c;
+  color: #fff;
+  text-decoration: none;
+}
+
+.rtt:hover {
+  opacity: 1;
+}
+
+.js-rtt {
+  opacity: 0.5;
+}
+
 @-moz-viewport {
   width: device-width;
   scale: 1;
@@ -2597,6 +2624,7 @@ body.noscript .fw-toggle {
   font-weight: 900;
   font-size: 2.5em;
   margin-bottom: 0;
+  padding-left: .1em;
 }
 
 .pp-skill {
@@ -2609,11 +2637,12 @@ body.noscript .fw-toggle {
 .pp-desc {
   border-top: 2px solid #000;
   width: 100%;
-  padding: 1em 0;
+  padding: 1.5em 0;
+  margin-bottom: 0;
 }
 
 .pp-links a {
-  padding-top: 1em;
+  padding-bottom: 1em;
   text-decoration: none;
   font-weight: 400;
   color: #000;
@@ -2914,12 +2943,12 @@ body.noscript .fw-toggle {
   position: absolute;
   z-index: 100;
   bottom: -1em;
-  padding: .3em .5em;
-  background-color: rgba(0, 0, 0, 0.6);
+  padding: .3em 1em;
+  background-color: rgba(0, 0, 0, 0.8);
   overflow: hidden;
   display: block;
   color: white;
-  font-family: "Effra", serif;
+  font-family: "Effra", sans-serif;
   font-size: 16px;
   text-transform: uppercase;
 }
@@ -2964,12 +2993,13 @@ body.noscript .fw-toggle {
 }
 
 .fe-info p, .fe-info a {
-  font-family: "Effra", serif;
+  font-family: "Effra", sans-serif;
   font-size: 14px;
 }
 
 .fe-details {
   margin-bottom: .5em;
+  font-weight: bold;
 }
 
 .fe-calender {
@@ -3039,8 +3069,8 @@ body.noscript .fw-toggle {
 }
 
 .grid-middle {
-  background-color: #55565a;
-  color: #fff;
+  background-color: #f8f2e9;
+  color: #000;
 }
 
 .ft-copyright {
@@ -3058,6 +3088,7 @@ body.noscript .fw-toggle {
   display: block;
   text-align: center;
   text-transform: uppercase;
+  margin: 0;
 }
 
 .sponsors {
@@ -3068,6 +3099,13 @@ body.noscript .fw-toggle {
   margin-left: auto;
   margin-right: auto;
   text-align: center;
+  padding-top: 0.7000rem;
+}
+
+@media only screen and (min-width: 60em) {
+  .sponsor-center {
+    padding-top: 0;
+  }
 }
 
 .bts-bg {
@@ -3169,6 +3207,13 @@ body.noscript .fw-toggle {
 
 .fw-info-sec3 {
   float: left;
+  padding-top: 2em;
+}
+
+@media only screen and (min-width: 38em) {
+  .fw-info-sec3 {
+    padding-top: 0;
+  }
 }
 
 .fw-info-sec3 button {

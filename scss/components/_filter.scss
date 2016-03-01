@@ -24,9 +24,9 @@
 #filter-print:checked ~ .grid .filters [for="filter-print"],
 #filter-type:checked ~ .grid .filters [for="filter-type"],
 #filter-photo:checked ~ .grid .filters [for="filter-photo"] {
-  background-color: $grey-3;
+  background-color: $green;
   box-shadow: none;
-  border: 2px solid $grey-3;
+  border: 2px solid $green;
   color: white;
 }
 
@@ -76,15 +76,27 @@ ul li {
   list-style-type: none;
 }
 
-.filter-btn {
-  display: inline-block;
-  margin: 0;
+// .filter-btn {
+//   display: inline-block;
+//   margin: 0;
+//   background-color: transparent;
+//   border: 1px solid $grey-1;
+//   color: $grey;
+//   padding: .5em 1em;
+//   margin: 4px 2px;
+//   box-shadow: 2px 2px $grey-1;
+// }
+
+.filter-btn{
+  text-align: center;
   background-color: transparent;
   border: 1px solid $grey-1;
   color: $grey;
   padding: .5em 1em;
-  margin: 4px 2px;
-  box-shadow: 2px 2px $grey-1;
+}
+
+.filters{
+  margin: 0 auto;
 }
 
 .filter-btn:hover {

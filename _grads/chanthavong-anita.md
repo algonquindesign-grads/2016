@@ -2,11 +2,12 @@
 title: Framework 2016 - Anita Chanthavong
 meta: Portfolio Page for Anita Chanthavong
 layout: portfolio
+
 full_name: "Anita Chanthavong"
 short_name: "Anita C"
+first_name: "Anita"
+last_name: "Chanthavong"
 
-# MIN 100 characters
-# MAX 140 characters
 description: "Tweak 'til perfection by day; maverick designer/developer by night. Love sharks, big cats, wolves, science, sci-fi, space, zombies & dessert."
 
 email: "ac@anitachanthavong.ca"

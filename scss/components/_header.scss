@@ -45,7 +45,7 @@
           fill: $svg-fill;
         }
       }
-      &:hover .svg-top{
+      &:hover svg .svg-top{
         // fill: lighten($svg-top-fill, 10%);
         animation: colours 5s ease-in-out infinite;
       }
@@ -316,4 +316,28 @@
       }
     }
   }
+}
+
+.rtt{
+  opacity: 0;
+  position: fixed;
+  display: block;
+  right: 0;
+  bottom: 4em;
+  transition: all 250ms ease-in-out;
+  z-index: 1000;
+  transition: opacity 250ms ease-in;
+  .rtt-btn{
+    padding: 1em;
+    background-color: $green;
+    color: $white;
+    text-decoration: none;
+  }
+  &:hover{
+    opacity: 1;
+  }
+}
+
+.js-rtt{
+  opacity: 0.5;
 }
