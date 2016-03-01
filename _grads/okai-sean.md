@@ -8,7 +8,7 @@ short_name: "Sean O"
 first_name: "Sean Z"
 last_name: "Okai"
 
-description: "I am a media enthusiast with a zeal for problem-solving. Digital handyman by day, pixel seller at night. Also a highly ranked wafer connoisseur"
+description: "I am a media enthusiast with a zeal for problem-solving. Digital handyman by day, pixel seller at night. Also a highly ranked wafer connoisseur."
 
 email: "hello@seanzokai.ca"
 
