@@ -4,15 +4,13 @@
 }
 
 .about-para {
- 	font-size: 14px;
+ 	font-size: 1em;
 	color: $grey-4;
 	text-align: left;
 }
 
 .about-header {
-	color: $purple;
-	font-size: 16px;
-	text-transform: uppercase;
+	 @include header-1;
 }
 
 .about-social-icons {
