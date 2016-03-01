@@ -3232,7 +3232,14 @@ body.noscript .fw-toggle {
   text-transform: uppercase;
 }
 
-<<<<<<< HEAD
+.fw-info-sec3 button:hover {
+  background-color: #3c3d40;
+}
+
+.fw-info-sec3 button:active {
+  background-color: #232426;
+}
+
 @media only screen and (min-width: 38em) {
   .clock-holder-2 {
     -webkit-transform: translateY(10%);
@@ -3309,13 +3316,7 @@ body.noscript .fw-toggle {
 @media only screen and (min-width: 55em) {
   .clock-smalltext {
     margin-bottom: auto;
-=======
-.fw-info-sec3 button:hover {
-  background-color: #3c3d40;
-}
-
-.fw-info-sec3 button:active {
-  background-color: #232426;
+  }
 }
 
 scss
@@ -3400,6 +3401,5 @@ scss
   }
   to {
     opacity: 1;
->>>>>>> gh-pages
   }
 }
