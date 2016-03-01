@@ -4,7 +4,7 @@ meta: Portfolio Page for Sara Clayton
 layout: portfolio
 
 full_name: "Sara Clayton"
-short_name: "Sara Clayton"
+short_name: "Sara C"
 first_name: "Sara"
 last_name: "Clayton"
 
