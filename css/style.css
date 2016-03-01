@@ -1,6 +1,6 @@
 .social-section {
   color: #64689b;
-  font-size: 16px;
+  font-size: 1.5em;
   text-transform: uppercase;
 }
 
@@ -169,7 +169,7 @@ ul li {
 
 .grad-section {
   color: #64689b;
-  font-size: 16px;
+  font-size: 1.5em;
   text-transform: uppercase;
 }
 
@@ -2624,6 +2624,7 @@ body.noscript .fw-toggle {
   font-weight: 900;
   font-size: 2.5em;
   margin-bottom: 0;
+  padding-left: .1em;
 }
 
 .pp-skill {
@@ -2636,11 +2637,12 @@ body.noscript .fw-toggle {
 .pp-desc {
   border-top: 2px solid #000;
   width: 100%;
-  padding: 1em 0;
+  padding: 1.5em 0;
+  margin-bottom: 0;
 }
 
 .pp-links a {
-  padding-top: 1em;
+  padding-bottom: 1em;
   text-decoration: none;
   font-weight: 400;
   color: #000;
@@ -2868,14 +2870,14 @@ body.noscript .fw-toggle {
 }
 
 .about-para {
-  font-size: 14px;
+  font-size: 1em;
   color: #55565a;
   text-align: left;
 }
 
 .about-header {
   color: #64689b;
-  font-size: 16px;
+  font-size: 1.5em;
   text-transform: uppercase;
 }
 
@@ -2929,7 +2931,7 @@ body.noscript .fw-toggle {
 
 .fe-title {
   color: #64689b;
-  font-size: 16px;
+  font-size: 1.5em;
   text-transform: uppercase;
 }
 
@@ -2940,14 +2942,14 @@ body.noscript .fw-toggle {
 .fe-event {
   position: absolute;
   z-index: 100;
-  bottom: -1em;
-  padding: .3em 1em;
+  bottom: -0.9em;
+  padding: .2em 1em;
   background-color: rgba(0, 0, 0, 0.8);
   overflow: hidden;
   display: block;
   color: white;
   font-family: "Effra", sans-serif;
-  font-size: 16px;
+  font-size: 1.25em;
   text-transform: uppercase;
 }
 
@@ -2990,20 +2992,26 @@ body.noscript .fw-toggle {
   width: 100%;
 }
 
-.fe-info p, .fe-info a {
+.fe-info p {
+  font-family: "Effra", sans-serif;
+  font-size: 1em;
+}
+
+.fe-info a {
   font-family: "Effra", sans-serif;
   font-size: 14px;
+  color: #000;
 }
 
 .fe-details {
   margin-bottom: .5em;
-  font-weight: bold;
 }
 
 .fe-calender {
   margin-bottom: 0;
   text-decoration: none;
   color: #000;
+  font-size: 14px;
 }
 
 .gd-video-wrap,
@@ -3067,7 +3075,7 @@ body.noscript .fw-toggle {
 }
 
 .grid-middle {
-  background-color: #f8f2e9;
+  background-color: #DCDBDB;
   color: #000;
 }
 
@@ -3080,6 +3088,15 @@ body.noscript .fw-toggle {
   padding-left: .25em;
   width: 180px;
   margin: auto 0;
+}
+
+.copyright {
+  display: block;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0;
+  font-size: 13px;
+  line-height: 1.3000rem;
 }
 
 .thanks {
@@ -3122,7 +3139,7 @@ body.noscript .fw-toggle {
 
 .bts-title {
   color: #64689b;
-  font-size: 16px;
+  font-size: 1.5em;
   text-transform: uppercase;
   margin-bottom: 1em;
 }
@@ -3136,13 +3153,13 @@ body.noscript .fw-toggle {
   color: white;
   padding: 1em 0;
   margin-top: 1em;
-  font-size: 0.75em;
+  font-size: 1em;
   line-height: 1em;
   text-align: center;
 }
 
 .bts-text {
-  font-size: .75em;
+  font-size: 1em;
   padding-top: 1em;
   margin-bottom: 0;
   padding-right: 1em;
@@ -3223,4 +3240,89 @@ body.noscript .fw-toggle {
   text-align: center;
   font-size: 18px;
   text-transform: uppercase;
+}
+
+scss
+.nf-404 {
+  color: rgba(0, 0, 0, 0.1);
+  font-size: 5em;
+}
+
+.nf-down {
+  margin-top: 2em;
+}
+
+.nf-center {
+  text-align: center;
+}
+
+.nf-title {
+  font-size: 1.6018rem;
+  line-height: 2.1000rem;
+  color: #55565a;
+  font-weight: bold;
+}
+
+.nf-subtitle {
+  color: #A6A5A7;
+}
+
+.nf-btn {
+  display: inline-block;
+  margin: 0;
+  background-color: transparent;
+  border: 1px solid #DCDBDB;
+  color: #55565a;
+  padding: .5em 1em;
+  margin: 1.5em;
+  box-shadow: 2px 2px #DCDBDB;
+}
+
+.nf-btn a {
+  text-decoration: none;
+  color: #55565a;
+}
+
+.nf-btn:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+  box-shadow: inset 2px 2px 0 0 #DCDBDB;
+}
+
+.nf-btn:active {
+  background-color: #DCDBDB;
+  border: 2px solid #DCDBDB;
+}
+
+.nf-max {
+  max-width: 65%;
+  margin: 0 auto;
+}
+
+.nf-fadeIn {
+  -webkit-animation-name: nf-fadeIn;
+  animation-name: nf-fadeIn;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-delay: .5s;
+          animation-delay: .5s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+
+@-webkit-keyframes nf-fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes nf-fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }

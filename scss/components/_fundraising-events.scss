@@ -1,5 +1,5 @@
 .fe-holder {
-  background-color: rgba( $grey-2, .5 );
+  background-color: rgba($grey-2, .5 );
   // padding: 1em;
   @media only screen and (min-width: 80em) {
       margin-top: 2em;
@@ -19,14 +19,14 @@
 .fe-event {
   position: absolute;
   z-index: 100;
-  bottom: -1em;
-  padding: .3em 1em;
+  bottom: -0.9em;
+  padding: .2em 1em;
   background-color: rgba( $black, .8 );
   overflow: hidden;
   display: block;
   color: white;
   font-family: "Effra", sans-serif;
-  font-size: 16px;
+  font-size: 1.25em;
   text-transform: uppercase;
  }
 
@@ -78,20 +78,25 @@
   display: inline-block;
   float: left;
   width: 100%;
-  p, a {
-
+  p {
+    font-family: "Effra", sans-serif;
+    font-size: 1em;
+  }
+  a {
     font-family: "Effra", sans-serif;
     font-size: 14px;
+    color: $text-color;
+
   }
 }
 
 .fe-details {
   margin-bottom: .5em;
-  font-weight: bold;
 }
 
 .fe-calender {
   margin-bottom: 0;
   text-decoration: none;
   color: $text-color;
+  font-size: 14px;
 }
