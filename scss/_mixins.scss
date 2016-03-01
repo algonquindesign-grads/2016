@@ -46,3 +46,19 @@
   font-size: 1.5em;
   text-transform: uppercase;
 }
+
+@mixin btn-outline-white {
+  text-align: center;
+  background-color: transparent;
+  border: 1px solid $white;
+  color: $white;
+  padding: .75em 1.5em;
+  font-size: 1em;
+  text-transform: uppercase;
+  &:hover {
+    background-color: darken($grey, 10%);
+  }
+  &:active{
+    background-color: darken($grey, 20%);
+  }
+}

@@ -154,8 +154,9 @@ ul li {
 }
 
 .filter-btn:hover {
-  background-color: rgba(0, 0, 0, 0.05);
-  box-shadow: inset 2px 2px 0 0 #DCDBDB;
+  background-color: rgba(0, 162, 156, 0.5);
+  xbox-shadow: inset 2px 2px 0 0 #DCDBDB;
+  color: #fff;
 }
 
 #filter-select {
@@ -290,6 +291,23 @@ ul li {
 @media only screen and (min-width: 60em) {
   .ph-padding {
     padding: 3em 2em 3em 2em;
+  }
+}
+
+.grad-slector-title {
+  font-size: 14px;
+  font-family: "Effra", sans-serif;
+  color: #7D7D80;
+  margin: 0 0 -1em 2.3em;
+}
+
+@media only screen and (min-width: 38em) {
+  .grad-slector-title {
+    position: absolute !important;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+    clip: rect(1px, 1px, 1px, 1px);
   }
 }
 
@@ -2753,7 +2771,7 @@ body.noscript .fw-toggle {
 
 .pp-wrap {
   width: 100%;
-  background-color: #DCDBDB;
+  background-color: rgba(220, 219, 219, 0.5);
 }
 
 .pp-wrap-name {
@@ -2833,23 +2851,11 @@ body.noscript .fw-toggle {
   .pp-off {
     display: inherit;
   }
-  .pp-wrap-name {
-    padding-top: 3em;
-  }
 }
 
 @media only screen and (min-width: 60em) {
   .pp-wrap-name {
     background-color: transparent;
-  }
-  .pp-name-sm {
-    display: inline-block;
-    font-size: 1em;
-    font-weight: 900;
-    line-height: 1em;
-  }
-  .pp-name {
-    margin-top: 1em;
   }
   .pp-social-icon {
     width: 95px;
@@ -2936,8 +2942,14 @@ body.noscript .fw-toggle {
   text-transform: uppercase;
 }
 
+.fe-width {
+  max-width: 75em;
+  margin: 2em auto;
+}
+
 .fe-img-holder {
   position: relative;
+  padding: 0.5em;
 }
 
 .fe-event {
@@ -2991,8 +3003,7 @@ body.noscript .fw-toggle {
   display: inline-block;
   float: left;
   width: 100%;
-  padding-top: .75em;
-  padding-bottom: 1em;
+  padding: .75em .5em;
 }
 
 .fe-info p {
@@ -3170,8 +3181,8 @@ body.noscript .fw-toggle {
 
 .fw-info-holder {
   padding: 2em;
-  background-color: #7D7D80;
-  color: #DCDBDB;
+  background-color: #55565a;
+  color: #fff;
 }
 
 @media only screen and (min-width: 80em) {
@@ -3235,14 +3246,21 @@ body.noscript .fw-toggle {
 }
 
 .fw-info-sec3 button {
-  text-decoration: none;
-  padding: 1em;
-  color: #fff;
-  background-color: #A6A5A7;
-  border: 0;
   text-align: center;
-  font-size: 18px;
+  background-color: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+  padding: .75em 1.5em;
+  font-size: 1em;
   text-transform: uppercase;
+}
+
+.fw-info-sec3 button:hover {
+  background-color: #3c3d40;
+}
+
+.fw-info-sec3 button:active {
+  background-color: #232426;
 }
 
 scss
