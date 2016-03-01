@@ -2,6 +2,7 @@
 title: Framework 2016 - Vivienne Kay
 meta: Portfolio Page for Vivienne Kay
 layout: portfolio
+
 full_name: "Vivienne Kay"
 short_name: "Vivienne K"
 
