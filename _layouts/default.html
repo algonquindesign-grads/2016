@@ -1,14 +1,39 @@
 <!DOCTYPE html>
 <html lang="en-ca">
 <head>
-	<meta charset="utf-8">
-	<title>{{ page.title }}</title>
-  <link rel="icon" type="image/png" href="http://grads.images.algonquindesign.ca.s3.amazonaws.com/2016/img/favicon.ico">
+  <meta charset="utf-8">
+  <title>{{ page.title }}</title>
   <link href="{{site.baseurl}}/css/style.css" rel="stylesheet">
-	<meta name="handheldfriendly" content="true">
-	<meta name="mobileoptimized" content="240">
-	<meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="handheldfriendly" content="true">
+  <meta name="mobileoptimized" content="240">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="description" content="{{ page.meta }}">
+  <!--Location-->
+  <meta name="geo-placename" content="Ottawa, Ontario, Canada">
+  <meta name="geo.region" content="CA-Ontario">
+  <!-- Basic Metadata-->
+  <meta name="author" content="2016 Graduating Class Web Team">
+  <meta name="copyright" content="&#169; Algonquin College Class of 2016">
+  <meta name="keyword" content="graphic deisgn, algonquin college, graduation, ottawa, framework, design, grads, ACGD, acgd, ux/ui, illustartion, motion, ux, ui, typography, branding, print, web, photography, 2016, students, landsdowne, landsdowne park, april 29">
+  <meta name="language" content="EN">
+  <meta name="subject" content="graphic design, graduation, grad show, portfolio, student, web">
+<!--Social Media -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Framework 2016">
+  <!--THIS NEEDS TO BE CHANGED WHEN IT IS CONNECTED TO OUR DOMAIN-->
+  <meta property="og:url" content="{{ site.baseurl }}">
+  <meta property="og:image" content="https://grads.images.algonquindesign.ca.s3.amazonaws.com/2016/img/fw-logo-vert.svg">
+  <meta property="og:site_name" content="Framework 2016">
+  <meta property="og:description" content="{{ page.meta }}">
+  <!-- Twitter-->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Framework 2016">
+    <meta name="twitter:url" content="w{{ site.baseurl }}">
+    <meta name="twitter:description" content="{{ page.meta }}">
+    <meta name="twitter:image" content="https://grads.images.algonquindesign.ca.s3.amazonaws.com/2016/img/fw-logo-vert.svg">
+
+
+  <link rel="icon" type="image/png" href="http://grads.images.algonquindesign.ca.s3.amazonaws.com/2016/img/fw-favicon.png">
 
 </head>
 {% include base.html %}
