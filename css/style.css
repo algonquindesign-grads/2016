@@ -2562,8 +2562,6 @@ body.noscript .fw-toggle {
 
 .pp-name-sm {
   display: block;
-  font-size: .5em;
-  font-weight: 200;
   line-height: 1em;
 }
 
@@ -2703,9 +2701,13 @@ body.noscript .fw-toggle {
   }
 }
 
-.pp-wrap, .pp-wrap-name {
+.pp-wrap {
   width: 100%;
   background-color: #DCDBDB;
+}
+
+.pp-wrap-name {
+  width: 100%;
 }
 
 .pp-wrap {

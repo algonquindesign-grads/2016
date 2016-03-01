@@ -2,8 +2,6 @@
 
 .pp-name-sm {
   display: block;
-  font-size: .5em;
-  font-weight: 200;
   line-height: 1em;
 }
 
@@ -138,9 +136,13 @@
 
 // Grads navigation buttons
 
-.pp-wrap, .pp-wrap-name {
+.pp-wrap {
   width: 100%;
   background-color: $grey-1;
+}
+
+.pp-wrap-name {
+  width: 100%;
 }
 
 .pp-wrap{
