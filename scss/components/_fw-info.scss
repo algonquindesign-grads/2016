@@ -50,13 +50,6 @@
       padding-top: 0;
     }
     button {
-    text-decoration: none;
-    padding: 1em;
-    color: $white;
-    background-color: $grey-2;
-    border: 0;
-    text-align: center;
-    font-size: 18px;
-    text-transform: uppercase;
+    @include btn-outline-white;
   }
 }

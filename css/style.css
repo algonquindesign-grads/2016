@@ -3232,14 +3232,21 @@ body.noscript .fw-toggle {
 }
 
 .fw-info-sec3 button {
-  text-decoration: none;
-  padding: 1em;
-  color: #fff;
-  background-color: #A6A5A7;
-  border: 0;
   text-align: center;
-  font-size: 18px;
+  background-color: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+  padding: 1em 2em;
+  font-size: 1em;
   text-transform: uppercase;
+}
+
+.fw-info-sec3 button:hover {
+  background-color: #3c3d40;
+}
+
+.fw-info-sec3 button:active {
+  background-color: #232426;
 }
 
 scss
