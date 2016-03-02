@@ -2873,6 +2873,9 @@ body.noscript .fw-toggle {
 
 .about-holder {
   max-width: 75em;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2em;
 }
 
 .about-sec {
@@ -3368,14 +3371,13 @@ scss
   background: url(../img/background-transp.png);
   font-family: sans-serif;
   font-weight: 100;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .clock-width {
   width: 100%;
   margin-top: 1.5em;
   position: relative;
+  text-align: center;
 }
 
 .clock-inline {
