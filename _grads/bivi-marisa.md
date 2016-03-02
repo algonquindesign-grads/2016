@@ -10,7 +10,7 @@ last_name: "Bivi"
 
 description: "Design, design, design. Tea, tea, tea. Anything sweet! Repeat! “Yes, that's it!” Said the Hatter with a sigh, “it's always tea time.”"
 
-email: "bivi.marisa@gmail.com"
+email: "hello@marisabivi.ca"
 
 website: "http://marisabivi.ca"
 
