@@ -154,8 +154,9 @@ ul li {
 }
 
 .filter-btn:hover {
-  background-color: rgba(0, 0, 0, 0.05);
-  box-shadow: inset 2px 2px 0 0 #DCDBDB;
+  background-color: rgba(0, 162, 156, 0.5);
+  xbox-shadow: inset 2px 2px 0 0 #DCDBDB;
+  color: #fff;
 }
 
 #filter-select {
@@ -290,6 +291,23 @@ ul li {
 @media only screen and (min-width: 60em) {
   .ph-padding {
     padding: 3em 2em 3em 2em;
+  }
+}
+
+.grad-slector-title {
+  font-size: 14px;
+  font-family: "Effra", sans-serif;
+  color: #7D7D80;
+  margin: 0 0 -1em 2.3em;
+}
+
+@media only screen and (min-width: 38em) {
+  .grad-slector-title {
+    position: absolute !important;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+    clip: rect(1px, 1px, 1px, 1px);
   }
 }
 
@@ -2853,6 +2871,13 @@ body.noscript .fw-toggle {
   }
 }
 
+.about-holder {
+  max-width: 75em;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2em;
+}
+
 .about-sec {
   display: none;
   text-align: left;
@@ -2924,8 +2949,14 @@ body.noscript .fw-toggle {
   text-transform: uppercase;
 }
 
+.fe-width {
+  max-width: 75em;
+  margin: 2em auto;
+}
+
 .fe-img-holder {
   position: relative;
+  padding: 0.5em;
 }
 
 .fe-event {
@@ -2979,8 +3010,7 @@ body.noscript .fw-toggle {
   display: inline-block;
   float: left;
   width: 100%;
-  padding-top: .75em;
-  padding-bottom: 1em;
+  padding: .75em .5em;
 }
 
 .fe-info p {
@@ -3116,7 +3146,7 @@ body.noscript .fw-toggle {
 
 .bts-bg {
   background-color: rgba(166, 165, 167, 0.5);
-  padding: 2em 2em 3em;
+  padding: 2em 1em 3em;
 }
 
 .bts-embed__item {
@@ -3142,11 +3172,18 @@ body.noscript .fw-toggle {
   text-decoration: none;
   text-transform: uppercase;
   color: white;
-  padding: 1em 0;
+  padding: 0.8em 0.15em;
   margin-top: 1em;
   font-size: 1em;
   line-height: 1em;
   text-align: center;
+}
+
+@media only screen and (min-width: 10em) {
+  .bts-more-btn {
+    height: 4em;
+    padding: 1.2em 0.15em;
+  }
 }
 
 .bts-text {
@@ -3214,11 +3251,15 @@ body.noscript .fw-toggle {
 .fw-info-sec3 {
   float: left;
   padding-top: 2em;
+  margin-top: 2em;
+  margin-right: 0;
+  margin-left: 0;
+  text-align: center;
 }
 
 @media only screen and (min-width: 38em) {
   .fw-info-sec3 {
-    padding-top: 0;
+    margin-top: 0;
   }
 }
 
@@ -3238,85 +3279,6 @@ body.noscript .fw-toggle {
 
 .fw-info-sec3 button:active {
   background-color: #232426;
-}
-
-@media only screen and (min-width: 38em) {
-  .clock-holder-2 {
-    -webkit-transform: translateY(10%);
-        -ms-transform: translateY(10%);
-            transform: translateY(10%);
-  }
-}
-
-@media only screen and (min-width: 55em) {
-  .clock-holder-2 {
-    -webkit-transform: translateY(50%);
-        -ms-transform: translateY(50%);
-            transform: translateY(50%);
-  }
-}
-
-.clock-holder {
-  text-align: center;
-  background: url(../img/background-transp.png);
-  font-family: sans-serif;
-  font-weight: 100;
-  height: 3em;
-  margin-bottom: 2em;
-}
-
-@media only screen and (min-width: 38em) {
-  .clock-holder {
-    margin-bottom: 0;
-  }
-}
-
-.clock-width {
-  width: 100%;
-  margin-top: 1.5em;
-  position: relative;
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-@media only screen and (min-width: 38em) {
-  .clock-width {
-    width: 10em;
-    margin-top: 2em;
-  }
-}
-
-@media only screen and (min-width: 55em) {
-  .clock-width {
-    width: 100%;
-    margin-top: .5em;
-  }
-}
-
-.clock-inline {
-  display: inline-block;
-  padding: .5em;
-}
-
-.clock-number {
-  font-size: 2em;
-}
-
-.clock-smalltext {
-  font-size: .65em;
-}
-
-@media only screen and (min-width: 38em) {
-  .clock-smalltext {
-    margin-bottom: .5em;
-  }
-}
-
-@media only screen and (min-width: 55em) {
-  .clock-smalltext {
-    margin-bottom: auto;
-  }
 }
 
 scss
@@ -3402,4 +3364,31 @@ scss
   to {
     opacity: 1;
   }
+}
+
+.clock-holder {
+  text-align: center;
+  background: url(../img/background-transp.png);
+  font-family: sans-serif;
+  font-weight: 100;
+}
+
+.clock-width {
+  width: 100%;
+  margin-top: 1.5em;
+  position: relative;
+  text-align: center;
+}
+
+.clock-inline {
+  display: inline-block;
+  padding: .5em;
+}
+
+.clock-number {
+  font-size: 2em;
+}
+
+.clock-smalltext {
+  font-size: .65em;
 }
