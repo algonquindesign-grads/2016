@@ -85,6 +85,9 @@
   float: left;
   width: 100%;
   padding: .75em .5em;
+  .fe-location {
+    font-weight: bold;
+  }
   p {
     font-family: "Effra", sans-serif;
     font-size: 1em;
@@ -97,8 +100,12 @@
   }
 }
 
+
+.fe-details-title {
+  margin-bottom: 1em;
+}
 .fe-details {
-  margin-bottom: .5em;
+  margin-bottom: .15em;
 }
 
 .fe-calender {

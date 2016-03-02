@@ -11,7 +11,9 @@
         <img class="fe-img" src="{{site.cdn}}img/{{event.img}}">
       </div>
       <div class="fe-info">
-        <p class="fe-details">{{event.location}}<br>{{event.date}}</p>
+        <p class="fe-location fe-details-title">{{event.location}}</p>
+        <p class="fe-details"> {{event.date}}</p>
+        <p class="fe-details"> {{event.time}}</p>
         <a class="fe-calendar" href="http://www.google.com/calendar/event?
 action=TEMPLATE
 &text={{event.name}}

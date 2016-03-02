@@ -3006,6 +3006,10 @@ body.noscript .fw-toggle {
   padding: .75em .5em;
 }
 
+.fe-info .fe-location {
+  font-weight: bold;
+}
+
 .fe-info p {
   font-family: "Effra", sans-serif;
   font-size: 1em;
@@ -3017,8 +3021,12 @@ body.noscript .fw-toggle {
   color: #000;
 }
 
+.fe-details-title {
+  margin-bottom: 1em;
+}
+
 .fe-details {
-  margin-bottom: .5em;
+  margin-bottom: .15em;
 }
 
 .fe-calender {
