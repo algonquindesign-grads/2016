@@ -1,0 +1,2 @@
+Sitemap: http://2016.grads.algonquindesign.ca/sitemap.xml
+User-agent: *
