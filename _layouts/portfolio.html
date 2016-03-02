@@ -4,7 +4,7 @@ layout: default
 
 {% include base.html %}
 <div class="pp-wrap-name island"><!--- Student's Name -->
-  <h1 class="pp-name"><span class="pp-name-sm">{{ page.first_name }} </span> {{ page.last_name }}</h1>
+  <h1 class="pp-name exa">{{ page.full_name }}</h1>
 </div>
 
 <div class="grid push-0">
@@ -16,16 +16,16 @@ layout: default
 
       <div class="unit unit-xs-1 unit-s-1 unit-m-1 unit-l-1">
         <div class="pp-vimeo">
-          <iframe src="https://player.vimeo.com/video/{{ page.vimeo }}" width="1080" height="300" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+          <iframe itemprop="video" src="https://player.vimeo.com/video/{{ page.vimeo }}" width="1080" height="300" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
         </div>
       </div>
 
       <div class="unit unit-xs-1 unit-s-1 unit-m-1-2 unit-l-1-2">
-        <img class="img-flex" src="{{site.cdn}}portfolio/{{page.url | replace: 'grads/', '/' | remove:'/'}}-1.jpg" alt="">
+        <img itemprop="image" class="img-flex" src="{{site.cdn}}portfolio/{{page.url | replace: 'grads/', '/' | remove:'/'}}-1.jpg" alt="">
       </div>
 
       <div class="unit unit-xs-1 unit-s-1 unit-m-1-2 unit-l-1-2">
-        <img class="img-flex" src="{{site.cdn}}portfolio/{{page.url | replace: 'grads/', '/' | remove:'/'}}-2.jpg" alt="">
+        <img itemprop="image" class="img-flex" src="{{site.cdn}}portfolio/{{page.url | replace: 'grads/', '/' | remove:'/'}}-2.jpg" alt="">
       </div>
     </div>
 <!--- END Student Profile Pictures with video -->
@@ -34,19 +34,19 @@ layout: default
 <!--- START Student Profile Pictures only -->
 
     <div class="unit unit-xs-1 unit-s-1 unit-m-1-2 unit-l-1-2">
-      <img class="img-flex" src="{{site.cdn}}portfolio/{{page.url | replace: 'grads/', '/' | remove:'/'}}-1.jpg" alt="">
+      <img itemprop="image" class="img-flex" src="{{site.cdn}}portfolio/{{page.url | replace: 'grads/', '/' | remove:'/'}}-1.jpg" alt="">
     </div>
 
     <div class="unit unit-xs-1 unit-s-1 unit-m-1-2 unit-l-1-2">
-      <img class="img-flex" src="{{site.cdn}}portfolio/{{page.url | replace: 'grads/', '/' | remove:'/'}}-2.jpg" alt="">
+      <img itemprop="image" class="img-flex" src="{{site.cdn}}portfolio/{{page.url | replace: 'grads/', '/' | remove:'/'}}-2.jpg" alt="">
     </div>
 
     <div class="unit unit-xs-1 unit-s-1 unit-m-1-2 unit-l-1-2">
-      <img class="img-flex" src="{{site.cdn}}portfolio/{{page.url | replace: 'grads/', '/' | remove:'/'}}-3.jpg" alt="">
+      <img itemprop="image" class="img-flex" src="{{site.cdn}}portfolio/{{page.url | replace: 'grads/', '/' | remove:'/'}}-3.jpg" alt="">
     </div>
 
     <div class="unit unit-xs-1 unit-s-1 unit-m-1-2 unit-l-1-2">
-      <img class="img-flex" src="{{site.cdn}}portfolio/{{page.url | replace: 'grads/', '/' | remove:'/'}}-4.jpg" alt="">
+      <img itemprop="image" class="img-flex" src="{{site.cdn}}portfolio/{{page.url | replace: 'grads/', '/' | remove:'/'}}-4.jpg" alt="">
     </div>
   </div>
 
@@ -68,14 +68,14 @@ layout: default
 <!--- Student bio -->
     <div class="unit unit-xs-1 unit-s-1 unit-m-1-2 unit-l-1-2 unit-xl-1 pp-padding mega">
       <h2 class="pp-skill peta">{{page.specialization | array_to_sentence_string }}</h2>
-      <p class="pp-desc">{{page.description}}</p>
-      <p class="pp-links peta"><a href="{{ page.website }}">{{page.website | replace: 'http://', '' }}</a></p>
-      <p class="pp-links"><a href="mailto:{{ page.email }}">{{ page.email }}</a></p>
+      <p itemprop="discription" class="pp-desc">{{page.description}}</p>
+      <p itemprop="url" class="pp-links peta"><a href="{{ page.website }}">{{page.website | replace: 'http://', '' }}</a></p>
+      <p itemprop="email" class="pp-links"><a href="mailto:{{ page.email }}">{{ page.email }}</a></p>
       <div>
         <ul class="pp-nav-btn pad-t">
 <!--- Social icons -->
         {% for a in page.social %}
-          <li class="pp-nav-btn-li"><a href="{{a | last}}" target="_blank"><img class="pp-social-icon gutter-1-2" src="{{site.cdn}}img/{{a | first}}.svg" alt="Follow me on {{a | first}}."></a></li>
+          <li class="pp-nav-btn-li"><a href="{{a | last}}" target=""><img class="pp-social-icon gutter-1-2" src="{{site.cdn}}img/{{a | first}}.svg" alt="Follow me on {{a | first}}."></a></li>
         {% endfor %}
         </ul>
       </div>

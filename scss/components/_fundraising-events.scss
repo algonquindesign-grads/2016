@@ -12,8 +12,14 @@
  @include header-1;
 }
 
+.fe-width {
+  max-width: 75em;
+  margin: 2em auto;;
+}
+
 .fe-img-holder {
   position: relative;
+  padding: 0.5em
 }
 
 .fe-event {
@@ -78,6 +84,10 @@
   display: inline-block;
   float: left;
   width: 100%;
+  padding: .75em .5em;
+  .fe-location {
+    font-weight: bold;
+  }
   p {
     font-family: "Effra", sans-serif;
     font-size: 1em;
@@ -90,8 +100,12 @@
   }
 }
 
+
+.fe-details-title {
+  margin-bottom: 1em;
+}
 .fe-details {
-  margin-bottom: .5em;
+  margin-bottom: .15em;
 }
 
 .fe-calender {

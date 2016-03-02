@@ -1,6 +1,6 @@
 .bts-bg {
   background-color: rgba( $grey-2, .5 );
-  padding: 2em 2em 3em
+  padding: 2em 1em 3em
 }
 
 .bts-embed__item {
@@ -24,11 +24,22 @@
   text-decoration: none;
   text-transform: uppercase;
   color: white;
-  padding: 1em 0;
+  padding: 0.8em 0.15em;
   margin-top: 1em;
   font-size: 1em;
   line-height: 1em;
   text-align: center;
+  &:hover {
+    background-color: $green;
+  }
+   @media only screen and (min-width: 10em) {
+    height: 4em;
+    padding: 1.2em 0.15em;
+  }
+  @media only screen and (min-width: 60em) {
+    height: 3em;
+    padding: 1em 0.15em;
+  }
 }
 
 .bts-text {

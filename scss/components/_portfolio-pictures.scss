@@ -1,18 +1,10 @@
 // Student Portfolio inside page
 
-.pp-name-sm {
-  display: block;
-  font-size: .5em;
-  font-weight: 200;
-  line-height: 1em;
-}
-
 .pp-name {
   text-transform: uppercase;
   font-weight: 900;
-  font-size: 2.5em;
   margin-bottom: 0;
-  padding-left: .1em;
+  padding-left: .2em;
 }
 
 .pp-skill {
@@ -138,12 +130,17 @@
 
 // Grads navigation buttons
 
-.pp-wrap, .pp-wrap-name {
+.pp-wrap {
   width: 100%;
-  background-color: $grey-1;
+  background-color: rgba($grey-1, .5);
 }
 
-.pp-wrap{
+.pp-wrap-name {
+  width: 100%;
+  padding-top: 2.5em;
+}
+
+.pp-wrap {
   text-align: center;
 }
 
@@ -201,17 +198,6 @@
 
   .pp-wrap-name {
     background-color: transparent;
-  }
-
-  .pp-name-sm {
-    display: inline-block;
-    font-size: 1em;
-    font-weight: 900;
-    line-height: 1em;
-  }
-
-  .pp-name {
-    margin-top: 1em;
   }
 
   .pp-social-icon {

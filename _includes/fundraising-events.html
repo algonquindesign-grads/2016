@@ -1,6 +1,7 @@
 <div class="fe-holder framework-padding" id="events">
+<div class="fe-width">
 
-  <h2 class="fe-title">Fundraising Events</h2>
+  <h2 itemprop="name" class="fe-title">Fundraising Events</h2>
 
   <div class="grid">
 
@@ -8,10 +9,11 @@
     <div class="fe-images-{{forloop.index}} unit unit-xs-{{event.xs}} unit-s-{{event.s}} unit-m-1-3 unit-l-1-3 unit-lx-1-3">
       <div class="fe-img-holder">
         <img class="fe-img" src="{{site.cdn}}img/{{event.img}}">
-        <p class="fe-event">{{event.name}}</p>
       </div>
       <div class="fe-info">
-        <p class="fe-details">{{event.location}}<br>{{event.date}}</p>
+        <p itemprop="location" class="fe-location fe-details-title">{{event.location}}</p>
+        <p itemprop="endDate" class="fe-details"> {{event.date}}</p>
+        <p itemprop="doorTime" class="fe-details"> {{event.time}}</p>
         <a class="fe-calendar" href="http://www.google.com/calendar/event?
 action=TEMPLATE
 &text={{event.name}}
@@ -21,10 +23,10 @@ action=TEMPLATE
 &trp=false
 &sprop=false
 &sprop=false"
-target="_blank" rel="nofollow">Google Calendar</a>
+target="" rel="nofollow">Google Calendar</a>
       </div>
     </div>
-{% endfor %}
-
+      {% endfor %}
+    </div>
   </div>
 </div>
