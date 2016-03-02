@@ -1,0 +1,37 @@
+/* Team */
+
+Paisley Laurenzio
+Sara Case
+Sara Clayton
+Vivienne Kay
+Isabelle Fortier
+McGregor, Samantha
+Rebecca Dagenais
+Mio Tahara
+Anna Misak
+Shaayaan Jameel
+Christian Madrid
+Elisa Koon
+Anita Chanthavong
+Natalie Macpherson
+Rudy Gordon
+Sean Okai
+
+/* Thanks */
+
+
+/* Technology and Site */
+
+Sublime Text
+Github
+Prepros
+Terminal
+Adobe Illustrator
+Adobe Photoshop
+
+
+/* Site */
+
+Standards: HTML5, SCSS, Jekyll, JQuery
+Last updated:
+

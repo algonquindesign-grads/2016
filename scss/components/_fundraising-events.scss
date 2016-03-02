@@ -1,10 +1,7 @@
 .fe-holder {
   background-color: rgba($grey-2, .5 );
-  // padding: 1em;
   @media only screen and (min-width: 80em) {
       margin-top: 2em;
-    // padding-right: 10%;
-    // padding-left: 10%;
   }
 }
 
@@ -66,25 +63,14 @@
   }
 }
 
-
-// .fe-event {
-//   position: absolute;
-//   z-index: 100;
-//   bottom: 0;
-//   padding: .5em;
-//   background-color: $black;
-//   margin-left: 1em;
-//   margin-right: 1em;
-//   overflow: hidden;
-//   display: block;
-//   color: white;
-// }
-
 .fe-info {
   display: inline-block;
   float: left;
   width: 100%;
   padding: .75em .5em;
+  .fe-location {
+    font-weight: bold;
+  }
   p {
     font-family: "Effra", sans-serif;
     font-size: 1em;
@@ -97,8 +83,12 @@
   }
 }
 
+
+.fe-details-title {
+  margin-bottom: 1em;
+}
 .fe-details {
-  margin-bottom: .5em;
+  margin-bottom: .15em;
 }
 
 .fe-calender {

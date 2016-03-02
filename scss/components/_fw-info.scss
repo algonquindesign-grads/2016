@@ -50,10 +50,15 @@
   margin-right: 0;
   margin-left: 0;
   text-align: center;
+  text-decoration: none;
     @media only screen and (min-width: 38em) {
       margin-top: 0;
     }
     button {
     @include btn-outline-white;
   }
+}
+
+.fw-link-center {
+  @include btn-main-page;
 }

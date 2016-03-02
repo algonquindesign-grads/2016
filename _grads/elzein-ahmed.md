@@ -21,5 +21,5 @@ specialization:
 
 social:
   behance:    "https://www.behance.net/ahmedelzein"
-  linkedin:   "https://www.linkedin.com/ahmed-el-zein"
+  linkedin:   "hhttps://ca.linkedin.com/in/ahmed-el-zein-316469a4"
 ---
