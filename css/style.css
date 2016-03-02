@@ -154,8 +154,9 @@ ul li {
 }
 
 .filter-btn:hover {
-  background-color: rgba(0, 0, 0, 0.05);
-  box-shadow: inset 2px 2px 0 0 #DCDBDB;
+  background-color: rgba(0, 162, 156, 0.5);
+  xbox-shadow: inset 2px 2px 0 0 #DCDBDB;
+  color: #fff;
 }
 
 #filter-select {
@@ -3138,7 +3139,7 @@ body.noscript .fw-toggle {
 
 .bts-bg {
   background-color: rgba(166, 165, 167, 0.5);
-  padding: 2em 2em 3em;
+  padding: 2em 1em 3em;
 }
 
 .bts-embed__item {
@@ -3164,11 +3165,18 @@ body.noscript .fw-toggle {
   text-decoration: none;
   text-transform: uppercase;
   color: white;
-  padding: 1em 0;
+  padding: 0.8em 0.15em;
   margin-top: 1em;
   font-size: 1em;
   line-height: 1em;
   text-align: center;
+}
+
+@media only screen and (min-width: 10em) {
+  .bts-more-btn {
+    height: 4em;
+    padding: 1.2em 0.15em;
+  }
 }
 
 .bts-text {
@@ -3236,11 +3244,15 @@ body.noscript .fw-toggle {
 .fw-info-sec3 {
   float: left;
   padding-top: 2em;
+  margin-top: 2em;
+  margin-right: 0;
+  margin-left: 0;
+  text-align: center;
 }
 
 @media only screen and (min-width: 38em) {
   .fw-info-sec3 {
-    padding-top: 0;
+    margin-top: 0;
   }
 }
 
