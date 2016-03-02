@@ -2875,13 +2875,6 @@ body.noscript .fw-toggle {
   max-width: 75em;
 }
 
-@media only screen and (min-width: 60em) {
-  .about-holder {
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
-
 .about-sec {
   display: none;
   text-align: left;
