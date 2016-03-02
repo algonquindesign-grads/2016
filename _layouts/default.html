@@ -56,9 +56,16 @@
 {% include base.html %}
 
 <body class="noscript">
+<!-- skip links-->
+<ul class="skip-links">
+  <li><a href="#main"> Jump to Main Content</a></li>
+   <li><a href="#navigation"> Jump to Navigation</a></li>
+</ul>
+<!-- skip links-->
+
   {% include header.html %}
 
-  <main class="site-wrapper" id="top">
+  <main id="#main" class="site-wrapper" id="top">
     {{content}}
 
   <div class="rtt">
