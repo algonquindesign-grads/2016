@@ -3139,7 +3139,7 @@ body.noscript .fw-toggle {
 
 .bts-bg {
   background-color: rgba(166, 165, 167, 0.5);
-  padding: 2em 2em 3em;
+  padding: 2em 1em 3em;
 }
 
 .bts-embed__item {
@@ -3165,11 +3165,18 @@ body.noscript .fw-toggle {
   text-decoration: none;
   text-transform: uppercase;
   color: white;
-  padding: 1em 0;
+  padding: 0.8em 0.15em;
   margin-top: 1em;
   font-size: 1em;
   line-height: 1em;
   text-align: center;
+}
+
+@media only screen and (min-width: 10em) {
+  .bts-more-btn {
+    height: 4em;
+    padding: 1.2em 0.15em;
+  }
 }
 
 .bts-text {
