@@ -3196,6 +3196,10 @@ body.noscript .fw-toggle {
   text-align: center;
 }
 
+.bts-more-btn:hover {
+  background-color: #00a29c;
+}
+
 @media only screen and (min-width: 10em) {
   .bts-more-btn {
     height: 4em;
@@ -3279,6 +3283,7 @@ body.noscript .fw-toggle {
   margin-right: 0;
   margin-left: 0;
   text-align: center;
+  text-decoration: none;
 }
 
 @media only screen and (min-width: 38em) {
@@ -3303,6 +3308,18 @@ body.noscript .fw-toggle {
 
 .fw-info-sec3 button:active {
   background-color: #232426;
+}
+
+.fw-link-center {
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  padding: 1em 2em;
+  background-color: #A6A5A7;
+}
+
+.fw-link-center:hover {
+  background-color: #00a29c;
 }
 
 scss
