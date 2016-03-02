@@ -45,11 +45,20 @@
   background: url('http://grads.images.algonquindesign.ca.s3.amazonaws.com/2016/img/facebook.svg');
   background-repeat: no-repeat;
   background-size: contain;
-  &:hover {
-    background: url('http://grads.images.algonquindesign.ca.s3.amazonaws.com/2016/img/facebook-h.svg');
-    background-repeat: no-repeat;
-    background-size: contain;
+    &:hover {
+      -webkit-animation: icons 800ms ease-in-out;
+      animation: icons 800ms ease-in-out;
+    }
+  @-webkit-keyframes icons {
+      0% { -webkit-transform: scale(1.0); }
+      50% { -webkit-transform: scale(1.5); }
+      100% { -webkit-transform: scale(1.0); }
+  }
 
+  @keyframes icons {
+      0% { transform: scale(1.0); }
+      50% { transform: scale(1.5); }
+      100% { transform: scale(1.0); }
   }
 }
 
@@ -57,10 +66,20 @@
   background: url('http://grads.images.algonquindesign.ca.s3.amazonaws.com/2016/img/twitter.svg');
   background-repeat: no-repeat;
   background-size: contain;
-  &:hover {
-    background: url('http://grads.images.algonquindesign.ca.s3.amazonaws.com/2016/img/twitter-h.svg');
-    background-repeat: no-repeat;
-    background-size: contain;
+    &:hover {
+      -webkit-animation: icons 800ms ease-in-out;
+      animation: icons 800ms ease-in-out;
+    }
+  @-webkit-keyframes icons {
+      0% { -webkit-transform: scale(1.0); }
+      50% { -webkit-transform: scale(1.5); }
+      100% { -webkit-transform: scale(1.0); }
+  }
+
+  @keyframes icons {
+      0% { transform: scale(1.0); }
+      50% { transform: scale(1.5); }
+      100% { transform: scale(1.0); }
   }
 }
 
@@ -69,9 +88,19 @@
   background-repeat: no-repeat;
   background-size: contain;
     &:hover {
-    background: url('http://grads.images.algonquindesign.ca.s3.amazonaws.com/2016/img/instagram-h.svg');
-    background-repeat: no-repeat;
-    background-size: contain;
+      -webkit-animation: icons 800ms ease-in-out;
+      animation: icons 800ms ease-in-out;
+    }
+  @-webkit-keyframes icons {
+      0% { -webkit-transform: scale(1.0); }
+      50% { -webkit-transform: scale(1.5); }
+      100% { -webkit-transform: scale(1.0); }
+  }
+
+  @keyframes icons {
+      0% { transform: scale(1.0); }
+      50% { transform: scale(1.5); }
+      100% { transform: scale(1.0); }
   }
 }
 
