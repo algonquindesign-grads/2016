@@ -3244,11 +3244,15 @@ body.noscript .fw-toggle {
 .fw-info-sec3 {
   float: left;
   padding-top: 2em;
+  margin-top: 2em;
+  margin-right: 0;
+  margin-left: 0;
+  text-align: center;
 }
 
 @media only screen and (min-width: 38em) {
   .fw-info-sec3 {
-    padding-top: 0;
+    margin-top: 0;
   }
 }
 
