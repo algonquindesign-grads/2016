@@ -2871,6 +2871,12 @@ body.noscript .fw-toggle {
   }
 }
 
+.about-holder {
+  max-width: 75em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .about-sec {
   display: none;
   text-align: left;
@@ -3006,6 +3012,10 @@ body.noscript .fw-toggle {
   padding: .75em .5em;
 }
 
+.fe-info .fe-location {
+  font-weight: bold;
+}
+
 .fe-info p {
   font-family: "Effra", sans-serif;
   font-size: 1em;
@@ -3017,8 +3027,12 @@ body.noscript .fw-toggle {
   color: #000;
 }
 
+.fe-details-title {
+  margin-bottom: 1em;
+}
+
 .fe-details {
-  margin-bottom: .5em;
+  margin-bottom: .15em;
 }
 
 .fe-calender {
@@ -3139,7 +3153,7 @@ body.noscript .fw-toggle {
 
 .bts-bg {
   background-color: rgba(166, 165, 167, 0.5);
-  padding: 2em 2em 3em;
+  padding: 2em 1em 3em;
 }
 
 .bts-embed__item {
@@ -3165,11 +3179,18 @@ body.noscript .fw-toggle {
   text-decoration: none;
   text-transform: uppercase;
   color: white;
-  padding: 1em 0;
+  padding: 0.8em 0.15em;
   margin-top: 1em;
   font-size: 1em;
   line-height: 1em;
   text-align: center;
+}
+
+@media only screen and (min-width: 10em) {
+  .bts-more-btn {
+    height: 4em;
+    padding: 1.2em 0.15em;
+  }
 }
 
 .bts-text {
@@ -3237,11 +3258,15 @@ body.noscript .fw-toggle {
 .fw-info-sec3 {
   float: left;
   padding-top: 2em;
+  margin-top: 2em;
+  margin-right: 0;
+  margin-left: 0;
+  text-align: center;
 }
 
 @media only screen and (min-width: 38em) {
   .fw-info-sec3 {
-    padding-top: 0;
+    margin-top: 0;
   }
 }
 
@@ -3346,4 +3371,32 @@ scss
   to {
     opacity: 1;
   }
+}
+
+.clock-holder {
+  text-align: center;
+  background: url(../img/background-transp.png);
+  font-family: sans-serif;
+  font-weight: 100;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.clock-width {
+  width: 100%;
+  margin-top: 1.5em;
+  position: relative;
+}
+
+.clock-inline {
+  display: inline-block;
+  padding: .5em;
+}
+
+.clock-number {
+  font-size: 2em;
+}
+
+.clock-smalltext {
+  font-size: .65em;
 }
