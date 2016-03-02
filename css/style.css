@@ -2933,6 +2933,15 @@ body.noscript .fw-toggle {
   }
 }
 
+.fw-info-sec3-btn {
+  text-align: center;
+  border: 1px solid #fff;
+  color: #fff;
+  padding: .75em 1.5em;
+  font-size: 1em;
+  text-transform: uppercase;
+}
+
 .fe-holder {
   background-color: rgba(166, 165, 167, 0.5);
 }
