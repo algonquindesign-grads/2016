@@ -3183,7 +3183,6 @@ body.noscript .fw-toggle {
   padding: 0.8em 0.15em;
   margin-top: 1em;
   font-size: 1em;
-  line-height: 1em;
   text-align: center;
 }
 
@@ -3313,7 +3312,6 @@ body.noscript .fw-toggle {
   background-color: #00a29c;
 }
 
-scss
 .nf-404 {
   color: rgba(0, 0, 0, 0.1);
   font-size: 5em;
