@@ -62,3 +62,14 @@
     background-color: darken($grey, 20%);
   }
 }
+
+@mixin btn-main-page {
+  text-align: center;
+  text-decoration: none;
+  color: $white;
+  padding: 1em 2em;
+  background-color: $grey-2;
+  &:hover {
+    background-color: $green;
+  }
+}
