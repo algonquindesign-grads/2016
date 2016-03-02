@@ -37,6 +37,26 @@ body:after{
   z-index: -10;
 }
 
+.skip-links {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  top: -3em;
+ li {
+  padding: 0.5em 0.75em;
+  position: absolute;
+  top: -3em;
+  background-color: $grey;
+  color: #fff;
+  font-size: 1.125em;
+  font-weight: bold;
+  text-decoration: none;
+  &:focus {
+    top: 0;
+  }
+ }
+}
+
 .framework-margin {
   margin: 2em 2em 2em 2em;
 }
