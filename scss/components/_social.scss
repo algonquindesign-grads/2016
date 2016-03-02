@@ -45,18 +45,34 @@
   background: url('http://grads.images.algonquindesign.ca.s3.amazonaws.com/2016/img/facebook.svg');
   background-repeat: no-repeat;
   background-size: contain;
+  &:hover {
+    background: url('http://grads.images.algonquindesign.ca.s3.amazonaws.com/2016/img/facebook-h.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+
+  }
 }
 
 .social-twitter{
   background: url('http://grads.images.algonquindesign.ca.s3.amazonaws.com/2016/img/twitter.svg');
   background-repeat: no-repeat;
   background-size: contain;
+  &:hover {
+    background: url('http://grads.images.algonquindesign.ca.s3.amazonaws.com/2016/img/twitter-h.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
 }
 
 .social-instagram{
   background: url('http://grads.images.algonquindesign.ca.s3.amazonaws.com/2016/img/instagram.svg');
   background-repeat: no-repeat;
   background-size: contain;
+    &:hover {
+    background: url('http://grads.images.algonquindesign.ca.s3.amazonaws.com/2016/img/instagram-h.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
 }
 
 .social-facebook, .social-twitter, .social-instagram{
