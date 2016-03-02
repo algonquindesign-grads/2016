@@ -33,6 +33,10 @@
     height: 4em;
     padding: 1.2em 0.15em;
   }
+  @media only screen and (min-width: 60em) {
+    height: 3em;
+    padding: 1em 0.15em;
+  }
 }
 
 .bts-text {

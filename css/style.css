@@ -3203,6 +3203,13 @@ body.noscript .fw-toggle {
   }
 }
 
+@media only screen and (min-width: 60em) {
+  .bts-more-btn {
+    height: 3em;
+    padding: 1em 0.15em;
+  }
+}
+
 .bts-text {
   font-size: 1em;
   padding-top: 1em;
