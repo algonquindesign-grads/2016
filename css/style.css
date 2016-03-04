@@ -2495,6 +2495,7 @@ ul li {
     display: none;
   }
   .logo {
+    width: 100%;
     min-width: 100%;
   }
   .fw-navigation {
@@ -2679,6 +2680,10 @@ body:after {
 
 body.noscript .fw-navigation {
   max-height: 15em;
+  width: 100%;
+  display: block;
+  position: relative;
+  left: 0;
 }
 
 body.noscript .fw-toggle {
@@ -2691,7 +2696,6 @@ body.noscript .fw-toggle {
 
 @media only screen and (min-width: 38em) {
   body.noscript .fw-header .logo {
-    width: 18em;
     margin: 0;
   }
   body.noscript .fw-info {
@@ -2700,9 +2704,9 @@ body.noscript .fw-toggle {
   }
   body.noscript .fw-navigation {
     position: absolute;
-    width: auto;
+    width: 18em;
     top: 1em;
-    right: 2em;
+    left: calc(100% - 19em);
   }
   body.noscript .fw-navigation ul {
     display: block;
@@ -2722,9 +2726,12 @@ body.noscript .fw-toggle {
 }
 
 @media only screen and (min-width: 80em) {
+  body.noscript .logo {
+    width: 100%;
+  }
   body.noscript .fw-navigation {
     left: 0;
-    top: 13em;
+    top: 12em;
     position: fixed;
     max-height: 20em;
     width: 14em;
@@ -2743,8 +2750,8 @@ body.noscript .fw-toggle {
     right: 0;
   }
   body.noscript .fw-navigation ul li a {
-    padding: 0.5em 2em;
-    font-size: 1em;
+    padding: 0.5em 2.6666em;
+    font-size: 0.75em;
     line-height: 1.5em;
   }
 }

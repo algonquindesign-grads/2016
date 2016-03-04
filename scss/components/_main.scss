@@ -83,6 +83,10 @@ body:after{
 body.noscript{
   .fw-navigation{
     max-height: 15em;
+    width: 100%;
+    display: block;
+    position: relative;
+    left: 0;
   }
 
   .fw-toggle{
@@ -94,7 +98,7 @@ body.noscript{
   body.noscript{
     .fw-header{
       .logo{
-        width: 18em;
+        // width: 18em;
         margin: 0;
       }
     }
@@ -104,9 +108,9 @@ body.noscript{
     }
     .fw-navigation{
       position: absolute;
-      width: auto;
+      width: 18em;
       top: 1em;
-      right: 2em;
+      left: calc(100% - 19em);
       ul{
         display: block;
         li{
@@ -128,9 +132,14 @@ body.noscript{
 
 @media only screen and (min-width: 80em){
   body.noscript{
+    .logo{
+      width: 100%;
+    }
+
+
     .fw-navigation{
     left: 0;
-    top: $side-bar-width - 1em;
+    top: $side-bar-width - 2em;
     position: fixed;
     max-height: $menu-max-height;
     width: $side-bar-width;
@@ -148,8 +157,8 @@ body.noscript{
           right: 0;
         }
         a{
-          padding: 0.5em 2em;
-          font-size: 1em;
+          padding: 0.5em 2.6666em;
+          font-size: 0.75em;
           line-height: 1.5em;
         }
       }
