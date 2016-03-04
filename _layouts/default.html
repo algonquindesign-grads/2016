@@ -7,7 +7,6 @@
 	<meta name="mobileoptimized" content="240">
 	<meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="description" content="{{ page.meta }}">
-  <meta charset="utf-8">
   <link href="{{site.baseurl}}/css/style.css" rel="stylesheet">
   <meta name="handheldfriendly" content="true">
   <meta name="mobileoptimized" content="240">
@@ -27,7 +26,7 @@
   <meta property="og:title" content="Framework 2016">
   <!--THIS NEEDS TO BE CHANGED WHEN IT IS CONNECTED TO OUR DOMAIN-->
   <meta property="og:url" content="{{ site.baseurl }}">
-  <meta property="og:image" content="https://grads.images.algonquindesign.ca.s3.amazonaws.com/2016/img/fw-logo-vert.svg">
+  <meta property="og:image" content="{{site.cdn}}img/fw-logo-vert.svg">
   <meta property="og:site_name" content="Framework 2016">
   <meta property="og:description" content="{{ page.meta }}">
   <!-- Twitter-->
@@ -35,12 +34,12 @@
     <meta name="twitter:title" content="Framework 2016">
     <meta name="twitter:url" content="w{{ site.baseurl }}">
     <meta name="twitter:description" content="{{ page.meta }}">
-    <meta name="twitter:image" content="https://grads.images.algonquindesign.ca.s3.amazonaws.com/2016/img/fw-logo-vert.svg">
+    <meta name="twitter:image" content="{{site.cdn}}img/fw-logo-vert.svg">
   <meta property="og:type" content="article">
   <meta property="og:title" content="Framework 2016">
   <!--THIS NEEDS TO BE CHANGED WHEN IT IS CONNECTED TO OUR DOMAIN-->
   <meta property="og:url" content="http://2016.grads.algonquindesign.ca">
-  <meta property="og:image" content="http://placehold.it/350x150"> <!-- save png-->
+  <meta property="og:image" content="{{site.cdn}}img/fw-logo-vert.png"> <!-- save png-->
   <meta property="og:site_name" content="Framework 2016">
   <meta property="og:description" content="Framework 2016 Algonquin College Graphic Design graduating class">
   <!-- Twitter-->
@@ -48,9 +47,9 @@
     <meta name="twitter:title" content="Framework 2016">
     <meta name="twitter:url" content="ttp://2016.grads.algonquindesign.ca">
     <meta name="twitter:description" content="Framework 2016 Algonquin College Graphic Design graduating class">
-    <meta name="twitter:image" content=""><!-- save png-->
+    <meta name="twitter:image" content="{{site.cdn}}img/fw-logo-vert.png"><!-- save png-->
     <meta name="twitter:site" content="@FRAMEWORK2016">
-  <link rel="icon" type="image/png" href="http://grads.images.algonquindesign.ca.s3.amazonaws.com/2016/img/fw-favicon.png">
+  <link rel="icon" type="image/png" href="{{site.cdn}}img/fw-favicon.png">
  <title>{{ page.title }}</title>
 </head>
 {% include base.html %}
