@@ -1,14 +1,14 @@
 @keyframes colours {
   0%{
-    fill: $yellow;
-  } 25%{
     fill: $purple;
-  } 50%{
+  } 25%{
     fill: $green;
-  } 75%{
+  } 50%{
     fill: $red;
-  } 100%{
+  } 75%{
     fill: $yellow;
+  } 100%{
+    fill: $purple;
   }
 }
 .fw-header{
