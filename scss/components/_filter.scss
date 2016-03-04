@@ -45,7 +45,7 @@
     &:hover{
       p{
         transition: background-color $filter-transition * 0.5 ease-in-out;
-        background-color: $green;
+        background-color: rgba($green, 0.75);
       }
     }
   }

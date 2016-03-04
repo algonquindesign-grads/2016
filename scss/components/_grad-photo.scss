@@ -80,6 +80,10 @@
   &:hover .ph-gradphoto-top {
     top: calc(-100% - 1px);
   }
+  p{
+    transition: background-color 250ms ease-in;
+    background-color: rgba($grey, 0.5)
+  }
 }
 
 .ph-gradphoto-top {
