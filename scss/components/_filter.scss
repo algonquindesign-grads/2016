@@ -61,7 +61,7 @@
 #filter-all:checked ~ .filter-items > li {
   opacity: 1;
   &:hover img{
-    top: -100%;
+    top: calc(-100% - 1px);
   }
 }
 
@@ -78,7 +78,7 @@
   opacity: 1;
   li{
     &:hover img{
-      top: -100%;
+      top: calc(-100% - 1px);
     }
   }
 }

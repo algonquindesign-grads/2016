@@ -2021,7 +2021,7 @@ td, th, fieldset {
 }
 
 #filter-all:checked ~ .filter-items > li:hover img {
-  top: -100%;
+  top: calc(-100% - 1px);
 }
 
 /* > will only select direct child descendant */
@@ -2044,7 +2044,7 @@ td, th, fieldset {
 #filter-print:checked ~ .filter-items > [data-category~="print"] li:hover img,
 #filter-type:checked ~ .filter-items > [data-category~="type"] li:hover img,
 #filter-photo:checked ~ .filter-items > [data-category~="photography"] li:hover img {
-  top: -100%;
+  top: calc(-100% - 1px);
 }
 
 ul li {
