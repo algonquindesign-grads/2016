@@ -92,6 +92,10 @@ body.noscript{
   .fw-toggle{
     @include element-invisible;
   }
+
+  .social{
+    @include element-invisible;
+  }
 }
 
 @media only screen and (min-width: 38em){

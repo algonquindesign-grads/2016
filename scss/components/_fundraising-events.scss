@@ -62,12 +62,19 @@
     }
   }
 }
-
+.fe {
+  position: relative;
+}
 .fe-info {
+  position: absolute;
+  bottom: 0;
   display: inline-block;
   float: left;
-  width: 100%;
-  padding: .75em .5em;
+  width: calc(100% - 1.5em);
+  margin: 0.5em;
+  padding: 1em;
+  background-color: rgba($black, 0.5);
+  color: $white;
   .fe-location {
     font-weight: bold;
   }
@@ -97,3 +104,4 @@
   color: $text-color;
   font-size: 14px;
 }
+

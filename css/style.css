@@ -2694,6 +2694,14 @@ body.noscript .fw-toggle {
   clip: rect(1px, 1px, 1px, 1px);
 }
 
+body.noscript .social {
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px);
+}
+
 @media only screen and (min-width: 38em) {
   body.noscript .fw-header .logo {
     margin: 0;
@@ -3131,11 +3139,20 @@ body.noscript .fw-toggle {
   }
 }
 
+.fe {
+  position: relative;
+}
+
 .fe-info {
+  position: absolute;
+  bottom: 0;
   display: inline-block;
   float: left;
-  width: 100%;
-  padding: .75em .5em;
+  width: calc(100% - 1.5em);
+  margin: 0.5em;
+  padding: 1em;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
 }
 
 .fe-info .fe-location {
