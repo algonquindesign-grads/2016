@@ -96,13 +96,18 @@ body.noscript{
   .social{
     @include element-invisible;
   }
+  .rtt{
+    opacity: 0.5;
+    &:hover{
+      opacity: 0.75
+    }
+  }
 }
 
 @media only screen and (min-width: 38em){
   body.noscript{
     .fw-header{
       .logo{
-        // width: 18em;
         margin: 0;
       }
     }
@@ -112,9 +117,9 @@ body.noscript{
     }
     .fw-navigation{
       position: absolute;
-      width: 18em;
+      width: calc(100% - 16em);
       top: 1em;
-      left: calc(100% - 19em);
+      left: 16em;
       ul{
         display: block;
         li{
@@ -132,6 +137,7 @@ body.noscript{
       }
     }
   }
+
 }
 
 @media only screen and (min-width: 80em){
@@ -139,8 +145,6 @@ body.noscript{
     .logo{
       width: 100%;
     }
-
-
     .fw-navigation{
     left: 0;
     top: $side-bar-width - 2em;
@@ -167,6 +171,6 @@ body.noscript{
         }
       }
     }
-  }
+    }
   }
 }
