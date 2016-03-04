@@ -12,7 +12,7 @@ description: "Hello, my name is Christianne, and I am an Ottawa based graphic de
 
 email: "christianne.mcpartland@gmail.com"
 
-website: "christiannemcpartland.ca"
+website: "http://christiannemcpartland.ca"
 
 specialization:
   - branding

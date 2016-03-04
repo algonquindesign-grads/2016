@@ -12,7 +12,7 @@ description: "Drink whiskey, build bikes; drop key frames, kern kern kern."
 
 email: "michelle.holly.dugas@gmail.com"
 
-website: "http://www.michellehollydugas.ca"
+website: "http://michellehollydugas.ca"
 
 specialization:
   - branding
