@@ -1,6 +1,6 @@
 - name: Speed Networking
   location: Corner Lounge
-  date: March 4
+  date: March 3
   time: 7:00pm-9:00pm
   link: '#'
   img: netowrking.jpg
@@ -12,7 +12,7 @@
   date: March 11
   time: 7:00pm-2:00am
   link: '#'
-  img: events-02.jpg
+  img: pub-night.jpg
   xs: '1'
   s: '1-2'
 
@@ -21,6 +21,6 @@
   date: April 29
   time: 6:00pm-9:30pm
   link: '#'
-  img: events-03.jpg
+  img: grad-show.jpg
   xs: 'hidden'
   s: 'hidden'
