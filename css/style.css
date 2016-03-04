@@ -2396,9 +2396,12 @@ ul li {
   background-color: transparent;
   overflow: hidden;
   transition: max-height 250ms ease-in-out;
+  width: 100%;
+  left: 0;
 }
 
 .fw-navigation ul {
+  width: 100%;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -2487,11 +2490,20 @@ ul li {
   text-decoration: underline;
 }
 
-.fw-navigation {
-  width: 18em;
-  left: calc(100% - 18em);
-  position: absolute;
-  z-index: 100;
+@media only screen and (min-width: 25em) {
+  .fw-navigation {
+    width: 100%;
+    left: 0;
+    position: absolute;
+    z-index: 100;
+  }
+}
+
+@media only screen and (min-width: 38em) {
+  .fw-navigation {
+    width: 18em;
+    left: calc(100% - 18em);
+  }
 }
 
 @media only screen and (min-width: 80em) {
@@ -2588,7 +2600,6 @@ ul li {
   bottom: 4em;
   transition: all 250ms ease-in-out;
   z-index: 1000;
-  transition: opacity 250ms ease-in;
 }
 
 .rtt .rtt-btn {
@@ -2727,6 +2738,14 @@ body.noscript .social {
   clip: rect(1px, 1px, 1px, 1px);
 }
 
+body.noscript .rtt {
+  opacity: 0.5;
+}
+
+body.noscript .rtt:hover {
+  opacity: 0.75;
+}
+
 @media only screen and (min-width: 38em) {
   body.noscript .fw-header .logo {
     margin: 0;
@@ -2737,9 +2756,9 @@ body.noscript .social {
   }
   body.noscript .fw-navigation {
     position: absolute;
-    width: 18em;
+    width: calc(100% - 16em);
     top: 1em;
-    left: calc(100% - 19em);
+    left: 16em;
   }
   body.noscript .fw-navigation ul {
     display: block;

@@ -125,7 +125,10 @@
   background-color: transparent;
   overflow: hidden;
   transition: max-height $menu-duration ease-in-out;
+  width: 100%;
+  left:0;
   ul{
+    width: 100%;
     @include zero;
     list-style: none;
     li{
@@ -197,16 +200,9 @@
 
 
 @media only screen and (min-width: 25em){
-
-}
-
-@media only screen and (min-width: 38em){
-
-  }
-
   .fw-navigation{
-    width: $menu-fly-out-width;
-    left: calc(100% - #{$menu-fly-out-width});
+    width: 100%;
+    left: 0;
     position: absolute;
     z-index: 100;
     ul{
@@ -217,7 +213,14 @@
       }
     }
   }
+}
 
+@media only screen and (min-width: 38em){
+.fw-navigation{
+    width: $menu-fly-out-width;
+    left: calc(100% - #{$menu-fly-out-width});
+  }
+}
 
 @media only screen and (min-width: 60em){
 
@@ -327,7 +330,6 @@
   bottom: 4em;
   transition: all 250ms ease-in-out;
   z-index: 1000;
-  transition: opacity 250ms ease-in;
   .rtt-btn{
     padding: 1em;
     background-color: $green;
