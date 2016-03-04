@@ -1,14 +1,14 @@
 @keyframes colours {
   0%{
-    fill: $yellow;
-  } 25%{
     fill: $purple;
-  } 50%{
+  } 25%{
     fill: $green;
-  } 75%{
+  } 50%{
     fill: $red;
-  } 100%{
+  } 75%{
     fill: $yellow;
+  } 100%{
+    fill: $purple;
   }
 }
 .fw-header{
@@ -45,7 +45,7 @@
           fill: $svg-fill;
         }
       }
-      &:hover .svg-top{
+      &:hover svg .svg-top{
         // fill: lighten($svg-top-fill, 10%);
         animation: colours 5s ease-in-out infinite;
       }
@@ -67,7 +67,7 @@
     .fw-toggle-button:after {
       transform: rotate(-45deg) translate(7px, -8px);
     }
-    & + #fw-menu {
+    & + #navigation {
       max-height: $menu-max-height;
     }
   }
@@ -125,7 +125,10 @@
   background-color: transparent;
   overflow: hidden;
   transition: max-height $menu-duration ease-in-out;
+  width: 100%;
+  left:0;
   ul{
+    width: 100%;
     @include zero;
     list-style: none;
     li{
@@ -197,16 +200,9 @@
 
 
 @media only screen and (min-width: 25em){
-
-}
-
-@media only screen and (min-width: 38em){
-
-  }
-
   .fw-navigation{
-    width: $menu-fly-out-width;
-    left: calc(100% - #{$menu-fly-out-width});
+    width: 100%;
+    left: 0;
     position: absolute;
     z-index: 100;
     ul{
@@ -217,7 +213,14 @@
       }
     }
   }
+}
 
+@media only screen and (min-width: 38em){
+.fw-navigation{
+    width: $menu-fly-out-width;
+    left: calc(100% - #{$menu-fly-out-width});
+  }
+}
 
 @media only screen and (min-width: 60em){
 
@@ -256,6 +259,7 @@
   }
 
   .logo{
+    width: 100%;
     min-width: 100%;
   }
 
@@ -316,4 +320,27 @@
       }
     }
   }
+}
+
+.rtt{
+  opacity: 0;
+  position: fixed;
+  display: block;
+  right: 0;
+  bottom: 4em;
+  transition: all 250ms ease-in-out;
+  z-index: 1000;
+  .rtt-btn{
+    padding: 1em;
+    background-color: $green;
+    color: $white;
+    text-decoration: none;
+  }
+  &:hover{
+    opacity: 1;
+  }
+}
+
+.js-rtt{
+  opacity: 0.5;
 }

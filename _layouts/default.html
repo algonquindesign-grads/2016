@@ -2,36 +2,82 @@
 <html lang="en-ca">
 <head>
 	<meta charset="utf-8">
-	<title>{{ page.title }}</title>
-  <link rel="icon" type="image/png" href="http://grads.images.algonquindesign.ca.s3.amazonaws.com/2016/img/fw-favicon.png">
   <link href="{{site.baseurl}}/css/style.css" rel="stylesheet">
 	<meta name="handheldfriendly" content="true">
 	<meta name="mobileoptimized" content="240">
 	<meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="description" content="{{ page.meta }}">
-
+  <link href="{{site.baseurl}}/css/style.css" rel="stylesheet">
+  <meta name="handheldfriendly" content="true">
+  <meta name="mobileoptimized" content="240">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Framework 2016 Algonquin College Graphic Design graduating class">
+  <!--Location-->
+  <meta name="geo-placename" content="Ottawa, Ontario, Canada">
+  <meta name="geo.region" content="CA-Ontario">
+  <!-- Basic Metadata-->
+  <meta name="author" content="2016 Graduating Class Web Team">
+  <meta name="copyright" content="&#169; Algonquin College Class of 2016">
+  <meta name="keyword" content="graphic deisgn, algonquin college, graduation, ottawa, framework, design, grads, ACGD, acgd, ux/ui, illustartion, motion, ux, ui, typography, branding, print, web, photography, 2016, students, landsdowne, landsdowne park, april 29">
+  <meta name="language" content="EN">
+  <meta name="subject" content="graphic design, graduation, grad show, portfolio, student, web">
+<!--Social Media -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Framework 2016">
+  <!--THIS NEEDS TO BE CHANGED WHEN IT IS CONNECTED TO OUR DOMAIN-->
+  <meta property="og:url" content="{{ site.baseurl }}">
+  <meta property="og:image" content="{{site.cdn}}img/fw-logo-vert.svg">
+  <meta property="og:site_name" content="Framework 2016">
+  <meta property="og:description" content="{{ page.meta }}">
+  <!-- Twitter-->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Framework 2016">
+    <meta name="twitter:url" content="w{{ site.baseurl }}">
+    <meta name="twitter:description" content="{{ page.meta }}">
+    <meta name="twitter:image" content="{{site.cdn}}img/fw-logo-vert.svg">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Framework 2016">
+  <!--THIS NEEDS TO BE CHANGED WHEN IT IS CONNECTED TO OUR DOMAIN-->
+  <meta property="og:url" content="http://2016.grads.algonquindesign.ca">
+  <meta property="og:image" content="{{site.cdn}}img/fw-logo-vert.png"> <!-- save png-->
+  <meta property="og:site_name" content="Framework 2016">
+  <meta property="og:description" content="Framework 2016 Algonquin College Graphic Design graduating class">
+  <!-- Twitter-->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Framework 2016">
+    <meta name="twitter:url" content="ttp://2016.grads.algonquindesign.ca">
+    <meta name="twitter:description" content="Framework 2016 Algonquin College Graphic Design graduating class">
+    <meta name="twitter:image" content="{{site.cdn}}img/fw-logo-vert.png"><!-- save png-->
+    <meta name="twitter:site" content="@FRAMEWORK2016">
+  <link rel="icon" type="image/png" href="{{site.cdn}}img/fw-favicon.png">
+ <title>{{ page.title }}</title>
 </head>
 {% include base.html %}
 
 <body class="noscript">
+<!-- skip links-->
+<ul class="skip-links">
+  <li><a href="#main"> Jump to Main Content</a></li>
+   <li><a href="#navigation"> Jump to Navigation</a></li>
+</ul>
+<!-- skip links-->
+
   {% include header.html %}
 
-  <main class="site-wrapper">
+  <main class="site-wrapper" id="main" role="main">
     {{content}}
+
+  <div class="rtt">
+  <a class="rtt-btn" href="#main">Return to Top</a>
+  </div>
   </main>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/2.1.2/jquery.scrollTo.min.js"></script>
   <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-localScroll/1.4.0/jquery.localScroll.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.0/noframework.waypoints.min.js"></script>
-  <script src="{{site.baseurl}}/js/fw-navigation.js"></script>
   <script src="https://use.typekit.net/mly7wqm.js"></script>
-<!--   <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script> -->
-  <script src="{{site.baseurl}}/js/video.js"></script>
-  <script src="{{site.baseurl}}/js/filter.js"></script>
-  <script src="{{site.baseurl}}/js/scroll.js"></script>
+  <script src="{{site.baseurl}}/js/main-dist.js"></script>
 
-<!--   <script>try{Typekit.load({ async: true });}catch(e){}</script> -->
   <script>
     window.onload = function () {
       try {Typekit.load();} catch(e) {}

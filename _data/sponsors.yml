@@ -1,8 +1,7 @@
-- name: Sponsor
-  img: ac-black.png
-- name: Sponsor
-  img: sa-logo-plain.png
-- name: Sponsor
+- name: Sponsor - Algonquin College School of Media &amp; Design
+  img: ac-black-logo.svg
+- name: Sponsor - Algonquin Students' Association
+  img: sa-plain-logo.svg
+- name: Sponsor - Nspired Signage &amp; Advertising Inc
   img: nspired.png
-- name: Sponsor
-  img: fw-logo-vert.svg
+

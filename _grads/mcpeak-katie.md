@@ -21,7 +21,6 @@ specialization:
 
 social:
   behance:    "https://www.behance.net/katiemcpeak"
-  facebook:   "https://www.facebook.com/katie.mcpeak.5"
   github:     "https://github.com/katiemcpeak"
   vimeo:      "https://vimeo.com/user36739750"
 

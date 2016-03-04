@@ -1,10 +1,7 @@
 .fe-holder {
-  background-color: rgba( $grey-2, .5 );
-  // padding: 1em;
+  background-color: rgba($grey-2, .5 );
   @media only screen and (min-width: 80em) {
       margin-top: 2em;
-    // padding-right: 10%;
-    // padding-left: 10%;
   }
 }
 
@@ -12,21 +9,27 @@
  @include header-1;
 }
 
+.fe-width {
+  max-width: 75em;
+  margin: 2em auto;;
+}
+
 .fe-img-holder {
   position: relative;
+  padding: 0.5em
 }
 
 .fe-event {
   position: absolute;
   z-index: 100;
-  bottom: -1em;
-  padding: .3em 1em;
+  bottom: -0.9em;
+  padding: .2em 1em;
   background-color: rgba( $black, .8 );
   overflow: hidden;
   display: block;
   color: white;
-  font-family: "Effra", serif;
-  font-size: 16px;
+  font-family: "Effra", sans-serif;
+  font-size: 1.25em;
   text-transform: uppercase;
  }
 
@@ -59,38 +62,44 @@
     }
   }
 }
-
-
-// .fe-event {
-//   position: absolute;
-//   z-index: 100;
-//   bottom: 0;
-//   padding: .5em;
-//   background-color: $black;
-//   margin-left: 1em;
-//   margin-right: 1em;
-//   overflow: hidden;
-//   display: block;
-//   color: white;
-// }
-
+.fe {
+  position: relative;
+}
 .fe-info {
+  position: absolute;
+  bottom: 0;
   display: inline-block;
   float: left;
-  width: 100%;
-  p, a {
-    font-family: "Effra", serif;
+  width: calc(100% - 1.5em);
+  margin: 0.5em;
+  padding: 1em;
+  background-color: rgba($black, 0.5);
+  color: $white;
+  .fe-location {
+    font-weight: bold;
+  }
+  p {
+    font-family: "Effra", sans-serif;
     font-size: 1em;
+  }
+  a {
+    font-family: "Effra", sans-serif;
+    font-size: 14px;
+    color: $text-color;
   }
 }
 
+.fe-details-title {
+  margin-bottom: 1em;
+}
 .fe-details {
-  margin-bottom: .5em;
-  font-weight: bold;
+  margin-bottom: .15em;
 }
 
 .fe-calender {
   margin-bottom: 0;
   text-decoration: none;
   color: $text-color;
+  font-size: 14px;
 }
+

@@ -15,9 +15,9 @@ email: "hello@rebeccadagenais.ca"
 website: "http://rebeccadagenais.ca"
 
 specialization:
-  - motion
   - ux-ui
   - web
+  - motion
 
 vimeo: "154918006"
 

@@ -1,18 +1,23 @@
+.about-holder {
+	max-width: 75em;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 2em;
+}
+
 .about-sec {
 	display: none;
 	text-align: left;
 }
 
 .about-para {
- 	font-size: 14px;
+ 	font-size: 1em;
 	color: $grey-4;
 	text-align: left;
 }
 
 .about-header {
-	color: $purple;
-	font-size: 16px;
-	text-transform: uppercase;
+	 @include header-1;
 }
 
 .about-social-icons {
@@ -55,7 +60,15 @@
 
 	.about-social {
 		margin-top: 4em;
-}
+	}
 
 }
+
+// .fw-info-sec3-btn {
+//     text-align: center;
+//     color: #fff;
+//     padding: .75em 1.5em;
+//     font-size: 1em;
+//     text-transform: uppercase;
+// }
 

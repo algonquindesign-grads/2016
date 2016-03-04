@@ -24,9 +24,9 @@
 #filter-print:checked ~ .grid .filters [for="filter-print"],
 #filter-type:checked ~ .grid .filters [for="filter-type"],
 #filter-photo:checked ~ .grid .filters [for="filter-photo"] {
-  background-color: $grey-3;
+  background-color: $green;
   box-shadow: none;
-  border: 2px solid $grey-3;
+  border: 2px solid $green;
   color: white;
 }
 
@@ -45,7 +45,7 @@
     &:hover{
       p{
         transition: background-color $filter-transition * 0.5 ease-in-out;
-        background-color: $green;
+        background-color: rgba($green, 0.75);
       }
     }
   }
@@ -53,10 +53,16 @@
 
 .filter-items > li {
   opacity: .4;
+  &:hover img{
+    top: 0;
+  }
 }
 
 #filter-all:checked ~ .filter-items > li {
   opacity: 1;
+  &:hover img{
+    top: calc(-100% - 1px);
+  }
 }
 
 /* > will only select direct child descendant */
@@ -70,26 +76,31 @@
 #filter-type:checked ~ .filter-items > [data-category~="type"],
 #filter-photo:checked ~ .filter-items > [data-category~="photography"] {
   opacity: 1;
+  &:hover img{
+    top: calc(-100% - 1px);
+  }
 }
 
 ul li {
   list-style-type: none;
 }
 
-.filter-btn {
-  display: inline-block;
-  margin: 0;
+.filter-btn{
+  text-align: center;
   background-color: transparent;
   border: 1px solid $grey-1;
   color: $grey;
   padding: .5em 1em;
-  margin: 4px 2px;
-  box-shadow: 2px 2px $grey-1;
+}
+
+.filters{
+  margin: 0 auto;
 }
 
 .filter-btn:hover {
-  background-color: rgba(0, 0, 0, .05);
-  box-shadow: inset 2px 2px 0 0 $grey-1;
+  background-color: rgba($green, .5);
+  xbox-shadow: inset 2px 2px 0 0 $grey-1;
+  color: $white;
 }
 
 #filter-select {

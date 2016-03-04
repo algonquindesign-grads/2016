@@ -12,13 +12,11 @@ html {
 	text-size-adjust: 100%;
   font-family: 'Effra', sans-serif;
   position: relative;
-  // height: 100%;
 }
 
 body{
   @include zero;
   position: relative;
-  // height: 100%;
   background-color: transparent;
 }
 
@@ -35,6 +33,26 @@ body:after{
   bottom: 0;
   position: fixed;
   z-index: -10;
+}
+
+.skip-links {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  top: -3em;
+ li {
+  padding: 0.5em 0.75em;
+  position: absolute;
+  top: -3em;
+  background-color: $grey;
+  color: #fff;
+  font-size: 1.125em;
+  font-weight: bold;
+  text-decoration: none;
+  &:focus {
+    top: 0;
+  }
+ }
 }
 
 .framework-margin {
@@ -65,10 +83,24 @@ body:after{
 body.noscript{
   .fw-navigation{
     max-height: 15em;
+    width: 100%;
+    display: block;
+    position: relative;
+    left: 0;
   }
 
   .fw-toggle{
     @include element-invisible;
+  }
+
+  .social{
+    @include element-invisible;
+  }
+  .rtt{
+    opacity: 0.5;
+    &:hover{
+      opacity: 0.75
+    }
   }
 }
 
@@ -76,7 +108,6 @@ body.noscript{
   body.noscript{
     .fw-header{
       .logo{
-        width: 18em;
         margin: 0;
       }
     }
@@ -86,9 +117,9 @@ body.noscript{
     }
     .fw-navigation{
       position: absolute;
-      width: auto;
+      width: calc(100% - 16em);
       top: 1em;
-      right: 2em;
+      left: 16em;
       ul{
         display: block;
         li{
@@ -106,13 +137,17 @@ body.noscript{
       }
     }
   }
+
 }
 
 @media only screen and (min-width: 80em){
   body.noscript{
+    .logo{
+      width: 100%;
+    }
     .fw-navigation{
     left: 0;
-    top: $side-bar-width - 1em;
+    top: $side-bar-width - 2em;
     position: fixed;
     max-height: $menu-max-height;
     width: $side-bar-width;
@@ -130,12 +165,12 @@ body.noscript{
           right: 0;
         }
         a{
-          padding: 0.5em 2em;
-          font-size: 1em;
+          padding: 0.5em 2.6666em;
+          font-size: 0.75em;
           line-height: 1.5em;
         }
       }
     }
-  }
+    }
   }
 }

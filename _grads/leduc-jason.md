@@ -12,6 +12,8 @@ description: "I am a tireless seeker of knowledge, occasional purveyor of wisdom
 
 email: "jasondlleduc@yahoo.ca"
 
+website: "jasonleduc.ca"
+
 specialization:
   - branding
   - illustration
