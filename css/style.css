@@ -2229,37 +2229,37 @@ ul li {
 
 @-webkit-keyframes colours {
   0% {
-    fill: #eab63f;
-  }
-  25% {
     fill: #64689b;
   }
-  50% {
+  25% {
     fill: #00a29c;
   }
-  75% {
+  50% {
     fill: #df4827;
   }
-  100% {
+  75% {
     fill: #eab63f;
+  }
+  100% {
+    fill: #64689b;
   }
 }
 
 @keyframes colours {
   0% {
-    fill: #eab63f;
-  }
-  25% {
     fill: #64689b;
   }
-  50% {
+  25% {
     fill: #00a29c;
   }
-  75% {
+  50% {
     fill: #df4827;
   }
-  100% {
+  75% {
     fill: #eab63f;
+  }
+  100% {
+    fill: #64689b;
   }
 }
 
