@@ -3323,3 +3323,45 @@ scss
     opacity: 1;
   }
 }
+
+.mouseoff {
+  transition: all 250ms ease-in-out;
+  bottom: -100%;
+}
+
+.instagram-post {
+  display: block;
+  position: relative;
+  overflow: hidden;
+}
+
+.instagram-post .mouseoff {
+  padding: 1.5em;
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.5);
+  opacity: 0;
+}
+
+.instagram-post:hover .mouseoff {
+  background-color: white;
+  bottom: 0;
+  opacity: 0.75;
+}
+
+.removal {
+  opacity: 0;
+  filter: alpha(opacity=0);
+  margin-left: -10px;
+  display: inline-block;
+  -webkit-transform: rotate(0deg);
+  -webkit-transition: all 1s ease-in-out;
+  position: relative;
+}
+
+.term:hover .removal {
+  opacity: 1;
+  color: red;
+  left: 13px;
+  -webkit-transform: rotate(45deg);
+  filter: alpha(opacity=100);
+}

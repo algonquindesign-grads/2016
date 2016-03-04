@@ -5,6 +5,6 @@ var feed = new Instafeed({
   limit: 3,
   resolution: 'standard_resolution',
   target: 'instagram-feed',
-  template: '<li class="unit xs-1-2  m-1-3"><img class="img-flex island-1-2" src="{{image}}" alt="{{caption}}"></li>'
+  template: '<li class="instagram-post unit xs-1-2 m-1-3"><img class="img-flex island-1-4" src="{{image}}" alt="{{caption}}"><p class="mouseoff">{{caption}}</p></li>'
 });
 feed.run();
