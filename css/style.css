@@ -2333,7 +2333,7 @@ ul li {
           transform: rotate(-45deg) translate(7px, -8px);
 }
 
-.fw-header[data-state="open"] + #fw-menu {
+.fw-header[data-state="open"] + #navigation {
   max-height: 20em;
 }
 

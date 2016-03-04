@@ -67,7 +67,7 @@
     .fw-toggle-button:after {
       transform: rotate(-45deg) translate(7px, -8px);
     }
-    & + #fw-menu {
+    & + #navigation {
       max-height: $menu-max-height;
     }
   }
