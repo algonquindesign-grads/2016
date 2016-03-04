@@ -2012,8 +2012,16 @@ td, th, fieldset {
   opacity: .4;
 }
 
+.filter-items > li:hover img {
+  top: 0;
+}
+
 #filter-all:checked ~ .filter-items > li {
   opacity: 1;
+}
+
+#filter-all:checked ~ .filter-items > li:hover img {
+  top: -100%;
 }
 
 /* > will only select direct child descendant */
@@ -2026,6 +2034,17 @@ td, th, fieldset {
 #filter-type:checked ~ .filter-items > [data-category~="type"],
 #filter-photo:checked ~ .filter-items > [data-category~="photography"] {
   opacity: 1;
+}
+
+#filter-branding:checked ~ .filter-items > [data-category~="branding"] li:hover img,
+#filter-ux:checked ~ .filter-items > [data-category~="ux-ui"] li:hover img,
+#filter-web:checked ~ .filter-items > [data-category~="web"] li:hover img,
+#filter-illustration:checked ~ .filter-items > [data-category~="illustration"] li:hover img,
+#filter-motion:checked ~ .filter-items > [data-category~="motion"] li:hover img,
+#filter-print:checked ~ .filter-items > [data-category~="print"] li:hover img,
+#filter-type:checked ~ .filter-items > [data-category~="type"] li:hover img,
+#filter-photo:checked ~ .filter-items > [data-category~="photography"] li:hover img {
+  top: -100%;
 }
 
 ul li {
@@ -2158,10 +2177,6 @@ ul li {
   display: block;
   padding-top: 100%;
   overflow: hidden;
-}
-
-.ph-image a:hover .ph-gradphoto-top {
-  top: calc(-100% - 1px);
 }
 
 .ph-image a p {
