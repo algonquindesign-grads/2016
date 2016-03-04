@@ -76,10 +76,8 @@
 #filter-type:checked ~ .filter-items > [data-category~="type"],
 #filter-photo:checked ~ .filter-items > [data-category~="photography"] {
   opacity: 1;
-  li{
-    &:hover img{
-      top: calc(-100% - 1px);
-    }
+  &:hover img{
+    top: calc(-100% - 1px);
   }
 }
 
