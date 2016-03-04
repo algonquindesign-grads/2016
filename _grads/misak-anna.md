@@ -17,7 +17,7 @@ website: "http://annamisak.com"
 specialization:
   - illustration
   - print
-  - photography
+  - branding
 
 social:
   behance:    "https://www.behance.net/annamisak"
