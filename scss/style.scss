@@ -3,11 +3,11 @@
 @import "mixins";
 
 // Component rules
+@import "components/grid";
+@import "components/type";
 @import "components/social";
 @import "components/filter";
 @import "components/grad-photo";
-@import "components/grid";
-@import "components/type";
 @import "components/header";
 @import "components/main";
 @import "components/portfolio-pictures";
@@ -19,3 +19,4 @@
 @import "components/fw-info";
 @import "components/404";
 @import "components/instagram";
+@import "components/countdown-clock";

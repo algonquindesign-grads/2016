@@ -76,17 +76,6 @@ ul li {
   list-style-type: none;
 }
 
-// .filter-btn {
-//   display: inline-block;
-//   margin: 0;
-//   background-color: transparent;
-//   border: 1px solid $grey-1;
-//   color: $grey;
-//   padding: .5em 1em;
-//   margin: 4px 2px;
-//   box-shadow: 2px 2px $grey-1;
-// }
-
 .filter-btn{
   text-align: center;
   background-color: transparent;
@@ -100,8 +89,9 @@ ul li {
 }
 
 .filter-btn:hover {
-  background-color: rgba(0, 0, 0, .05);
-  box-shadow: inset 2px 2px 0 0 $grey-1;
+  background-color: rgba($green, .5);
+  xbox-shadow: inset 2px 2px 0 0 $grey-1;
+  color: $white;
 }
 
 #filter-select {

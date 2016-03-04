@@ -3,12 +3,12 @@ title: Framework 2016 - Sean Z Okai
 meta: Portfolio Page for Sean Z Okai
 layout: portfolio
 
-full_name: "Sean Okai"
+full_name: "Sean Z Okai"
 short_name: "Sean O"
 first_name: "Sean Z"
 last_name: "Okai"
 
-description: "Iam a media enthusiast with a zeal for problem-solving. Digital handyman by day, pixel seller at night. Also a highly ranked wafer connoisseur"
+description: "I am a media enthusiast with a zeal for problem-solving. Digital handyman by day, pixel seller at night. Also a highly ranked wafer connoisseur."
 
 email: "hello@seanzokai.ca"
 
