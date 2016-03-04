@@ -1,5 +1,6 @@
 .grad-section {
  @include header-1;
+ margin: 1.3em;
 }
 
 .ph-graduates {
@@ -10,6 +11,9 @@
   max-width: 75em;
   margin: 0 auto;
   padding-bottom: 2em;
+  .ph-padding{
+    padding-top: 0;
+  }
 }
 
 .ph-image {
@@ -35,7 +39,7 @@
 .ph-student {
 	padding-left: 0;
   padding-right: 0;
-  padding-top: 1em;
+  // padding-top: 1em;
 	p{
     position: absolute;
     text-align: center;

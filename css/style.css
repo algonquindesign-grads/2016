@@ -2063,6 +2063,7 @@ ul li {
   color: #000;
   font-size: 1.5em;
   text-transform: uppercase;
+  margin: 1.3em;
 }
 
 .ph-graduates {
@@ -2073,6 +2074,10 @@ ul li {
   max-width: 75em;
   margin: 0 auto;
   padding-bottom: 2em;
+}
+
+.ph-graduates .ph-padding {
+  padding-top: 0;
 }
 
 .ph-image {
@@ -2109,7 +2114,6 @@ ul li {
 .ph-student {
   padding-left: 0;
   padding-right: 0;
-  padding-top: 1em;
 }
 
 .ph-student p {
