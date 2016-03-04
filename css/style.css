@@ -2112,6 +2112,7 @@ ul li {
 }
 
 .ph-student {
+  display: block;
   padding-left: 0;
   padding-right: 0;
 }
@@ -2160,7 +2161,7 @@ ul li {
 }
 
 .ph-image a:hover .ph-gradphoto-top {
-  top: -105%;
+  top: calc(-100% - 1px);
 }
 
 .ph-gradphoto-top {
