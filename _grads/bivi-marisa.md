@@ -5,8 +5,6 @@ layout: portfolio
 
 full_name: "Marisa Bivi"
 short_name: "Marisa B"
-first_name: "Marisa"
-last_name: "Bivi"
 
 description: "Design, design, design. Tea, tea, tea. Anything sweet! Repeat! “Yes, that's it!” Said the Hatter with a sigh, “it's always tea time.”"
 
