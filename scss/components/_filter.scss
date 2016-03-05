@@ -41,7 +41,7 @@
 .filter-items {
   li{
     transition: opacity $filter-transition ease-in-out;
-    &:hover{
+    &:hover, a:focus{
       p{
         transition: background-color $filter-transition * 0.5 ease-in-out;
         background-color: rgba($green, 0.75);
@@ -52,14 +52,14 @@
 
 .filter-items > li {
   opacity: .4;
-  &:hover img{
+  &:hover img, a:focus img{
     top: 0;
   }
 }
 
 #filter-all:checked ~ .filter-items > li {
   opacity: 1;
-  &:hover img{
+  &:hover img, a:focus img{
     top: calc(-100% - 1px);
   }
 }
@@ -75,7 +75,7 @@
 #filter-type:checked ~ .filter-items > [data-category~="type"],
 #filter-photo:checked ~ .filter-items > [data-category~="photography"] {
   opacity: 1;
-  &:hover img{
+  &:hover img, a:focus img{
     top: calc(-100% - 1px);
   }
 }

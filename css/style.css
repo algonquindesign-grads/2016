@@ -2002,7 +2002,7 @@ td, th, fieldset {
   transition: opacity 500ms ease-in-out;
 }
 
-.filter-items li:hover p {
+.filter-items li:hover p, .filter-items li a:focus p {
   transition: background-color 250ms ease-in-out;
   background-color: rgba(0, 162, 156, 0.75);
 }
@@ -2011,7 +2011,7 @@ td, th, fieldset {
   opacity: .4;
 }
 
-.filter-items > li:hover img {
+.filter-items > li:hover img, .filter-items > li a:focus img {
   top: 0;
 }
 
@@ -2019,7 +2019,7 @@ td, th, fieldset {
   opacity: 1;
 }
 
-#filter-all:checked ~ .filter-items > li:hover img {
+#filter-all:checked ~ .filter-items > li:hover img, #filter-all:checked ~ .filter-items > li a:focus img {
   top: calc(-100% - 1px);
 }
 
@@ -2035,14 +2035,21 @@ td, th, fieldset {
   opacity: 1;
 }
 
-#filter-branding:checked ~ .filter-items > [data-category~="branding"]:hover img,
+#filter-branding:checked ~ .filter-items > [data-category~="branding"]:hover img, #filter-branding:checked ~ .filter-items > [data-category~="branding"] a:focus img,
 #filter-ux:checked ~ .filter-items > [data-category~="ux-ui"]:hover img,
+#filter-ux:checked ~ .filter-items > [data-category~="ux-ui"] a:focus img,
 #filter-web:checked ~ .filter-items > [data-category~="web"]:hover img,
+#filter-web:checked ~ .filter-items > [data-category~="web"] a:focus img,
 #filter-illustration:checked ~ .filter-items > [data-category~="illustration"]:hover img,
+#filter-illustration:checked ~ .filter-items > [data-category~="illustration"] a:focus img,
 #filter-motion:checked ~ .filter-items > [data-category~="motion"]:hover img,
+#filter-motion:checked ~ .filter-items > [data-category~="motion"] a:focus img,
 #filter-print:checked ~ .filter-items > [data-category~="print"]:hover img,
+#filter-print:checked ~ .filter-items > [data-category~="print"] a:focus img,
 #filter-type:checked ~ .filter-items > [data-category~="type"]:hover img,
-#filter-photo:checked ~ .filter-items > [data-category~="photography"]:hover img {
+#filter-type:checked ~ .filter-items > [data-category~="type"] a:focus img,
+#filter-photo:checked ~ .filter-items > [data-category~="photography"]:hover img,
+#filter-photo:checked ~ .filter-items > [data-category~="photography"] a:focus img {
   top: calc(-100% - 1px);
 }
 
