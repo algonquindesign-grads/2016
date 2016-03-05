@@ -2,6 +2,26 @@ var $btn = $(".gd-btn-play-pause");
 var video = $(".gd-grad-vid").get(0);
 var $videoWrap = $('.gd-video-wrap');
 var $bb = $('.hero-billboard');
+var $stepOne = $('#step-1');
+var $stepTwo = $('#step-2');
+var $stepThree = $('#step-3');
+var $stepFour = $('#step-4');
+
+$stepOne.on('click', function() {
+  $videoWrap.attr('data-step', '1');
+});
+
+$stepTwo.on('click', function() {
+  $videoWrap.attr('data-step', '2');
+});
+
+$stepThree.on('click', function() {
+  $videoWrap.attr('data-step', '3');
+});
+
+$stepFour.on('click', function() {
+  $videoWrap.attr('data-step', '4');
+});
 
 $btn.on('click', function () {
   $bb.css('display', 'none');
@@ -12,6 +32,7 @@ $btn.on('click', function () {
   $btn.addClass('pause');
   $btn.removeClass('play');
 });
+
 
 $btn.on('click', function () {
   if (video.paused) {

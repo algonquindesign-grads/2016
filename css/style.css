@@ -3290,6 +3290,7 @@ body.noscript .rtt:hover {
   opacity: 0;
   transition: opacity 250ms linear;
   cursor: pointer;
+  z-index: 100;
 }
 
 .gd-video-wrap:hover .gd-btn-play-pause,
@@ -3299,12 +3300,12 @@ body.noscript .rtt:hover {
 
 .play {
   background-image: url(http://grads.images.algonquindesign.ca/2016/img/play-button.svg);
-  opacity: 0;
+  opacity: 1;
 }
 
 .pause {
   background-image: url(http://grads.images.algonquindesign.ca/2016/img/pause-button.svg);
-  opacity: 0;
+  opacity: 1;
 }
 
 @media only screen and (min-width: 80em) {
