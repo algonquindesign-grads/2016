@@ -1,11 +1,16 @@
 var $btn = $(".gd-btn-play-pause");
 var video = $(".gd-grad-vid").get(0);
 var $videoWrap = $('.gd-video-wrap');
-var $img = $('.video-img');
+var $bb = $('.hero-billboard');
 
-$videoWrap.on('click', function () {
-  $img.css('display', 'none');
-  $videoWrap.html('<div class="gd-embed gd-embed--16by9"><video class="gd-embed__item gd-grad-vid" loop src="http://grads.images.algonquindesign.ca.s3.amazonaws.com/2016/video/test-video.mp4" poster="http://grads.images.algonquindesign.ca.s3.amazonaws.com/2016/img/website-banners-01.jpg" autoplay>Framwork 2016 Grad site video.</video></div><button class="gd-btn-play-pause"></button>')
+$btn.on('click', function () {
+  $bb.css('display', 'none');
+  $videoWrap.html('<div class="gd-embed gd-embed--16by9"><video class="gd-embed__item gd-grad-vid" src="http://grads.images.algonquindesign.ca.s3.amazonaws.com/2016/video/test-video.mp4" poster="http://grads.images.algonquindesign.ca.s3.amazonaws.com/2016/img/website-banners-01.jpg">Framwork 2016 Grad site video.</video></div>');
+  $videoWrap.addClass('is-playing');
+  $videoWrap.removeClass('is-paused');
+  $(".gd-grad-vid").get(0).play();
+  $btn.addClass('pause');
+  $btn.removeClass('play');
 });
 
 $btn.on('click', function () {
