@@ -3585,9 +3585,9 @@ body.noscript .rtt:hover {
 }
 
 .mouseoff {
+  display: none;
   transition: all 250ms ease-in-out;
-  top: 0;
-  botom: 0;
+  bottom: -100%;
 }
 
 .instagram-post {
@@ -3596,21 +3596,24 @@ body.noscript .rtt:hover {
   overflow: hidden;
 }
 
-.instagram-post .mouseoff {
+.instagram-post a .mouseoff {
   width: calc(100% - 0.25em);
-  padding: 1em;
+  padding: 0.5em 0.75em 1.5em;
+  max-height: calc(100% + 0.5em);
   position: absolute;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.55);
   opacity: 0;
+  color: #000;
 }
 
-.instagram-post:hover .mouseoff {
+.instagram-post a:hover .mouseoff, .instagram-post a:focus .mouseoff {
   background-color: rgab(#fff, 0.75);
   overflow: hidden;
   opacity: 1;
+  bottom: -2em;
 }
 
-.instagram-post:hover .mouseoff:hover:before {
+.instagram-post a:hover .mouseoff:hover:before, .instagram-post a:focus .mouseoff:hover:before {
   display: block;
   content: '';
   position: absolute;
@@ -3625,6 +3628,12 @@ body.noscript .rtt:hover {
 
 .instagram-post:last-child {
   display: none;
+}
+
+@media only screen and (min-width: 25em) {
+  .mouseoff {
+    display: block;
+  }
 }
 
 @media only screen and (min-width: 38em) {
