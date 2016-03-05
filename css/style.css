@@ -1987,7 +1987,6 @@ td, th, fieldset {
 #filter-photo:checked ~ .grid .filters [for="filter-photo"] {
   background-color: #00a29c;
   box-shadow: none;
-  border: 2px solid #00a29c;
   color: white;
 }
 
@@ -2054,18 +2053,19 @@ ul li {
 .filter-btn {
   text-align: center;
   background-color: transparent;
-  border: 1px solid #DCDBDB;
-  color: #55565a;
+  border: 1px solid #55565a;
+  color: #fff;
   padding: .5em 1em;
 }
 
 .filters {
   margin: 0 auto;
+  border: 1px solid #55565a;
+  background-color: rgba(85, 86, 90, 0.5);
 }
 
 .filter-btn:hover {
   background-color: rgba(0, 162, 156, 0.5);
-  xbox-shadow: inset 2px 2px 0 0 #DCDBDB;
   color: #fff;
 }
 
@@ -2074,8 +2074,8 @@ ul li {
   color: #55565a;
   font-size: 16px;
   background-color: transparent;
-  border: 1px solid #DCDBDB;
   padding: .5em 1em;
+  border: 1px solid #55565a;
 }
 
 .grad-section {
@@ -2666,6 +2666,11 @@ body:after {
   bottom: 0;
   position: fixed;
   z-index: -10;
+}
+
+.main-bg {
+  background-color: #f8f2e9;
+  z-index: -13;
 }
 
 .skip-links {

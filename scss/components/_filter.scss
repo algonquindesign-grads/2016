@@ -26,7 +26,6 @@
 #filter-photo:checked ~ .grid .filters [for="filter-photo"] {
   background-color: $green;
   box-shadow: none;
-  border: 2px solid $green;
   color: white;
 }
 
@@ -88,18 +87,19 @@ ul li {
 .filter-btn{
   text-align: center;
   background-color: transparent;
-  border: 1px solid $grey-1;
-  color: $grey;
+  border: 1px solid $grey-4;
+  color: $white;
   padding: .5em 1em;
 }
 
 .filters{
   margin: 0 auto;
+  border: 1px solid $grey-4;
+  background-color: rgba($grey-4, .5);
 }
 
 .filter-btn:hover {
   background-color: rgba($green, .5);
-  xbox-shadow: inset 2px 2px 0 0 $grey-1;
   color: $white;
 }
 
@@ -108,8 +108,8 @@ ul li {
   color: $grey;
   font-size: 16px;
   background-color: transparent;
-  border: 1px solid $grey-1;
   padding: .5em 1em;
+  border: 1px solid $grey-4;
 }
 
 //Prepros should add webkit for box-shadow
