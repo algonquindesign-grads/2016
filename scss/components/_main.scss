@@ -79,9 +79,13 @@ body:after{
 
 .site-wrapper{
   display: block;
-  // overflow: hidden;
+  overflow: visible;
   position: relative;
   @include zero;
+}
+
+iframe {
+  border: none;
 }
 
 // Show navigation on screen when there is no JS
@@ -156,7 +160,6 @@ body.noscript{
     position: fixed;
     max-height: $menu-max-height;
     width: $side-bar-width;
-    overflow-y: scroll;
     ul{
       li{
         width: 100%;
