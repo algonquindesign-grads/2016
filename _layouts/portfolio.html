@@ -69,7 +69,7 @@ layout: default
       <p itemprop="url" class="pp-links peta"><a href="{{ page.website }}">{{page.website | replace: 'http://', '' }}</a></p>
       <p itemprop="email" class="pp-links"><a href="mailto:{{ page.email }}">{{ page.email }}</a></p>
       <div>
-        <ul class="pp-nav-btn pad-t">
+        <ul class="pp-nav-btn">
 <!--- Social icons -->
         {% for a in page.social %}
           <li class="pp-nav-btn-li"><a href="{{a | last}}" target="_blank"><img class="pp-social-icon" src="{{site.cdn}}img/{{a | first}}.svg" alt="Follow me on {{a | first}}."></a></li>

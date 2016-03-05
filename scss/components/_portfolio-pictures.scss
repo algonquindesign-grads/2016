@@ -155,14 +155,14 @@
 .pp-nav-btn-a {
   width: 8em;
   font-weight: 100;
-  @include pp-nav-btn;
+  @include main-btn;
 }
 
 .pp-nav-btn-arrows {
   width: 3em;
   font-weight: 600;
   margin: 0;
-  @include pp-nav-btn;
+  @include main-btn;
     &:hover {
       font-weight: 600;
     }
