@@ -2691,10 +2691,9 @@ body:after {
   margin: 0;
   padding: 0;
   list-style-type: none;
-  top: -3em;
 }
 
-.skip-links li {
+.skip-links a {
   padding: 0.5em 0.75em;
   position: absolute;
   top: -3em;
@@ -2703,10 +2702,12 @@ body:after {
   font-size: 1.125em;
   font-weight: bold;
   text-decoration: none;
+  z-index: 999999;
 }
 
-.skip-links li:focus {
-  top: 0;
+.skip-links a a:focus {
+  top: 5em;
+  right: 1em;
 }
 
 .framework-margin {
@@ -3311,6 +3312,35 @@ body.noscript .rtt:hover {
   .gd-btn-play-pause:hover {
     opacity: 0.75;
   }
+}
+
+.shapes-wrapper {
+  margin: 2em;
+}
+
+.shapes-wrapper .shapes-list {
+  width: 10em;
+  margin: 0 auto;
+}
+
+.gd-video-wrap[data-step="1"] .hero-billboard {
+  background: url("http://grads.images.algonquindesign.ca.s3.amazonaws.com/2016/img/website-banners-01.jpg");
+  background-size: cover;
+}
+
+.gd-video-wrap[data-step="2"] .hero-billboard {
+  background: url("http://grads.images.algonquindesign.ca.s3.amazonaws.com/2016/img/website-banners-02.jpg");
+  background-size: cover;
+}
+
+.gd-video-wrap[data-step="3"] .hero-billboard {
+  background: url("http://grads.images.algonquindesign.ca.s3.amazonaws.com/2016/img/website-banners-03.jpg");
+  background-size: cover;
+}
+
+.gd-video-wrap[data-step="4"] .hero-billboard {
+  background: url("http://grads.images.algonquindesign.ca.s3.amazonaws.com/2016/img/website-banners-04.jpg");
+  background-size: cover;
 }
 
 .grid-middle {
