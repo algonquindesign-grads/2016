@@ -2953,7 +2953,7 @@ body.noscript .rtt:hover {
 
 .pp-wrap {
   width: 100%;
-  background-color: rgba(166, 165, 167, 0.5);
+  text-align: center;
 }
 
 .pp-wrap-name {
@@ -2961,16 +2961,11 @@ body.noscript .rtt:hover {
   padding-top: 2.5em;
 }
 
-.pp-wrap {
-  text-align: center;
-}
-
 .pp-nav-btn {
   list-style-type: none;
   width: auto;
   text-align: center;
   padding-left: 0;
-  margin-bottom: 0 auto;
 }
 
 .pp-nav-btn-li {
@@ -2985,14 +2980,14 @@ body.noscript .rtt:hover {
   text-transform: uppercase;
   padding: 1em;
   color: #fff;
-  background-color: rgba(85, 86, 90, 0.4);
+  background-color: rgba(85, 86, 90, 0.5);
   text-decoration: none;
-  border: 2px solid rgba(0, 0, 0, 0.4);
+  border: 2px solid #55565a;
 }
 
 .pp-nav-btn-a:hover {
   color: #fff;
-  background-color: rgba(0, 162, 156, 0.6);
+  background-color: rgba(0, 162, 156, 0.8);
   transition: all 300ms ease-in-out;
 }
 
@@ -3004,14 +2999,14 @@ body.noscript .rtt:hover {
   text-transform: uppercase;
   padding: 1em;
   color: #fff;
-  background-color: rgba(85, 86, 90, 0.4);
+  background-color: rgba(85, 86, 90, 0.5);
   text-decoration: none;
-  border: 2px solid rgba(0, 0, 0, 0.4);
+  border: 2px solid #55565a;
 }
 
 .pp-nav-btn-arrows:hover {
   color: #fff;
-  background-color: rgba(0, 162, 156, 0.6);
+  background-color: rgba(0, 162, 156, 0.8);
   transition: all 300ms ease-in-out;
 }
 

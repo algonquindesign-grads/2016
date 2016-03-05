@@ -25,12 +25,12 @@
   text-transform: uppercase;
   padding: 1em;
   color: $white;
-  background-color: rgba($grey-4, .4);
+  background-color: rgba($grey-4, .5);
   text-decoration: none;
-  border: 2px solid rgba($black, .4);
+  border: 2px solid $grey-4;
     &:hover {
       color: $white;
-      background-color: rgba($green, .6);
+      background-color: rgba($green, .8);
       -webkit-transition: all 300ms ease-in-out;
       transition: all 300ms ease-in-out;
     }
