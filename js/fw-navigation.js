@@ -14,3 +14,13 @@ function toggleNav(){
     $('.fw-header').attr('data-state','closed');
   }
 }
+
+
+
+$('.fw-navigation a').on('keypress', function (e) {
+  $($(this).attr('href')).focus();
+});
+
+$('.fw-navigation a').on('click', function (e) {
+  $('.fw-header').attr('data-state','closed');
+});

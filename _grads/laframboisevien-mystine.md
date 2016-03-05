@@ -8,7 +8,7 @@ short_name: "Mystine L"
 first_name: "Mystine"
 last_name: "Laframboise Vien"
 
-description: "I am and will forever be a cat lover. I enjoy travelling, chocolate, wine, music, white space, and bright colors."
+description: "I am and will forever be a cat lover. I enjoy traveling, chocolate, wine, music, white space, and bright colors."
 
 email: "hello@mystine.ca"
 

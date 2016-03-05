@@ -33,7 +33,8 @@
 }
 
 .pp-social-icon {
-  width: 80px;
+  width: 2.5em;
+  margin: 0 0.5em;
 
   &:hover {
       -webkit-animation: icons 800ms ease-in-out;
@@ -44,13 +45,13 @@
 
 @-webkit-keyframes icons {
     0% { -webkit-transform: scale(1.0); }
-    50% { -webkit-transform: scale(1.5); }
+    50% { -webkit-transform: scale(1.2); }
     100% { -webkit-transform: scale(1.0); }
 }
 
 @keyframes icons {
     0% { transform: scale(1.0); }
-    50% { transform: scale(1.5); }
+    50% { transform: scale(1.2); }
     100% { transform: scale(1.0); }
 }
 
@@ -132,7 +133,7 @@
 
 .pp-wrap {
   width: 100%;
-  background-color: rgba($grey-1, .5);
+  text-align: center;
 }
 
 .pp-wrap-name {
@@ -140,21 +141,15 @@
   padding-top: 2.5em;
 }
 
-.pp-wrap {
-  text-align: center;
-}
-
 .pp-nav-btn {
   list-style-type: none;
   width: auto;
   text-align: center;
   padding-left: 0;
-  margin-bottom: 0 auto;
 }
 
 .pp-nav-btn-li {
   display: inline-block;
-  left: 33%;
 }
 
 .pp-nav-btn-a {
@@ -164,7 +159,7 @@
 }
 
 .pp-nav-btn-arrows {
-  width: 4em;
+  width: 3em;
   font-weight: 600;
   margin: 0;
   @include pp-nav-btn;
@@ -180,6 +175,15 @@
 
 .pp-on {
   visibility: visible;
+}
+
+@media only screen and (min-width: 25em) {
+
+  .pp-nav-btn-all{
+    padding-left: 1.3em;
+    padding-right: 1.3em;
+  }
+
 }
 
 @media only screen and (min-width: 38em) {
@@ -201,7 +205,7 @@
   }
 
   .pp-social-icon {
-    width: 95px;
+    width: 3em;
   }
 
 }

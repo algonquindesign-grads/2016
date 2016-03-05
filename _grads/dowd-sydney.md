@@ -12,7 +12,7 @@ description: "Hello, I'm Sydney Dowd. I'm a problem solver and creative thinker 
 
 email: "me@sydneydowd.ca"
 
-website: "sydneydowd.ca"
+website: "http://sydneydowd.ca"
 
 specialization:
   - branding

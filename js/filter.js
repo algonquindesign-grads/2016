@@ -8,3 +8,7 @@ $filterSelect.on('change', function () {
 $filterBtn.on('click', function () {
   $filterSelect.val($(this).attr('for'));
 });
+
+$('.filter-btn').on('keypress', function (e) {
+  $(this).click();
+});

@@ -12,7 +12,7 @@ description: "Animator & illustrator. Inspired by comic books, rubberhose animat
 
 email: "marissa.e.godwin@gmail.com"
 
-website: "http://www.braticate.ca"
+website: "http://braticate.ca"
 
 specialization:
   - illustration

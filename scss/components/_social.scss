@@ -12,7 +12,7 @@
   display: block;
   background-color: rgba($grey-2, .5 );
   overflow: hidden;
-  padding: 2em 4em;
+  padding: 2em 1em;
   a{
     color: $white;
     display: block;
@@ -45,18 +45,63 @@
   background: url('http://grads.images.algonquindesign.ca.s3.amazonaws.com/2016/img/facebook.svg');
   background-repeat: no-repeat;
   background-size: contain;
+    &:hover {
+      -webkit-animation: icons 800ms ease-in-out;
+      animation: icons 800ms ease-in-out;
+    }
+  @-webkit-keyframes icons {
+      0% { -webkit-transform: scale(1.0); }
+      50% { -webkit-transform: scale(1.5); }
+      100% { -webkit-transform: scale(1.0); }
+  }
+
+  @keyframes icons {
+      0% { transform: scale(1.0); }
+      50% { transform: scale(1.5); }
+      100% { transform: scale(1.0); }
+  }
 }
 
 .social-twitter{
   background: url('http://grads.images.algonquindesign.ca.s3.amazonaws.com/2016/img/twitter.svg');
   background-repeat: no-repeat;
   background-size: contain;
+    &:hover {
+      -webkit-animation: icons 800ms ease-in-out;
+      animation: icons 800ms ease-in-out;
+    }
+  @-webkit-keyframes icons {
+      0% { -webkit-transform: scale(1.0); }
+      50% { -webkit-transform: scale(1.5); }
+      100% { -webkit-transform: scale(1.0); }
+  }
+
+  @keyframes icons {
+      0% { transform: scale(1.0); }
+      50% { transform: scale(1.5); }
+      100% { transform: scale(1.0); }
+  }
 }
 
 .social-instagram{
   background: url('http://grads.images.algonquindesign.ca.s3.amazonaws.com/2016/img/instagram.svg');
   background-repeat: no-repeat;
   background-size: contain;
+    &:hover {
+      -webkit-animation: icons 800ms ease-in-out;
+      animation: icons 800ms ease-in-out;
+    }
+  @-webkit-keyframes icons {
+      0% { -webkit-transform: scale(1.0); }
+      50% { -webkit-transform: scale(1.5); }
+      100% { -webkit-transform: scale(1.0); }
+  }
+
+  @keyframes icons {
+      0% { transform: scale(1.0); }
+      50% { transform: scale(1.5); }
+      100% { transform: scale(1.0); }
+  }
 }
 
 .social-facebook, .social-twitter, .social-instagram{

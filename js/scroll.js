@@ -3,9 +3,9 @@ var $rtt = $('.rtt');
 $('.fw-nav-list').localScroll();
 $('.rtt').localScroll();
 
-var $fe = $('.fe-holder');
+var $ah = $('.about-holder');
 
-$fe.waypoint(function (direction) {
+$ah.waypoint(function (direction) {
   if (direction == 'down') {
     $rtt.addClass('js-rtt');
   } else {
