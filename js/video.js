@@ -23,9 +23,13 @@ $stepFour.on('click', function() {
   $videoWrap.attr('data-step', '4');
 });
 
+
 $btn.on('click', function () {
   $bb.css('display', 'none');
-  $videoWrap.html('<div class="gd-embed gd-embed--16by9"><video class="gd-embed__item gd-grad-vid" src="http://grads.images.algonquindesign.ca.s3.amazonaws.com/2016/video/test-video.mp4" poster="http://grads.images.algonquindesign.ca.s3.amazonaws.com/2016/img/website-banners-01.jpg">Framwork 2016 Grad site video.</video></div>');
+  if ($videoWrap.attr('data-step') == '1'){
+    $videoWrap.html('<div class="gd-embed gd-embed--16by9"><video class="gd-embed__item gd-grad-vid" src="http://grads.images.algonquindesign.ca.s3.amazonaws.com/2016/video/test-video.mp4" poster="http://grads.images.algonquindesign.ca.s3.amazonaws.com/2016/img/website-banners-01.jpg">Framwork 2016 Grad site video.</video></div>');
+  }
+
   $videoWrap.addClass('is-playing');
   $videoWrap.removeClass('is-paused');
   $(".gd-grad-vid").get(0).play();
