@@ -1809,7 +1809,7 @@ td, th, fieldset {
   display: block;
   background-color: rgba(166, 165, 167, 0.5);
   overflow: hidden;
-  padding: 2em 4em;
+  padding: 2em 1em;
 }
 
 .social-footer a {
@@ -2864,7 +2864,8 @@ body.noscript .rtt:hover {
 }
 
 .pp-social-icon {
-  width: 80px;
+  width: 2.5em;
+  margin: 0 0.5em;
 }
 
 .pp-social-icon:hover {
@@ -2988,7 +2989,6 @@ body.noscript .rtt:hover {
 
 .pp-nav-btn-li {
   display: inline-block;
-  left: 33%;
 }
 
 .pp-nav-btn-a {
@@ -3010,7 +3010,7 @@ body.noscript .rtt:hover {
 }
 
 .pp-nav-btn-arrows {
-  width: 4em;
+  width: 3em;
   font-weight: 600;
   margin: 0;
   display: block;
@@ -3041,6 +3041,13 @@ body.noscript .rtt:hover {
   visibility: visible;
 }
 
+@media only screen and (min-width: 25em) {
+  .pp-nav-btn-all {
+    padding-left: 1.3em;
+    padding-right: 1.3em;
+  }
+}
+
 @media only screen and (min-width: 38em) {
   .pp-on {
     display: none;
@@ -3055,7 +3062,7 @@ body.noscript .rtt:hover {
     background-color: transparent;
   }
   .pp-social-icon {
-    width: 95px;
+    width: 3em;
   }
 }
 
