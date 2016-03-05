@@ -84,6 +84,10 @@ body:after{
   @include zero;
 }
 
+iframe {
+  border: none;
+}
+
 // Show navigation on screen when there is no JS
 body.noscript{
   .fw-navigation{

@@ -2734,6 +2734,10 @@ body:after {
   padding: 0;
 }
 
+iframe {
+  border: none;
+}
+
 body.noscript .fw-navigation {
   max-height: 15em;
   width: 100%;
