@@ -2005,6 +2005,7 @@ td, th, fieldset {
 .filter-items li:hover p, .filter-items li a:focus p {
   transition: background-color 250ms ease-in-out;
   background-color: rgba(0, 162, 156, 0.75);
+  z-index: 3000;
 }
 
 .filter-items > li {
@@ -2013,6 +2014,11 @@ td, th, fieldset {
 
 .filter-items > li:hover img, .filter-items > li a:focus img {
   top: 0;
+}
+
+.filter-items > li > a:focus {
+  z-index: 2000;
+  outline: 5px solid #eab63f;
 }
 
 #filter-all:checked ~ .filter-items > li {
