@@ -45,6 +45,7 @@
       p{
         transition: background-color $filter-transition * 0.5 ease-in-out;
         background-color: rgba($green, 0.75);
+        z-index: 3000;
       }
     }
   }
@@ -55,6 +56,10 @@
   &:hover img, a:focus img{
     top: 0;
   }
+  &> a:focus{
+    z-index: 2000;
+    outline: 5px solid $yellow;
+  }
 }
 
 #filter-all:checked ~ .filter-items > li {
@@ -62,6 +67,7 @@
   &:hover img, a:focus img{
     top: calc(-100% - 1px);
   }
+
 }
 
 /* > will only select direct child descendant */
