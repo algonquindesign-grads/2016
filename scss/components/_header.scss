@@ -176,7 +176,7 @@
     @include zero;
     color: $info-text;
   }
-  h2{
+  .fw-title{
     text-transform: uppercase;
     font-weight: normal;
   }
@@ -297,7 +297,7 @@
         color: $menu-text;
       }
       @include element-invisible-off;
-      h2{
+      .fw-title{
         font-size: $side-info-scale * 0.8889rem;
         line-height: $side-info-scale * 1rem;
       }
