@@ -35,6 +35,11 @@ body:after{
   z-index: -10;
 }
 
+.main-bg {
+  background-color: $off-white;
+  z-index: -13;
+}
+
 .skip-links {
   margin: 0;
   padding: 0;
