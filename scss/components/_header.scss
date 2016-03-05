@@ -123,7 +123,7 @@
   max-height: 0;
   margin: 0;
   background-color: transparent;
-  overflow: visible;
+  overflow: hidden;
   transition: max-height $menu-duration ease-in-out;
   width: 100%;
   left:0;
@@ -269,6 +269,7 @@
     position: fixed;
     max-height: $menu-max-height;
     width: $side-bar-width;
+    overflow: visible;
     ul{
       li{
         &:before{
