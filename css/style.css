@@ -2728,9 +2728,14 @@ body:after {
 
 .site-wrapper {
   display: block;
+  overflow: visible;
   position: relative;
   margin: 0;
   padding: 0;
+}
+
+iframe {
+  border: none;
 }
 
 body.noscript .fw-navigation {
@@ -2806,7 +2811,6 @@ body.noscript .rtt:hover {
     position: fixed;
     max-height: 20em;
     width: 14em;
-    overflow-y: scroll;
   }
   body.noscript .fw-navigation ul li {
     width: 100%;
@@ -3671,7 +3675,6 @@ body.noscript .rtt:hover {
 
 .clock-inline {
   display: inline-block;
-  padding: .5em;
 }
 
 .clock-number {
@@ -3680,4 +3683,14 @@ body.noscript .rtt:hover {
 
 .clock-smalltext {
   font-size: .65em;
+}
+
+#clockdiv {
+  margin: 0 auto;
+}
+
+@media only screen and (min-width: 25em) {
+  .clock-inline {
+    padding: .5em;
+  }
 }
