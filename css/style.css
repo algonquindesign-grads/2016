@@ -2728,6 +2728,7 @@ body:after {
 
 .site-wrapper {
   display: block;
+  overflow: visible;
   position: relative;
   margin: 0;
   padding: 0;
@@ -2806,7 +2807,6 @@ body.noscript .rtt:hover {
     position: fixed;
     max-height: 20em;
     width: 14em;
-    overflow-y: scroll;
   }
   body.noscript .fw-navigation ul li {
     width: 100%;

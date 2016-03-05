@@ -79,7 +79,7 @@ body:after{
 
 .site-wrapper{
   display: block;
-  // overflow: hidden;
+  overflow: visible;
   position: relative;
   @include zero;
 }
@@ -156,7 +156,6 @@ body.noscript{
     position: fixed;
     max-height: $menu-max-height;
     width: $side-bar-width;
-    overflow-y: scroll;
     ul{
       li{
         width: 100%;
