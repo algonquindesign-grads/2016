@@ -12,7 +12,7 @@ description: "I love my family, my friends, my cats and I absolutely adore trave
 
 email: "katie.mcpeak@hotmail.com"
 
-website: "http://katiemcpeak.ca/"
+website: "http://katiemcpeak.ca"
 
 specialization:
   - branding

@@ -10,7 +10,7 @@ last_name: "McGregor"
 
 description: "I'm a creative thinker who’s always down for a good adventure and I love to create beautiful, simple and effective designs."
 
-email: "hey@samanthamcgregor.ca"
+email: "hello@samanthamcgregor.ca"
 
 website: "http://samanthamcgregor.ca"
 

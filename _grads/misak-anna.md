@@ -8,7 +8,7 @@ short_name: "Anna M"
 first_name: "Anna"
 last_name: "Misak"
 
-description: "My passion for design and illustration, but when I am not being artistic, I tend to get lost in books I have a hard time putting down."
+description: "My passion is for graphic design and illustration, but when I am not being artistic, I enjoy reading books and spend time with my family."
 
 email: "hello@annamisak.com"
 
@@ -17,7 +17,7 @@ website: "http://annamisak.com"
 specialization:
   - illustration
   - print
-  - photography
+  - branding
 
 social:
   behance:    "https://www.behance.net/annamisak"

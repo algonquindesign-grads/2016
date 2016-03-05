@@ -12,7 +12,7 @@ description: "Tall, dark, and nerdy. I love pop culture, kung-fu movies, tacos, 
 
 email: "designs@stevebickram.ca"
 
-website: "http://www.stevebickram.ca/"
+website: "http://stevebickram.ca"
 
 specialization:
   - branding
