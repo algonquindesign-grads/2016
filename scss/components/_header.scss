@@ -269,6 +269,7 @@
     position: fixed;
     max-height: $menu-max-height;
     width: $side-bar-width;
+    overflow: visible;
     ul{
       li{
         &:before{

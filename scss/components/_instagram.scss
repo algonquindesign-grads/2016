@@ -1,29 +1,30 @@
 
-
 .mouseoff{
+  display: none;
   transition: all 250ms ease-in-out;
-  top: 0;
-  botom: 0;
+  bottom: -100%;
 }
-
 
 .instagram-post{
   display: block;
   position: relative;
   overflow: hidden;
-
+  a{
   .mouseoff{
     width: calc(100% - 0.25em);
-    padding: 1em;
+    padding: 0.5em 0.75em 1.5em;
+    max-height: calc(100% + 0.5em);
     position: absolute;
-    background-color: rgba(white, 0.5);
+    background-color: rgba(white, 0.55);
     opacity: 0;
+    color: $text-color;
 
   }
-  &:hover .mouseoff{
+  &:hover .mouseoff, &:focus .mouseoff{
     background-color: rgab($white, 0.75);
     overflow: hidden;
     opacity: 1;
+    bottom: -2em;
     &:hover:before {
       display: block;
       content: '';
@@ -36,6 +37,7 @@
       opacity: 1;
       z-index: 100;
     }
+    }
   }
 
 }
@@ -43,6 +45,12 @@
 .instagram-post:last-child{
       display: none;
     }
+
+@media only screen and (min-width: 25em) {
+  .mouseoff{
+    display: block;
+  }
+}
 
 @media only screen and (min-width: 38em) {
     .instagram-post:last-child{
