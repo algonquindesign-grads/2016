@@ -2394,7 +2394,7 @@ ul li {
   max-height: 0;
   margin: 0;
   background-color: transparent;
-  overflow: hidden;
+  overflow: visible;
   transition: max-height 250ms ease-in-out;
   width: 100%;
   left: 0;
