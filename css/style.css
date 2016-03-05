@@ -3675,7 +3675,6 @@ body.noscript .rtt:hover {
 
 .clock-inline {
   display: inline-block;
-  padding: .5em;
 }
 
 .clock-number {
@@ -3684,4 +3683,14 @@ body.noscript .rtt:hover {
 
 .clock-smalltext {
   font-size: .65em;
+}
+
+#clockdiv {
+  margin: 0 auto;
+}
+
+@media only screen and (min-width: 25em) {
+  .clock-inline {
+    padding: .5em;
+  }
 }
