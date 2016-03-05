@@ -1809,7 +1809,7 @@ td, th, fieldset {
   display: block;
   background-color: rgba(166, 165, 167, 0.5);
   overflow: hidden;
-  padding: 2em 4em;
+  padding: 2em 1em;
 }
 
 .social-footer a {
