@@ -3316,6 +3316,35 @@ body.noscript .rtt:hover {
   }
 }
 
+.shapes-wrapper {
+  margin: 2em;
+}
+
+.shapes-wrapper .shapes-list {
+  width: 10em;
+  margin: 0 auto;
+}
+
+.gd-video-wrap[data-step="1"] .hero-billboard {
+  background: url("http://grads.images.algonquindesign.ca.s3.amazonaws.com/2016/img/website-banners-01.jpg");
+  background-size: cover;
+}
+
+.gd-video-wrap[data-step="2"] .hero-billboard {
+  background: url("http://grads.images.algonquindesign.ca.s3.amazonaws.com/2016/img/website-banners-02.jpg");
+  background-size: cover;
+}
+
+.gd-video-wrap[data-step="3"] .hero-billboard {
+  background: url("http://grads.images.algonquindesign.ca.s3.amazonaws.com/2016/img/website-banners-03.jpg");
+  background-size: cover;
+}
+
+.gd-video-wrap[data-step="4"] .hero-billboard {
+  background: url("http://grads.images.algonquindesign.ca.s3.amazonaws.com/2016/img/website-banners-04.jpg");
+  background-size: cover;
+}
+
 .grid-middle {
   background-color: rgba(166, 165, 167, 0.5);
   color: #000;
