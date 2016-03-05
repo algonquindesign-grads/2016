@@ -40,7 +40,7 @@
   text-transform: uppercase;
   padding: 1em;
   color: $white;
-  background-color: rgba($green, .6);
+  background-color: rgba($green, .7);
   text-decoration: none;
     &:hover {
       color: $white;
@@ -48,6 +48,9 @@
       -webkit-transition: all 300ms ease-in-out;
       transition: all 300ms ease-in-out;
     }
+  @media only screen and (min-width: 80em){
+    margin-top: 1em;
+}
 }
 
 @mixin header-1-white {

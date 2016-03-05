@@ -3515,7 +3515,7 @@ body.noscript .rtt:hover {
   text-transform: uppercase;
   padding: 1em;
   color: #fff;
-  background-color: rgba(0, 162, 156, 0.6);
+  background-color: rgba(0, 162, 156, 0.7);
   text-decoration: none;
 }
 
@@ -3523,6 +3523,12 @@ body.noscript .rtt:hover {
   color: #fff;
   background-color: #00a29c;
   transition: all 300ms ease-in-out;
+}
+
+@media only screen and (min-width: 80em) {
+  .fw-link-center {
+    margin-top: 1em;
+  }
 }
 
 .nf-404 {
@@ -3665,6 +3671,10 @@ body.noscript .rtt:hover {
   .instagram-post:last-child {
     display: block;
   }
+}
+
+.clock1 {
+  float: left;
 }
 
 .clock-holder {
