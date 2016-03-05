@@ -2477,7 +2477,7 @@ ul li {
   color: #000;
 }
 
-.fw-info h2 {
+.fw-info .fw-title {
   text-transform: uppercase;
   font-weight: normal;
 }
@@ -2582,7 +2582,7 @@ ul li {
   .fw-info-small .fw-info * {
     color: #1d1c1c;
   }
-  .fw-info-small .fw-info h2 {
+  .fw-info-small .fw-info .fw-title {
     font-size: 1.11112rem;
     line-height: 1.25rem;
   }
