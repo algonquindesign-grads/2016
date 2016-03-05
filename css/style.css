@@ -2691,10 +2691,9 @@ body:after {
   margin: 0;
   padding: 0;
   list-style-type: none;
-  top: -3em;
 }
 
-.skip-links li {
+.skip-links a {
   padding: 0.5em 0.75em;
   position: absolute;
   top: -3em;
@@ -2703,10 +2702,12 @@ body:after {
   font-size: 1.125em;
   font-weight: bold;
   text-decoration: none;
+  z-index: 999999;
 }
 
-.skip-links li:focus {
-  top: 0;
+.skip-links a a:focus {
+  top: 5em;
+  right: 1em;
 }
 
 .framework-margin {
