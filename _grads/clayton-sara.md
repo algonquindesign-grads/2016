@@ -17,6 +17,7 @@ website: "http://saraaclayton.ca"
 specialization:
   - ux-ui
   - web
+  - illustration
 
 social:
   behance:    "https://www.behance.net/SaraClayton"
