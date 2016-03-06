@@ -17,4 +17,4 @@ exclude:
 kramdown:
   input: GFM
 
-baseurl: /2016
+baseurl: ""

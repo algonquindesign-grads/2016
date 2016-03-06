@@ -17,27 +17,8 @@
 }
 
 .bts-more-btn {
-  height: 3em;
-  background-color: $grey-4;
-  display: block;
-  text-decoration: none;
-  text-transform: uppercase;
-  color: white;
-  padding: 0.8em 0.15em;
   margin-top: 1em;
-  font-size: 1em;
-  text-align: center;
-  &:hover {
-    background-color: $green;
-  }
-   @media only screen and (min-width: 10em) {
-    height: 4em;
-    padding: 1.2em 0.15em;
-  }
-  @media only screen and (min-width: 60em) {
-    height: 3em;
-    padding: 1em 0.15em;
-  }
+  @include main-btn;
 }
 
 .bts-text {

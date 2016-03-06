@@ -1,14 +1,20 @@
 .filter-tabs{
   label{
-    margin: 2px;
-    width: calc(25% - 4px);
-    background-color: $grey-3;
+    margin: 6px;
+    width: calc(25% - 12px);
+    background-color: rgba($grey-4, .7);
     border: none;
+    &:hover {
+      color: $white;
+      background-color: rgba($green, .7);
+      -webkit-transition: all 300ms ease-in-out;
+      transition: all 300ms ease-in-out;
+    }
     &:last-child{
       width: 100%;
     }
     &:focus{
-      background-color: rgba($green, .5);
+      background-color: rgba($green, .7);
       color: $white;
     }
   }
@@ -17,6 +23,28 @@
     border: none;
   }
 }
+
+//
+// .filter-tabs{
+//   label{
+//    margin: 2px;
+//     width: calc(25% - 4px);
+//     background-color: $grey-3;
+//     border: none;
+//     &:last-child{
+//       width: 100%;
+//     }
+//     &:focus{
+//       background-color: rgba($green, .5);
+//       color: $white;
+//     }
+//   }
+//   .filters{
+//     background-color: transparent;
+//     border: none;
+//   }
+// }
+//
 
 .filter-radio {
   left: -50px;
