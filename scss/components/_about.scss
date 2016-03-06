@@ -3,10 +3,23 @@
 	margin-left: auto;
 	margin-right: auto;
 	margin-top: 2em;
+  .framework-margin{
+    width: 100%;
+    .about-sec{
+      p{
+        display: block;
+        max-width: 45em;
+        margin: 0 auto;
+      }
+    }
+    .about-bottom{
+      max-width: 45em;
+      margin: 0 auto;
+    }
+  }
 }
 
 .about-sec {
-	// display: none;
 	text-align: left;
 }
 

@@ -3176,6 +3176,21 @@ p[itemprop="email"] img {
   margin-top: 2em;
 }
 
+.about-holder .framework-margin {
+  width: 100%;
+}
+
+.about-holder .framework-margin .about-sec p {
+  display: block;
+  max-width: 45em;
+  margin: 0 auto;
+}
+
+.about-holder .framework-margin .about-bottom {
+  max-width: 45em;
+  margin: 0 auto;
+}
+
 .about-sec {
   text-align: left;
 }
