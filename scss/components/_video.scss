@@ -69,6 +69,15 @@
   }
 }
 
+.shapes-list {
+  img {
+  opacity: 1;
+  &:hover {
+    opacity: .6;
+  }
+}
+}
+
 .hero-billboard{
   transition: background 250ms ease-in;
   // animation: hero 1s steps(4, start) infinite;

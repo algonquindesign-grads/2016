@@ -3403,6 +3403,14 @@ p[itemprop="email"] img {
   margin: 0 auto;
 }
 
+.shapes-list img {
+  opacity: 1;
+}
+
+.shapes-list img:hover {
+  opacity: .6;
+}
+
 .hero-billboard {
   transition: background 250ms ease-in;
 }
