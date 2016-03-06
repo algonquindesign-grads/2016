@@ -3633,7 +3633,6 @@ p[itemprop="email"] img {
 
 .fw-info-sec3 {
   float: left;
-  padding-top: 2em;
   margin-top: 2em;
   margin-right: 0;
   margin-left: 0;
@@ -3643,7 +3642,14 @@ p[itemprop="email"] img {
 
 @media only screen and (min-width: 38em) {
   .fw-info-sec3 {
+    padding-top: 1em;
     margin-top: 0;
+  }
+}
+
+@media only screen and (min-width: 60em) {
+  .fw-info-sec3 {
+    padding-top: 2em;
   }
 }
 
