@@ -1,7 +1,14 @@
-- name: Sponsor - Algonquin College School of Media &amp; Design
-  img: ac-black-logo.svg
-- name: Sponsor - Algonquin Students' Association
-  img: sa-plain-logo.svg
-- name: Sponsor - Nspired Signage &amp; Advertising Inc
-  img: nspired.png
+- name: "Algonquin College School of Media &amp; Design"
+- name: "Algonquin Students' Association"
+- name: "Kitchissippi"
+- name: "Nspired Signage &amp; Advertising Inc"
+- name: "Connections: The Campus Bookstore"
+- name: "Metropolitan Brasserie"
+- name: "KungFu Bistro"
+- name: "Subway"
+- name: "The Grand Pizzeria &amp; Bar"
+- name: "Doree's Habit"
+- name: "Algonquin Dental"
+- name: "Off The Dome"
+
 
