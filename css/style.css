@@ -1960,9 +1960,14 @@ td, th, fieldset {
   }
 }
 
+.filter-tabs {
+  max-width: 45em;
+  margin: 0 auto;
+}
+
 .filter-tabs label {
-  margin: 6px;
-  width: calc(25% - 12px);
+  margin: 2px;
+  width: calc(25% - 4px);
   background-color: rgba(85, 86, 90, 0.7);
   border: none;
 }
@@ -2538,6 +2543,7 @@ ul li {
 
 @media only screen and (min-width: 80em) {
   .fw-header {
+    z-index: 50;
     position: fixed;
     width: 14em;
     left: 0;
