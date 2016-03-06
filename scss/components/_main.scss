@@ -153,8 +153,11 @@ body.noscript{
           &:before{
             border-bottom: none;
           }
+          &:last-child:before{
+            border-bottom: none;
+          }
           &:hover:before{
-            border-bottom: 1px solid $menu-underline;
+            border-bottom: 1px solid darken($svg-top-fill, 30%);
           }
         }
       }
@@ -180,7 +183,10 @@ body.noscript{
         &:before{
           left: 2em;
           right: 2em;
-          border-bottom: 1px solid $menu-underline;
+          border-bottom: 1px solid darken($svg-top-fill, 30%);
+        }
+        &:last-child:before{
+          border-bottom: none;
         }
         &:hover:before{
           left: 0;

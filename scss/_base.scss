@@ -22,23 +22,23 @@ $grid-size: 2em;
 
 //Variables for header/nav/sidebar styles
 
+$svg-transition: 500ms;
+$svg-fill: $grey;
+$svg-top-fill: $purple;
+
 $menu-duration: 250ms;
 $menu-max-height: 20em;
 $menu-toggle-size: 3em;
 $menu-background: $grey-1;
 $menu-burger-lines: 4px;
-$menu-burger: darken($menu-background, 75%);
-$menu-text: darken($menu-background,75%);
-$menu-underline: darken($menu-background,75%);
+$menu-burger: darken($svg-top-fill, 30%);
+$menu-text: darken($svg-top-fill,30%);
+$menu-underline: darken($svg-top-fill,30%);
 $menu-underline-stroke: 1px;
 $menu-fly-out-width: 18em;
 $side-bar-width: 14em;
 $side-info-scale: 1.25;
-$info-text: $text-color;
+$info-text: $menu-text;
 $side-info-top: 17.5em;
-
-$svg-transition: 500ms;
-$svg-fill: $grey;
-$svg-top-fill: $purple;
 
 $filter-transition: 500ms;
