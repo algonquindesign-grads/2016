@@ -7,25 +7,29 @@ var $stepTwo = $('#step-2');
 var $stepThree = $('#step-3');
 var $stepFour = $('#step-4');
 
-$stepOne.on('click', function() {
+$stepOne.on('click', function(e) {
+  e.preventDefault();
   $videoWrap.attr('data-step', '1');
   $videoWrap.addClass('is-paused');
-  $videoWrap.html('<div class="hero-billboard gd-embed gd-embed--16by9"></div>');
+  // $videoWrap.html('<div class="hero-billboard gd-embed gd-embed--16by9"></div>');
 });
 
-$stepTwo.on('click', function() {
+$stepTwo.on('click', function(e) {
+  e.preventDefault();
   $videoWrap.attr('data-step', '2');
   $videoWrap.addClass('is-paused');
   $videoWrap.html('<div class="hero-billboard gd-embed gd-embed--16by9"></div>');
 });
 
-$stepThree.on('click', function() {
+$stepThree.on('click', function(e) {
+  e.preventDefault();
   $videoWrap.attr('data-step', '3');
   $videoWrap.addClass('is-paused');
   $videoWrap.html('<div class="hero-billboard gd-embed gd-embed--16by9"></div>');
 });
 
-$stepFour.on('click', function() {
+$stepFour.on('click', function(e) {
+  e.preventDefault();
   $videoWrap.attr('data-step', '4');
   $videoWrap.addClass('is-paused');
   $videoWrap.html('<div class="hero-billboard gd-embed gd-embed--16by9"></div>');
