@@ -3395,15 +3395,17 @@ p[itemprop="email"] img {
 }
 
 .shapes-wrapper {
-  margin: 2em;
+  margin: 2em 2em 0 2em;
 }
 
 .shapes-wrapper .shapes-list {
-  width: 10em;
+  width: 12em;
   margin: 0 auto;
 }
 
 .shapes-list img {
+  padding-right: .5em;
+  padding-left: .5em;
   opacity: 1;
 }
 
