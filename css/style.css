@@ -1961,10 +1961,16 @@ td, th, fieldset {
 }
 
 .filter-tabs label {
-  margin: 2px;
-  width: calc(25% - 4px);
-  background-color: #7D7D80;
+  margin: 6px;
+  width: calc(25% - 12px);
+  background-color: rgba(85, 86, 90, 0.7);
   border: none;
+}
+
+.filter-tabs label:hover {
+  color: #fff;
+  background-color: rgba(0, 162, 156, 0.7);
+  transition: all 300ms ease-in-out;
 }
 
 .filter-tabs label:last-child {
@@ -1972,7 +1978,7 @@ td, th, fieldset {
 }
 
 .filter-tabs label:focus {
-  background-color: rgba(0, 162, 156, 0.5);
+  background-color: rgba(0, 162, 156, 0.7);
   color: #fff;
 }
 
@@ -3072,6 +3078,7 @@ p[itemprop="email"] img {
   color: #fff;
   background-color: rgba(85, 86, 90, 0.7);
   text-decoration: none;
+  text-align: center;
 }
 
 .pp-nav-btn-a:hover {
@@ -3090,6 +3097,7 @@ p[itemprop="email"] img {
   color: #fff;
   background-color: rgba(85, 86, 90, 0.7);
   text-decoration: none;
+  text-align: center;
 }
 
 .pp-nav-btn-arrows:hover {
@@ -3535,34 +3543,20 @@ p[itemprop="email"] img {
 }
 
 .bts-more-btn {
-  height: 3em;
-  background-color: #55565a;
-  display: block;
-  text-decoration: none;
-  text-transform: uppercase;
-  color: white;
-  padding: 0.8em 0.15em;
   margin-top: 1em;
-  font-size: 1em;
+  display: block;
+  text-transform: uppercase;
+  padding: 1em;
+  color: #fff;
+  background-color: rgba(85, 86, 90, 0.7);
+  text-decoration: none;
   text-align: center;
 }
 
 .bts-more-btn:hover {
-  background-color: #00a29c;
-}
-
-@media only screen and (min-width: 10em) {
-  .bts-more-btn {
-    height: 4em;
-    padding: 1.2em 0.15em;
-  }
-}
-
-@media only screen and (min-width: 60em) {
-  .bts-more-btn {
-    height: 3em;
-    padding: 1em 0.15em;
-  }
+  color: #fff;
+  background-color: rgba(0, 162, 156, 0.7);
+  transition: all 300ms ease-in-out;
 }
 
 .bts-text {
