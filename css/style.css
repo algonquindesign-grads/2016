@@ -2771,6 +2771,20 @@ body.noscript .rtt:hover {
   opacity: 0.75;
 }
 
+body.noscript .shapes-wrapper {
+  display: none;
+}
+
+body.noscript .hero-billboard {
+  transition: background 250ms ease-in;
+  -webkit-animation: hero 10s steps(1) infinite;
+          animation: hero 10s steps(1) infinite;
+}
+
+body.noscript .clock1 {
+  display: none;
+}
+
 @media only screen and (min-width: 38em) {
   body.noscript .fw-header .logo {
     margin: 0;
@@ -3355,16 +3369,20 @@ body.noscript .rtt:hover {
     background: url("http://grads.images.algonquindesign.ca.s3.amazonaws.com/2016/img/website-banners-1.jpg");
     background-size: cover;
   }
-  33% {
+  25% {
     background: url("http://grads.images.algonquindesign.ca.s3.amazonaws.com/2016/img/website-banners-2.jpg");
     background-size: cover;
   }
-  66% {
+  50% {
     background: url("http://grads.images.algonquindesign.ca.s3.amazonaws.com/2016/img/website-banners-3.jpg");
     background-size: cover;
   }
-  100% {
+  75% {
     background: url("http://grads.images.algonquindesign.ca.s3.amazonaws.com/2016/img/website-banners-4.jpg");
+    background-size: cover;
+  }
+  100% {
+    background: url("http://grads.images.algonquindesign.ca.s3.amazonaws.com/2016/img/website-banners-1.jpg");
     background-size: cover;
   }
 }
@@ -3374,16 +3392,20 @@ body.noscript .rtt:hover {
     background: url("http://grads.images.algonquindesign.ca.s3.amazonaws.com/2016/img/website-banners-1.jpg");
     background-size: cover;
   }
-  33% {
+  25% {
     background: url("http://grads.images.algonquindesign.ca.s3.amazonaws.com/2016/img/website-banners-2.jpg");
     background-size: cover;
   }
-  66% {
+  50% {
     background: url("http://grads.images.algonquindesign.ca.s3.amazonaws.com/2016/img/website-banners-3.jpg");
     background-size: cover;
   }
-  100% {
+  75% {
     background: url("http://grads.images.algonquindesign.ca.s3.amazonaws.com/2016/img/website-banners-4.jpg");
+    background-size: cover;
+  }
+  100% {
+    background: url("http://grads.images.algonquindesign.ca.s3.amazonaws.com/2016/img/website-banners-1.jpg");
     background-size: cover;
   }
 }

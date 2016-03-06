@@ -113,6 +113,18 @@ body.noscript{
       opacity: 0.75
     }
   }
+  .shapes-wrapper {
+    display: none;
+
+  }
+  .hero-billboard{
+    transition: background 250ms ease-in;
+    animation: hero 10s steps(1) infinite;
+  }
+
+  .clock1{
+    display: none;
+  }
 }
 
 @media only screen and (min-width: 38em){
