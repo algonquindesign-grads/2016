@@ -2867,6 +2867,55 @@ body.noscript .clock1 {
   margin-bottom: 0;
 }
 
+p[itemprop="email"] {
+  text-align: center;
+}
+
+@media only screen and (min-width: 18em) {
+  p[itemprop="email"] {
+    text-align: left;
+  }
+}
+
+p[itemprop="email"] a {
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px);
+}
+
+@media only screen and (min-width: 18em) {
+  p[itemprop="email"] a {
+    position: static !important;
+    clip: auto;
+    height: auto;
+    width: auto;
+    overflow: auto;
+    text-align: left;
+  }
+}
+
+p[itemprop="email"] img {
+  position: static !important;
+  clip: auto;
+  height: auto;
+  width: auto;
+  overflow: auto;
+  width: 25%;
+  color: black;
+}
+
+@media only screen and (min-width: 18em) {
+  p[itemprop="email"] img {
+    position: absolute !important;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+    clip: rect(1px, 1px, 1px, 1px);
+  }
+}
+
 .pp-links a {
   padding-bottom: 1em;
   text-decoration: none;
@@ -3013,14 +3062,13 @@ body.noscript .clock1 {
   text-transform: uppercase;
   padding: 1em;
   color: #fff;
-  background-color: rgba(85, 86, 90, 0.5);
+  background-color: rgba(85, 86, 90, 0.7);
   text-decoration: none;
-  border: 2px solid #55565a;
 }
 
 .pp-nav-btn-a:hover {
   color: #fff;
-  background-color: rgba(0, 162, 156, 0.8);
+  background-color: rgba(0, 162, 156, 0.7);
   transition: all 300ms ease-in-out;
 }
 
@@ -3032,14 +3080,13 @@ body.noscript .clock1 {
   text-transform: uppercase;
   padding: 1em;
   color: #fff;
-  background-color: rgba(85, 86, 90, 0.5);
+  background-color: rgba(85, 86, 90, 0.7);
   text-decoration: none;
-  border: 2px solid #55565a;
 }
 
 .pp-nav-btn-arrows:hover {
   color: #fff;
-  background-color: rgba(0, 162, 156, 0.8);
+  background-color: rgba(0, 162, 156, 0.7);
   transition: all 300ms ease-in-out;
 }
 
@@ -3461,7 +3508,6 @@ body.noscript .clock1 {
 
 .bts-bg {
   background-color: rgba(166, 165, 167, 0.5);
-  padding: 2em 1em 3em;
 }
 
 .bts-embed__item {
@@ -3608,15 +3654,24 @@ body.noscript .clock1 {
 }
 
 .fw-link-center {
-  text-align: center;
-  text-decoration: none;
+  display: block;
+  text-transform: uppercase;
+  padding: 1em;
   color: #fff;
-  padding: 1em 2em;
-  background-color: #A6A5A7;
+  background-color: rgba(0, 162, 156, 0.7);
+  text-decoration: none;
 }
 
 .fw-link-center:hover {
+  color: #fff;
   background-color: #00a29c;
+  transition: all 300ms ease-in-out;
+}
+
+@media only screen and (min-width: 80em) {
+  .fw-link-center {
+    margin-top: 1em;
+  }
 }
 
 .nf-404 {
@@ -3759,6 +3814,10 @@ body.noscript .clock1 {
   .instagram-post:last-child {
     display: block;
   }
+}
+
+.clock1 {
+  float: left;
 }
 
 .clock-holder {
