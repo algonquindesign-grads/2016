@@ -84,7 +84,15 @@ body:after{
   overflow: visible;
   position: relative;
   @include zero;
+  padding: 5em 0 0;
 }
+@media only screen and (min-width: 80em){
+  .site-wrapper{
+    padding-top: 0;
+  }
+
+}
+
 
 iframe {
   border: none;

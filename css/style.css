@@ -2296,7 +2296,8 @@ ul li {
   display: block;
   overflow: hidden;
   background-color: #DCDBDB;
-  position: relative;
+  position: fixed;
+  width: 100%;
   z-index: 50;
 }
 
@@ -2417,7 +2418,8 @@ ul li {
 }
 
 .fw-navigation {
-  position: relative;
+  position: fixed;
+  top: 5em;
   max-height: 0;
   margin: 0;
   background-color: #DCDBDB;
@@ -2425,6 +2427,7 @@ ul li {
   transition: max-height 250ms ease-in-out;
   width: 100%;
   left: 0;
+  z-index: 9999;
 }
 
 .fw-navigation ul {
@@ -2521,7 +2524,7 @@ ul li {
   .fw-navigation {
     width: 100%;
     left: 0;
-    position: absolute;
+    position: fixed;
     z-index: 100;
   }
 }
@@ -2747,6 +2750,13 @@ body:after {
   position: relative;
   margin: 0;
   padding: 0;
+  padding: 5em 0 0;
+}
+
+@media only screen and (min-width: 80em) {
+  .site-wrapper {
+    padding-top: 0;
+  }
 }
 
 iframe {
