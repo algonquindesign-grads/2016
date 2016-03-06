@@ -1,3 +1,15 @@
+
+.clock-intro {
+  text-align: center;
+  margin: 0 auto;
+  text-transform: uppercase;
+  color: $black;
+  font-size: .75em;
+  font-weight: bold;
+  padding-bottom: 0;
+  float: left;
+}
+
 .clock-holder {
   text-align: center;
   background: url(../img/background-transp.png);
@@ -7,9 +19,9 @@
 
 .clock-width {
   width: 100%;
-  margin-top: 1.5em;
   position: relative;
   text-align: center;
+  float: left;
 }
 
 .clock-inline {
@@ -29,8 +41,23 @@
   margin: 0 auto;
 }
 
+.clock-position {
+ display: block;
+ float: left;
+}
+
 @media only screen and (min-width: 25em){
   .clock-inline {
     padding: .5em;
+  }
+
+  .clock-position {
+    text-align: center;
+    float: left;
+  }
+
+  .clock-intro {
+    float: none;
+    display: inline-block;
   }
 }

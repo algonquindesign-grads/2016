@@ -3193,24 +3193,31 @@ p[itemprop="email"] img {
 }
 
 .about-holder .framework-margin .about-bottom {
-  max-width: 45em;
+  /*max-width: $max-width;*/
   margin: 0 auto;
 }
 
 .about-sec {
   text-align: left;
+  display: block;
+  float: left;
+  width: 100%;
+  padding-right: 20%;
 }
 
 .about-para {
   font-size: 1em;
   color: #55565a;
   text-align: left;
+  float: left;
+  display: inline-block;
 }
 
 .about-header {
   color: #000;
   font-size: 1.5em;
   text-transform: uppercase;
+  float: left;
 }
 
 .about-social-icons {
@@ -3875,6 +3882,17 @@ p[itemprop="email"] img {
   }
 }
 
+.clock-intro {
+  text-align: center;
+  margin: 0 auto;
+  text-transform: uppercase;
+  color: #000;
+  font-size: .75em;
+  font-weight: bold;
+  padding-bottom: 0;
+  float: left;
+}
+
 .clock-holder {
   text-align: center;
   background: url(../img/background-transp.png);
@@ -3884,9 +3902,9 @@ p[itemprop="email"] img {
 
 .clock-width {
   width: 100%;
-  margin-top: 1.5em;
   position: relative;
   text-align: center;
+  float: left;
 }
 
 .clock-inline {
@@ -3905,8 +3923,21 @@ p[itemprop="email"] img {
   margin: 0 auto;
 }
 
+.clock-position {
+  display: block;
+  float: left;
+}
+
 @media only screen and (min-width: 25em) {
   .clock-inline {
     padding: .5em;
+  }
+  .clock-position {
+    text-align: center;
+    float: left;
+  }
+  .clock-intro {
+    float: none;
+    display: inline-block;
   }
 }
