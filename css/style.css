@@ -2857,7 +2857,7 @@ p[itemprop="email"] {
   text-align: center;
 }
 
-@media only screen and (min-width: 16em) {
+@media only screen and (min-width: 18em) {
   p[itemprop="email"] {
     text-align: left;
   }
@@ -2871,7 +2871,7 @@ p[itemprop="email"] a {
   clip: rect(1px, 1px, 1px, 1px);
 }
 
-@media only screen and (min-width: 16em) {
+@media only screen and (min-width: 18em) {
   p[itemprop="email"] a {
     position: static !important;
     clip: auto;
@@ -2892,7 +2892,7 @@ p[itemprop="email"] img {
   color: black;
 }
 
-@media only screen and (min-width: 16em) {
+@media only screen and (min-width: 18em) {
   p[itemprop="email"] img {
     position: absolute !important;
     height: 1px;

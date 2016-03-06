@@ -23,12 +23,12 @@
 
   p[itemprop="email"] {
     text-align: center;
-      @media only screen and (min-width: 16em) {
+      @media only screen and (min-width: 18em) {
         text-align: left;
       }
     a {
       @include element-invisible;
-    @media only screen and (min-width: 16em) {
+    @media only screen and (min-width: 18em) {
       @include element-invisible-off;
       text-align: left;
     }
@@ -37,7 +37,7 @@
       @include element-invisible-off;
       width: 25%;
       color: black;
-    @media only screen and (min-width: 16em) {
+    @media only screen and (min-width: 18em) {
       @include element-invisible;
     }
 }
