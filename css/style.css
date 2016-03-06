@@ -3682,6 +3682,10 @@ p[itemprop="email"] img {
   }
 }
 
+.ticket-button {
+  float: left;
+}
+
 .nf-404 {
   color: rgba(0, 0, 0, 0.1);
   font-size: 5em;
@@ -3822,10 +3826,6 @@ p[itemprop="email"] img {
   .instagram-post:last-child {
     display: block;
   }
-}
-
-.clock1 {
-  float: left;
 }
 
 .clock-holder {
