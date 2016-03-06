@@ -55,8 +55,6 @@ $btn.on('click', function () {
   $btn.removeClass('play');
 });
 
-
-
 $btn.on('click', function () {
   if (video.paused) {
     $videoWrap.addClass('is-playing');
