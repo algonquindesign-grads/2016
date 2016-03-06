@@ -1977,6 +1977,7 @@ td, th, fieldset {
 }
 
 .filter-tabs .filters {
+  max-width: 45em;
   background-color: transparent;
   border: none;
 }
@@ -3146,7 +3147,7 @@ p[itemprop="email"] img {
 }
 
 .about-holder {
-  max-width: 75em;
+  max-width: 45em;
   margin-left: auto;
   margin-right: auto;
   margin-top: 2em;
