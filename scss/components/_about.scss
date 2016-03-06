@@ -8,12 +8,12 @@
     .about-sec{
       p{
         display: block;
-        max-width: 45em;
+        max-width: $max-width;
         margin: 0 auto;
       }
     }
     .about-bottom{
-      max-width: 45em;
+      max-width: $max-width;
       margin: 0 auto;
     }
   }
