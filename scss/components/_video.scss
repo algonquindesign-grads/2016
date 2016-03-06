@@ -59,14 +59,25 @@
 }
 
 .shapes-wrapper{
-  margin: 2em;
+  margin: 2em 2em 0 2em;
   .shapes-list{
-    width: 10em;
+    width: 12em;
     margin: 0 auto;
     .shape{
 
     }
   }
+}
+
+.shapes-list {
+  img {
+  padding-right: .5em;
+  padding-left: .5em;
+  opacity: 1;
+  &:hover {
+    opacity: .6;
+  }
+}
 }
 
 .hero-billboard{

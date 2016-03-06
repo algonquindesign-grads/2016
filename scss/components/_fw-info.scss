@@ -45,15 +45,18 @@
 
 .fw-info-sec3 {
   float: left;
-  padding-top: 2em;
   margin-top: 2em;
   margin-right: 0;
   margin-left: 0;
   text-align: center;
   text-decoration: none;
     @media only screen and (min-width: 38em) {
+      padding-top: 1em;
       margin-top: 0;
     }
+    @media only screen and (min-width: 60em) {
+    padding-top: 2em;
+  }
     button {
     @include btn-outline-white;
   }
