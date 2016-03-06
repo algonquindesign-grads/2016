@@ -62,3 +62,7 @@
 .fw-link-center {
   @include main-btn-tickets;
 }
+
+.ticket-button {
+  float: left;
+}
