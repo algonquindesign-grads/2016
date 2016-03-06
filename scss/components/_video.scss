@@ -30,6 +30,7 @@
   opacity: 0;
   transition: opacity 250ms linear;
   cursor: pointer;
+  z-index: 100;
 }
 
 .gd-video-wrap:hover .gd-btn-play-pause,
@@ -39,12 +40,12 @@
 
 .play {
   background-image: url(http://grads.images.algonquindesign.ca/2016/img/play-button.svg);
-  opacity: 0;
+  opacity: 1;
 }
 
 .pause {
   background-image: url(http://grads.images.algonquindesign.ca/2016/img/pause-button.svg);
-  opacity: 0
+  opacity: 1;
 }
 @media only screen and (min-width: 80em){
   .gd-video-wrap.is-paused .gd-btn-play-pause{
@@ -68,34 +69,60 @@
   }
 }
 
-
+.hero-billboard{
+  transition: background 250ms ease-in;
+  // animation: hero 1s steps(4, start) infinite;
+}
 .gd-video-wrap{
   &[data-step="1"]{
     .hero-billboard{
-      background: url('http://grads.images.algonquindesign.ca.s3.amazonaws.com/2016/img/website-banners-01.jpg');
+      background: url('http://grads.images.algonquindesign.ca.s3.amazonaws.com/2016/img/website-banners-1.jpg');
       background-size: cover;
 
     }
   }
   &[data-step="2"]{
     .hero-billboard{
-      background: url('http://grads.images.algonquindesign.ca.s3.amazonaws.com/2016/img/website-banners-02.jpg');
+      background: url('http://grads.images.algonquindesign.ca.s3.amazonaws.com/2016/img/website-banners-2.jpg');
       background-size: cover;
 
     }
   }
   &[data-step="3"]{
     .hero-billboard{
-      background: url('http://grads.images.algonquindesign.ca.s3.amazonaws.com/2016/img/website-banners-03.jpg');
+      background: url('http://grads.images.algonquindesign.ca.s3.amazonaws.com/2016/img/website-banners-3.jpg');
       background-size: cover;
 
     }
   }
   &[data-step="4"]{
     .hero-billboard{
-      background: url('http://grads.images.algonquindesign.ca.s3.amazonaws.com/2016/img/website-banners-04.jpg');
+      background: url('http://grads.images.algonquindesign.ca.s3.amazonaws.com/2016/img/website-banners-4.jpg');
       background-size: cover;
 
     }
+  }
+}
+
+@keyframes hero {
+  0%{
+    background: url('http://grads.images.algonquindesign.ca.s3.amazonaws.com/2016/img/website-banners-1.jpg');
+    background-size: cover;
+  }
+  25%{
+    background: url('http://grads.images.algonquindesign.ca.s3.amazonaws.com/2016/img/website-banners-2.jpg');
+    background-size: cover;
+  }
+  50%{
+  background: url('http://grads.images.algonquindesign.ca.s3.amazonaws.com/2016/img/website-banners-3.jpg');
+    background-size: cover;
+  }
+  75%{
+  background: url('http://grads.images.algonquindesign.ca.s3.amazonaws.com/2016/img/website-banners-4.jpg');
+    background-size: cover;
+  }
+  100%{
+  background: url('http://grads.images.algonquindesign.ca.s3.amazonaws.com/2016/img/website-banners-1.jpg');
+    background-size: cover;
   }
 }

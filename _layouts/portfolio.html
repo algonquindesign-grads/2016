@@ -48,7 +48,6 @@ layout: default
 <!--- END Student Profile Pictures only -->
 {% endif %}
     </div>
-  </div>
 </div>
 <div class="unit unit-xs-1 unit-s-1 unit-m-1 unit-l-1 unit-xl-1-3 pp-pad-left">
 <!--- Student photo -->
@@ -67,7 +66,7 @@ layout: default
       <h2 class="pp-skill peta">{{page.specialization | array_to_sentence_string }}</h2>
       <p itemprop="discription" class="pp-desc">{{page.description}}</p>
       <p itemprop="url" class="pp-links peta"><a href="{{ page.website }}">{{page.website | replace: 'http://', '' }}</a></p>
-      <p itemprop="email" class="pp-links"><a href="mailto:{{ page.email }}">{{ page.email }}</a></p>
+      <p itemprop="email" class="pp-links"><img src="{{site.cdn}}img/mail-icon.svg"><a href="mailto:{{ page.email }}">{{ page.email }}</a></p>
       <div>
         <ul class="pp-nav-btn">
 <!--- Social icons -->
@@ -79,7 +78,7 @@ layout: default
     </div>
   </div>
 </div>
-<!-- </div> -->
+</div>
 <!--- Back and Next links -->
 {% capture grads %}{{page.collection}}{% endcapture %}
   {% if page.collection %}
