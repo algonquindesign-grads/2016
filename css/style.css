@@ -2298,7 +2298,7 @@ ul li {
   background-color: #DCDBDB;
   position: fixed;
   width: 100%;
-  z-index: 50;
+  z-index: 9999;
 }
 
 .fw-header .logo {
