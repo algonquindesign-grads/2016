@@ -21,12 +21,37 @@
   margin-bottom: 0;
 }
 
+  p[itemprop="email"] {
+    text-align: center;
+      @media only screen and (min-width: 16em) {
+        text-align: left;
+      }
+    a {
+      @include element-invisible;
+    @media only screen and (min-width: 16em) {
+      @include element-invisible-off;
+      text-align: left;
+    }
+  }
+    img {
+      @include element-invisible-off;
+      width: 25%;
+      color: black;
+    @media only screen and (min-width: 16em) {
+      @include element-invisible;
+    }
+}
+}
+
+
+
+
+
 .pp-links a {
   padding-bottom: 1em;
   text-decoration: none;
   font-weight: 400;
   color: $black;
-
     &:hover {
       text-decoration: underline;
     }

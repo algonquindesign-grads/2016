@@ -2853,6 +2853,55 @@ body.noscript .rtt:hover {
   margin-bottom: 0;
 }
 
+p[itemprop="email"] {
+  text-align: center;
+}
+
+@media only screen and (min-width: 16em) {
+  p[itemprop="email"] {
+    text-align: left;
+  }
+}
+
+p[itemprop="email"] a {
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px);
+}
+
+@media only screen and (min-width: 16em) {
+  p[itemprop="email"] a {
+    position: static !important;
+    clip: auto;
+    height: auto;
+    width: auto;
+    overflow: auto;
+    text-align: left;
+  }
+}
+
+p[itemprop="email"] img {
+  position: static !important;
+  clip: auto;
+  height: auto;
+  width: auto;
+  overflow: auto;
+  width: 25%;
+  color: black;
+}
+
+@media only screen and (min-width: 16em) {
+  p[itemprop="email"] img {
+    position: absolute !important;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+    clip: rect(1px, 1px, 1px, 1px);
+  }
+}
+
 .pp-links a {
   padding-bottom: 1em;
   text-decoration: none;
