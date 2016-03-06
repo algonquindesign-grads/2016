@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*
   Gridifier || Code released under the UNLICENSE
   http://thomasjbradley.github.io/gridifier/#xs,8,0,0,0;s,8,25,0,0;m,8,38,1,1;l,8,60,1,1;xl,8,80,1,1
@@ -3521,19 +3522,13 @@ p[itemprop="email"] img {
 }
 
 .grid-middle {
-  background-color: rgba(166, 165, 167, 0.5);
-  color: #000;
+  background-color: #55565a;
+  color: #fff;
 }
 
 .ft-copyright {
   overflow: hidden;
   display: block;
-}
-
-.ft-sponsor {
-  padding-left: .25em;
-  width: 180px;
-  margin: auto 0;
 }
 
 .copyright {
@@ -3552,23 +3547,27 @@ p[itemprop="email"] img {
   margin: 0;
 }
 
-.sponsors {
-  display: inline-block;
-}
-
-.sponsor-center {
-  margin-left: auto;
-  margin-right: auto;
+.ft-center {
   text-align: center;
-  padding-top: 0.7000rem;
 }
 
-@media only screen and (min-width: 60em) {
-  .sponsor-center {
-    padding-top: 0;
-  }
+.ft-sponsor {
+  display: inline-block;
+  font-size: .75em;
+  text-transform: uppercase;
+  color: #fff;
+  padding: .5em 1em;
 }
 
+/*
+.ft-sponsor::after {
+  content:"•";
+  padding-left: 1em;
+    &:last-child {
+      content:"";
+    }
+}
+*/
 .bts-bg {
   background-color: rgba(166, 165, 167, 0.5);
 }
