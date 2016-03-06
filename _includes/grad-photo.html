@@ -41,7 +41,7 @@
     {% for student in site.grads %}
         <li class="ph-image" data-category="{{student.specialization[0]}} {{student.specialization[1]}} {{student.specialization[2]}}">
           <a href="{{site.baseurl}}{{student.url}}">
-          <img class="img-flex ph-gradphoto-top" src="{{site.cdn}}portraits/{{student.url | replace: 'grads/', '/' | remove:'/'}}.jpg" alt="{{student.full_name}}">
+          <img class="img-flex ph-gradphoto-top" src="{{site.cdn}}portraits-thumb/{{student.url | replace: 'grads/', '/' | remove:'/'}}.jpg" alt="{{student.full_name}}">
           <p class="ph-fullname">{{student.full_name}}</p>
           <p aria-hidden="true" class="ph-partialname">{{student.short_name}}</p>
           </a>
