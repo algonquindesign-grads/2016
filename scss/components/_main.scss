@@ -47,7 +47,7 @@ body:after{
   a{
     padding: 0.5em 0.75em;
     position: absolute;
-    top: -3em;
+    top: -5em;
     background-color: $grey;
     color: #fff;
     font-size: 1.125em;
@@ -112,6 +112,18 @@ body.noscript{
     &:hover{
       opacity: 0.75
     }
+  }
+  .shapes-wrapper {
+    display: none;
+
+  }
+  .hero-billboard{
+    transition: background 250ms ease-in;
+    animation: hero 10s steps(1) infinite;
+  }
+
+  .clock1{
+    display: none;
   }
 }
 
