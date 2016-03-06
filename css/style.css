@@ -1960,10 +1960,25 @@ td, th, fieldset {
   }
 }
 
-.filter-module {
-  position: relative;
-  display: block;
-  margin: 0 auto;
+.filter-tabs label {
+  margin: 2px;
+  width: calc(25% - 4px);
+  background-color: #7D7D80;
+  border: none;
+}
+
+.filter-tabs label:last-child {
+  width: 100%;
+}
+
+.filter-tabs label:focus {
+  background-color: rgba(0, 162, 156, 0.5);
+  color: #fff;
+}
+
+.filter-tabs .filters {
+  background-color: transparent;
+  border: none;
 }
 
 .filter-radio {
@@ -1988,13 +2003,6 @@ td, th, fieldset {
   background-color: #00a29c;
   box-shadow: none;
   color: white;
-}
-
-#filter-all:checked ~ .filters [for="filter-all"],
-#filter-branding:checked ~ .filters [for="filter-branding"],
-#filter-group-2:checked ~ .filters [for="filter-group-2"],
-#filter-group-3:checked ~ .filters [for="filter-group-3"] {
-  background-color: red;
 }
 
 /* The ~ sibling selector will select all .filters elements, as long as they follow the preceding value*/
