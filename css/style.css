@@ -1960,9 +1960,14 @@ td, th, fieldset {
   }
 }
 
+.filter-tabs {
+  max-width: 45em;
+  margin: 0 auto;
+}
+
 .filter-tabs label {
-  margin: 6px;
-  width: calc(25% - 12px);
+  margin: 2px;
+  width: calc(25% - 4px);
   background-color: rgba(85, 86, 90, 0.7);
   border: none;
 }
@@ -2296,8 +2301,9 @@ ul li {
   display: block;
   overflow: hidden;
   background-color: #DCDBDB;
-  position: relative;
-  z-index: 50;
+  position: fixed;
+  width: 100%;
+  z-index: 9999;
 }
 
 .fw-header .logo {
@@ -2409,7 +2415,7 @@ ul li {
 .fw-toggle-button:before {
   width: 100%;
   height: 4px;
-  background-color: #1d1c1c;
+  background-color: #282a3e;
   transition: all 250ms;
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
@@ -2417,14 +2423,16 @@ ul li {
 }
 
 .fw-navigation {
-  position: relative;
+  position: fixed;
+  top: 5em;
   max-height: 0;
   margin: 0;
-  background-color: transparent;
+  background-color: #DCDBDB;
   overflow: hidden;
   transition: max-height 250ms ease-in-out;
   width: 100%;
   left: 0;
+  z-index: 9999;
 }
 
 .fw-navigation ul {
@@ -2444,11 +2452,11 @@ ul li {
   display: block;
   padding: 1em 2em;
   text-decoration: none;
-  color: #1d1c1c;
+  color: #282a3e;
 }
 
 .fw-navigation ul li a:hover, .fw-navigation ul li a:focus {
-  background-color: #cfcece;
+  background-color: rgba(100, 104, 155, 0.25);
 }
 
 .fw-navigation ul li a:active {
@@ -2462,7 +2470,7 @@ ul li {
   left: 2em;
   right: 2em;
   bottom: 0;
-  border-bottom: 1px solid #1d1c1c;
+  border-bottom: 1px solid #282a3e;
   transition: all 250ms;
 }
 
@@ -2488,7 +2496,7 @@ ul li {
 .fw-info * {
   margin: 0;
   padding: 0;
-  color: #000;
+  color: #282a3e;
 }
 
 .fw-info .fw-title {
@@ -2513,7 +2521,7 @@ ul li {
 }
 
 .fw-info .fw-info-address:hover {
-  color: gray;
+  color: #a2a4c3;
   text-decoration: underline;
 }
 
@@ -2521,7 +2529,7 @@ ul li {
   .fw-navigation {
     width: 100%;
     left: 0;
-    position: absolute;
+    position: fixed;
     z-index: 100;
   }
 }
@@ -2535,6 +2543,7 @@ ul li {
 
 @media only screen and (min-width: 80em) {
   .fw-header {
+    z-index: 50;
     position: fixed;
     width: 14em;
     left: 0;
@@ -2571,10 +2580,10 @@ ul li {
     overflow: visible;
   }
   .fw-navigation ul li:before {
-    border-bottom: 1px solid #1d1c1c;
+    border-bottom: 1px solid #282a3e;
   }
   .fw-navigation ul li:last-child:before {
-    border-bottom: 1px solid #1d1c1c;
+    border-bottom: 1px solid #282a3e;
   }
   .fw-navigation ul li a {
     padding: 0.5em 2.6666em;
@@ -2594,7 +2603,7 @@ ul li {
     overflow: auto;
   }
   .fw-info-small .fw-info * {
-    color: #1d1c1c;
+    color: #282a3e;
   }
   .fw-info-small .fw-info .fw-title {
     font-size: 1.11112rem;
@@ -2625,7 +2634,7 @@ ul li {
   position: fixed;
   display: block;
   right: 0;
-  bottom: 4em;
+  bottom: 2em;
   transition: all 250ms ease-in-out;
   z-index: 1000;
 }
@@ -2747,6 +2756,13 @@ body:after {
   position: relative;
   margin: 0;
   padding: 0;
+  padding: 5em 0 0;
+}
+
+@media only screen and (min-width: 80em) {
+  .site-wrapper {
+    padding-top: 0;
+  }
 }
 
 iframe {
@@ -2791,8 +2807,8 @@ body.noscript .shapes-wrapper {
 
 body.noscript .hero-billboard {
   transition: background 250ms ease-in;
-  -webkit-animation: hero 10s steps(1) infinite;
-          animation: hero 10s steps(1) infinite;
+  -webkit-animation: hero 20s steps(1) infinite;
+          animation: hero 20s steps(1) infinite;
 }
 
 body.noscript .clock1 {
@@ -2825,8 +2841,11 @@ body.noscript .clock1 {
   body.noscript .fw-navigation ul li:before {
     border-bottom: none;
   }
+  body.noscript .fw-navigation ul li:last-child:before {
+    border-bottom: none;
+  }
   body.noscript .fw-navigation ul li:hover:before {
-    border-bottom: 1px solid #1d1c1c;
+    border-bottom: 1px solid #282a3e;
   }
 }
 
@@ -2847,7 +2866,10 @@ body.noscript .clock1 {
   body.noscript .fw-navigation ul li:before {
     left: 2em;
     right: 2em;
-    border-bottom: 1px solid #1d1c1c;
+    border-bottom: 1px solid #282a3e;
+  }
+  body.noscript .fw-navigation ul li:last-child:before {
+    border-bottom: none;
   }
   body.noscript .fw-navigation ul li:hover:before {
     left: 0;
@@ -3158,6 +3180,21 @@ p[itemprop="email"] img {
   margin-left: auto;
   margin-right: auto;
   margin-top: 2em;
+}
+
+.about-holder .framework-margin {
+  width: 100%;
+}
+
+.about-holder .framework-margin .about-sec p {
+  display: block;
+  max-width: 45em;
+  margin: 0 auto;
+}
+
+.about-holder .framework-margin .about-bottom {
+  max-width: 45em;
+  margin: 0 auto;
 }
 
 .about-sec {

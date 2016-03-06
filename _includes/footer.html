@@ -1,19 +1,15 @@
-
-
 <footer class="gutter grid grid-middle" role="contentinfo">
-	<div class="unit unit-xs-1 pad-t">
-  	<h3 class="thanks">Special Thanks to our Sponsors</h3>
+  <div class="unit unit-xs-1 pad-t">
+    <h3 class="thanks">Special Thanks to our Sponsors</h3>
   </div>
-  	<div class="unit-xs-1 pad-t pad-b">
-{% for sponsor in site.data.sponsors %}
-	    <div class="unit unit-xs-1 unit-s-1-2 unit-m-1-2 unit-l-1-4 sponsor-center">
-	      <img class="ft-sponsor" src="{{site.cdn}}img/{{sponsor.img}}" alt="{{sponsor.name}}">
-	    </div>
-{% endfor %}
-
-		</div>
-	<div class="unit unit-xs-1 unit-s-1 unit-m-1 unit-l-1 pad-b">
-		<p class="unit copyright">	&copy; Algonquin College Class of 2016</p>
-	</div>
+  <div class="unit-xs-1 pad-t pad-b">
+    {% for sponsor in site.data.sponsors %}
+    <div class="unit unit-xs-1 unit-s-1-2 unit-m-1-2 unit-l-1-4 sponsor-center">
+      <img class="ft-sponsor" src="{{site.cdn}}img/{{sponsor.img}}" alt="{{sponsor.name}}">
+    </div>
+    {% endfor %}
+  </div>
+  <div class="unit unit-xs-1 unit-s-1 unit-m-1 unit-l-1 pad-b">
+    <p class="unit copyright">	&copy; Algonquin College Class of 2016</p>
+  </div>
 </footer>
-

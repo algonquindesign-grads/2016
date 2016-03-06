@@ -1,4 +1,3 @@
-
 <section id="grads" class="ph-graduates" tabindex="0">
   <h2 class="grad-section">Graduates</h2>
   <p class="grad-slector-title">Filter by specialization</p>
@@ -22,7 +21,6 @@
     <div class="unit unit-xs-hidden unit-s-hidden m-1 filter-tabs">
       <div class="filters">
         <div class="grid">
-
           <label tabindex="0" class="unit xs-1-4 filter-btn" for="filter-branding">Branding</label>
           <label tabindex="0" class="unit xs-1-4 filter-btn" for="filter-ux">UX-UI</label>
           <label tabindex="0" class="unit xs-1-4 filter-btn" for="filter-web">Web</label>
@@ -39,16 +37,14 @@
 
   <ul class="ph-student filter-items ph-padding">
     {% for student in site.grads %}
-        <li class="ph-image" data-category="{{student.specialization[0]}} {{student.specialization[1]}} {{student.specialization[2]}}">
-          <a href="{{site.baseurl}}{{student.url}}">
-          <img class="img-flex ph-gradphoto-top" src="{{site.cdn}}portraits/{{student.url | replace: 'grads/', '/' | remove:'/'}}.jpg" alt="{{student.full_name}}">
-          <p class="ph-fullname">{{student.full_name}}</p>
-          <p aria-hidden="true" class="ph-partialname">{{student.short_name}}</p>
-          </a>
-        </li>
+    <li class="ph-image" data-category="{{student.specialization[0]}} {{student.specialization[1]}} {{student.specialization[2]}}">
+      <a href="{{site.baseurl}}{{student.url}}">
+        <img class="img-flex ph-gradphoto-top" src="{{site.cdn}}portraits-thumb/{{student.url | replace: 'grads/', '/' | remove:'/'}}.jpg" alt="{{student.full_name}}">
+        <p class="ph-fullname">{{student.full_name}}</p>
+        <p aria-hidden="true" class="ph-partialname">{{student.short_name}}</p>
+      </a>
+    </li>
     {% endfor %}
   </ul>
 
 </section>
-
-<!-- {% for a in student.specialization%}{{a}} {% endfor %} -->

@@ -15,8 +15,6 @@ function toggleNav(){
   }
 }
 
-
-
 $('.fw-navigation a').on('keypress', function (e) {
   $($(this).attr('href')).focus();
 });

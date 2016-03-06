@@ -16,8 +16,9 @@
   display: block;
   overflow: hidden;
   background-color: $menu-background;
-  position: relative;
-  z-index: 50;
+  position: fixed;
+  width: 100%;
+  z-index: 9999;
   .logo{
     position: relative;
     top: 0;
@@ -119,14 +120,16 @@
 }
 
 .fw-navigation{
-  position: relative;
+  position: fixed;
+  top: 5em;
   max-height: 0;
   margin: 0;
-  background-color: transparent;
+  background-color: $menu-background;
   overflow: hidden;
   transition: max-height $menu-duration ease-in-out;
   width: 100%;
   left:0;
+  z-index: 9999;
   ul{
     width: 100%;
     @include zero;
@@ -141,7 +144,7 @@
         text-decoration: none;
         color: $menu-text;
         &:hover, &:focus{
-          background-color: darken($menu-background, 5%);
+          background-color: rgba($svg-top-fill, 0.25);
         }
         &:active{
           background-color: darken($menu-background, 10%);
@@ -154,7 +157,7 @@
         left : 2em;
         right: 2em;
         bottom: 0;
-        border-bottom: $menu-underline-stroke solid $menu-underline;
+        border-bottom: 1px solid darken($svg-top-fill, 30%);
         transition: all $menu-duration;
       }
       &:hover:before{
@@ -203,15 +206,8 @@
   .fw-navigation{
     width: 100%;
     left: 0;
-    position: absolute;
+    position: fixed;
     z-index: 100;
-    ul{
-      li{
-        a{
-          // font-size: 1em;
-        }
-      }
-    }
   }
 }
 
@@ -228,6 +224,7 @@
 
 @media only screen and (min-width: 80em){
   .fw-header{
+    z-index: 50;
     position: fixed;
     width: $side-bar-width;
     left: 0;
@@ -273,13 +270,12 @@
     ul{
       li{
         &:before{
-          border-bottom: 1px solid $menu-underline;
+          border-bottom: 1px solid darken($svg-top-fill, 30%);
         }
         &:last-child:before{
-          border-bottom: 1px solid $menu-underline;
+          border-bottom: 1px solid darken($svg-top-fill, 30%);
         }
         a{
-
           padding: 0.5em 2.6666em;
           font-size: 0.75em;
         }
@@ -328,7 +324,7 @@
   position: fixed;
   display: block;
   right: 0;
-  bottom: 4em;
+  bottom: 2em;
   transition: all 250ms ease-in-out;
   z-index: 1000;
   .rtt-btn{

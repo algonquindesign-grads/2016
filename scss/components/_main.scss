@@ -84,7 +84,15 @@ body:after{
   overflow: visible;
   position: relative;
   @include zero;
+  padding: 5em 0 0;
 }
+@media only screen and (min-width: 80em){
+  .site-wrapper{
+    padding-top: 0;
+  }
+
+}
+
 
 iframe {
   border: none;
@@ -119,7 +127,7 @@ body.noscript{
   }
   .hero-billboard{
     transition: background 250ms ease-in;
-    animation: hero 10s steps(1) infinite;
+    animation: hero 20s steps(1) infinite;
   }
 
   .clock1{
@@ -153,8 +161,11 @@ body.noscript{
           &:before{
             border-bottom: none;
           }
+          &:last-child:before{
+            border-bottom: none;
+          }
           &:hover:before{
-            border-bottom: 1px solid $menu-underline;
+            border-bottom: 1px solid darken($svg-top-fill, 30%);
           }
         }
       }
@@ -180,7 +191,10 @@ body.noscript{
         &:before{
           left: 2em;
           right: 2em;
-          border-bottom: 1px solid $menu-underline;
+          border-bottom: 1px solid darken($svg-top-fill, 30%);
+        }
+        &:last-child:before{
+          border-bottom: none;
         }
         &:hover:before{
           left: 0;
