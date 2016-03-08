@@ -21,29 +21,27 @@
   margin-bottom: 0;
 }
 
-  p[itemprop="email"] {
-    text-align: center;
-      @media only screen and (min-width: 18em) {
-        text-align: left;
-      }
-    a {
-      @include element-invisible;
+p[itemprop="email"] {
+  text-align: center;
+  @media only screen and (min-width: 18em) {
+    text-align: left;
+  }
+  a {
+    @include element-invisible;
     @media only screen and (min-width: 18em) {
       @include element-invisible-off;
       text-align: left;
     }
   }
-    img {
-      @include element-invisible-off;
-      width: 25%;
-      color: black;
+  img {
+    @include element-invisible-off;
+    width: 25%;
+    color: black;
     @media only screen and (min-width: 18em) {
       @include element-invisible;
     }
+  }
 }
-}
-
-
 
 
 
@@ -52,32 +50,23 @@
   text-decoration: none;
   font-weight: 400;
   color: $black;
-    &:hover {
+    &:hover, &:focus {
       text-decoration: underline;
     }
+}
+
+@keyframes icons {
+    0% { transform: scale(1.0); }
+    100% { transform: scale(1.15); }
 }
 
 .pp-social-icon {
   width: 2.5em;
   margin: 0 0.5em;
+  &:hover img, &:focus img{
+    animation: icons 250ms ease-in-out forwards;
+  }
 
-  &:hover {
-      -webkit-animation: icons 800ms ease-in-out;
-      animation: icons 800ms ease-in-out;
-    }
-
-}
-
-@-webkit-keyframes icons {
-    0% { -webkit-transform: scale(1.0); }
-    50% { -webkit-transform: scale(1.2); }
-    100% { -webkit-transform: scale(1.0); }
-}
-
-@keyframes icons {
-    0% { transform: scale(1.0); }
-    50% { transform: scale(1.2); }
-    100% { transform: scale(1.0); }
 }
 
 //Vimeo Video iframe settings
@@ -94,8 +83,6 @@
     height: 100%!important;
   }
 }
-
-
 
 // Student sprite photo
 
@@ -131,7 +118,6 @@
   position: absolute;
   top: 0;
   left: 0;
-  // transition: all 150ms ease-in-out;
 }
 
 .pp-pad-left {
@@ -188,9 +174,9 @@
   font-weight: 600;
   margin: 0;
   @include main-btn;
-    &:hover {
-      font-weight: 600;
-    }
+  &:hover {
+    font-weight: 600;
+  }
 }
 
 .pp-off {

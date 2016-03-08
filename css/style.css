@@ -1817,7 +1817,6 @@ td, th, fieldset {
   color: #fff;
   display: block;
   text-decoration: none;
-  text-align: center;
   font-size: 3em;
 }
 
@@ -1851,114 +1850,26 @@ td, th, fieldset {
   background: url("http://grads.images.algonquindesign.ca.s3.amazonaws.com/2016/img/facebook.svg");
   background-repeat: no-repeat;
   background-size: contain;
-}
-
-.social-facebook:hover {
-  -webkit-animation: icons 800ms ease-in-out;
-  animation: icons 800ms ease-in-out;
-}
-
-@-webkit-keyframes icons {
-  0% {
-    -webkit-transform: scale(1);
-  }
-  50% {
-    -webkit-transform: scale(1.5);
-  }
-  100% {
-    -webkit-transform: scale(1);
-  }
-}
-
-@keyframes icons {
-  0% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
-  50% {
-    -webkit-transform: scale(1.5);
-            transform: scale(1.5);
-  }
-  100% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
+  background-position: center;
 }
 
 .social-twitter {
   background: url("http://grads.images.algonquindesign.ca.s3.amazonaws.com/2016/img/twitter.svg");
   background-repeat: no-repeat;
   background-size: contain;
-}
-
-.social-twitter:hover {
-  -webkit-animation: icons 800ms ease-in-out;
-  animation: icons 800ms ease-in-out;
-}
-
-@-webkit-keyframes icons {
-  0% {
-    -webkit-transform: scale(1);
-  }
-  50% {
-    -webkit-transform: scale(1.5);
-  }
-  100% {
-    -webkit-transform: scale(1);
-  }
-}
-
-@keyframes icons {
-  0% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
-  50% {
-    -webkit-transform: scale(1.5);
-            transform: scale(1.5);
-  }
-  100% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
+  background-position: center;
 }
 
 .social-instagram {
   background: url("http://grads.images.algonquindesign.ca.s3.amazonaws.com/2016/img/instagram.svg");
   background-repeat: no-repeat;
   background-size: contain;
+  background-position: center;
 }
 
-.social-instagram:hover {
-  -webkit-animation: icons 800ms ease-in-out;
-  animation: icons 800ms ease-in-out;
-}
-
-@-webkit-keyframes icons {
-  0% {
-    -webkit-transform: scale(1);
-  }
-  50% {
-    -webkit-transform: scale(1.5);
-  }
-  100% {
-    -webkit-transform: scale(1);
-  }
-}
-
-@keyframes icons {
-  0% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
-  50% {
-    -webkit-transform: scale(1.5);
-            transform: scale(1.5);
-  }
-  100% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
+.social-facebook:hover, .social-facebook:focus, .social-twitter:hover, .social-twitter:focus, .social-instagram:hover, .social-instagram:focus {
+  -webkit-animation: icons 250ms ease-in-out forwards;
+          animation: icons 250ms ease-in-out forwards;
 }
 
 .filter-tabs {
@@ -1976,7 +1887,7 @@ td, th, fieldset {
 .filter-tabs label:hover {
   color: #fff;
   background-color: rgba(0, 162, 156, 0.7);
-  transition: all 300ms ease-in-out;
+  transition: all 250ms ease-in-out;
 }
 
 .filter-tabs label:last-child {
@@ -2960,29 +2871,18 @@ p[itemprop="email"] img {
   color: #000;
 }
 
-.pp-links a:hover {
+.pp-links a:hover, .pp-links a:focus {
   text-decoration: underline;
-}
-
-.pp-social-icon {
-  width: 2.5em;
-  margin: 0 0.5em;
-}
-
-.pp-social-icon:hover {
-  -webkit-animation: icons 800ms ease-in-out;
-  animation: icons 800ms ease-in-out;
 }
 
 @-webkit-keyframes icons {
   0% {
     -webkit-transform: scale(1);
-  }
-  50% {
-    -webkit-transform: scale(1.2);
+            transform: scale(1);
   }
   100% {
-    -webkit-transform: scale(1);
+    -webkit-transform: scale(1.15);
+            transform: scale(1.15);
   }
 }
 
@@ -2991,14 +2891,20 @@ p[itemprop="email"] img {
     -webkit-transform: scale(1);
             transform: scale(1);
   }
-  50% {
-    -webkit-transform: scale(1.2);
-            transform: scale(1.2);
-  }
   100% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
+    -webkit-transform: scale(1.15);
+            transform: scale(1.15);
   }
+}
+
+.pp-social-icon {
+  width: 2.5em;
+  margin: 0 0.5em;
+}
+
+.pp-social-icon:hover img, .pp-social-icon:focus img {
+  -webkit-animation: icons 250ms ease-in-out forwards;
+          animation: icons 250ms ease-in-out forwards;
 }
 
 .pp-vimeo {
@@ -3781,14 +3687,8 @@ p[itemprop="email"] img {
 }
 
 .nf-fadeIn {
-  -webkit-animation-name: nf-fadeIn;
-          animation-name: nf-fadeIn;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
-  -webkit-animation-delay: .5s;
-          animation-delay: .5s;
-  -webkit-animation-fill-mode: both;
-          animation-fill-mode: both;
+  -webkit-animation: nf-fadeIn 2s 500ms both;
+          animation: nf-fadeIn 2s 500ms both;
 }
 
 @-webkit-keyframes nf-fadeIn {
@@ -3838,17 +3738,8 @@ p[itemprop="email"] img {
   bottom: -2em;
 }
 
-.instagram-post a:hover .mouseoff:hover:before, .instagram-post a:focus .mouseoff:hover:before {
-  display: block;
-  content: '';
-  position: absolute;
-  top: 75%;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), #fff);
-  opacity: 1;
-  z-index: 100;
+.instagram-post a:hover .likes, .instagram-post a:focus .likes {
+  opacity: 0;
 }
 
 .instagram-post:last-child {
@@ -3865,6 +3756,50 @@ p[itemprop="email"] img {
   .instagram-post:last-child {
     display: block;
   }
+}
+
+.likes {
+  position: absolute;
+  width: 2em;
+  height: 1.8em;
+  top: 1em;
+  left: 1em;
+  opacity: 1;
+  transition: opacity 250ms ease-in-out;
+}
+
+.likes span {
+  position: relative;
+  left: 2em;
+  color: #fff;
+}
+
+.likes:before,
+.likes:after {
+  position: absolute;
+  content: "";
+  left: 1em;
+  top: 0;
+  width: 1em;
+  height: 1.6em;
+  background: #df4827;
+  border-radius: 1em 1em 0 0;
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  -webkit-transform-origin: 0 100%;
+      -ms-transform-origin: 0 100%;
+          transform-origin: 0 100%;
+}
+
+.likes:after {
+  left: 0;
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+  -webkit-transform-origin: 100% 100%;
+      -ms-transform-origin: 100% 100%;
+          transform-origin: 100% 100%;
 }
 
 .clock-holder {

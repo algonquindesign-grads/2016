@@ -9,8 +9,7 @@
     &:hover {
       color: $white;
       background-color: rgba($green, .7);
-      -webkit-transition: all 300ms ease-in-out;
-      transition: all 300ms ease-in-out;
+      transition: all 250ms ease-in-out;
     }
     &:last-child{
       width: 100%;
@@ -140,4 +139,3 @@ ul li {
   border: 1px solid $grey-4;
 }
 
-//Prepros should add webkit for box-shadow
