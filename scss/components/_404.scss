@@ -24,32 +24,18 @@
   color: $grey-2;
 }
 
-.nf-btn {
-  // display: inline-block;
-  // margin: 0;
-  // background-color: transparent;
-  // border: 1px solid $grey-1;
-  // color: $grey;
-  // padding: .5em 1em;
-  // margin: 1.5em;
-  // box-shadow: 2px 2px $grey-1;
-  // @include btn-main;
-}
-
-.nf-btn a{
-  // text-decoration: none;
-  // color: $grey;
-  @include main-btn;
-  margin: 2em auto;
-  max-width: 8em;
+.nf-btn{
+  a{
+    @include main-btn;
+    margin: 2em auto;
+    max-width: 8em;
+  }
 }
 
 .nf-max {
   max-width: 65%;
   margin: 0 auto;
 }
-
-//animations from animate.css by danedin
 
 .nf-fadeIn {
   animation-name: nf-fadeIn;
