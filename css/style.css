@@ -2617,11 +2617,6 @@ body:after {
   z-index: -10;
 }
 
-.main-bg {
-  background-color: #f8f2e9;
-  z-index: -13;
-}
-
 .skip-links {
   margin: 0;
   padding: 0;
@@ -3475,11 +3470,6 @@ p[itemprop="email"] img {
 .grid-middle {
   background-color: #55565a;
   color: #fff;
-}
-
-.ft-copyright {
-  overflow: hidden;
-  display: block;
 }
 
 .copyright {
