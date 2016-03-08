@@ -2939,7 +2939,7 @@ p[itemprop="email"] img {
   overflow: hidden;
 }
 
-.pp-image a:hover .ph-gradphoto-top, .pp-image a:hover .pp-gradphoto-top {
+.pp-image a:hover .ph-gradphoto-top, .pp-image a:hover .pp-gradphoto-top, .pp-image a:focus .pp-gradphoto-top {
   top: -100%;
 }
 
