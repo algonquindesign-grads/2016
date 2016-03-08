@@ -127,7 +127,7 @@ body.noscript{
   }
   .hero-billboard{
     transition: background 250ms ease-in;
-    animation: hero 20s steps(1) infinite;
+    animation: hero 40s ease-in-out infinite;
   }
 
   .clock1{

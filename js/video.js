@@ -6,34 +6,49 @@ var $stepOne = $('#step-1');
 var $stepTwo = $('#step-2');
 var $stepThree = $('#step-3');
 var $stepFour = $('#step-4');
+var duration = 10000;
+var $bar = $('.bar');
+
+var slideTime = setInterval(slide, duration);
 
 $stepOne.on('click', function(e) {
   e.preventDefault();
   $videoWrap.attr('data-step', '1');
-  $videoWrap.addClass('is-paused');
-  // $videoWrap.html('<div class="hero-billboard gd-embed gd-embed--16by9"></div>');
 });
 
 $stepTwo.on('click', function(e) {
   e.preventDefault();
   $videoWrap.attr('data-step', '2');
-  $videoWrap.addClass('is-paused');
-  $videoWrap.html('<div class="hero-billboard gd-embed gd-embed--16by9"></div>');
 });
 
 $stepThree.on('click', function(e) {
   e.preventDefault();
   $videoWrap.attr('data-step', '3');
-  $videoWrap.addClass('is-paused');
-  $videoWrap.html('<div class="hero-billboard gd-embed gd-embed--16by9"></div>');
 });
 
 $stepFour.on('click', function(e) {
   e.preventDefault();
   $videoWrap.attr('data-step', '4');
-  $videoWrap.addClass('is-paused');
-  $videoWrap.html('<div class="hero-billboard gd-embed gd-embed--16by9"></div>');
 });
+
+
+
+function slide(){
+  if ($videoWrap.attr('data-step') == '1'){
+    $videoWrap.attr('data-step', 2);
+    // $bar.animate({ right: "100%" }, 0);
+  } else if ($videoWrap.attr('data-step') == '2'){
+    $videoWrap.attr('data-step', 3);
+    // $bar.animate({ right: "100%" }, 0);
+  } else if ($videoWrap.attr('data-step') == '3'){
+    $videoWrap.attr('data-step', 4);
+    // $bar.animate({ right: "100%" }, 0);
+  } else if ($videoWrap.attr('data-step') == '4'){
+    $videoWrap.attr('data-step', 1);
+    // $bar.attr('data-state', '0');
+  }
+}
+
 
 
 $btn.on('click', function () {
