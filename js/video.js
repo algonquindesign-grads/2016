@@ -47,7 +47,6 @@ function slide(){
     $videoWrap.attr('data-step', 1);
     // $bar.attr('data-state', '0');
   }
-  clearInterval(slide);
 }
 
 
