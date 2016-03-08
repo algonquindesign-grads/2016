@@ -35,7 +35,7 @@
 
 .fe-images-1 {
   .fe-img {
-    display: inline-block;
+    display: block;
     width: 100%;
     @media only screen and (min-width: 25em) {
       padding-right: .5em;
@@ -45,7 +45,7 @@
 
 .fe-images-2 {
   .fe-img {
-    display: inline-block;
+    display: block;
     width: 100%;
     @media only screen and (min-width: 25em) {
       padding-right: .5em;

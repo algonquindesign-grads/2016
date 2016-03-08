@@ -2676,12 +2676,17 @@ iframe {
   border: none;
 }
 
+body.noscript .fw-header {
+  position: absolute;
+}
+
 body.noscript .fw-navigation {
   max-height: 15em;
   width: 100%;
   display: block;
   position: relative;
   left: 0;
+  z-index: 9999;
 }
 
 body.noscript .fw-toggle {
@@ -2759,6 +2764,9 @@ body.noscript .clock1 {
 @media only screen and (min-width: 80em) {
   body.noscript .logo {
     width: 100%;
+  }
+  body.noscript .fw-header {
+    position: fixed;
   }
   body.noscript .fw-navigation {
     left: 0;
@@ -3194,7 +3202,7 @@ p[itemprop="email"] img {
 }
 
 .fe-images-1 .fe-img {
-  display: inline-block;
+  display: block;
   width: 100%;
 }
 
@@ -3205,7 +3213,7 @@ p[itemprop="email"] img {
 }
 
 .fe-images-2 .fe-img {
-  display: inline-block;
+  display: block;
   width: 100%;
 }
 
@@ -3375,7 +3383,6 @@ p[itemprop="email"] img {
 }
 
 .gd-video-wrap[data-step="1"] .bar {
-  right: 75%;
   border-bottom: 2px solid #eab63f;
 }
 
@@ -3389,7 +3396,6 @@ p[itemprop="email"] img {
 }
 
 .gd-video-wrap[data-step="2"] .bar {
-  right: 50%;
   border-bottom: 2px solid #64689b;
 }
 
@@ -3403,7 +3409,6 @@ p[itemprop="email"] img {
 }
 
 .gd-video-wrap[data-step="3"] .bar {
-  right: 25%;
   border-bottom: 2px solid #00a29c;
 }
 
@@ -3417,7 +3422,6 @@ p[itemprop="email"] img {
 }
 
 .gd-video-wrap[data-step="4"] .bar {
-  right: 0%;
   border-bottom: 2px solid #df4827;
 }
 
