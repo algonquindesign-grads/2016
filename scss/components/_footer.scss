@@ -1,18 +1,12 @@
 
 .grid-middle {
-	background-color: rgba($grey-2, .5 );
-	color:$text-color;
+	background-color: $grey;
+	color:$white;
 }
 
 .ft-copyright{
 	overflow:hidden;
 	display: block;
-}
-
-.ft-sponsor{
-	padding-left: .25em;
-	width: 180px;
-	margin: auto 0;
 }
 
 .copyright {
@@ -31,16 +25,25 @@
   margin: 0;
 }
 
-.sponsors {
-	display: inline-block;
+.ft-center {
+  text-align: center;
 }
 
-.sponsor-center {
-	margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-  padding-top: 0.7000rem;
-   @media only screen and (min-width: 60em) {
-   	padding-top: 0;
-   }
+
+.ft-sponsor {
+  display: inline-block;
+  font-size: .75em;
+  text-transform: uppercase;
+  color: $white;
+  padding: .5em 1em;
 }
+
+/*
+.ft-sponsor::after {
+  content:"•";
+  padding-left: 1em;
+    &:last-child {
+      content:"";
+    }
+}
+*/

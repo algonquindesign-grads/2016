@@ -18,7 +18,6 @@
     background-color: rgba(white, 0.55);
     opacity: 0;
     color: $text-color;
-
   }
   &:hover .mouseoff, &:focus .mouseoff{
     background-color: rgab($white, 0.75);
