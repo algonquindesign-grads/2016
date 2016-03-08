@@ -3104,10 +3104,10 @@ p[itemprop="email"] img {
   text-align: center;
 }
 
-.pp-nav-btn-a:hover {
+.pp-nav-btn-a:hover, .pp-nav-btn-a:focus {
   color: #fff;
   background-color: rgba(0, 162, 156, 0.7);
-  transition: all 300ms ease-in-out;
+  transition: all 250ms ease-in-out;
 }
 
 .pp-nav-btn-arrows {
@@ -3123,10 +3123,10 @@ p[itemprop="email"] img {
   text-align: center;
 }
 
-.pp-nav-btn-arrows:hover {
+.pp-nav-btn-arrows:hover, .pp-nav-btn-arrows:focus {
   color: #fff;
   background-color: rgba(0, 162, 156, 0.7);
-  transition: all 300ms ease-in-out;
+  transition: all 250ms ease-in-out;
 }
 
 .pp-nav-btn-arrows:hover {
@@ -3600,10 +3600,10 @@ p[itemprop="email"] img {
   text-align: center;
 }
 
-.bts-more-btn:hover {
+.bts-more-btn:hover, .bts-more-btn:focus {
   color: #fff;
   background-color: rgba(0, 162, 156, 0.7);
-  transition: all 300ms ease-in-out;
+  transition: all 250ms ease-in-out;
 }
 
 .bts-text {
@@ -3700,7 +3700,7 @@ p[itemprop="email"] img {
   text-transform: uppercase;
 }
 
-.fw-info-sec3 button:hover {
+.fw-info-sec3 button:hover, .fw-info-sec3 button:focus {
   background-color: #3c3d40;
 }
 
@@ -3717,10 +3717,10 @@ p[itemprop="email"] img {
   text-decoration: none;
 }
 
-.fw-link-center:hover {
+.fw-link-center:hover, .fw-link-center:focus {
   color: #fff;
   background-color: #00a29c;
-  transition: all 300ms ease-in-out;
+  transition: all 250ms ease-in-out;
 }
 
 @media only screen and (min-width: 80em) {
@@ -3757,30 +3757,22 @@ p[itemprop="email"] img {
   color: #A6A5A7;
 }
 
-.nf-btn {
-  display: inline-block;
-  margin: 0;
-  background-color: transparent;
-  border: 1px solid #DCDBDB;
-  color: #55565a;
-  padding: .5em 1em;
-  margin: 1.5em;
-  box-shadow: 2px 2px #DCDBDB;
-}
-
 .nf-btn a {
+  display: block;
+  text-transform: uppercase;
+  padding: 1em;
+  color: #fff;
+  background-color: rgba(85, 86, 90, 0.7);
   text-decoration: none;
-  color: #55565a;
+  text-align: center;
+  margin: 2em auto;
+  max-width: 8em;
 }
 
-.nf-btn:hover {
-  background-color: rgba(0, 0, 0, 0.05);
-  box-shadow: inset 2px 2px 0 0 #DCDBDB;
-}
-
-.nf-btn:active {
-  background-color: #DCDBDB;
-  border: 2px solid #DCDBDB;
+.nf-btn a:hover, .nf-btn a:focus {
+  color: #fff;
+  background-color: rgba(0, 162, 156, 0.7);
+  transition: all 250ms ease-in-out;
 }
 
 .nf-max {
@@ -3790,7 +3782,7 @@ p[itemprop="email"] img {
 
 .nf-fadeIn {
   -webkit-animation-name: nf-fadeIn;
-  animation-name: nf-fadeIn;
+          animation-name: nf-fadeIn;
   -webkit-animation-duration: 2s;
           animation-duration: 2s;
   -webkit-animation-delay: .5s;
