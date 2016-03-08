@@ -16,6 +16,6 @@ var feed = new Instafeed({
       }
       return true;
     },
-  template: '<li class="instagram-post unit xs-1-2 m-1-3"><a target="_blank" href="{{link}}"><img class="img-flex island-1-4" src="{{image}}" alt="{{caption}}"><p class="mouseoff">{{model.short_caption}}...</p></a></li>'
+  template: '<li class="instagram-post unit xs-1-2 m-1-3"><a target="_blank" href="{{link}}"><img class="img-flex island-1-4" src="{{image}}" alt="{{caption}}"><div class="likes"><span>{{likes}}</span></div><p class="mouseoff">{{model.short_caption}}...</p></a></li>'
 });
 feed.run();
