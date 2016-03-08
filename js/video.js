@@ -32,28 +32,22 @@ $stepFour.on('click', function(e) {
 });
 
 
-$bar.animate({ right: "0%" }, duration);
-$bar.animate({ right: "100%" }, 0);
+
 function slide(){
-  $bar.animate({ right: "0%" }, duration);
   if ($videoWrap.attr('data-step') == '1'){
     $videoWrap.attr('data-step', 2);
-    $bar.animate({ right: "100%" }, 0);
-    $bar.css('border-bottom', '2px solid #64689b');
+    // $bar.animate({ right: "100%" }, 0);
   } else if ($videoWrap.attr('data-step') == '2'){
     $videoWrap.attr('data-step', 3);
-    $bar.animate({ right: "100%" }, 0);
-    $bar.css('border-bottom', '2px solid #00a29c');
+    // $bar.animate({ right: "100%" }, 0);
   } else if ($videoWrap.attr('data-step') == '3'){
     $videoWrap.attr('data-step', 4);
-    $bar.animate({ right: "100%" }, 0);
-    $bar.css('border-bottom', '2px solid #df4827');
+    // $bar.animate({ right: "100%" }, 0);
   } else if ($videoWrap.attr('data-step') == '4'){
     $videoWrap.attr('data-step', 1);
-    $bar.animate({ right: "100%" }, 0);
-    $bar.css('border-bottom', '2px solid #eab63f');
+    // $bar.attr('data-state', '0');
   }
-
+  clearInterval(slide);
 }
 
 
