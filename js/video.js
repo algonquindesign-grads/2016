@@ -6,34 +6,56 @@ var $stepOne = $('#step-1');
 var $stepTwo = $('#step-2');
 var $stepThree = $('#step-3');
 var $stepFour = $('#step-4');
+var duration = 10000;
+var $bar = $('.bar');
+
+var slideTime = setInterval(slide, duration);
 
 $stepOne.on('click', function(e) {
   e.preventDefault();
   $videoWrap.attr('data-step', '1');
-  $videoWrap.addClass('is-paused');
-  // $videoWrap.html('<div class="hero-billboard gd-embed gd-embed--16by9"></div>');
 });
 
 $stepTwo.on('click', function(e) {
   e.preventDefault();
   $videoWrap.attr('data-step', '2');
-  $videoWrap.addClass('is-paused');
-  $videoWrap.html('<div class="hero-billboard gd-embed gd-embed--16by9"></div>');
 });
 
 $stepThree.on('click', function(e) {
   e.preventDefault();
   $videoWrap.attr('data-step', '3');
-  $videoWrap.addClass('is-paused');
-  $videoWrap.html('<div class="hero-billboard gd-embed gd-embed--16by9"></div>');
 });
 
 $stepFour.on('click', function(e) {
   e.preventDefault();
   $videoWrap.attr('data-step', '4');
-  $videoWrap.addClass('is-paused');
-  $videoWrap.html('<div class="hero-billboard gd-embed gd-embed--16by9"></div>');
 });
+
+
+$bar.animate({ right: "0%" }, duration);
+$bar.animate({ right: "100%" }, 0);
+function slide(){
+  $bar.animate({ right: "0%" }, duration);
+  if ($videoWrap.attr('data-step') == '1'){
+    $videoWrap.attr('data-step', 2);
+    $bar.animate({ right: "100%" }, 0);
+    $bar.css('border-bottom', '2px solid #64689b');
+  } else if ($videoWrap.attr('data-step') == '2'){
+    $videoWrap.attr('data-step', 3);
+    $bar.animate({ right: "100%" }, 0);
+    $bar.css('border-bottom', '2px solid #00a29c');
+  } else if ($videoWrap.attr('data-step') == '3'){
+    $videoWrap.attr('data-step', 4);
+    $bar.animate({ right: "100%" }, 0);
+    $bar.css('border-bottom', '2px solid #df4827');
+  } else if ($videoWrap.attr('data-step') == '4'){
+    $videoWrap.attr('data-step', 1);
+    $bar.animate({ right: "100%" }, 0);
+    $bar.css('border-bottom', '2px solid #eab63f');
+  }
+
+}
+
 
 
 $btn.on('click', function () {
