@@ -95,12 +95,16 @@ iframe {
 
 // Show navigation on screen when there is no JS
 body.noscript{
+  .fw-header{
+    position: absolute;
+  }
   .fw-navigation{
     max-height: 15em;
     width: 100%;
     display: block;
     position: relative;
     left: 0;
+    z-index: 9999;
   }
 
   .fw-toggle{
@@ -173,6 +177,9 @@ body.noscript{
   body.noscript{
     .logo{
       width: 100%;
+    }
+    .fw-header{
+      position: fixed;
     }
     .fw-navigation{
     left: 0;
