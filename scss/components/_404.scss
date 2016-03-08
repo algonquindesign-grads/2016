@@ -14,10 +14,10 @@
 }
 
 .nf-title {
-font-size: 1.6018rem;
-line-height: 2.1000rem;
-color: $grey;
-font-weight: bold;
+  font-size: 1.6018rem;
+  line-height: 2.1000rem;
+  color: $grey;
+  font-weight: bold;
 }
 
 .nf-subtitle {
@@ -25,29 +25,23 @@ font-weight: bold;
 }
 
 .nf-btn {
-  display: inline-block;
-  margin: 0;
-  background-color: transparent;
-  border: 1px solid $grey-1;
-  color: $grey;
-  padding: .5em 1em;
-  margin: 1.5em;
-  box-shadow: 2px 2px $grey-1;
+  // display: inline-block;
+  // margin: 0;
+  // background-color: transparent;
+  // border: 1px solid $grey-1;
+  // color: $grey;
+  // padding: .5em 1em;
+  // margin: 1.5em;
+  // box-shadow: 2px 2px $grey-1;
+  // @include btn-main;
 }
 
 .nf-btn a{
-  text-decoration: none;
-  color: $grey;
-}
-
-.nf-btn:hover {
-  background-color: rgba(0, 0, 0, .05);
-  box-shadow: inset 2px 2px 0 0 $grey-1;
-}
-
-.nf-btn:active {
-  background-color: $grey-1;
-  border: 2px solid $grey-1;
+  // text-decoration: none;
+  // color: $grey;
+  @include main-btn;
+  margin: 2em auto;
+  max-width: 8em;
 }
 
 .nf-max {
@@ -58,7 +52,6 @@ font-weight: bold;
 //animations from animate.css by danedin
 
 .nf-fadeIn {
-  -webkit-animation-name: nf-fadeIn;
   animation-name: nf-fadeIn;
   animation-duration: 2s;
   animation-delay: .5s;
