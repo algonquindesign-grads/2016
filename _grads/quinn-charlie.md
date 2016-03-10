@@ -19,7 +19,7 @@ specialization:
   - photography
   - ux-ui
 
-vimeo: "149187822"
+vimeo: "158405612"
 
 social:
   linkedin:   "https://ca.linkedin.com/in/charliequinngd"

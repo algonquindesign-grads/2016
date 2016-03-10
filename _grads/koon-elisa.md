@@ -10,7 +10,7 @@ last_name: "Koon"
 
 description: "I enjoy problem solving! Movies, yoga, shopping and my pets are my favourite. Sweets are my Kryptonite. My friends are my heroes."
 
-email: "elisa.koon5@gmail.com"
+email: "hey@elisakoon.ca"
 
 website: "http://elisakoon.ca"
 
