@@ -54,13 +54,13 @@ function slide(){
 $btn.on('click', function () {
   $bb.css('display', 'none');
   if ($videoWrap.attr('data-step') == '1'){
-    $videoWrap.html('<div class="gd-embed gd-embed--16by9"><video class="gd-embed__item gd-grad-vid" src="http://grads.images.algonquindesign.ca.s3.amazonaws.com/2016/video/test-video.mp4" poster="http://grads.images.algonquindesign.ca.s3.amazonaws.com/2016/img/website-banners-1.jpg">Framwork 2016 Grad site video.</video></div><button class="gd-btn-play-pause"></button>');
+    $videoWrap.html('<div class="gd-embed gd-embed--16by9"><video class="gd-embed__item gd-grad-vid" src="https://grads.images.algonquindesign.ca/2016/video/test-video.mp4" poster="https://grads.images.algonquindesign.ca/2016/img/website-banners-1.jpg">Framwork 2016 Grad site video.</video></div><button class="gd-btn-play-pause"></button>');
   } else if ($videoWrap.attr('data-step') == '2'){
-    $videoWrap.html('<div class="gd-embed gd-embed--16by9"><video class="gd-embed__item gd-grad-vid" src="http://grads.images.algonquindesign.ca.s3.amazonaws.com/2016/video/test-video.mp4" poster="http://grads.images.algonquindesign.ca.s3.amazonaws.com/2016/img/website-banners-2.jpg">Framwork 2016 Grad site video.</video></div><button class="gd-btn-play-pause"></button>');
+    $videoWrap.html('<div class="gd-embed gd-embed--16by9"><video class="gd-embed__item gd-grad-vid" src="https://grads.images.algonquindesign.ca/2016/video/test-video.mp4" poster="https://grads.images.algonquindesign.ca/2016/img/website-banners-2.jpg">Framwork 2016 Grad site video.</video></div><button class="gd-btn-play-pause"></button>');
   } else if ($videoWrap.attr('data-step') == '3'){
-    $videoWrap.html('<div class="gd-embed gd-embed--16by9"><video class="gd-embed__item gd-grad-vid" src="http://grads.images.algonquindesign.ca.s3.amazonaws.com/2016/video/test-video.mp4" poster="http://grads.images.algonquindesign.ca.s3.amazonaws.com/2016/img/website-banners-3.jpg">Framwork 2016 Grad site video.</video></div><button class="gd-btn-play-pause"></button>');
+    $videoWrap.html('<div class="gd-embed gd-embed--16by9"><video class="gd-embed__item gd-grad-vid" src="https://grads.images.algonquindesign.ca/2016/video/test-video.mp4" poster="https://grads.images.algonquindesign.ca/2016/img/website-banners-3.jpg">Framwork 2016 Grad site video.</video></div><button class="gd-btn-play-pause"></button>');
   } else if ($videoWrap.attr('data-step') == '4'){
-    $videoWrap.html('<div class="gd-embed gd-embed--16by9"><video class="gd-embed__item gd-grad-vid" src="http://grads.images.algonquindesign.ca.s3.amazonaws.com/2016/video/test-video.mp4" poster="http://grads.images.algonquindesign.ca.s3.amazonaws.com/2016/img/website-banners-4.jpg">Framwork 2016 Grad site video.</video></div><button class="gd-btn-play-pause"></button>');
+    $videoWrap.html('<div class="gd-embed gd-embed--16by9"><video class="gd-embed__item gd-grad-vid" src="https://grads.images.algonquindesign.ca/2016/video/test-video.mp4" poster="https://grads.images.algonquindesign.ca/2016/img/website-banners-4.jpg">Framwork 2016 Grad site video.</video></div><button class="gd-btn-play-pause"></button>');
   }
 
   $videoWrap.addClass('is-playing');
