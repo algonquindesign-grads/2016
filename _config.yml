@@ -1,7 +1,5 @@
 permalink: pretty
-cdn: http://grads.images.algonquindesign.ca/2016/
-
-# http://grads.images.algonquindesign.ca/2016
+cdn: https://grads.images.algonquindesign.ca/2016/
 
 collections:
   grads:
