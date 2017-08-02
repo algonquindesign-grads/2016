@@ -1333,19 +1333,19 @@ td, th, fieldset {
       margin: 0 auto; }
 
 .social-facebook {
-  background: url("http://grads.images.algonquindesign.ca.s3.amazonaws.com/2016/img/facebook.svg");
+  background: url("https://grads.images.algonquindesign.ca/2016/img/facebook.svg");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center; }
 
 .social-twitter {
-  background: url("http://grads.images.algonquindesign.ca.s3.amazonaws.com/2016/img/twitter.svg");
+  background: url("https://grads.images.algonquindesign.ca/2016/img/twitter.svg");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center; }
 
 .social-instagram {
-  background: url("http://grads.images.algonquindesign.ca.s3.amazonaws.com/2016/img/instagram.svg");
+  background: url("https://grads.images.algonquindesign.ca/2016/img/instagram.svg");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center; }
@@ -1918,7 +1918,7 @@ body {
 
 body:after {
   content: "";
-  background-image: url("http://grads.images.algonquindesign.ca.s3.amazonaws.com/2016/img/dots.png");
+  background-image: url("https://grads.images.algonquindesign.ca/2016/img/dots.png");
   background-repeat: repeat;
   background-size: 2em 2em;
   background-position: top;
